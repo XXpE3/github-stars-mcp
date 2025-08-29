@@ -1,0 +1,496 @@
+---
+project: obsidian.el
+stars: 468
+description: |-
+    Obsidian Notes for Emacs
+url: https://github.com/licht1stein/obsidian.el
+---
+
+#+TITLE: Obsidian Notes for Emacs
+[[https://melpa.org/#/obsidian][file:https://melpa.org/packages/obsidian-badge.svg]] [[https://stable.melpa.org/#/obsidian][file:https://stable.melpa.org/packages/obsidian-badge.svg]]
+
+Emacs front-end for [[https://obsidian.md/][Obsidian Notes]].
+
+Obsidian Notes does not need to be installed to make use of the full functionality of this package.
+
+* Table of Contents                                                     :toc:
+- [[#why-obsidianel][Why obsidian.el]]
+  - [[#what-should-we-keep-doing-in-obsidian-blorg][What should we keep doing in Obsidian blorg?]]
+  - [[#what-should-be-possible-to-do-in-emacs][What should be possible to do in Emacs?]]
+  - [[#why-obsidianel-and-not][Why obsidian.el and not...]]
+- [[#installation][Installation]]
+  - [[#additional-settings][Additional settings]]
+- [[#usage][Usage]]
+  - [[#creating-a-new-note][Creating a new note]]
+  - [[#inserting-links][Inserting links]]
+  - [[#following-links][Following links]]
+  - [[#opening-other-notes][Opening other notes]]
+  - [[#following-backlinks][Following backlinks]]
+  - [[#move-note-to-another-location][Move note to another location]]
+  - [[#searching-in-notes][Searching in notes]]
+  - [[#inserting-tags][Inserting tags]]
+  - [[#searching-for-a-tag][Searching for a tag]]
+  - [[#manual-re-scan][Manual re-scan]]
+  - [[#changing-active-vault][Changing active vault]]
+  - [[#hydra-menu][Hydra menu]]
+  - [[#front-matter][Front Matter]]
+  - [[#templates][Templates]]
+  - [[#markdown-mode-functionality][markdown-mode functionality]]
+- [[#versioning][Versioning]]
+- [[#architecture-of-obsidianel][Architecture of obsidian.el]]
+  - [[#data-structures][Data structures]]
+  - [[#building-the-cache][Building the cache]]
+  - [[#cache-update-timer][Cache update timer]]
+  - [[#backlinks-panel][Backlinks panel]]
+- [[#contributing][Contributing]]
+- [[#gratitude][Gratitude]]
+
+* Why obsidian.el
+
+I wanted to work with Obsidian Notes using Emacs. Obviously you already can open your Obsidian folder and start editing markdown files with Emacs. But I want to improve that and split the responsibilities between Emacs and Obsidian the way it makes sense for an Emacs user.
+
+** What should we keep doing in Obsidian?
+- Sync
+- Mobile client (of course, and that's where Obsidian beats anything else in Emacs)
+- Complex exploring (graph views etc)
+- All the things done with complex plugins
+
+** What should be possible to do in Emacs?
+Obsidian.el must empower us to stay in Emacs for things that make sense in Emacs:
+
+- Creating and editing notes with convenient auto-complete for tags and links (nothing will ever compare to Emacs in terms of editing power)
+- Jumping between notes
+- Searching all notes
+- Finding all notes with a tag
+- Following backlinks
+- Viewing backlinks in a separate list
+
+With the above functionality we will almost never need the Obsidian app on desktop, but will still be able to use it on mobile or when specifically needed.
+
+** Why obsidian.el and not...
+*** Obsidian App itself, Athens Research or any other great app?
+Easy. When on desktop they are simply not Emacs.  Not even Obsidian itself. Emacs beats anything else for things that it is built for. But you know this already, otherwise you wouldn't be here.
+
+*** org-roam or any other great Emacs libraries?
+The answer is mostly the same for all of them. Mobile support. Or rather — NO mobile support. I don't buy into the story that "you don't really need your PKM system on mobile", and "serious work is done only on desktop" etc. These are just excuses for the impossibility of building a full-fledged mobile version of Emacs.
+
+So there were two ways to go about it: build a mobile app for something like org-roam (which would be cool, but is above my front-end skills) or build a light-weight Emacs client for something like Obsidian. I chose the simpler task.
+
+* Installation
+Obsidian.el is available from [[https://melpa.org][MELPA]] or [[https://stable.melpa.org/#/obsidian][MELPA Stable]] and can be installed with:
+
+#+begin_src
+  M-x package-install RET obsidian RET
+#+end_src
+
+You'll then want to enable ~obsidian-mode~ as well as the optional ~obsidian-backlinks-mode~ if you'd like to use the backlinks panel.
+
+Below is an example configuration that can be used in your ~init.el~ file. Note the use of ~setopt~ (as opposed to ~setq~) for setting these values; this ensures that all required initialization will occur after these values are set.
+
+#+begin_src elisp
+(require 'obsidian)
+;; Location of obsidian vault
+(setopt obsidian-directory "~/MY_OBSIDIAN_FOLDER")
+;; Default location for new notes from `obsidian-capture'
+(setopt obsidian-inbox-directory "Inbox")
+;; Useful if you're going to be using wiki links
+(setopt markdown-enable-wiki-links t)
+
+;; These bindings are only suggestions; it's okay to use other bindings
+;; Create note
+(define-key obsidian-mode-map (kbd "C-c C-n") 'obsidian-capture)
+;; If you prefer you can use `obsidian-insert-wikilink'
+(define-key obsidian-mode-map (kbd "C-c C-l") 'obsidian-insert-link)
+;; Open file pointed to by link at point
+(define-key obsidian-mode-map (kbd "C-c C-o") 'obsidian-follow-link-at-point)
+;; Open a note note from vault
+(define-key obsidian-mode-map (kbd "C-c C-p") 'obsidian-jump)
+;; Follow a backlink for the current file
+(define-key obsidian-mode-map (kbd "C-c C-b") 'obsidian-backlink-jump)
+
+;; Activate obsidian mode and backlinks mode
+(global-obsidian-mode t)
+(obsidian-backlinks-mode t)
+#+end_src
+
+or using [[https://github.com/jwiegley/use-package][use-package]]:
+
+#+begin_src elisp
+
+(use-package obsidian
+  :config
+  (global-obsidian-mode t)
+  (obsidian-backlinks-mode t)
+  :custom
+  ;; location of obsidian vault
+  (obsidian-directory "~/MY_OBSIDIAN_FOLDER")
+  ;; Default location for new notes from `obsidian-capture'
+  (obsidian-inbox-directory "Inbox")
+  ;; Useful if you're going to be using wiki links
+  (markdown-enable-wiki-links t)
+
+  ;; These bindings are only suggestions; it's okay to use other bindings
+  :bind (:map obsidian-mode-map
+              ;; Create note
+              ("C-c C-n" . obsidian-capture)
+              ;; If you prefer you can use `obsidian-insert-wikilink'
+              ("C-c C-l" . obsidian-insert-link)
+              ;; Open file pointed to by link at point
+              ("C-c C-o" . obsidian-follow-link-at-point)
+              ;; Open a different note from vault
+              ("C-c C-p" . obsidian-jump)
+              ;; Follow a backlink for the current file
+              ("C-c C-b" . obsidian-backlink-jump)))
+
+#+end_src
+
+** Additional settings
+In addition to the settings show in the example configurations above, some other common variables that you may wish to configure include:
+
+- obsidian-directory :: location of obsidian vault directory
+- obsidian-inbox-directory :: location for new notes created via ~obsidian-capture~
+- obsidian-daily-notes-directory :: location for new notes created via ~obsidian-daily-note~
+- obsidian-templates-directory :: location for obsidian.el to find template files
+- obsidian-daily-note-template :: name of template file to use for daily notes
+- obsidian-include-hidden-files :: configure obsidian.el to either track or ignore hidden files
+- obsidian-excluded-directories :: list of full directory paths to be excluded from obsidian vault
+- obsidian-create-unfound-files-in-inbox :: whether to create files for unfound links in inbox or in same directory as file
+- obsidian-backlinks-panel-position :: which side of the window to host backlinks panel: 'left or 'right
+- obsidian-backlinks-panel-width :: width of the backlinks panel in characters
+- obsidian-backlinks-show-vault-path :: show backlink files as only file name or full vault path
+
+* Usage
+
+** Creating a new note
+Use ~obsidian-capture~ to create new notes.
+
+#+begin_src
+  M-x obsidian-capture RET
+#+end_src
+
+If you specified ~obsidian-inbox-directory~, the new note will be created in this directory. Otherwise they will be placed in your Obsidian vault root directory specified by ~obsidian-directory~.
+
+*** Daily Notes
+You can create a daily note using the command ~obsidian-daily-note~. If set, this note will use the template specified by ~obsidian-daily-note-template~.
+
+** Inserting links
+[[./resources/insert-link.png]]
+
+There are two commands to insert links: ~obsidian-insert-link~ and ~obsidian-insert-wikilink~.  You can choose one depending on your preferred link format.
+
+If you'll be using wiki links, it's recommended to have ~markdown-enable-wiki-links~ set to ~t~.
+
+When inserting links, two different formats can be used to specify the file: the filename alone, or the path to the file within the Obsidian vault.  The default is to only use the filename, but this behavior can be changed by setting the variable ~obsidian-links-use-vault-path~ to ~t~.  Alternately, using the prefix argument before the call to insert a link will toggle this behavior, inserting a link with the format opposite of this variable.
+
+When inserting links for files that don't exist, an empty file will be created.  The location of this new file depends upon the variable ~obsidian-create-unfound-files-in-inbox~.  For a non-nil value, the files will be created in the directory specified by ~obsidian-inbox-directory~ if that value is set, or in the ~obsidian-directory~ otherwise.  If ~obsidian-create-unfound-files-in-inbox~ is nil, new files will be created in the same directory into which the link is inserted.
+
+*** Insert a link in Markdown format
+Example: ~[Link description](path/to/file.md)~
+#+begin_src
+M-x obsidian-insert-link RET
+#+end_src
+
+Note, that when you insert a link to file that has spaces in it's name, like "facts about inserting links.md", Obsidian app would HTML-format the spaces, meaning the link will look like
+
+#+begin_src text
+[facts](facts%20about%20inserting%20links.md)
+#+end_src
+
+Obsidian.el follows this convention and does the same when inserting markdown links. ~obsidian-follow-link-at-point~ handles this correctly.
+
+*** Insert a link in wikilink format
+If you'll be using wiki links, it's recommended to have ~markdown-enable-wiki-links~ set to ~t~.
+
+#+begin_src
+  M-x obsidian-insert-wikilink RET
+#+end_src
+
+Here's an example wiki link: ~[[path/fo/file.md|Link description]]~
+
+There is a variable ~obsidian-wiki-link-alias-first~ that will flip the order of a wiki link, putting the description first and the link second.  This setting will override the related setting from the ~markdown-mode~ package, ~markdown-wiki-link-alias-first~.
+
+*** Removing a link
+If you have a link but decide that you'd like to remove it while keeping the link text, use the command ~obsidian-remove-link~.  This will work for both markdown links and wiki links.
+
+#+begin_src
+  M-x obsidian-remove-link RET
+#+end_src
+
+** Following links
+Obsidian.el implements a custom command ~obsidian-follow-link-at-point~ which correctly follows markdown and wiki links generated by the Obsidian App, as well as backlinks from the backlinks panel. In the installation example above, this command is bound to ~C-c C-o~.
+
+#+begin_src
+M-x obsidian-follow-link-at-point RET
+#+end_src
+
+After following a link, you can return to the previous note using ~obsidian-jump-back~.
+
+*** Multiple matches
+Obsidian doesn't insert relative path by default, only does it when there are multiple files with the same name. ~obsidian-follow-link-at-point~ handles this correctly. Every time you follow a link it checks, if there's only one match for the filename linked. If there's just one it simply opens that file. If there's more than one it prompts you to select which file to open.
+
+** Opening other notes
+Quickly jump between notes in your vault using ~obsidian-jump~.  This function will provide a list of all of the notes in your vault for you to choose from.
+
+#+begin_src
+  M-x obsidian-jump RET
+#+end_src
+
+*** Aliases
+If you have [[#front-matter][YAML front matter]] in your note, Obsidian.el will find aliases in it and add them to the ~obsidian-jump~ selection. Both ~aliases~ and ~alias~ keys are supported.
+
+#+begin_src yaml
+alias: other-note-name
+  OR
+aliases:
+- other-name-1
+- other-name-2
+#+end_src
+
+See the [[https://help.obsidian.md/Linking+notes+and+files/Aliases][Obsidian App aliases documentation]] for more information.
+
+*** Returning to previous location
+After jumping to a new note, or following a link or backlink, you can return to your previous location using ~obsidian-jump-back~.
+
+** Following backlinks
+If ~obsidian-backlinks-mode~ is disabled, you can quickly jump to a backlink from the current file using ~obsidian-backlink-jump~.
+
+If ~obsidian-backlinks-mode~ is enabled, running the command ~obsidian-backlink-jump~ will move the point back and forth between the current note and the backlinks panel; if the backlinks panel is not open when this command is run, the panel will be opened.
+
+From the backlinks panel, a backlink can be visited using ~obsidian-follow-link-at-point~.
+
+#+begin_src
+M-x obsidian-backlink-jump RET
+#+end_src
+
+After jumping to a backlink, you can return to the previous note using ~obsidian-jump-back~.
+
+*** Backlinks panel and obsidian-backlinks-mode
+~obsidian-backlinks-mode~ is a minor mode that provides a side panel for displaying the backlinks of the current note file.  A =Bk= will be shown in the modeline to indicate when this minor mode is active.
+
+The placement and size of the panel, as well as the formatting of the links within the panel, can be customized as part of the =obsidian= group.
+
+#+begin_src
+M-x obsidian-backlinks-mode RET
+#+end_src
+
+The backlinks panel can be toggled open and closed using ~obsidian-toggle-backlinks-panel~.  Even if the panel is toggled closed, a called to ~obsidian-backlink-jump~ with re-open the backlinks panel and move the point to that window.
+
+#+begin_src
+M-x obsidian-toggle-backlinks-panel RET
+#+end_src
+
+[[./resources/backlinks-panel.png]]
+
+** Move note to another location
+Use ~obsidian-move-file~ to move the current note to another folder.
+
+#+begin_src
+  M-x obsidian-move-file RET
+#+end_src
+
+** Searching in notes
+~obsidian.el~ includes the function ~obsidian-search~ to look for a string or a regular expression within the notes in your vault.  After entering a search query, the user can select from a list of files that include the search query.
+
+#+begin_src
+  M-x obsidian-search RET query RET select-file RET
+#+end_src
+
+Alternately, the third party library [[https://sr.ht/~casouri/xeft/][xeft]] can be used for searching through the vault. This package provides search-as-you-type functionality, as well as displaying the context of the file that matches the search.
+
+Below is an example configuration to use with ~obsidian.el~:
+
+#+begin_src elisp
+(use-package xeft
+  :after obsidian
+  :bind ((:map obsidian-mode-map (("C-c C-g" . xeft))))
+  :custom
+  (xeft-directory obsidian-directory)
+  (xeft-recursive t)
+  (xeft-file-filter #'obsidian-file-p)
+  (xeft-title-function #'obsidian-file-title-function))
+#+end_src
+
+** Inserting tags
+Use the function ~obsidian-insert-tag~ to insert an existing tag in the file at point. This function recognizes whether the point is adding the tag to the front matter or the body of a note and includes a leading "#" as appropriate.
+
+#+begin_src
+  M-x obsidian-insert-tag
+#+end_src
+
+You can also simply type in a tag and obsidian.el and it will be recognized by obsidian.el the next time the file is saved.
+
+*** company-mode completion
+[[./resources/tag-completion.png]]
+
+Obsidian.el also adds a [[http://company-mode.github.io/][company-mode]] backend to suggest tags for completion. This can be triggered with ~obsidian--tags-backend~.
+
+** Searching for a tag
+Use ~obsidian-find-tag~ to list all notes that contain a tag and select one to open.
+
+#+begin_src
+  M-x obsidian-find-tag RET tag-selection RET file-selection RET
+#+end_src
+
+** Manual re-scan
+Metadata for a note, including links, backlinks, tags, and aliases, will not be recognized until after a call to ~obsidian-update~.  This function is called automatically each time a file is saved, as well as periodically if ~obsidian-use-update-timer~ is non-nil.
+
+However, if you believe that the metadata is not currently in sync with the vault contents, an update can be manually run using ~obsidian-update~:
+
+#+begin_src
+  M-x obsidian-update RET
+#+end_src
+
+If this still doesn't seem to fix the issue, the entire vault can be re-scanned and repopulated by calling:
+
+#+begin_src
+  M-x obsidian-rescan-cache RET
+#+end_src
+
+** Changing active vault
+If you have multiple obsidian vaults, you can change which one is currently active with the command ~obsidian-change-vault~.  Note that only one vault can be active a time.  The vault cache will be updated after changing to a different vault.
+
+#+begin_src
+  M-x obsidian-change-vault RET directory-selection RET
+#+end_src
+
+** Hydra menu
+[[https://github.com/abo-abo/hydra][Hydra]] is a package for GNU Emacs that can be used to tie related commands into a family of short bindings with a common prefix. When Hydra is installed, ~obsidian-hydra~ will be defined such that it can be configured with a key binding. For example:
+
+#+begin_src elisp
+  (define-key obsidian-mode-map (kbd "C-c M-o") 'obsidian-hydra/body)
+#+end_src
+
+[[./resources/hydra-menu.png]]
+
+** Front Matter
+obsidian.el supports YAML front matter.  The front matter must be at the beginning of the file and begin and and with 3 dashes.  JSON front matter is not currently supported.
+
+If tags or aliases are specified, the key must be the lowercase ~tags~ or ~aliases~. The tags and aliases be in a list, either inside square brackets separate by commas, or each on a separate line with leading dashes.  Tags must not include the leading "#".
+
+#+begin_src yaml
+---
+title: My New Note
+aliases:
+- new-note-alias
+tags:
+- emacs
+- lisp
+---
+#+end_src
+
+OR
+
+#+begin_src yaml
+---
+title: My New Note
+aliases: [new-note-alias]
+tags: [emacs, lisp]
+---
+#+end_src
+
+** Templates
+
+Obsidian.el has basic template support, where the Obsidian app's template placeholders can be used without customization.
+
+{{title}}, {{date}}, and {{time}} can be used. {{title}} is the name of the file without the extension.
+
+See the [[https://help.obsidian.md/Plugins/Templates][Obsidian App template documentation]] for more information.
+
+** markdown-mode functionality
+obsidian.el builds upon [[https://jblevins.org/projects/markdown-mode/][markdown-mode]], and therefore there is some functionality provided by ~markdown-mode~ that can be useful when using obsidian.el
+
+- markdown-next-link :: move point to next link in note (M-n by default)
+- markdown-previous-link :: move point to previous link in note (M-p by default)
+- markdown-toggle-markup-hiding :: hide markdown formatting to view raw text
+
+* Versioning
+The project uses [[https://github.com/ptaoussanis/encore/blob/master/BREAK-VERSIONING.md][break versioning]], meaning that upgrading from 1.0.x to 1.0.y will always be safe, upgrading from 1.x.x to 1.y.x might break something small, and upgrade from x.x.x to y.x.x will break almost everything.
+
+* Architecture of obsidian.el
+
+** Data structures
+
+*** obsidian-vault-cache
+This is the main data structure used for the vault file metadata.
+
+The ~obsidian-vault-cache~ is a nested hash table where the keys are absolute file paths for the files tracked by obsidian in the vault.  The values are also hash tables with the keys tags, aliases, and links.  The tags and aliases are lists of the tags and aliases associated with that file specified by the key.  The links are all of the links within that file, and the values are the response lists from the call to ~markdown-link-at-pos~ that includes the link, the link text, and the position of the link within the file.
+
+#+begin_src
+{<filepath> : {'tags: (list of tags associated with file)
+               'aliases: (list of aliases associated with file)
+               'links: {<linked-file-name: ((list of info for link 1)
+                                            (list of info for link 2)
+                                            (list of info for link 3))}}}
+#+end_src
+
+*** obsidian--aliases-map
+A simple hash table where each key is an alias, and the value is the absolute file path associated with that alias.
+
+#+begin_src
+{<alias> : <filepath>}
+#+end_src
+
+** Building the cache
+*** obsidian-rescan-cache
+Function that rebuilds both ~obsidian-vault-cache~ and ~obsidian--aliases-map~.
+
+This is a relatively heavy operation so ideally would only called at startup by ~after-init-hook~.  All relevant information is retrieved with a single reading of the files on disk with an associated single call to ~with-temp-buffer~.
+
+The pseudo-code for this function roughly looks like this:
+  - directory-files-recursively
+    - obsidian-add-file
+      - obsidian-update-file-metadata
+        - obsidian-find-tags-in-string
+        - obsidian-find-aliases-in-string
+        - obsidian-find-links
+
+*** obsidian-update
+Compares the list of currently cached files against the files on disk, removing any files from cache that no longer exist and adding files that exist on disk but not in the cache.
+
+Will call ~obsidian-rescan-cache~ if that function has not yet been run, but it should be run on startup.
+
+*** obsidian-add-file
+One of the two main internal functions along with ~obsidian-remove-file~.
+
+File will be added to the cache if it's not already there, the tags list and alias list for that file will be updated, and finally the aliases list will be synced with the obsidian--aliases-map.
+
+1. file added to the cache
+2. update tags for file
+3. update aliases for file
+4. sync list of aliases with ~obsidian--aliases-map~
+
+*** obsidian-remove-file
+One of the two main internal functions along with ~obsidian-add-file~.
+
+1. Remove aliases for file from ~obsidian--aliases-map~
+2. Remove file record from ~obsidian-vault-cache~
+
+*** obsidian--update-on-save
+Function added to ~after-save-hook~ to update file metadata after saving.
+
+Checks to see if the saved file is an obsidian file, and if so, the record in the vault cache for the file is updated with a call to ~obsidian-add-file~.
+
+** Cache update timer
+All of the file and metadata updates should be handled by the functions and hooks of =obsidian.el= when a file is saved or moved.  However, if a file is add or deleted out of band of =obsidian.el= by some other process, we need a way to include the information in our caches.
+
+In order to do these, a timer is start that periodically calls ~obsidian-update~. The timer waits for a specified amount of time, and then waits for Emacs to be idle before calling the update function. In this way it aims to be as unobtrusive to the user as possible while still recognizing files that have been modified out of band.
+
+The code snippet below creates a timer called =update-timer= that runs every 5 minutes (5 * 60 seconds) and then waits for a 5 second period when Emacs is idle before calling =obsidian-update=.
+
+Setting the value of ~obsidian-use-update-timer~ to nil will disable this timer.  If it's already running, call to ~obsidian-stop-update-timer~ will stop it.
+
+** Backlinks panel
+The backlinks panel behavior was modeled after [[https://github.com/Alexander-Miller/treemacs][treemacs]].
+
+* Contributing
+PRs and issues are very welcome. In order to develop locally you need to install [[https://github.com/doublep/eldev/][eldev]]. After that you can run ~make~ commands, in particular ~make test~ and ~make lint~ to make sure that your code will pass all MELPA checks.
+
+Take a look at the open [[https://github.com/licht1stein/obsidian.el/issues][issues]] if you're looking for a way to contribute.
+
+If updating this README file, note that the table of contents is generate with the package ~toc-org~, specifically the function ~toc-org-insert-toc~.
+
+* Gratitude
+- The work on Obsidian.el was made considerably easier and definitely more fun thanks to the great work of [[https://github.com/magnars][Magnar Sveen]] and his packages [[https://github.com/magnars/dash.el][dash.el]] and [[https://github.com/magnars/s.el][s.el]]. Thank you for making Elisp almost as convenient as Clojure!
+
+- During the development of Obsidian.el I have learned and copied from the code of the amazing [[https://github.com/org-roam/org-roam][org-roam]] package. Thank you!
+

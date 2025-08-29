@@ -1,6 +1,6 @@
 ---
 project: system-prompts-and-models-of-ai-tools
-stars: 79795
+stars: 79815
 description: |-
     FULL v0, Cursor, Manus, Augment Code, Same.dev, Lovable, Devin, Replit Agent, Windsurf Agent, VSCode Agent, Dia Browser, Xcode, Trae AI, Cluely & Orchids.app (And other Open Sourced) System Prompts, Tools & AI Models.
 url: https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools

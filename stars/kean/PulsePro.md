@@ -1,0 +1,14 @@
+---
+project: PulsePro
+stars: 486
+description: |-
+    A macOS app for viewing logs from Pulse
+url: https://github.com/kean/PulsePro
+---
+
+**Pulse** app for Mac is now [available on App Store](https://apps.apple.com/us/app/pulse-network-logger/id6661031747). More info on https://pulselogger.com. 
+
+If you want to give it a try first, check out the [TestFlight version](https://testflight.apple.com/join/1jcanE3q). The TestFlight version is behind the App Store. Get the App Store version for the latest updates.
+
+<img width="1559" alt="Screenshot 2023-05-09 at 10 25 08 PM" src="https://github.com/kean/Pulse/assets/1567433/6ba7d6a7-7033-4f81-89f2-338eff7ef82e">
+
