@@ -1,6 +1,6 @@
 ---
 project: invidious
-stars: 17804
+stars: 17803
 description: |-
     Invidious is an alternative front-end to YouTube
 url: https://github.com/iv-org/invidious

@@ -1,6 +1,6 @@
 ---
 project: claude-squad
-stars: 4348
+stars: 4356
 description: |-
     Manage multiple AI terminal agents like Claude Code, Aider, Codex, OpenCode, and Amp.
 url: https://github.com/smtg-ai/claude-squad

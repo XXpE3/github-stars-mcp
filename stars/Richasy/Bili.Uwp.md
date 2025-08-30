@@ -1,6 +1,6 @@
 ---
 project: Bili.Uwp
-stars: 8317
+stars: 8318
 description: |-
     适用于新系统UI的哔哩
 url: https://github.com/Richasy/Bili.Uwp

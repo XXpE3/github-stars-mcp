@@ -1,6 +1,6 @@
 ---
 project: DesktopCommanderMCP
-stars: 4323
+stars: 4331
 description: |-
     This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities
 url: https://github.com/wonderwhy-er/DesktopCommanderMCP

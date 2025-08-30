@@ -1,6 +1,6 @@
 ---
 project: Suwayomi-Server-docker
-stars: 378
+stars: 379
 description: |-
     Run Suwayomi-Server in a docker container
 url: https://github.com/Suwayomi/Suwayomi-Server-docker

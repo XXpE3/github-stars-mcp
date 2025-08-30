@@ -1,6 +1,6 @@
 ---
 project: Kwrt
-stars: 8524
+stars: 8525
 description: |-
     openwrt 软路由固件
 url: https://github.com/kiddin9/Kwrt

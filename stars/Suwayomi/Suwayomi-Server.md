@@ -1,6 +1,6 @@
 ---
 project: Suwayomi-Server
-stars: 5541
+stars: 5545
 description: |-
     A rewrite of Tachiyomi for the Desktop
 url: https://github.com/Suwayomi/Suwayomi-Server

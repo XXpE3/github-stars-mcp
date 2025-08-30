@@ -1,6 +1,6 @@
 ---
 project: langflow
-stars: 108002
+stars: 108283
 description: |-
     Langflow is a powerful tool for building and deploying AI-powered agents and workflows.
 url: https://github.com/langflow-ai/langflow

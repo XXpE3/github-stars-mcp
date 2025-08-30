@@ -1,6 +1,6 @@
 ---
 project: system-monitoring-center
-stars: 931
+stars: 932
 description: |-
     Multi-featured system monitor
 url: https://github.com/hakandundar34coding/system-monitoring-center

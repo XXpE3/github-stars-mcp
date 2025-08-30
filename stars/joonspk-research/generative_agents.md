@@ -1,6 +1,6 @@
 ---
 project: generative_agents
-stars: 19518
+stars: 19519
 description: |-
     Generative Agents: Interactive Simulacra of Human Behavior
 url: https://github.com/joonspk-research/generative_agents

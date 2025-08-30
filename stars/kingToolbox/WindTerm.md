@@ -1,6 +1,6 @@
 ---
 project: WindTerm
-stars: 27812
+stars: 27816
 description: |-
     A professional cross-platform SSH/Sftp/Shell/Telnet/Tmux/Serial terminal.
 url: https://github.com/kingToolbox/WindTerm

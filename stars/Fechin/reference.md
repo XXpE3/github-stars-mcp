@@ -1,6 +1,6 @@
 ---
 project: reference
-stars: 8930
+stars: 8933
 description: |-
     ⭕ Share quick reference cheat sheet for developers.
 url: https://github.com/Fechin/reference

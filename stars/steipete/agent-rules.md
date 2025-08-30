@@ -1,6 +1,6 @@
 ---
 project: agent-rules
-stars: 4178
+stars: 4196
 description: |-
     Rules and Knowledge to work better with agents such as Claude Code or Cursor
 url: https://github.com/steipete/agent-rules

@@ -1,6 +1,6 @@
 ---
 project: Archon
-stars: 11122
+stars: 11175
 description: |-
     Beta release of Archon OS - the knowledge and task management backbone for AI coding assistants.
 url: https://github.com/coleam00/Archon

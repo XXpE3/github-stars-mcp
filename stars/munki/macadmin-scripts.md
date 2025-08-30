@@ -1,6 +1,6 @@
 ---
 project: macadmin-scripts
-stars: 2387
+stars: 2386
 description: |-
     Scripts of possible interest to macOS admins
 url: https://github.com/munki/macadmin-scripts

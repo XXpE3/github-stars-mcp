@@ -1,6 +1,6 @@
 ---
 project: cognee
-stars: 6853
+stars: 6860
 description: |-
     Memory for AI Agents in 5 lines of code
 url: https://github.com/topoteretes/cognee

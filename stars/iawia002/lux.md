@@ -1,6 +1,6 @@
 ---
 project: lux
-stars: 30362
+stars: 30365
 description: |-
     👾 Fast and simple video download library and CLI tool written in Go
 url: https://github.com/iawia002/lux

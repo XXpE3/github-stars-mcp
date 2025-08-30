@@ -1,6 +1,6 @@
 ---
 project: gpt-crawler
-stars: 21844
+stars: 21843
 description: |-
     Crawl a site to generate knowledge files to create your own custom GPT from a URL
 url: https://github.com/BuilderIO/gpt-crawler

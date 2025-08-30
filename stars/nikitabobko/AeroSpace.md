@@ -1,6 +1,6 @@
 ---
 project: AeroSpace
-stars: 15085
+stars: 15097
 description: |-
     AeroSpace is an i3-like tiling window manager for macOS
 url: https://github.com/nikitabobko/AeroSpace

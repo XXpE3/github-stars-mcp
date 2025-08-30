@@ -1,6 +1,6 @@
 ---
 project: tabler
-stars: 39984
+stars: 39985
 description: |-
     Tabler is free and open-source HTML Dashboard UI Kit built on Bootstrap
 url: https://github.com/tabler/tabler

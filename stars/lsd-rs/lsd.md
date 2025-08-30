@@ -1,6 +1,6 @@
 ---
 project: lsd
-stars: 14776
+stars: 14777
 description: |-
     The next gen ls command
 url: https://github.com/lsd-rs/lsd

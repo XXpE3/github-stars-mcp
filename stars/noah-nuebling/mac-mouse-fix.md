@@ -1,6 +1,6 @@
 ---
 project: mac-mouse-fix
-stars: 7716
+stars: 7720
 description: |-
     Mac Mouse Fix - Make Your $10 Mouse Better Than an Apple Trackpad!
 url: https://github.com/noah-nuebling/mac-mouse-fix

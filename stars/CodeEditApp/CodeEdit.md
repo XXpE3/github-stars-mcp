@@ -1,6 +1,6 @@
 ---
 project: CodeEdit
-stars: 22070
+stars: 22073
 description: |-
     📝 CodeEdit App for macOS – Elevate your code editing experience. Open source, free forever.
 url: https://github.com/CodeEditApp/CodeEdit

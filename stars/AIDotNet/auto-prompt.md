@@ -1,6 +1,6 @@
 ---
 project: auto-prompt
-stars: 466
+stars: 465
 description: |-
     AI Prompt Optimization Platform is a professional prompt engineering tool designed to help users optimize AI model prompts, enhancing the effectiveness and accuracy of AI interactions. The platform integrates intelligent optimization algorithms, deep reasoning analysis, visualization debugging tools, and community sharing features, providing compre
 url: https://github.com/AIDotNet/auto-prompt

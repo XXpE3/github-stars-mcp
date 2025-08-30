@@ -1,6 +1,6 @@
 ---
 project: text-generation-webui
-stars: 44821
+stars: 44823
 description: |-
     LLM UI with advanced features, easy setup, and multiple backend support.
 url: https://github.com/oobabooga/text-generation-webui
