@@ -1,6 +1,6 @@
 ---
 project: CopilotForXcode
-stars: 8186
+stars: 8187
 description: |-
     The first GitHub Copilot, Codeium and ChatGPT Xcode Source Editor Extension
 url: https://github.com/intitni/CopilotForXcode

@@ -1,6 +1,6 @@
 ---
 project: ai-research-assistant
-stars: 1478
+stars: 1479
 description: |-
     Aria is Your AI Research Assistant Powered by GPT Large Language Models
 url: https://github.com/lifan0127/ai-research-assistant

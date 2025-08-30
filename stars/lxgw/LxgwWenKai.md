@@ -1,6 +1,6 @@
 ---
 project: LxgwWenKai
-stars: 21368
+stars: 21375
 description: |-
     An unprofessional open-source Chinese font derived from Fontworks' Klee One. 一款非专业的开源中文字体，基于 FONTWORKS 出品字体 Klee One 衍生。  
 url: https://github.com/lxgw/LxgwWenKai

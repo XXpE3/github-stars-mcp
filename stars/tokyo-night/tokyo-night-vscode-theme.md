@@ -1,6 +1,6 @@
 ---
 project: tokyo-night-vscode-theme
-stars: 2129
+stars: 2131
 description: |-
     A clean, dark Visual Studio Code theme that celebrates the lights of Downtown Tokyo at night.
 url: https://github.com/tokyo-night/tokyo-night-vscode-theme

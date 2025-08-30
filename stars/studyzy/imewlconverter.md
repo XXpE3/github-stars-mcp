@@ -1,6 +1,6 @@
 ---
 project: imewlconverter
-stars: 8840
+stars: 8841
 description: |-
     ”深蓝词库转换“ 一款开源免费的输入法词库转换程序
 url: https://github.com/studyzy/imewlconverter

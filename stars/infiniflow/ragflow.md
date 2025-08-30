@@ -1,6 +1,6 @@
 ---
 project: ragflow
-stars: 63320
+stars: 63355
 description: |-
     RAGFlow is the leading open-source RAG engine, converging cutting-edge RAG with Agent capabilities to build the superior context layer for LLMs.
 url: https://github.com/infiniflow/ragflow

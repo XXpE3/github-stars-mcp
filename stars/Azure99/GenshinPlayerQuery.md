@@ -1,6 +1,6 @@
 ---
 project: GenshinPlayerQuery
-stars: 365
+stars: 366
 description: |-
     根据原神uid查询玩家信息(基础数据、角色&装备、深境螺旋战绩等)
 url: https://github.com/Azure99/GenshinPlayerQuery

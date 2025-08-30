@@ -1,6 +1,6 @@
 ---
 project: wik
-stars: 629
+stars: 630
 description: |-
     wik is use to get information about anything on the shell using Wikipedia.
 url: https://github.com/yashsinghcodes/wik

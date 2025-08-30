@@ -1,6 +1,6 @@
 ---
 project: PowerShell
-stars: 48313
+stars: 48315
 description: |-
     PowerShell for every system!
 url: https://github.com/PowerShell/PowerShell

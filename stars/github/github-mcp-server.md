@@ -1,6 +1,6 @@
 ---
 project: github-mcp-server
-stars: 21953
+stars: 21987
 description: |-
     GitHub's official MCP Server
 url: https://github.com/github/github-mcp-server

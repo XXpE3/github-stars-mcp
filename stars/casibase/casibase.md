@@ -1,6 +1,6 @@
 ---
 project: casibase
-stars: 3979
+stars: 3981
 description: |-
     ⚡️AI Cloud OS: Open-source enterprise-level AI knowledge base and MCP (model-context-protocol)/A2A (agent-to-agent) management platform with admin UI, user management and Single-Sign-On⚡️, supports ChatGPT, Claude, Llama, Ollama, HuggingFace, etc., chat bot demo: https://ai.casibase.com, admin UI demo: https://ai-admin.casibase.com
 url: https://github.com/casibase/casibase

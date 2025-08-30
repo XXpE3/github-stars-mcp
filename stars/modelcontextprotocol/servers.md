@@ -1,6 +1,6 @@
 ---
 project: servers
-stars: 66238
+stars: 66311
 description: |-
     Model Context Protocol Servers
 url: https://github.com/modelcontextprotocol/servers

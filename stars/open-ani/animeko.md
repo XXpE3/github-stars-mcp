@@ -1,6 +1,6 @@
 ---
 project: animeko
-stars: 10478
+stars: 10499
 description: |-
     集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。100% Kotlin/Compose Multiplatform
 url: https://github.com/open-ani/animeko

@@ -1,6 +1,6 @@
 ---
 project: claude-code-ide.el
-stars: 1013
+stars: 1014
 description: |-
     Claude Code IDE integration for Emacs
 url: https://github.com/manzaltu/claude-code-ide.el

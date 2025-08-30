@@ -1,6 +1,6 @@
 ---
 project: Leaked-GPTs
-stars: 2336
+stars: 2338
 description: |-
     Leaked GPTs Prompts Bypass the 25 message limit or to try out GPTs without a Plus subscription. 
 url: https://github.com/friuns2/Leaked-GPTs

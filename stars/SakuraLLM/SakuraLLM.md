@@ -1,6 +1,6 @@
 ---
 project: SakuraLLM
-stars: 3877
+stars: 3884
 description: |-
     适配轻小说/Galgame的日中翻译大模型
 url: https://github.com/SakuraLLM/SakuraLLM

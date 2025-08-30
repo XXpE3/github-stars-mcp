@@ -1,6 +1,6 @@
 ---
 project: serena
-stars: 10426
+stars: 10499
 description: |-
     A powerful coding agent toolkit providing semantic retrieval and editing capabilities (MCP server & Agno integration)
 url: https://github.com/oraios/serena
@@ -109,6 +109,7 @@ With Serena, we provide direct, out-of-the-box support for:
   * TypeScript/Javascript
   * PHP (uses Intelephense LSP; set `INTELEPHENSE_LICENSE_KEY` environment variable for premium features)
   * Go (requires installation of gopls)
+  * R (requires installation of the `languageserver` R package)
   * Rust (requires [rustup](https://rustup.rs/) - uses rust-analyzer from your toolchain)
   * C/C++ (you may experience issues with finding references, we are working on it)
   * Zig (requires installation of ZLS - Zig Language Server)

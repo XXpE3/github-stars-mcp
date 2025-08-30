@@ -1,6 +1,6 @@
 ---
 project: ChatALL
-stars: 16010
+stars: 16015
 description: |-
      Concurrently chat with ChatGPT, Bing Chat, Bard, Alpaca, Vicuna, Claude, ChatGLM, MOSS, 讯飞星火, 文心一言 and more, discover the best answers
 url: https://github.com/ai-shifu/ChatALL

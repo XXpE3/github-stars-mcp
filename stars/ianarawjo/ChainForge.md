@@ -1,6 +1,6 @@
 ---
 project: ChainForge
-stars: 2731
+stars: 2732
 description: |-
     An open-source visual programming environment for battle-testing prompts to LLMs.
 url: https://github.com/ianarawjo/ChainForge

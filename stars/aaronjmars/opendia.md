@@ -1,6 +1,6 @@
 ---
 project: opendia
-stars: 1582
+stars: 1583
 description: |-
     Connect your browser to AI models. Just use Dia on Chrome, Arc or Firefox.
 url: https://github.com/aaronjmars/opendia

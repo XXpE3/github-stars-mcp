@@ -1,6 +1,6 @@
 ---
 project: dify-chat
-stars: 544
+stars: 545
 description: |-
     一个基于 Dify API 的 AI Web 应用, 适配聊天、工作流等应用类型，支持单应用、多应用等多种模式，提供开箱即用的应用配置管理功能，适配深度思考、思维链、图表等多种形式输出。使用文档：https://docs.dify-chat.lexmin.cn/
 url: https://github.com/lexmin0412/dify-chat

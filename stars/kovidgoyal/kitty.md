@@ -1,6 +1,6 @@
 ---
 project: kitty
-stars: 28760
+stars: 28776
 description: |-
     Cross-platform, fast, feature-rich, GPU based terminal
 url: https://github.com/kovidgoyal/kitty
