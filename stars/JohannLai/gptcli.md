@@ -2,7 +2,7 @@
 project: gptcli
 stars: 265
 description: |-
-    🔥 All in one ChatGPT CLI, build your own AI cli tools just like GitHub Actions workflow gptcli.  内置 AI commmit（自动生成 commit message）、AI Command（自然语言转命令行）、翻译、gitmoji 等插件。秒级创建任意自定义 ChatGPT CLI 工具，就像创建一个 GitHub Actions 这么简单，让 AI 帮助我们链接自然语言和结构化数据。
+    🔥 All-in-one ChatGPT CLI - Build custom AI tools like GitHub Actions. Features AI commit, natural language commands, translation, and gitmoji. Create powerful CLI tools in seconds, bridging natural language and structured data.
 url: https://github.com/JohannLai/gptcli
 ---
 

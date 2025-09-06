@@ -1,6 +1,6 @@
 ---
 project: fetch-mcp
-stars: 158
+stars: 159
 description: |-
     An MCP server for fetching URLs / Youtube video transcript.
 url: https://github.com/egoist/fetch-mcp

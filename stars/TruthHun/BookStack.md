@@ -1,6 +1,6 @@
 ---
 project: BookStack
-stars: 3492
+stars: 3491
 description: |-
     BookStack，基于MinDoc，使用Beego开发的在线文档管理系统，功能类似Gitbook和看云。
 url: https://github.com/TruthHun/BookStack

@@ -1,6 +1,6 @@
 ---
 project: apple-mcp
-stars: 2411
+stars: 2444
 description: |-
     Collection of apple-native tools for the model context protocol.
 url: https://github.com/supermemoryai/apple-mcp

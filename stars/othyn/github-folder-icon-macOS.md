@@ -1,6 +1,6 @@
 ---
 project: github-folder-icon-macOS
-stars: 75
+stars: 76
 description: |-
     GitHub folder icon for use in macOS. Made so that it fits nicely alongside all the others inside your home directory. Mac OS X 10.5 (Leopard) through to macOS 15 (Sequoia).
 url: https://github.com/othyn/github-folder-icon-macOS

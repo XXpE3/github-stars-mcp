@@ -1,6 +1,6 @@
 ---
 project: LunaTranslator
-stars: 8416
+stars: 8545
 description: |-
     视觉小说翻译器，支持HOOK、OCR、剪贴板等。Visual Novel Translator, support HOOK / OCR / Clipboard
 url: https://github.com/HIllya51/LunaTranslator

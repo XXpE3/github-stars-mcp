@@ -1,6 +1,6 @@
 ---
 project: PyTorchDocs
-stars: 2741
+stars: 2744
 description: |-
     PyTorch 官方中文教程包含 60 分钟快速入门教程，强化教程，计算机视觉，自然语言处理，生成对抗网络，强化学习。欢迎 Star，Fork！
 url: https://github.com/fendouai/PyTorchDocs

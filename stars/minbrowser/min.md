@@ -1,6 +1,6 @@
 ---
 project: min
-stars: 8632
+stars: 8645
 description: |-
     A fast, minimal browser that protects your privacy
 url: https://github.com/minbrowser/min

@@ -1,6 +1,6 @@
 ---
 project: upscayl
-stars: 39359
+stars: 39556
 description: |-
     🆙 Upscayl - #1 Free and Open Source AI Image Upscaler for Linux, MacOS and Windows.
 url: https://github.com/upscayl/upscayl
@@ -18,6 +18,16 @@ url: https://github.com/upscayl/upscayl
    <b>Warp, the intelligent terminal for developers</b>
    <div>
       <sup>Use images as AI context in your terminal!</sup>
+   </div>
+</a>
+
+<a href="https://requestly.com/?utm_source=github&utm_medium=partnered&utm_campaign=rq_upscayl_github">
+   <div>
+   <img alt="Requestly sponsorship" width="500" src="https://github.com/user-attachments/assets/41edcfcd-8898-4086-850d-c9ffbb4af913">
+   </div>
+   <b>Requestly - Free & Open-Source alternative to Postman</b>
+   <div>
+      <sup>All-in-one platform to Test, Mock and Intercept APIs.</sup>
    </div>
 </a>
 

@@ -1,6 +1,6 @@
 ---
 project: SuperClaude_Framework
-stars: 14624
+stars: 15055
 description: |-
     A configuration framework that enhances Claude Code with specialized commands, cognitive personas, and development methodologies.
 url: https://github.com/SuperClaude-Org/SuperClaude_Framework
@@ -13,7 +13,7 @@ url: https://github.com/SuperClaude-Org/SuperClaude_Framework
 ### **Transform Claude Code into a Structured Development Platform**
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-4.0.8-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-4.0.9-blue" alt="Version">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome">
 </p>

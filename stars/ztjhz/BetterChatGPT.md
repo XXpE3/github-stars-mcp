@@ -1,6 +1,6 @@
 ---
 project: BetterChatGPT
-stars: 8427
+stars: 8430
 description: |-
     An amazing UI for OpenAI's ChatGPT (Website + Windows + MacOS + Linux)
 url: https://github.com/ztjhz/BetterChatGPT

@@ -1,6 +1,6 @@
 ---
 project: openchat-monorepo
-stars: 558
+stars: 559
 description: |-
     一个现代化的全栈 AI Chatbot 应用，使用 React 和 Cloudflare Workers 结合 Connect RPC 构建，通过 Tauri 支持 Web、移动 App 和桌面端
 url: https://github.com/akazwz/openchat-monorepo

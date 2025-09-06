@@ -1,6 +1,6 @@
 ---
 project: chat-ollama
-stars: 3347
+stars: 3354
 description: |-
     ChatOllama is an open-source AI chatbot that brings cutting-edge language models to your fingertips while keeping your data private and secure.
 url: https://github.com/sugarforever/chat-ollama

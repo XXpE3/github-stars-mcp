@@ -1,6 +1,6 @@
 ---
 project: inspector
-stars: 6035
+stars: 6152
 description: |-
     Visual testing tool for MCP servers
 url: https://github.com/modelcontextprotocol/inspector

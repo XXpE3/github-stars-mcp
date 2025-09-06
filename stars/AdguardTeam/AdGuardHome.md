@@ -1,6 +1,6 @@
 ---
 project: AdGuardHome
-stars: 29904
+stars: 29989
 description: |-
     Network-wide ads & trackers blocking DNS server
 url: https://github.com/AdguardTeam/AdGuardHome
@@ -213,7 +213,7 @@ Run `make init` to prepare the development environment.
 
 You will need this to build AdGuard Home:
 
-- [Go](https://golang.org/dl/) v1.24 or later;
+- [Go](https://golang.org/dl/) v1.25 or later;
 - [Node.js](https://nodejs.org/en/download/) v20.19 or later;
 - [npm](https://www.npmjs.com/) v10.8 or later;
 

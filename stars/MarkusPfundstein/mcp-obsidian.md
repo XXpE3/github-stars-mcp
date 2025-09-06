@@ -1,6 +1,6 @@
 ---
 project: mcp-obsidian
-stars: 1842
+stars: 1915
 description: |-
     MCP server that interacts with Obsidian via the Obsidian rest API community plugin
 url: https://github.com/MarkusPfundstein/mcp-obsidian

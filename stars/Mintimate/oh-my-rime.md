@@ -1,6 +1,6 @@
 ---
 project: oh-my-rime
-stars: 3566
+stars: 3589
 description: |-
     The Simple Config Template Of Rime By Mintimate.  
 url: https://github.com/Mintimate/oh-my-rime

@@ -1,6 +1,6 @@
 ---
 project: evangelion-clock-screensaver
-stars: 548
+stars: 550
 description: |-
     A digital clock screensaver inspired by the graphical interfaces from Neon Genesis Evengelion.
 url: https://github.com/Wandmalfarbe/evangelion-clock-screensaver

@@ -1,6 +1,6 @@
 ---
 project: shell_gpt
-stars: 11294
+stars: 11311
 description: |-
     A command-line productivity tool powered by AI large language models like GPT-4, will help you accomplish your tasks faster and more efficiently.
 url: https://github.com/TheR1D/shell_gpt

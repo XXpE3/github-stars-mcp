@@ -1,6 +1,6 @@
 ---
 project: RSS-Translator
-stars: 560
+stars: 561
 description: |-
     开源、简洁、可自部署的RSS翻译器 | Translate RSS feeds into your language!
 url: https://github.com/versun/RSS-Translator

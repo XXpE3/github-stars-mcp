@@ -1,6 +1,6 @@
 ---
 project: hexo-theme-matery
-stars: 5341
+stars: 5347
 description: |-
     A beautiful hexo blog theme with material design and responsive design.一个基于材料设计和响应式设计而成的全面、美观的Hexo主题。国内访问：http://blinkfox.com
 url: https://github.com/blinkfox/hexo-theme-matery

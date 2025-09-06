@@ -1,6 +1,6 @@
 ---
 project: bob-plugin-akl-moe-tts
-stars: 16
+stars: 17
 description: |-
     **二次元老婆文字转语音bob插件tts**
 url: https://github.com/akl7777777/bob-plugin-akl-moe-tts

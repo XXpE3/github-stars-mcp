@@ -1,6 +1,6 @@
 ---
 project: textmate
-stars: 14498
+stars: 14505
 description: |-
     TextMate is a graphical text editor for macOS 10.12 or later
 url: https://github.com/textmate/textmate

@@ -1,6 +1,6 @@
 ---
 project: Valine
-stars: 2239
+stars: 2240
 description: |-
     A fast, simple & powerful comment system.
 url: https://github.com/xCss/Valine

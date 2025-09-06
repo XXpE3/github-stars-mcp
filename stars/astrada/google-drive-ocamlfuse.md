@@ -1,6 +1,6 @@
 ---
 project: google-drive-ocamlfuse
-stars: 5770
+stars: 5773
 description: |-
     FUSE filesystem over Google Drive
 url: https://github.com/astrada/google-drive-ocamlfuse

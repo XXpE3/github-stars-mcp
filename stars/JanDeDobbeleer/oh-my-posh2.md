@@ -1,6 +1,6 @@
 ---
 project: oh-my-posh2
-stars: 5202
+stars: 5201
 description: |-
     A prompt theming engine for Powershell
 url: https://github.com/JanDeDobbeleer/oh-my-posh2

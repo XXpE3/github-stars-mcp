@@ -1,6 +1,6 @@
 ---
 project: github-stars-notion-sync
-stars: 7
+stars: 8
 description: |-
     Command Line tool to sync your GitHub starred repos to a Notion database
 url: https://github.com/brpaz/github-stars-notion-sync

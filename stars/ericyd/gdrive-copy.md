@@ -1,6 +1,6 @@
 ---
 project: gdrive-copy
-stars: 1585
+stars: 1586
 description: |-
     Web app to copy a Google Drive folder
 url: https://github.com/ericyd/gdrive-copy

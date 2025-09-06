@@ -1,6 +1,6 @@
 ---
 project: goindex-theme-acrou
-stars: 1602
+stars: 1601
 description: |-
     This is a goindex theme.一个goindex的扩展主题。
 url: https://github.com/Achrou/goindex-theme-acrou

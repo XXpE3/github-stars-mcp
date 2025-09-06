@@ -1,6 +1,6 @@
 ---
 project: smartdns
-stars: 9468
+stars: 9581
 description: |-
     A local DNS server to obtain the fastest website IP for the best Internet experience, support DoT, DoH, DoQ. 一个本地DNS服务器，获取最快的网站IP，获得最佳上网体验，支持DoH，DoT，DoQ。
 url: https://github.com/pymumu/smartdns

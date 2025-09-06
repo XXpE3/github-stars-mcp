@@ -1,6 +1,6 @@
 ---
 project: dnscrypt-proxy
-stars: 12413
+stars: 12432
 description: |-
     dnscrypt-proxy 2 - A flexible DNS proxy, with support for encrypted DNS protocols.
 url: https://github.com/DNSCrypt/dnscrypt-proxy

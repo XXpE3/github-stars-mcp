@@ -1,6 +1,6 @@
 ---
 project: mcp-gsuite
-stars: 420
+stars: 427
 description: |-
     MCP Server to interact with Google Gsuite prodcuts
 url: https://github.com/MarkusPfundstein/mcp-gsuite

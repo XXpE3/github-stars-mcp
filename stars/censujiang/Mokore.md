@@ -1,6 +1,6 @@
 ---
 project: Mokore
-stars: 385
+stars: 384
 description: |-
     🎉Wordpress二次元简约个人博客主题by江程训
 url: https://github.com/censujiang/Mokore

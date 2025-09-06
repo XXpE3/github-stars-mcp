@@ -1,6 +1,6 @@
 ---
 project: MediaCrawler
-stars: 36429
+stars: 36677
 description: |-
     小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫
 url: https://github.com/NanmiCoder/MediaCrawler
@@ -59,8 +59,6 @@ url: https://github.com/NanmiCoder/MediaCrawler
 | 知乎   | ✅          | ✅              | ✅        | ✅              | ✅          | ✅        | ✅              |
 
 
-<details id="pro-version">
-<summary>🔗 <strong>🚀 MediaCrawlerPro 重磅发布！更多的功能，更好的架构设计！</strong></summary>
 
 ### 🚀 MediaCrawlerPro 重磅发布！
 
@@ -85,7 +83,7 @@ url: https://github.com/NanmiCoder/MediaCrawler
 - [ ] **基于自媒体平台的AI Agent正在开发中 🚀🚀**
 
 点击查看：[MediaCrawlerPro 项目主页](https://github.com/MediaCrawlerPro) 更多介绍
-</details>
+
 
 ## 🚀 快速开始
 
@@ -224,9 +222,39 @@ uv run main.py --platform xhs --lt qrcode --type search --save_data_option sqlit
 uv run main.py --platform xhs --lt qrcode --type search --save_data_option db
 ```
 
----
 
 [🚀 MediaCrawlerPro 重磅发布 🚀！更多的功能，更好的架构设计！](https://github.com/MediaCrawlerPro)
+
+---
+
+### 💰 赞助商展示
+
+<a href="https://www.swiftproxy.net/?ref=nanmi">
+<img src="docs/static/images/img_5.png">
+<br>
+Swiftproxy - 90M+ 全球高质量纯净住宅IP，注册可领免费 500MB 测试流量，动态流量不过期！
+> 专属折扣码：**GHB5** 立享九折优惠！
+</a>
+
+<br>
+<br>
+
+<a href="https://h.wandouip.com">
+<img src="docs/static/images/img_8.jpg">
+<br>
+豌豆HTTP自营千万级IP资源池，IP纯净度≥99.8%，每日保持IP高频更新，快速响应，稳定连接，满足多种业务场景，支持按需定制，注册免费提取10000ip。
+</a>
+
+
+
+### 🤝 成为赞助者
+
+成为赞助者，可以将您的产品展示在这里，每天获得大量曝光！
+
+**联系方式**：
+- 微信：`yzglan`
+- 邮箱：`relakkes@gmail.com`
+
 
 ## 🤝 社区与支持
 
@@ -258,42 +286,6 @@ uv run main.py --platform xhs --lt qrcode --type search --save_data_option db
 
 [![Star History Chart](https://api.star-history.com/svg?repos=NanmiCoder/MediaCrawler&type=Date)](https://star-history.com/#NanmiCoder/MediaCrawler&Date)
 
-### 💰 赞助商展示
-
-<a href="https://www.swiftproxy.net/?ref=nanmi">
-<img src="docs/static/images/img_5.png">
-<br>
-Swiftproxy - 90M+ 全球高质量纯净住宅IP，注册可领免费 500MB 测试流量，动态流量不过期！
-> 专属折扣码：**GHB5** 立享九折优惠！
-</a>
-
-<br>
-<br>
-
-<a href="https://www.thordata.com/?ls=github&lk=Crawler">
-<img src="docs/static/images/img_7.png">
-<br>
-Thordata是全球代理IP解决方案提供商，支持大规模采集公共网络数据，提供 195+ 国家城市、6000 万住宅IP，价格低至 $0.65/GB，支持不限流量、不限IP、不限并发；还包括本土独享ISP静态代理和高性能数据中心代理（均为 $0.75/IP，弹性定价）。点击图片注册后联系中文客服即可免费试用，现在首充还有赠送同额金额活动。可与EasySpider工具配合使用，高效采集网络数据。
-</a>
-
-<br>
-<br>
-
-<a href="https://h.wandouip.com">
-<img src="docs/static/images/img_8.jpg">
-<br>
-豌豆HTTP自营千万级IP资源池，IP纯净度≥99.8%，每日保持IP高频更新，快速响应，稳定连接，满足多种业务场景，支持按需定制，注册免费提取10000ip。
-</a>
-
-
-
-### 🤝 成为赞助者
-
-成为赞助者，可以将您的产品展示在这里，每天获得大量曝光！
-
-**联系方式**：
-- 微信：`yzglan`
-- 邮箱：`relakkes@gmail.com`
 
 
 ## 📚 参考
@@ -324,15 +316,4 @@ Thordata是全球代理IP解决方案提供商，支持大规模采集公共网�
 ## 6. 最终解释权
 关于本项目的最终解释权归开发者所有。开发者保留随时更改或更新本免责声明的权利，恕不另行通知。
 </div>
-
-
-## 🙏 致谢
-
-### JetBrains 开源许可证支持
-
-感谢 JetBrains 为本项目提供免费的开源许可证支持！
-
-<a href="https://www.jetbrains.com/?from=MediaCrawler">
-    <img src="https://www.jetbrains.com/company/brand/img/jetbrains_logo.png" width="100" alt="JetBrains" />
-</a>
 

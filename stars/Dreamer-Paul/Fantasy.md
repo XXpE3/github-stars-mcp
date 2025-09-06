@@ -1,6 +1,6 @@
 ---
 project: Fantasy
-stars: 181
+stars: 180
 description: |-
     🍨 一个优美梦幻的动漫风 Typecho 博客主题
 url: https://github.com/Dreamer-Paul/Fantasy

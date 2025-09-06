@@ -1,6 +1,6 @@
 ---
 project: aria2-static-builds
-stars: 712
+stars: 715
 description: |-
     aria2 static builds for GNU/Linux & Windows (with OpenSSL). 
 url: https://github.com/q3aql/aria2-static-builds

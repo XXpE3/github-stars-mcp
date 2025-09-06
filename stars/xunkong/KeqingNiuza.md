@@ -1,6 +1,6 @@
 ---
 project: KeqingNiuza
-stars: 506
+stars: 507
 description: |-
     刻记牛杂店
 url: https://github.com/xunkong/KeqingNiuza

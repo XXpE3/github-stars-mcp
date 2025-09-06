@@ -1,6 +1,6 @@
 ---
 project: sd-webui-bilingual-localization
-stars: 909
+stars: 910
 description: |-
     Stable Diffusion web UI bilingual localization extensions. SD WebUI双语对照翻译插件
 url: https://github.com/journey-ad/sd-webui-bilingual-localization

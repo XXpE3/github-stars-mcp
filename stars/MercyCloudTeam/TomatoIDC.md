@@ -1,6 +1,6 @@
 ---
 project: TomatoIDC
-stars: 302
+stars: 303
 description: |-
      TomatoIDC/HStack是一款以MIT协议开源销售系统，具备易于扩展的插件系统，模版系统，使用强大的Laravel框架进行驱动，能帮助你轻松的扩展业务。
 url: https://github.com/MercyCloudTeam/TomatoIDC

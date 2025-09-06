@@ -1,6 +1,6 @@
 ---
 project: speedtest-cli
-stars: 13896
+stars: 13909
 description: |-
     Command line interface for testing internet bandwidth using speedtest.net
 url: https://github.com/sivel/speedtest-cli

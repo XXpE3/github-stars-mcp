@@ -1,6 +1,6 @@
 ---
 project: llm-subtrans
-stars: 482
+stars: 487
 description: |-
     Open Source project using LLMs to translate SRT subtitles
 url: https://github.com/machinewrapped/llm-subtrans
@@ -36,32 +36,23 @@ You can choose to let OpenRouter select the model automatically (the "Use Defaul
 
 Since hundreds of models are available they are grouped by model family. By default the list of available models is pulled from the "Translation" category - though this excludes many other models that are perfectly capable of translation.
 
-### OpenAI
-https://openai.com/policies/privacy-policy
-
-You will need an OpenAI API key from https://platform.openai.com/account/api-keys to use OpenAI's GPT models as a translator.
-
-If the API key is associated with a free trial account the translation speed will be severely restricted.
-
-You can use the custom api_base parameter to access a custom OpenAI instance or other providers with an OpenAI compatible API (which is most of them).
-
-You can use an **OpenAI Azure** installation as a translation provider, but this is only advisable if you know what you're doing - in which case hopefully it will be clear how to configure the Azure provider settings.
-
 ### Google Gemini
 https://ai.google.dev/terms
 
 **Please note that regions restrictions may apply: https://ai.google.dev/available_regions**
 
+Gemini 2.5 Flash is perhaps the leading model for translation speed and fluency at time of writing, and Preview models are sometims free to use.
+
 You will need a Google Gemini API key from https://ai.google.dev/ or from a project created on https://console.cloud.google.com/. You must ensure that Generative AI is enabled for the api key and project.
 
-The Gemini 2.0 Flash Experimental model is perhaps the leading model for translation speed and fluency at time of writing, and is currently free to use.
+### OpenAI
+https://openai.com/policies/privacy-policy
 
-### Anthropic Claude
-https://support.anthropic.com/en/collections/4078534-privacy-legal
+You will need an OpenAI API key from https://platform.openai.com/account/api-keys to use OpenAI's GPT models as a translator. If the API key is associated with a free trial account the translation speed will be severely restricted.
 
-You will need an Anthropic API key from https://console.anthropic.com/settings/keys to use Claude as a provider. The Anthropic SDK does not provide a way to retrieve available models, so the latest Claude 3 model names are currently hardcoded.
+You can use the custom api_base parameter to access a custom OpenAI instance (or any other OpenAI-compatible endpoint, though the Custom Server option gives you more flexibility).
 
-The API has very strict [rate limits](https://docs.anthropic.com/claude/reference/rate-limits) based on your credit tier, both on requests per minutes and tokens per day. The free credit tier should be sufficient to translate approximately one full movie per day.
+You can use an **OpenAI Azure** installation as a translation provider, but this is only advisable if you know what you're doing - in which case hopefully it will be clear how to configure the Azure provider settings.
 
 ### DeepSeek
 https://platform.deepseek.com/downloads/DeepSeek%20Open%20Platform%20Terms%20of%20Service.html
@@ -73,6 +64,13 @@ You will need a DeepSeek API key from https://platform.deepseek.com/api_keys to 
 - **Model**: The default model is `deepseek-chat`, which is recommended for translation tasks. `deepseek-reasoner` may produce better results for source subtitles with OCR or transcription errors as it will spend longer trying to guess what the error is.
 
 DeepSeek is quite simple to set up and offers reasonable performance at a very low price, though translation does not seem to be its strongest point.
+
+### Anthropic Claude
+https://support.anthropic.com/en/collections/4078534-privacy-legal
+
+You will need an Anthropic API key from https://console.anthropic.com/settings/keys to use Claude as a provider. Translation is not Claude's strongest suit, and the API is expensive compared to others.
+
+The API has strict [rate limits](https://docs.anthropic.com/claude/reference/rate-limits) based on your credit tier, both on requests per minutes and tokens per day.
 
 ### Mistral AI
 https://mistral.ai/terms/
@@ -88,9 +86,9 @@ Mistral AI is straightforward to set up, but its performance as a translator is 
 ### Custom Server
 LLM-Subtrans can interface directly with any server that supports an OpenAI compatible API, including locally hosted models e.g. [LM Studio](https://lmstudio.ai/).
 
-This is mainly for research and you should not expect particularly good results. LLMs derive much of their power from their size, so the small, quantized models you can run on a GPU are likely to produce poor translations, fail to generate valid responses or get stuck in endless loops. If you find a model that reliably producess good results, please post about it in the Discussions area!
+This is mainly for research and you should not expect particularly good results from local models. LLMs derive much of their power from their size, so the small, quantized models you can run on a consumer GPU are likely to produce poor translations, fail to generate valid responses or get stuck in endless loops. If you find a model that reliably producess good results, please post about it in the Discussions area!
 
-Chat and completion endpoints are supported, you should configure the settings and endpoint based on the model the server is running (e.g. instruction tuned models will probably produce better results using the completions endpoint rather than chat/conversation). The prompt template can be edited in the GUI if you are using a model that requires a particular format - make sure to include at least the {prompt} tag in the template, as this is where the subtitles that need translating in each batch will be provided.
+Chat and completion endpoints are supported - you should configure the settings and endpoint based on the model the server is running (e.g. instruction tuned models will probably produce better results using the completions endpoint rather than chat). The prompt template can be edited in the GUI if you are using a model that requires a particular format - make sure to include at least the {prompt} tag in the template, as this is where the subtitles that need translating in each batch will be filled in!
 
 ### Amazon Bedrock
 https://aws.amazon.com/service-terms/
@@ -223,17 +221,11 @@ Other options that can be specified on the command line are detailed below.
 
 ## Project File
 
-**Note** If you are using the GUI a project file is created automatically when you open a subtitle file for the first time, and updated automatically.
+**Note**: Project files are enabled by default in the GUI.
 
-The `--project` argument or `PROJECT` .env setting can take a number of values, which control whether and when an intermediate file will be written to disc.
+The `--project` argument or `PROJECT_FILE` .env setting control whether a project file will be written to disc for the command line.
 
-The default setting is `None`, which means the project file is neither written nor read, the only output of the program is the final translation.
-
-If the argument is set to `True` then a project file will be created with the `.subtrans` extension, containing details of the translation process,
-and it will be updated as the translation progresses. Writing a project file allows, amongst other things, resuming a translation that was interrupted.
-
-Other valid options include `preview`, `resume`, `reparse` and `retranslate`. These are probably only useful if you're modifying the code, in which case
-you should be able to see what they do.
+If enabled, a file will be created with the `.subtrans` extension when a subtitle file is loaded, containing details of the project. It will be updated as the translation progresses. Writing a project file allows, amongst other things, resuming a translation that was interrupted. It is highly recommended.
 
 ## Advanced usage
 
@@ -304,6 +296,19 @@ Default values for many settings can be set in the .env file, using a NAME_IN_CA
 - `--temperature`:
   A higher temperature increases the random variance of translations. Default 0.
 
+- `--reload`:
+  Subtitles will be reloaded from the source file rather than using the subtitles saved in the project (note: this implies `--project`)
+
+- `--retranslate`:
+  Existing translations will be ignored and all subtitles will be retranslated (note: this implies `--project`)
+
+- `--reparse`:
+  Existing translations will not be sent to the translator again but the translator's response will be reprocessed to extract the translations.
+  This is mainly useful after a bug fix release, but can also be used to reset translations that have been hand-edited (note: this implies `--project`)
+
+- `--preview`:
+  Subtitles will be loaded and batched and the translation flow will run, but no calls to the translator will be made. Only useful for debug.
+
 ### Provider-specific arguments
 Some additional arguments are available for specific providers.
 
@@ -316,7 +321,7 @@ Some additional arguments are available for specific providers.
 
 #### OpenAI
 - `-k`, `--apikey`:
-  Your [OpenAI API Key](https://platform.openai.com/account/api-keys).
+  Your [OpenAI API Key](https://platform.openai.com/account/api-keys) (the app will look for OPENAI_API_KEY in the environment if this is not provided)
 
 - `-b`, `--apibase`:
   API base URL if you are using a custom instance. if it is not set, the default URL will be used.
@@ -332,17 +337,37 @@ Some additional arguments are available for specific providers.
 
 #### Gemini
 - `-k`, `--apikey`:
-  Your [Google Gemini API Key](https://aistudio.google.com/app/apikey). Not required if it is set in the .env file.
+  Your [Google Gemini API Key](https://aistudio.google.com/app/apikey). (the app will look for GEMINI_API_KEY in the environment if this is not provided)
 
 - `-m`, `--model`:
   Specify the [AI model](https://ai.google.dev/models/gemini) to use for translation
 
 #### Claude
 - `-k`, `--apikey`:
-  Your [Anthropic API Key](https://console.anthropic.com/settings/keys). Not required if it is set in the .env file.
+  Your [Anthropic API Key](https://console.anthropic.com/settings/keys). (the app will look for ANTHROPIC_API_KEY in the environment if this is not provided)
 
 - `-m`, `--model`:
   Specify the [AI model](https://docs.anthropic.com/claude/docs/models-overview#model-comparison) to use for translation. This should be the full model name, e.g. `claude-3-haiku-20240307`
+
+#### DeepSeek
+  - `-k`, `--apikey`:
+  Your [DeepSeek API Key](https://platform.deepseek.com/api_keys). (the app will look for DEEPSEEK_API_KEY in the environment if this is not provided)
+
+- `-b`, `--apibase`:
+  Base URL if you are using a custom deployment of DeepSeek. if it is not set, the official URL will be used.
+
+- `-m`, `--model`:
+  Specify the [model](https://api-docs.deepseek.com/quick_start/pricing) to use for translation. **deepseek-chat** is probably the only sensible choice (and default).
+
+#### Mistral AI
+  - `-k`, `--apikey`:
+  Your [Mistral API Key](https://console.mistral.ai/api-keys/). (the app will look for MISTRAL_API_KEY in the environment if this is not provided)
+
+- `--server_url`:
+  URL if you are using a custom deployment of Mistral. if unset, the official URL will be used.
+
+- `-m`, `--model`:
+  Specify the [model](https://docs.mistral.ai/getting-started/models/models_overview/) to use for translation. **mistral-large-latest** is recommended, the small models are not very reliable.
 
 #### OpenAI Azure
 - `--deploymentname`:
@@ -356,26 +381,6 @@ Some additional arguments are available for specific providers.
 
 - `-a`, `--apiversion`:
   Azure API version.
-
-#### DeepSeek
-  - `-k`, `--apikey`:
-  Your [DeepSeek API Key](https://platform.deepseek.com/api_keys).
-
-- `-b`, `--apibase`:
-  Base URL if you are using a custom deployment of DeepSeek. if it is not set, the official URL will be used.
-
-- `-m`, `--model`:
-  Specify the [model](https://api-docs.deepseek.com/quick_start/pricing) to use for translation. **deepseek-chat** is probably the only sensible choice (and default).
-
-#### Mistral AI
-  - `-k`, `--apikey`:
-  Your [DeepSeek API Key](https://console.mistral.ai/api-keys/).
-
-- `--server_url`:
-  URL if you are using a custom deployment of Mistral. if unset, the official URL will be used.
-
-- `-m`, `--model`:
-  Specify the [model](https://docs.mistral.ai/getting-started/models/models_overview/) to use for translation. **mistral-large-latest** is recommended, the small models are not very reliable.
 
 #### Amazon Bedrock
 - `-k`, `--accesskey`:

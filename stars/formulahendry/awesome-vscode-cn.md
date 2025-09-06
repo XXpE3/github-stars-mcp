@@ -1,6 +1,6 @@
 ---
 project: awesome-vscode-cn
-stars: 803
+stars: 804
 description: |-
     中文版 Awesome VS Code
 url: https://github.com/formulahendry/awesome-vscode-cn

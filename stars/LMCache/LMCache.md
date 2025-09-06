@@ -1,6 +1,6 @@
 ---
 project: LMCache
-stars: 5028
+stars: 5082
 description: |-
     Supercharge Your LLM with the Fastest KV Cache Layer
 url: https://github.com/LMCache/LMCache

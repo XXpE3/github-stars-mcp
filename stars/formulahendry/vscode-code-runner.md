@@ -1,6 +1,6 @@
 ---
 project: vscode-code-runner
-stars: 2333
+stars: 2336
 description: |-
     Code Runner for Visual Studio Code
 url: https://github.com/formulahendry/vscode-code-runner

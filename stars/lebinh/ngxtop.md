@@ -1,6 +1,6 @@
 ---
 project: ngxtop
-stars: 6517
+stars: 6520
 description: |-
     Real-time metrics for nginx server
 url: https://github.com/lebinh/ngxtop

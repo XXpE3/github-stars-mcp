@@ -1,6 +1,6 @@
 ---
 project: Adachi-BOT
-stars: 339
+stars: 338
 description: |-
     一个在 QQ 中运行的原神助手
 url: https://github.com/Arondight/Adachi-BOT

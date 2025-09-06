@@ -1,6 +1,6 @@
 ---
 project: HexFiend
-stars: 5671
+stars: 5674
 description: |-
     A fast and clever hex editor for macOS
 url: https://github.com/HexFiend/HexFiend

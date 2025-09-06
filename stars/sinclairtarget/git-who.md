@@ -1,13 +1,12 @@
 ---
 project: git-who
-stars: 2387
+stars: 2391
 description: |-
     Git blame for file trees
 url: https://github.com/sinclairtarget/git-who
 ---
 
-# git-who
- ![Vanity screenshot](./screenshots/vanity.png)
+![logo](./assets/gitwho_logo.svg)
 
 `git-who` is a command-line tool for answering that eternal question:
 
@@ -17,6 +16,8 @@ Unlike `git blame`, which can tell you who wrote a _line_ of code, `git-who`
 tells you the people responsible for entire components or subsystems in a
 codebase. You can think of `git-who` sort of like `git blame` but for file
 trees rather than individual files.
+
+ ![Vanity screenshot](./screenshots/vanity.png)
 
 ## Demo
 This README contains comprehensive documentation. For an overview, see [Who
@@ -661,8 +662,8 @@ from any Git repository, and it will invoke git-who through Docker.
 The number of **commits** shown for each author is the number of unique commits
 found while walking the commit log. When supplying a path argument to `git
 who`, the commits walked include only commits modifying the given path(s).
-Here, the rules described under the HISTORY SIMPLIFICATION section of the Git log 
-man page apply—branches in the commit history that do not modify the given path(s) 
+Here, the rules described under the HISTORY SIMPLIFICATION section of the Git log
+man page apply—branches in the commit history that do not modify the given path(s)
 are pruned away.
 
 The number of **files** shown for each author is the number of unique files
@@ -714,30 +715,8 @@ up with the code in this file?", perhaps because the question is too ambiguous.
 `git who` answers, "Who made the most modifications to this file / this file
 tree?"
 
-## DEVELOPMENT
-### Test Repository Submodule
-Some of the automated tests for `git-who` need to run against a Git repository.
-Test repositories are attached to this repository as submodules.
-
-If you want to run the automated tests, you will first need to set up the
-submodules:
-
-```
-$ git submodule update --init
-```
-
-### Automated Tests
-The unit and integration tests, written in Go, can be run using:
-
-```
-$ rake test
-```
-
-### Functional Tests
-There are some end-to-end/functional tests written in Ruby. These require the
-`minitest` gem. You can run them using:
-
-```
-$ rake test:functional
-```
+## Logo
+The logo was designed by [AdrienDSlone](https://github.com/AdrienDSlone) and is
+available under [this Creative
+Commons license](https://creativecommons.org/licenses/by-sa/4.0/).
 

@@ -1,6 +1,6 @@
 ---
 project: vscode-snippetslab
-stars: 5
+stars: 6
 description: |-
     Access your SnippetsLab snippets directly in VSCode and enjoy full compatibility with native VSCode snippet syntax.
 url: https://github.com/sisoe24/vscode-snippetslab

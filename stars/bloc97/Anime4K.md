@@ -1,6 +1,6 @@
 ---
 project: Anime4K
-stars: 20030
+stars: 20052
 description: |-
     A High-Quality Real Time Upscaler for Anime Video
 url: https://github.com/bloc97/Anime4K

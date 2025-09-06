@@ -1,6 +1,6 @@
 ---
 project: udp2raw
-stars: 7926
+stars: 7938
 description: |-
     A Tunnel which Turns UDP Traffic into Encrypted UDP/FakeTCP/ICMP Traffic by using Raw Socket,helps you Bypass UDP FireWalls(or Unstable UDP Environment)
 url: https://github.com/wangyu-/udp2raw

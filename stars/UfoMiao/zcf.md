@@ -1,6 +1,6 @@
 ---
 project: zcf
-stars: 1027
+stars: 1211
 description: |-
     Zero-Config Claude-Code Flow
 url: https://github.com/UfoMiao/zcf
@@ -32,12 +32,28 @@ Menu options include:
 
 - `1` Full initialization (equivalent to `zcf i`)
 - `2` Import workflows (equivalent to `zcf u`)
-- `3-7` Configuration management (API/CCR, MCP, Model settings, AI output style, environment permissions, etc.)
+- `3` Configure API or CCR - API configuration or CCR proxy setup
+- `4` Configure MCP - MCP service configuration and management
+- `5` Configure default model - Set default model (opus/sonnet/opusplan/custom)
+- `6` Configure AI memory - Configure AI output language and global output style
+- `7` Configure environment permissions - Import environment variables and permissions
 - `R` Claude Code Router management (enhanced in v2.8.1)
 - `U` ccusage - Claude Code usage analysis
 - `L` CCometixLine - High-performance statusline tool with Git integration and real-time usage tracking (v2.9.9+ new)
 - `+` Check updates - Check and update Claude Code, CCR and CCometixLine versions (v2.9.9+ enhanced)
 - More features...
+
+#### 🎯 Key Configuration Features
+
+**Model Configuration (Option 5)**: Configure your default Claude model with flexible options:
+- **Default**: Let Claude Code automatically choose the best model for each task
+- **Opus**: Use Claude-3.5-Opus exclusively (high token consumption, use with caution)
+- **OpusPlan**: Use Opus for planning, Sonnet for implementation (recommended balance)
+- **Custom**: Specify your own model names for both primary and fast tasks (supports any custom model)
+
+**AI Memory Configuration (Option 6)**: Personalize your AI assistant:
+- **AI Output Language**: Set the language for AI responses (Chinese, English, or custom)
+- **Global Output Style**: Configure AI personality and response style
 
 ### Or, use direct commands:
 
@@ -63,6 +79,26 @@ npx zcf → select 2  # Execute workflow update via menu
 > - You can choose operations through the menu or use commands directly for quick execution
 > - `zcf i` = full initialization, `zcf u` = update workflows only
 
+#### 🌐 Language Support
+
+ZCF supports bilingual operation with automatic language switching for all commands:
+
+```bash
+# Use Chinese for all operations
+npx zcf --lang zh-CN          # Interactive menu in Chinese
+npx zcf init --lang zh-CN      # Initialize with Chinese interface  
+npx zcf ccr --allLang zh-CN    # Configure CCR in Chinese
+
+# Language parameter priority (highest to lowest):
+# --all-lang > --lang > saved user preference > interactive prompt
+```
+
+**Language Parameters:**
+- `--lang, -l`: ZCF interface language (applies to all commands)
+- `--all-lang, -g`: Set all language parameters at once (most convenient)
+- `--config-lang, -c`: Template files language (init/update commands only)
+- `--ai-output-lang, -a`: AI assistant output language (init command only)
+
 #### 🤖 Non-interactive Mode
 
 For CI/CD and automated setups, use `--skip-prompt` with parameters:
@@ -82,10 +118,10 @@ When using `--skip-prompt`, the following parameters are available:
 | Parameter                    | Description                                              | Values                                                                                             | Required                               | Default                                                                                                                          |
 | ---------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `--skip-prompt, -s`          | Skip all interactive prompts                             | -                                                                                                  | Yes (for non-interactive mode)         | -                                                                                                                                |
-| `--lang, -l`                 | ZCF display language                                     | `zh-CN`, `en`                                                                                      | No                                     | `en`                                                                                                                             |
-| `--config-lang, -c`          | Configuration language                                   | `zh-CN`, `en`                                                                                      | No                                     | `en`                                                                                                                             |
+| `--lang, -l`                 | ZCF display language (applies to all commands)           | `zh-CN`, `en`                                                                                      | No                                     | `en` or user's saved preference                                                                                                  |
+| `--config-lang, -c`          | Configuration language (template files language)         | `zh-CN`, `en`                                                                                      | No                                     | `en`                                                                                                                             |
 | `--ai-output-lang, -a`       | AI output language                                       | `zh-CN`, `en`, custom string                                                                       | No                                     | `en`                                                                                                                             |
-| `--all-lang, -g`             | Set all language parameters to this value                | `zh-CN`, `en`, custom string                                                                       | No                                     | - (overrides above 3 params. Custom string sets AI output language to custom while interaction and config languages remain 'en') |
+| `--all-lang, -g`             | Set all language parameters (applies to all commands)    | `zh-CN`, `en`, custom string                                                                       | No                                     | - (Priority: allLang > lang > user preference > prompt. Custom string sets AI output language to custom while interaction and config languages remain 'en') |
 | `--config-action, -r`        | Config handling                                          | `new`, `backup`, `merge`, `docs-only`, `skip`                                                      | No                                     | `backup`                                                                                                                         |
 | `--api-type, -t`             | API configuration type                                   | `auth_token`, `api_key`, `ccr_proxy`, `skip`                                                       | No                                     | `skip`                                                                                                                           |
 | `--api-key, -k`              | API key (for both API key and auth token types)          | string                                                                                             | Required when `api-type` is not `skip` | -                                                                                                                                |
@@ -140,13 +176,18 @@ After installation, use `/bmad-init` to initialize the BMad workflow in your pro
 [Spec Workflow](https://github.com/Pimzino/spec-workflow-mcp) is a comprehensive MCP service that provides structured feature development workflow from requirements to implementation:
 
 - **Requirements Analysis**: Structured requirements gathering and documentation
-- **Design Phase**: Detailed technical design and architecture planning  
+- **Design Phase**: Detailed technical design and architecture planning
 - **Task Management**: Automatic task breakdown and progress tracking
 - **Implementation Workflow**: Systematic approach from requirements to implementation
 - **Interactive Dashboard**: Built-in dashboard for workflow visualization and management
 - **Approval System**: Review and approval process for each development phase
 
-The Spec Workflow MCP includes an automatic dashboard that launches with the `--AutoStartDashboard` flag, providing a visual interface for managing your development workflow.
+The Spec Workflow MCP provides an optional dashboard for workflow visualization. Users can manually launch the dashboard using:
+```bash
+npx -y @pimzino/spec-workflow-mcp@latest --dashboard
+```
+
+Alternatively, you can install the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=Pimzino.spec-workflow-mcp) for integrated workflow management.
 
 **Usage Guide**: For detailed usage instructions and best practices, see the [official Spec Workflow documentation](https://github.com/Pimzino/spec-workflow-mcp/blob/main/README.md#quick-start).
 
@@ -294,7 +335,7 @@ Select function:
   2. Import workflow - Import/update workflow-related files only
   3. Configure API - Configure API URL and authentication (supports CCR proxy)
   4. Configure MCP - Configure MCP services (includes Windows fix)
-  5. Configure default model - Set default model (opus/sonnet)
+  5. Configure default model - Set default model (opus/sonnet/opusplan/custom)
   6. Configure Claude global memory - Configure AI output language and output styles
   7. Import recommended environment variables and permissions - Import privacy protection environment variables and system permissions
 

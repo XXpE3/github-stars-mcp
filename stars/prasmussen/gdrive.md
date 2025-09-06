@@ -1,6 +1,6 @@
 ---
 project: gdrive
-stars: 8988
+stars: 8986
 description: |-
     Google Drive CLI Client
 url: https://github.com/prasmussen/gdrive

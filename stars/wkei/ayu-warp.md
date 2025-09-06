@@ -1,6 +1,6 @@
 ---
 project: ayu-warp
-stars: 19
+stars: 20
 description: |-
     ayu theme for warp
 url: https://github.com/wkei/ayu-warp

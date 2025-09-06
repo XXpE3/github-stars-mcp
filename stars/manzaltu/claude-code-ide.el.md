@@ -1,6 +1,6 @@
 ---
 project: claude-code-ide.el
-stars: 1014
+stars: 1035
 description: |-
     Claude Code IDE integration for Emacs
 url: https://github.com/manzaltu/claude-code-ide.el
@@ -152,6 +152,7 @@ The easiest way to interact with Claude Code IDE is through the transient menu i
 | =M-x claude-code-ide-send-escape=         | Send escape key to Claude terminal                |
 | =M-x claude-code-ide-insert-newline=      | Insert newline in Claude prompt (sends \ + Enter) |
 | =M-x claude-code-ide-toggle=              | Toggle visibility of Claude Code window           |
+| =M-x claude-code-ide-toggle-recent=       | Toggle most recent Claude window globally         |
 | =M-x claude-code-ide-show-debug=          | Show the debug buffer with WebSocket messages     |
 | =M-x claude-code-ide-clear-debug=         | Clear the debug buffer                            |
 
@@ -165,6 +166,7 @@ You can run multiple Claude Code instances simultaneously for different projects
 
 - Running =claude-code-ide= when a session is already active will toggle the window visibility
 - The window can be closed with standard Emacs window commands (=C-x 0=) without stopping Claude
+- Use =claude-code-ide-toggle-recent= to toggle the most recent Claude window from anywhere, regardless of your current project context. This is useful when you're outside a project directory but want to quickly hide/show Claude
 
 ** Configuration
 

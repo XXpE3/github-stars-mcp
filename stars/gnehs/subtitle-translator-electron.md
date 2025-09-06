@@ -1,6 +1,6 @@
 ---
 project: subtitle-translator-electron
-stars: 1643
+stars: 1644
 description: |-
     ↔️ Translate subtitle using ChatGPT
 url: https://github.com/gnehs/subtitle-translator-electron

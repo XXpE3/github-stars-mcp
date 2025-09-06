@@ -1,6 +1,6 @@
 ---
 project: Pengwin
-stars: 1508
+stars: 1506
 description: |-
     A Linux distro optimized for WSL based on Debian.
 url: https://github.com/WhitewaterFoundry/Pengwin

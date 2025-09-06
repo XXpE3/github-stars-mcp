@@ -1,6 +1,6 @@
 ---
 project: dl-engineer-guidebook
-stars: 906
+stars: 907
 description: |-
     深度学习工程师生存指南
 url: https://github.com/ypwhs/dl-engineer-guidebook

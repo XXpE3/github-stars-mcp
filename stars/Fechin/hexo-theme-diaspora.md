@@ -1,6 +1,6 @@
 ---
 project: hexo-theme-diaspora
-stars: 1270
+stars: 1272
 description: |-
     Hexo theme, Blog theme, Clean, Responsive theme
 url: https://github.com/Fechin/hexo-theme-diaspora

@@ -1,6 +1,6 @@
 ---
 project: space-jekyll-template
-stars: 404
+stars: 406
 description: |-
     A simple spacemacs template on jekyll. https://victorvoid.github.io/space-jekyll-template/
 url: https://github.com/victorvoid/space-jekyll-template

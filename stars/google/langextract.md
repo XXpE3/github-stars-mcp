@@ -1,6 +1,6 @@
 ---
 project: langextract
-stars: 13969
+stars: 14618
 description: |-
     A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization.
 url: https://github.com/google/langextract
@@ -17,6 +17,7 @@ url: https://github.com/google/langextract
 [![PyPI version](https://img.shields.io/pypi/v/langextract.svg)](https://pypi.org/project/langextract/)
 [![GitHub stars](https://img.shields.io/github/stars/google/langextract.svg?style=social&label=Star)](https://github.com/google/langextract)
 ![Tests](https://github.com/google/langextract/actions/workflows/ci.yaml/badge.svg)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17015089.svg)](https://doi.org/10.5281/zenodo.17015089)
 
 ## Table of Contents
 

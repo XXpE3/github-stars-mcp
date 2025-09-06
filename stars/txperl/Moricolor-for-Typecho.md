@@ -1,6 +1,6 @@
 ---
 project: Moricolor-for-Typecho
-stars: 359
+stars: 357
 description: |-
     Typecho Theme Moricolor - 森之色
 url: https://github.com/txperl/Moricolor-for-Typecho

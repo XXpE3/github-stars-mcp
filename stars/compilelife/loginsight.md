@@ -1,6 +1,6 @@
 ---
 project: loginsight
-stars: 288
+stars: 289
 description: |-
     loginsight致力于打造一款日志分析的利器
 url: https://github.com/compilelife/loginsight

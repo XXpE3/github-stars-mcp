@@ -1,6 +1,6 @@
 ---
 project: ffmpeg-web-gui
-stars: 183
+stars: 184
 description: |-
     This is a PHP script for FFmpeg which allows you to upload a video and convert it into html5 (mp4 h264, webm, ogv)
 url: https://github.com/swooningfish/ffmpeg-web-gui

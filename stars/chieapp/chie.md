@@ -1,6 +1,6 @@
 ---
 project: chie
-stars: 180
+stars: 181
 description: |-
     An extensive desktop app for ChatGPT and other LLMs.
 url: https://github.com/chieapp/chie

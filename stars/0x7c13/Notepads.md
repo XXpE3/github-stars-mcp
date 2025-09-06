@@ -1,6 +1,6 @@
 ---
 project: Notepads
-stars: 9491
+stars: 9500
 description: |-
     A modern, lightweight text editor with a minimalist design.
 url: https://github.com/0x7c13/Notepads

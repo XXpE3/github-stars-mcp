@@ -1,6 +1,6 @@
 ---
 project: auto-add-routes
-stars: 1561
+stars: 1562
 description: |-
     China Route for VPN
 url: https://github.com/lmc999/auto-add-routes

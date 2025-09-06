@@ -1,6 +1,6 @@
 ---
 project: Fluent-for-Steam
-stars: 1417
+stars: 1416
 description: |-
     Fluent for Steam. A simple skin for steam to make it look like windows 11.
 url: https://github.com/purogamer/Fluent-for-Steam

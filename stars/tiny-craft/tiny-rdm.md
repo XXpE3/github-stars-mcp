@@ -1,6 +1,6 @@
 ---
 project: tiny-rdm
-stars: 11126
+stars: 11172
 description: |-
     Tiny RDM (Tiny Redis Desktop Manager) - A modern, colorful, super lightweight Redis GUI client for Mac, Windows, and Linux.
 url: https://github.com/tiny-craft/tiny-rdm
@@ -109,10 +109,6 @@ npm install
 wails dev
 ```
 ## About
-
-### Thanks
-
-[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
 
 ### Wechat Official Account
 

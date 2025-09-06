@@ -1,6 +1,6 @@
 ---
 project: moonlight-docs
-stars: 1382
+stars: 1384
 description: |-
     Moonlight Documentation
 url: https://github.com/moonlight-stream/moonlight-docs

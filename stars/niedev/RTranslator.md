@@ -1,6 +1,6 @@
 ---
 project: RTranslator
-stars: 9083
+stars: 9099
 description: |-
     Open source real-time translation app for Android that runs locally
 url: https://github.com/niedev/RTranslator
@@ -174,6 +174,16 @@ So, if you like the app and want to say thank you and support the project, you c
 
 In case you will donate, or just live a star, thank you :heart:
 <br /><br />
+
+<h3>Connected external projects</h3>
+
+Take a look at these awesome projects that use RTranslator code:
+
+[**WhisperIMEplus**](https://github.com/woheller69/whisperIMEplus)
+
+[**WhisperJET**](https://github.com/eix128/WhisperJET)
+<br /><br />
+
 
 <h3>Contributions</h3>
 

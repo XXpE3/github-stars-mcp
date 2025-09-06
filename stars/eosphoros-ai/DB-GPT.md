@@ -1,6 +1,6 @@
 ---
 project: DB-GPT
-stars: 17230
+stars: 17280
 description: |-
     AI Native Data App Development framework with AWEL(Agentic Workflow Expression Language) and Agents
 url: https://github.com/eosphoros-ai/DB-GPT

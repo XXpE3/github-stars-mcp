@@ -1,6 +1,6 @@
 ---
 project: zotero-gpt
-stars: 6485
+stars: 6501
 description: |-
     GPT Meet Zotero.
 url: https://github.com/MuiseDestiny/zotero-gpt

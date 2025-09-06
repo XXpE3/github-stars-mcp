@@ -1,8 +1,8 @@
 ---
 project: jumpserver
-stars: 28564
+stars: 28622
 description: |-
-    JumpServer is an open-source Privileged Access Management (PAM) tool that provides DevOps and IT teams with on-demand and secure access to SSH, RDP, Kubernetes, Database and RemoteApp endpoints through a web browser.
+    JumpServer is an open-source Privileged Access Management (PAM) platform that provides DevOps and IT teams with on-demand and secure access to SSH, RDP, Kubernetes, Database and RemoteApp endpoints through a web browser.
 url: https://github.com/jumpserver/jumpserver
 ---
 
@@ -10,7 +10,7 @@ url: https://github.com/jumpserver/jumpserver
   <a name="readme-top"></a>
   <a href="https://jumpserver.com" target="_blank"><img src="https://download.jumpserver.org/images/jumpserver-logo.svg" alt="JumpServer" width="300" /></a>
   
-## An open-source PAM tool (Bastion Host)
+## An open-source PAM platform (Bastion Host)
 
 [![][license-shield]][license-link]
 [![][docs-shield]][docs-link]
@@ -27,7 +27,7 @@ url: https://github.com/jumpserver/jumpserver
 
 ## What is JumpServer?
 
-JumpServer is an open-source Privileged Access Management (PAM) tool that provides DevOps and IT teams with on-demand and secure access to SSH, RDP, Kubernetes, Database and RemoteApp endpoints through a web browser.
+JumpServer is an open-source Privileged Access Management (PAM) platform that provides DevOps and IT teams with on-demand and secure access to SSH, RDP, Kubernetes, Database and RemoteApp endpoints through a web browser.
 
 
 <picture>

@@ -1,6 +1,6 @@
 ---
 project: Lepton
-stars: 10249
+stars: 10254
 description: |-
     💻     Democratizing Snippet Management (macOS/Win/Linux)
 url: https://github.com/hackjutsu/Lepton

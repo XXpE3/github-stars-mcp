@@ -1,6 +1,6 @@
 ---
 project: DatasetLoom
-stars: 113
+stars: 117
 description: |-
     一个面向多模态大模型训练的智能数据集构建与评估平台
 url: https://github.com/599yongyang/DatasetLoom

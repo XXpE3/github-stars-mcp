@@ -1,6 +1,6 @@
 ---
 project: spacemacs
-stars: 24301
+stars: 24325
 description: |-
     A community-driven Emacs distribution - The best editor is neither Emacs nor Vim,  it's Emacs *and* Vim!
 url: https://github.com/syl20bnr/spacemacs

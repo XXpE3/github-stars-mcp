@@ -1,12 +1,12 @@
 ---
 project: text-generation-webui
-stars: 44836
+stars: 44891
 description: |-
-    LLM UI with advanced features, easy setup, and multiple backend support.
+    The definitive Web UI for local AI, with powerful features and easy setup.
 url: https://github.com/oobabooga/text-generation-webui
 ---
 
-# Text generation web UI
+# Text Generation Web UI
 
 A Gradio web UI for Large Language Models.
 
@@ -246,7 +246,7 @@ usage: server.py [-h] [--multi-user] [--model MODEL] [--lora LORA [LORA ...]] [-
                  [--ssl-certfile SSL_CERTFILE] [--subpath SUBPATH] [--old-colors] [--portable] [--api] [--public-api] [--public-api-id PUBLIC_API_ID] [--api-port API_PORT] [--api-key API_KEY]
                  [--admin-key ADMIN_KEY] [--api-enable-ipv6] [--api-disable-ipv4] [--nowebui]
 
-Text generation web UI
+Text Generation Web UI
 
 options:
   -h, --help                                show this help message and exit

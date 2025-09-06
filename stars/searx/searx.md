@@ -1,6 +1,6 @@
 ---
 project: searx
-stars: 13487
+stars: 13491
 description: |-
     Privacy-respecting metasearch engine
 url: https://github.com/searx/searx

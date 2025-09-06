@@ -1,6 +1,6 @@
 ---
 project: linyu-client
-stars: 422
+stars: 421
 description: |-
     im system client
 url: https://github.com/DWHengr/linyu-client

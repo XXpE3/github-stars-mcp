@@ -1,6 +1,6 @@
 ---
 project: awesome-gpt4
-stars: 2187
+stars: 2189
 description: |-
     A curated list of prompts, tools, and resources regarding the GPT-4 language model.
 url: https://github.com/radi-cho/awesome-gpt4

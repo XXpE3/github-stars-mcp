@@ -1,6 +1,6 @@
 ---
 project: trojan
-stars: 19409
+stars: 19416
 description: |-
     An unidentifiable mechanism that helps you bypass GFW.
 url: https://github.com/trojan-gfw/trojan

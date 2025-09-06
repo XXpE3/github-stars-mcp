@@ -1,6 +1,6 @@
 ---
 project: claude-code-router
-stars: 15977
+stars: 16882
 description: |-
     Use Claude Code as the foundation for coding infrastructure, allowing you to decide how to interact with the model while enjoying updates from Anthropic.
 url: https://github.com/musistudio/claude-code-router
@@ -327,6 +327,7 @@ Transformers allow you to modify the request and response payloads to ensure com
 - `enhancetool`: Adds a layer of error tolerance to the tool call parameters returned by the LLM (this will cause the tool call information to no longer be streamed).
 - `cleancache`: Clears the `cache_control` field from requests.
 - `vertex-gemini`: Handles the Gemini API using Vertex authentication.
+- `chutes-glm` Unofficial support for GLM 4.5 model via Chutes [chutes-glm-transformer.js](https://gist.github.com/vitobotta/2be3f33722e05e8d4f9d2b0138b8c863).
 - `qwen-cli` (experimental): Unofficial support for qwen3-coder-plus model via Qwen CLI [qwen-cli.js](https://gist.github.com/musistudio/f5a67841ced39912fd99e42200d5ca8b).
 - `rovo-cli` (experimental): Unofficial support for gpt-5 via Atlassian Rovo Dev CLI [rovo-cli.js](https://gist.github.com/SaseQ/c2a20a38b11276537ec5332d1f7a5e53).
 
@@ -357,8 +358,9 @@ The `Router` object defines which model to use for different scenarios:
 - `longContext`: A model for handling long contexts (e.g., > 60K tokens).
 - `longContextThreshold` (optional): The token count threshold for triggering the long context model. Defaults to 60000 if not specified.
 - `webSearch`: Used for handling web search tasks and this requires the model itself to support the feature. If you're using openrouter, you need to add the `:online` suffix after the model name.
+- `image` (beta): Used for handling image-related tasks (supported by CCR’s built-in agent). If the model does not support tool calling, you need to set the `config.forceUseImageAgent` property to `true`.
 
-You can also switch models dynamically in Claude Code with the `/model` command:
+- You can also switch models dynamically in Claude Code with the `/model` command:
 `/model provider_name,model_name`
 Example: `/model openrouter,anthropic/claude-3.5-sonnet`
 
@@ -552,7 +554,7 @@ A huge thank you to all our sponsors for their generous support!
 - @b\*g
 - @\*亿
 - @\*辉
-- @JACK 
+- @JACK
 - @\*光
 - @W\*l
 - [@kesku](https://github.com/kesku)
@@ -570,6 +572,15 @@ A huge thank you to all our sponsors for their generous support!
 - [@qierkang](http://github.com/qierkang)
 - @\*军
 - [@snrise-z](http://github.com/snrise-z)
+- @\*王
+- [@greatheart1000](http://github.com/greatheart1000)
+- @\*王
+- @zcutlip
+- [@Peng-YM](http://github.com/Peng-YM)
+- @\*更
+- @\*.
+- @F\*t
+
 
 (If your name is masked, please contact me via my homepage email to update it with your GitHub username.)
 

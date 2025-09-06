@@ -1,6 +1,6 @@
 ---
 project: genshin-wish-export
-stars: 3796
+stars: 3797
 description: |-
     Easily export the Genshin Impact wish record.
 url: https://github.com/biuuu/genshin-wish-export

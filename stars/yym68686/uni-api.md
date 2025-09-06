@@ -1,6 +1,6 @@
 ---
 project: uni-api
-stars: 1064
+stars: 1078
 description: |-
     This is a project that unifies the management of LLM APIs. It can call multiple backend services through a unified API interface, convert them to the OpenAI format uniformly, and support load balancing. Currently supported backend services include: OpenAI, Anthropic, DeepBricks, OpenRouter, Gemini, Vertex, etc.
 url: https://github.com/yym68686/uni-api
@@ -21,13 +21,13 @@ url: https://github.com/yym68686/uni-api
 
 ## Introduction
 
-For personal use, one/new-api is too complex with many commercial features that individuals don't need. If you don't want a complicated frontend interface and prefer support for more models, you can try uni-api. This is a project that unifies the management of large language model APIs, allowing you to call multiple backend services through a single unified API interface, converting them all to OpenAI format, and supporting load balancing. Currently supported backend services include: OpenAI, Anthropic, Gemini, Vertex, Azure, AWS, xai, Cohere, Groq, Cloudflare, OpenRouter, and more.
+For personal use, one/new-api is too complex with many commercial features that individuals don't need. If you don't want a complicated frontend interface and prefer support for more models, you can try uni-api. This is a project that unifies the management of large language model APIs, allowing you to call multiple backend services through a single unified API interface, converting them all to OpenAI format, and supporting load balancing. Currently supported backend services include: OpenAI, Anthropic, Gemini, Vertex, Azure, AWS, xai, Cohere, Groq, Cloudflare, OpenRouter, [302.AI](https://share.302.ai/IRQYs0) and more.
 
 ## ✨ Features
 
 - No front-end, pure configuration file to configure API channels. You can run your own API station just by writing a file, and the documentation has a detailed configuration guide, beginner-friendly.
 - Unified management of multiple backend services, supporting providers such as OpenAI, Deepseek, OpenRouter, and other APIs in OpenAI format. Supports OpenAI Dalle-3 image generation.
-- Simultaneously supports Anthropic, Gemini, Vertex AI, Azure, AWS, xai, Cohere, Groq, Cloudflare. Vertex simultaneously supports Claude and Gemini API.
+- Simultaneously supports Anthropic, Gemini, Vertex AI, Azure, AWS, xai, Cohere, Groq, Cloudflare, [302.AI](https://share.302.ai/IRQYs0). Vertex simultaneously supports Claude and Gemini API.
 - Support OpenAI, Anthropic, Gemini, Vertex, Azure, AWS, xai native tool use function calls.
 - Support OpenAI, Anthropic, Gemini, Vertex, Azure, AWS, xai native image recognition API.
 - Support four types of load balancing.
@@ -157,6 +157,12 @@ providers:
         gemini-2.5-pro-search: # Add custom request body parameters to the model gemini-2.5-pro-search
           tools:
             - google_search: {} # Add google_search tool to the model gemini-2.5-pro-search
+        gemini-2.5-flash:
+          generationConfig:
+            thinkingConfig:
+              includeThoughts: True
+              thinkingBudget: 24576
+            maxOutputTokens: 65535
         gemini-2.5-flash-search:
           tools:
             - google_search: {}
@@ -220,7 +226,7 @@ providers:
 
 api_keys:
   - api: sk-KjjI60Yf0JFWxfgRmXqFWyGtWUd9GZnmi3KlvowmRWpWpQRo # API Key, required for users to use this service
-    model: # Models that can be used by this API Key, required. Default channel-level polling load balancing is enabled, and each request model is requested in sequence according to the model configuration. It is not related to the original channel order in providers. Therefore, you can set different request sequences for each API key.
+    model: # Models that can be used by this API Key, optional. Default channel-level polling load balancing is enabled, and each request model is requested in sequence according to the model configuration. It is not related to the original channel order in providers. Therefore, you can set different request sequences for each API key.
       - gpt-4o # Usable model name, can use all gpt-4o models provided by providers
       - claude-3-5-sonnet # Usable model name, can use all claude-3-5-sonnet models provided by providers
       - gemini/* # Usable model name, can only use all models provided by providers named gemini, where gemini is the provider name, * represents all models

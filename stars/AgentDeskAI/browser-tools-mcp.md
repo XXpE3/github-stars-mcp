@@ -1,6 +1,6 @@
 ---
 project: browser-tools-mcp
-stars: 6399
+stars: 6452
 description: |-
     Monitor browser logs directly from Cursor and other MCP compatible IDEs.
 url: https://github.com/AgentDeskAI/browser-tools-mcp

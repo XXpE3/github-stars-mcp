@@ -1,6 +1,6 @@
 ---
 project: Zen-Nebula
-stars: 1029
+stars: 1044
 description: |-
     A minimalist Glassmorphism based theme to elevate the UI of Zen browser
 url: https://github.com/JustAdumbPrsn/Zen-Nebula
@@ -16,7 +16,7 @@ url: https://github.com/JustAdumbPrsn/Zen-Nebula
 ###
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/9178dd77-a0ad-4000-8bbf-66453fb8f6c9" width="800" />
+  <img src="https://github.com/user-attachments/assets/7583b74a-b551-4f7a-8c14-43e45e8d6593" width="800" />
 </div>
 
 ###
@@ -76,7 +76,8 @@ Follow these steps to install and apply the **Nebula** theme to Zen Browser:
    - If visible, set it to `true`.
 
 4. 🖼️ **Install Wallpapers (Optional)**
-   - Download `wallpapers.zip` from the [latest release](https://github.com/JustAdumbPrsn/Nebula-A-Minimal-Theme-for-Zen-Browser/releases/latest).
+   - Download `wallpapers.zip` from this [Link](https://github.com/JustAdumbPrsn/Zen-Nebula/releases/download/v3.1/Wallpapers.rar).
+
    - Extract and use them as desired.
 
 

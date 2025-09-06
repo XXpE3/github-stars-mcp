@@ -1,6 +1,6 @@
 ---
 project: ddns-go
-stars: 15165
+stars: 15224
 description: |-
     Simple and easy to use DDNS. Support Aliyun, Tencent Cloud, Dnspod, Cloudflare, Callback, Huawei Cloud, Baidu Cloud, Porkbun, GoDaddy, Namecheap, NameSilo...
 url: https://github.com/jeessy2/ddns-go

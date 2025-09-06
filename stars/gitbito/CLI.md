@@ -1,6 +1,6 @@
 ---
 project: CLI
-stars: 553
+stars: 552
 description: |-
     Bito CLI (Command Line Interface) provides a command line interface to the Bito AI chat functionality. Over time, CLI will add more functions and new command options to support complex automation and workflows.  This is a very early Alpha version. We would love to get your feedback on the new features or improvements.
 url: https://github.com/gitbito/CLI

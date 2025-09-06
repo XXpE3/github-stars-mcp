@@ -1,6 +1,6 @@
 ---
 project: wslu
-stars: 3699
+stars: 3697
 description: |-
     A collection of utilities for Windows Subsystem for Linux
 url: https://github.com/wslutilities/wslu

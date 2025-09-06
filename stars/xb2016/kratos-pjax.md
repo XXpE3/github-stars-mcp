@@ -1,6 +1,6 @@
 ---
 project: kratos-pjax
-stars: 994
+stars: 995
 description: |-
     🍨 A lovely WordPress theme [DEPRECATED]
 url: https://github.com/xb2016/kratos-pjax

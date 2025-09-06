@@ -1,6 +1,6 @@
 ---
 project: one-mcp
-stars: 97
+stars: 103
 description: |-
     A centralized proxy platform for MCP servers, accessible via a single HTTP server,featuring a web-based management interface. 
 url: https://github.com/burugo/one-mcp

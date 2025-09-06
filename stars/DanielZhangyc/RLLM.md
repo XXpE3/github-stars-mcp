@@ -1,6 +1,6 @@
 ---
 project: RLLM
-stars: 89
+stars: 90
 description: |-
     LLM powered RSS reader
 url: https://github.com/DanielZhangyc/RLLM

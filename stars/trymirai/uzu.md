@@ -1,6 +1,6 @@
 ---
 project: uzu
-stars: 1287
+stars: 1297
 description: |-
     A high-performance inference engine for AI models
 url: https://github.com/trymirai/uzu
@@ -55,6 +55,7 @@ Alternatively, you can download a prepared model using the sample script:
 ### Bindings
 
 - [uzu-swift](https://github.com/trymirai/uzu-swift) - a prebuilt Swift framework, ready to use with SPM
+- [uzu-ts](https://github.com/trymirai/uzu-ts) - a prebuilt TypeScript framework made for Node.js ecosystem
 
 ### CLI
 
@@ -98,7 +99,7 @@ use uzu::{
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let model_path = PathBuf::from("MODEL_PATH");
-    
+
     let mut session = Session::new(model_path.clone())?;
     session.load_with_session_config(SessionConfig::default())?;
 

@@ -1,6 +1,6 @@
 ---
 project: cowtransfer-uploader
-stars: 449
+stars: 450
 description: |-
     Simple Cowtransfer Uploader/Downloader in Golang
 url: https://github.com/Mikubill/cowtransfer-uploader

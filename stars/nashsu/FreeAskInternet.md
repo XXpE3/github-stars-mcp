@@ -1,6 +1,6 @@
 ---
 project: FreeAskInternet
-stars: 8719
+stars: 8723
 description: |-
     FreeAskInternet is a completely free, PRIVATE and LOCALLY running search aggregator & answer generate using MULTI LLMs, without GPU needed. The user can ask a question and the system will  make a multi engine search and combine the search result to LLM and generate the answer based on search results. It's all FREE to use. 
 url: https://github.com/nashsu/FreeAskInternet

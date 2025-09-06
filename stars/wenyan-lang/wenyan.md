@@ -1,6 +1,6 @@
 ---
 project: wenyan
-stars: 20105
+stars: 20104
 description: |-
     文言文編程語言 A programming language for the ancient Chinese.
 url: https://github.com/wenyan-lang/wenyan

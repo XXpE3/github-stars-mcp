@@ -1,6 +1,6 @@
 ---
 project: mpv_thumbnail_script
-stars: 699
+stars: 701
 description: |-
     A Lua script to show preview thumbnails in mpv's OSC seekbar, sans external dependencies
 url: https://github.com/TheAMM/mpv_thumbnail_script

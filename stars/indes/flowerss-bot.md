@@ -1,6 +1,6 @@
 ---
 project: flowerss-bot
-stars: 1841
+stars: 1842
 description: |-
     A telegram bot  for rss reader. 一个支持应用内阅读的 Telegram RSS Bot。
 url: https://github.com/indes/flowerss-bot

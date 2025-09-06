@@ -1,6 +1,6 @@
 ---
 project: tuic
-stars: 2974
+stars: 2979
 description: |-
     Delicately-TUICed 0-RTT proxy protocol
 url: https://github.com/tuic-protocol/tuic

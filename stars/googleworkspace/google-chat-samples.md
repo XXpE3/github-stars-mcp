@@ -1,6 +1,6 @@
 ---
 project: google-chat-samples
-stars: 550
+stars: 552
 description: |-
     Google Chat app samples.
 url: https://github.com/googleworkspace/google-chat-samples

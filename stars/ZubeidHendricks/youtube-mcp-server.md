@@ -1,6 +1,6 @@
 ---
 project: youtube-mcp-server
-stars: 330
+stars: 332
 description: |-
     MCP Server for YouTube API, enabling video management, Shorts creation, and advanced analytics
 url: https://github.com/ZubeidHendricks/youtube-mcp-server

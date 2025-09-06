@@ -1,6 +1,6 @@
 ---
 project: glow
-stars: 18993
+stars: 19050
 description: |-
     Render markdown on the CLI, with pizzazz! 💅🏻
 url: https://github.com/charmbracelet/glow

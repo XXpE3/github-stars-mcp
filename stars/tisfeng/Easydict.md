@@ -1,6 +1,6 @@
 ---
 project: Easydict
-stars: 10315
+stars: 10361
 description: |-
     一个简洁优雅的词典翻译 macOS App。开箱即用，支持离线 OCR 识别，支持有道词典，🍎 苹果系统词典，🍎 苹果系统翻译，OpenAI，Gemini，DeepL，Google，Bing，腾讯，百度，阿里，小牛，彩云和火山翻译。A concise and elegant Dictionary and Translator macOS App for looking up words and translating text. 
 url: https://github.com/tisfeng/Easydict
@@ -766,6 +766,18 @@ Easydict 作为一个免费开源的非盈利项目，目前主要是作者个�
 | 2025-03-10 |  | 10 | |
 | 2025-03-14 | Liam | 10 | 等着你上 store ( Easydict 使用了一些私有 API，上不了 App Store)|
 | 2025-03-19 |  | 10 | Easydict 做的很棒，谢谢|
+| 2025-03-23 | 好(hào)吃俱乐部部长 | 5 | 幸苦啦 谢谢  别买苹果年费 浪费钱（😑） |
+| 2025-03-24 | 장철 | 5 | 绵薄之力，再接再厉！ |
+| 2025-03-25 |  | 10 | 优雅! 感谢 |
+| 2025-03-27 | D | 10 | 感谢用爱发电 |
+| 2025-04-29 | 胡子 | 10 | 加油 期待上线 |
+| 2025-05-05 |  | 100 | 谢谢你的开源项目，在这个项目里学习了 axapi 的使用方法 |
+| 2025-05-18 | 我怎么知道我原本叫啥 | 50 | 开源是我爹 |
+| 2025-05-30 | tzcsky | 10 | 很好用，谢谢 |
+| 2025-06-14 | Quixotica11y | 1 | 谢谢你(^🙏^)很好用 |
+| 2025-06-17 | CraigMaritimus | 50 | 致敬 |
+| 2025-07-09 |  | 10 | 很好用的软件 希望能一直完善下去 |
+| 2025-07-15 |  | 10 | 感谢分享，很好用的软件 |
 
 </p>
 

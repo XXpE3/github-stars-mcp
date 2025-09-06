@@ -1,6 +1,6 @@
 ---
 project: notion-py
-stars: 4366
+stars: 4370
 description: |-
     Unofficial Python API client for Notion.so
 url: https://github.com/jamalex/notion-py
