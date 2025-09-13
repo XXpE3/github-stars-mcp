@@ -1,6 +1,6 @@
 ---
 project: DesktopCommanderMCP
-stars: 4401
+stars: 4457
 description: |-
     This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities
 url: https://github.com/wonderwhy-er/DesktopCommanderMCP
@@ -30,6 +30,7 @@ Work with code and text, run processes, and automate tasks, going far beyond oth
 ## Table of Contents
 - [Features](#features)
 - [How to install](#how-to-install)
+- [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Handling Long-Running Commands](#handling-long-running-commands)
 - [Work in Progress and TODOs](#roadmap)
@@ -385,6 +386,28 @@ Close and restart Claude Desktop to complete the removal.
 
 **Need help?**
 - Join our Discord community: https://discord.com/invite/kQ27sNnZr7
+
+## Getting Started
+
+Once Desktop Commander is installed and Claude Desktop is restarted, you're ready to supercharge your Claude experience!
+
+### 🚀 New User Onboarding
+
+Desktop Commander includes intelligent onboarding to help you discover what's possible:
+
+**For New Users:** When you're just getting started (fewer than 10 successful commands), Claude will automatically offer helpful getting-started guidance and practical tutorials after you use Desktop Commander successfully.
+
+**Request Help Anytime:** You can ask for onboarding assistance at any time by simply saying:
+- *"Help me get started with Desktop Commander"*
+- *"Show me Desktop Commander examples"* 
+- *"What can I do with Desktop Commander?"*
+
+Claude will then show you beginner-friendly tutorials and examples, including:
+- 📁 Organizing your Downloads folder automatically
+- 📊 Analyzing CSV/Excel files with Python
+- ⚙️ Setting up GitHub Actions CI/CD
+- 🔍 Exploring and understanding codebases
+- 🤖 Running interactive development environments
 
 ## Usage
 

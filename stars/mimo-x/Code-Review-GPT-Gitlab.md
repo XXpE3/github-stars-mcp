@@ -1,6 +1,6 @@
 ---
 project: Code-Review-GPT-Gitlab
-stars: 716
+stars: 722
 description: |-
     🤖 GPT（ Deepseek and more ） Code Review for Gitlab （针对于 Gitlab 的 LLM 辅助 Code Review 工具）项目详细文档 👇🏻
 url: https://github.com/mimo-x/Code-Review-GPT-Gitlab

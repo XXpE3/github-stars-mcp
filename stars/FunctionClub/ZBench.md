@@ -1,6 +1,6 @@
 ---
 project: ZBench
-stars: 1185
+stars: 1184
 description: |-
     又一个Linux VPS测评脚本
 url: https://github.com/FunctionClub/ZBench

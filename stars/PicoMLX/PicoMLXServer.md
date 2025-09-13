@@ -1,6 +1,6 @@
 ---
 project: PicoMLXServer
-stars: 297
+stars: 299
 description: |-
     The easiest way to run the fastest MLX-based LLMs locally
 url: https://github.com/PicoMLX/PicoMLXServer

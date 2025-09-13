@@ -1,6 +1,6 @@
 ---
 project: pure
-stars: 13775
+stars: 13784
 description: |-
     Pretty, minimal and fast ZSH prompt
 url: https://github.com/sindresorhus/pure

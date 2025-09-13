@@ -1,6 +1,6 @@
 ---
 project: nightingale
-stars: 11380
+stars: 11998
 description: |-
     Nightingale for monitoring and alerting, just as Grafana for visualization.
 url: https://github.com/ccfos/nightingale

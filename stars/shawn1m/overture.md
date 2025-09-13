@@ -1,6 +1,6 @@
 ---
 project: overture
-stars: 1814
+stars: 1812
 description: |-
     A customized DNS relay server
 url: https://github.com/shawn1m/overture

@@ -1,6 +1,6 @@
 ---
 project: studio3
-stars: 1094
+stars: 1095
 description: |-
     This repository contains the code for core components of Aptana Studio 3. 
 url: https://github.com/aptana/studio3

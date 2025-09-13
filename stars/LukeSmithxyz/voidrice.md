@@ -1,6 +1,6 @@
 ---
 project: voidrice
-stars: 4404
+stars: 4408
 description: |-
     My dotfiles (deployed by LARBS)
 url: https://github.com/LukeSmithxyz/voidrice

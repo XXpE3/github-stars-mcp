@@ -1,6 +1,6 @@
 ---
 project: compose
-stars: 36093
+stars: 36133
 description: |-
     Define and run multi-container applications with Docker
 url: https://github.com/docker/compose

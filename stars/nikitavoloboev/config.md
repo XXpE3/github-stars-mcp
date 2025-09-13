@@ -1,6 +1,6 @@
 ---
 project: config
-stars: 21113
+stars: 21128
 description: |-
     Apps/CLIs/configs I use on macOS/iOS
 url: https://github.com/nikitavoloboev/config

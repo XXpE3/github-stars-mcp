@@ -1,6 +1,6 @@
 ---
 project: elfeed
-stars: 1624
+stars: 1625
 description: |-
     An Emacs web feeds client
 url: https://github.com/skeeto/elfeed

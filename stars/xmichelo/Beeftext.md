@@ -1,6 +1,6 @@
 ---
 project: Beeftext
-stars: 1135
+stars: 1142
 description: |-
     A text snippet tool for Windows.
 url: https://github.com/xmichelo/Beeftext

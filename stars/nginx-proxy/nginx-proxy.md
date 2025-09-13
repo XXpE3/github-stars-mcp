@@ -1,6 +1,6 @@
 ---
 project: nginx-proxy
-stars: 19557
+stars: 19569
 description: |-
     Automated nginx proxy for Docker containers using docker-gen
 url: https://github.com/nginx-proxy/nginx-proxy

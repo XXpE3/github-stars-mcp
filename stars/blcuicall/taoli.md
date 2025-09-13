@@ -1,6 +1,6 @@
 ---
 project: taoli
-stars: 183
+stars: 182
 description: |-
     "桃李“: 国际中文教育大模型
 url: https://github.com/blcuicall/taoli

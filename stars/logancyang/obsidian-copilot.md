@@ -1,6 +1,6 @@
 ---
 project: obsidian-copilot
-stars: 5286
+stars: 5315
 description: |-
     THE Copilot in Obsidian
 url: https://github.com/logancyang/obsidian-copilot
@@ -312,5 +312,4 @@ Copilot Plus is a premium product of Brevilabs LLC and it is not affiliated with
 
 Brevilabs Team | Email: logan@brevilabs.com | X/Twitter: [@logancyang](https://twitter.com/logancyang)
 
-[![MSeeP.ai Security Assessment Badge](https://mseep.net/pr/logancyang-obsidian-copilot-badge.png)](https://mseep.ai/app/logancyang-obsidian-copilot)
 

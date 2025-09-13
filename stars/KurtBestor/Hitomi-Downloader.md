@@ -1,6 +1,6 @@
 ---
 project: Hitomi-Downloader
-stars: 26031
+stars: 26067
 description: |-
     :cake: Desktop utility to download images/videos/music/text from various websites, and more.
 url: https://github.com/KurtBestor/Hitomi-Downloader

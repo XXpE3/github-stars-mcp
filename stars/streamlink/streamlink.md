@@ -1,6 +1,6 @@
 ---
 project: streamlink
-stars: 10814
+stars: 10835
 description: |-
     Streamlink is a CLI utility which pipes video streams from various services into a video player
 url: https://github.com/streamlink/streamlink

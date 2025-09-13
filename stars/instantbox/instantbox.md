@@ -1,6 +1,6 @@
 ---
 project: instantbox
-stars: 4167
+stars: 4168
 description: |-
     📦 Get a clean, ready-to-go Linux box in seconds.
 url: https://github.com/instantbox/instantbox

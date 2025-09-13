@@ -1,6 +1,6 @@
 ---
 project: system-prompts-and-models-of-ai-tools
-stars: 81098
+stars: 84097
 description: |-
     FULL v0, Cursor, Manus, Augment Code, Same.dev, Lovable, Devin, Replit Agent, Windsurf Agent, VSCode Agent, Dia Browser, Xcode, Trae AI, Cluely & Orchids.app (And other Open Sourced) System Prompts, Tools & AI Models.
 url: https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools
@@ -23,29 +23,11 @@ url: https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools
 [![Build Status](https://app.cloudback.it/badge/x1xhlol/system-prompts-and-models-of-ai-tools)](https://cloudback.it)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/x1xhlol/system-prompts-and-models-of-ai-tools)
 
----
-
-## ❤️ Support the Project
-
-If you find this collection valuable and appreciate the effort involved in obtaining and sharing these insights, please consider supporting the project. Your contribution helps keep this resource updated and allows for further exploration.
-
-You can show your support via:
-
-- **PayPal:** `lucknitelol@proton.me`
-- **Cryptocurrency:**  
-  - **BTC:** `bc1q7zldmzjwspnaa48udvelwe6k3fef7xrrhg5625`  
-  - **LTC:** `LRWgqwEYDwqau1WeiTs6Mjg85NJ7m3fsdQ`  
-  - **ETH:** `0x3f844B2cc3c4b7242964373fB0A41C4fdffB192A`
-- **Patreon:** https://patreon.com/lucknite
-
-🙏 Thank you for your support!
-
 
 ---
 
 ## 📑 Table of Contents
 
-  - [❤️ Support the Project](#️-support-the-project)
   - [📑 Table of Contents](#-table-of-contents)
   - [📂 Available Files](#-available-files)
   - [🛠 Roadmap \& Feedback](#-roadmap--feedback)
@@ -72,6 +54,7 @@ You can show your support via:
 - [**Perplexity**](./Perplexity/)
 - [**Cluely**](./Cluely/)
 - [**Xcode**](./Xcode/)
+- [**Notion AI**](./NotionAi/)
 - [**Orchids.app**](./Orchids.app/)
 - [**Junie**](./Junie/)
 - [**Kiro**](./Kiro/)
@@ -94,7 +77,7 @@ You can show your support via:
 
 > Open an issue.
 
-> **Latest Update:** 03/09/2025
+> **Latest Update:** 08/09/2025
 
 ---
 

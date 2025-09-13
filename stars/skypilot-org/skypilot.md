@@ -1,6 +1,6 @@
 ---
 project: skypilot
-stars: 8616
+stars: 8715
 description: |-
     Run, manage, and scale AI workloads on any AI infrastructure. Use one system to access & manage all AI compute (Kubernetes, 17+ clouds, or on-prem).
 url: https://github.com/skypilot-org/skypilot

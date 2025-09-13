@@ -1,6 +1,6 @@
 ---
 project: wg-meshconf
-stars: 1016
+stars: 1017
 description: |-
     WireGuard full mesh configuration generator.
 url: https://github.com/k4yt3x/wg-meshconf

@@ -1,6 +1,6 @@
 ---
 project: azerothcore-wotlk
-stars: 7443
+stars: 7464
 description: |-
     Complete Open Source and Modular solution for MMO
 url: https://github.com/azerothcore/azerothcore-wotlk

@@ -1,6 +1,6 @@
 ---
 project: LTSC-Add-MicrosoftStore
-stars: 3700
+stars: 3715
 description: |-
     Add Windows Store for LTSC
 url: https://github.com/kkkgo/LTSC-Add-MicrosoftStore

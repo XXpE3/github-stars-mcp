@@ -1,6 +1,6 @@
 ---
 project: browser
-stars: 9636
+stars: 9685
 description: |-
     Lightpanda: the headless browser designed for AI and automation
 url: https://github.com/lightpanda-io/browser
@@ -148,8 +148,7 @@ You may still encounter errors or crashes. Please open an issue with specifics i
 
 Here are the key features we have implemented:
 
-- [x] HTTP loader
-- [x] HTTP loader
+- [x] HTTP loader (based on Libcurl)
 - [x] HTML parser and DOM tree (based on Netsurf libs)
 - [x] Javascript support (v8)
 - [x] DOM APIs
@@ -178,6 +177,7 @@ install it with the right version in order to build the project.
 
 Lightpanda also depends on
 [zig-js-runtime](https://github.com/lightpanda-io/zig-js-runtime/) (with v8),
+[Libcurl](https://curl.se/libcurl/),
 [Netsurf libs](https://www.netsurf-browser.org/) and
 [Mimalloc](https://microsoft.github.io/mimalloc).
 

@@ -1,6 +1,6 @@
 ---
 project: GI-Assets
-stars: 1865
+stars: 1867
 description: |-
     Character textures, models and mods for a certain anime game. 
 url: https://github.com/zeroruka/GI-Assets

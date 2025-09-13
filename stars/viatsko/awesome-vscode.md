@@ -1,6 +1,6 @@
 ---
 project: awesome-vscode
-stars: 27402
+stars: 27502
 description: |-
     🎨 A curated list of delightful VS Code packages and resources.
 url: https://github.com/viatsko/awesome-vscode

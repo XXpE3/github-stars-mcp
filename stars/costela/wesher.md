@@ -1,6 +1,6 @@
 ---
 project: wesher
-stars: 965
+stars: 967
 description: |-
     wireguard overlay mesh network manager
 url: https://github.com/costela/wesher

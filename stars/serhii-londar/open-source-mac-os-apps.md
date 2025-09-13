@@ -1,6 +1,6 @@
 ---
 project: open-source-mac-os-apps
-stars: 45116
+stars: 45222
 description: |-
     🚀 Awesome list of open source applications for macOS. https://t.me/s/opensourcemacosapps
 url: https://github.com/serhii-londar/open-source-mac-os-apps

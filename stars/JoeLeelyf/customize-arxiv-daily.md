@@ -1,6 +1,6 @@
 ---
 project: customize-arxiv-daily
-stars: 122
+stars: 123
 description: |-
     Customize your arXiv recommendation every day.
 url: https://github.com/JoeLeelyf/customize-arxiv-daily

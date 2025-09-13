@@ -1,6 +1,6 @@
 ---
 project: DBDiff
-stars: 721
+stars: 722
 description: |-
     Compare MySQL databases & automatically create schema & data change scripts/migrations rapidly (up & down SQL supported) for database version control. Supports *some* migration tools.
 url: https://github.com/DBDiff/DBDiff

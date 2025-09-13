@@ -1,6 +1,6 @@
 ---
 project: folderify
-stars: 1830
+stars: 1832
 description: |-
     :file_folder: Generate pixel-perfect macOS folder icons in the native style. (Now with support for macOS 26 Tahoe!)
 url: https://github.com/lgarron/folderify

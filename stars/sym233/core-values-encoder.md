@@ -1,6 +1,6 @@
 ---
 project: core-values-encoder
-stars: 2049
+stars: 2048
 description: |-
     Translating text to core values and back
 url: https://github.com/sym233/core-values-encoder

@@ -1,6 +1,6 @@
 ---
 project: enchanted
-stars: 5621
+stars: 5629
 description: |-
     Enchanted is iOS and macOS app for chatting with private self hosted language models such as Llama2, Mistral or Vicuna using Ollama.
 url: https://github.com/gluonfield/enchanted

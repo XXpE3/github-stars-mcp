@@ -1,6 +1,6 @@
 ---
 project: vps_setup
-stars: 854
+stars: 855
 description: |-
     linux  vim bash 脚本学习笔记 by 蘭雅sRGB   https://262235.xyz/
 url: https://github.com/hongwenjun/vps_setup

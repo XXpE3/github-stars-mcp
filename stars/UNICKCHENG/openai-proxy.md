@@ -1,6 +1,6 @@
 ---
 project: openai-proxy
-stars: 409
+stars: 410
 description: |-
     openai-proxy is a solution provided for Chinese users to address the issue of being unable to make requests to the OpenAI API.
 url: https://github.com/UNICKCHENG/openai-proxy

@@ -1,6 +1,6 @@
 ---
 project: tg-keyword-reply-bot
-stars: 549
+stars: 550
 description: |-
     Telegram关键词自动回复机器人: 根据群组管理员设定的关键词或者正则规则，自动回复文字、图片、文件或者进行永久禁言、临时禁言、踢出等群管操作
 url: https://github.com/zu1k/tg-keyword-reply-bot

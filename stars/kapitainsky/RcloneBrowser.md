@@ -1,6 +1,6 @@
 ---
 project: RcloneBrowser
-stars: 2661
+stars: 2660
 description: |-
     Simple cross platform GUI for rclone. Supports macOS, GNU/Linux, BSD family and Windows.
 url: https://github.com/kapitainsky/RcloneBrowser

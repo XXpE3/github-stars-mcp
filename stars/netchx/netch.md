@@ -1,6 +1,6 @@
 ---
 project: netch
-stars: 16940
+stars: 16943
 description: |-
     A simple proxy client
 url: https://github.com/netchx/netch

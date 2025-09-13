@@ -1,6 +1,6 @@
 ---
 project: TopList
-stars: 4715
+stars: 4714
 description: |-
     今日热榜，一个获取各大热门网站热门头条的聚合网站，使用Go语言编写，多协程异步快速抓取信息，预览:https://mo.fish
 url: https://github.com/tophubs/TopList

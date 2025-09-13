@@ -1,6 +1,6 @@
 ---
 project: SearchGram
-stars: 328
+stars: 330
 description: |-
     🔠 Telegram 中文聊天记录搜索机器人 Effortlessly search your Telegram chat history, including CJK languages, with fuzzy and typo-tolerant search capabilities.
 url: https://github.com/tgbot-collection/SearchGram

@@ -1,6 +1,6 @@
 ---
 project: onedev
-stars: 14234
+stars: 14250
 description: |-
     Git Server with CI/CD, Kanban, and Packages. Seamless integration. Unparalleled experience.
 url: https://github.com/theonedev/onedev

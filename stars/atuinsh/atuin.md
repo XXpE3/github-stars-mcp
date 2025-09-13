@@ -1,6 +1,6 @@
 ---
 project: atuin
-stars: 25626
+stars: 25777
 description: |-
     ✨ Magical shell history
 url: https://github.com/atuinsh/atuin

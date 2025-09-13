@@ -1,6 +1,6 @@
 ---
 project: ubnt-mips-shadowsocks-libev
-stars: 143
+stars: 142
 description: |-
     Cross complie shadowsocks for UBNT devices based on mipsel or mips64
 url: https://github.com/m2nx/ubnt-mips-shadowsocks-libev

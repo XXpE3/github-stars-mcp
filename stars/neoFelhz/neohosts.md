@@ -1,6 +1,6 @@
 ---
 project: neohosts
-stars: 1778
+stars: 1777
 description: |-
     自由·负责·克制 去广告 Hosts 项目
 url: https://github.com/neoFelhz/neohosts

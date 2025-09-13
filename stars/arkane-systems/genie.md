@@ -1,6 +1,6 @@
 ---
 project: genie
-stars: 1862
+stars: 1861
 description: |-
     A quick way into a systemd "bottle" for WSL
 url: https://github.com/arkane-systems/genie

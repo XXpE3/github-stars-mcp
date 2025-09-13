@@ -1,6 +1,6 @@
 ---
 project: SweetSub
-stars: 720
+stars: 722
 description: |-
     Subtitle source files from SweetSub, a fansub group
 url: https://github.com/SweetSub/SweetSub

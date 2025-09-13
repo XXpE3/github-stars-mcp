@@ -1,6 +1,6 @@
 ---
 project: LANraragi
-stars: 2651
+stars: 2654
 description: |-
     Web application for archival and reading of manga/doujinshi. Lightweight and Docker-ready for NAS/servers.
 url: https://github.com/Difegue/LANraragi

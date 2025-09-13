@@ -1,6 +1,6 @@
 ---
 project: wonderful-prompts
-stars: 4817
+stars: 4846
 description: |-
     🔥中文 prompt 精选🔥，ChatGPT 使用指南，提升 ChatGPT 可玩性和可用性！🚀
 url: https://github.com/langgptai/wonderful-prompts

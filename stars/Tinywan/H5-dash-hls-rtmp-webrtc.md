@@ -1,6 +1,6 @@
 ---
 project: H5-dash-hls-rtmp-webrtc
-stars: 2147
+stars: 2145
 description: |-
     :sunflower: 传统直播：HTML5播放器、M3U8直播/点播、RTMP直播、低延迟、推流/播流地址鉴权。:green_apple: 实时直播：WebRTC
 url: https://github.com/Tinywan/H5-dash-hls-rtmp-webrtc

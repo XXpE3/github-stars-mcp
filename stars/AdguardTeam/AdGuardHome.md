@@ -1,6 +1,6 @@
 ---
 project: AdGuardHome
-stars: 29989
+stars: 30083
 description: |-
     Network-wide ads & trackers blocking DNS server
 url: https://github.com/AdguardTeam/AdGuardHome

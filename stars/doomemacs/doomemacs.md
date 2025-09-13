@@ -1,6 +1,6 @@
 ---
 project: doomemacs
-stars: 20900
+stars: 20939
 description: |-
     An Emacs framework for the stubborn martian hacker
 url: https://github.com/doomemacs/doomemacs

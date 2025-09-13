@@ -1,6 +1,6 @@
 ---
 project: LMCache
-stars: 5082
+stars: 5188
 description: |-
     Supercharge Your LLM with the Fastest KV Cache Layer
 url: https://github.com/LMCache/LMCache
@@ -34,7 +34,7 @@ url: https://github.com/LMCache/LMCache
 
 | [**Blog**](https://blog.lmcache.ai/)
 | [**Documentation**](https://docs.lmcache.ai/)
-| [**Join Slack**](https://join.slack.com/t/lmcacheworkspace/shared_invite/zt-36x1m765z-8FgDA_73vcXtlZ_4XvpE6Q)
+| [**Join Slack**](https://join.slack.com/t/lmcacheworkspace/shared_invite/zt-3bgx768yd-H8WkOTmPtbxVYJ5nuZ4dmA)
 | [**Interest Form**](https://forms.gle/MHwLiYDU6kcW3dLj7)
 | [**Roadmap**](https://github.com/LMCache/LMCache/issues/1253)
 

@@ -1,6 +1,6 @@
 ---
 project: Coding-iOS
-stars: 3806
+stars: 3804
 description: |-
     CODING iOS 客户端源代码
 url: https://github.com/coding/Coding-iOS

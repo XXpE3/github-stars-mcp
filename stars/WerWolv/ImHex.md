@@ -1,6 +1,6 @@
 ---
 project: ImHex
-stars: 50360
+stars: 50450
 description: |-
     🔍 A Hex Editor for Reverse Engineers, Programmers and people who value their retinas when working at 3 AM.
 url: https://github.com/WerWolv/ImHex
@@ -44,6 +44,14 @@ If you like my work, please consider supporting me on GitHub Sponsors, Patreon o
 <a href="https://www.patreon.com/werwolv"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Patreon donate button" /></a>
 <a href="https://werwolv.net/donate"><img src="https://werwolv.net/assets/paypal_banner.png" alt="PayPal donate button" /></a>
 </p>
+
+### Notable Sponsors
+|                                                                                                  |                                                                                   |
+|:------------------------------------------------------------------------------------------------:|-----------------------------------------------------------------------------------|
+| [![SignPath logo](https://avatars.githubusercontent.com/u/34448643?s=48)](https://signpath.io/)  | SignPath, providing us with free Code Signing Certificates for our Windows builds |
+|   [![AWS logo](https://avatars.githubusercontent.com/u/2232217?s=48)](https://aws.amazon.com)    | Amazon, providing us with free AWS Cloud Credits for our CI                       |
+
+Would you like to appear here as well? Contact us at [imhex@werwolv.net](mailto:imhex@werwolv.net)!
 
 ## Screenshots
 ![Hex editor, patterns and data information](https://github.com/user-attachments/assets/902a7c4c-410d-490f-999e-14c856fec027)
@@ -418,4 +426,19 @@ Notable exceptions to this are the following parts which are under the LGPLv2.1 
 - **/plugins/ui**: The UI plugin library that contains some common UI elements that can be used by other plugins
 
 The reason for this is to allow for proprietary plugins to be developed for ImHex.
+
+### Code Signing Policy
+
+Free code signing provided by [SignPath.io](https://about.signpath.io/),
+certificate by [SignPath Foundation](https://signpath.org/).
+
+This program will not transfer any information to other networked systems
+unless specifically requested by the user or the person installing or
+operating it.
+
+#### People with direct push access
+- [WerWolv](https://github.com/WerWolv)
+- [iTrooz](https://github.com/iTrooz)
+- [jumanji144](https://github.com/jumanji144)
+- [AxCut](https://github.com/paxcut)
 

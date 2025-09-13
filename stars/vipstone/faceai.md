@@ -1,6 +1,6 @@
 ---
 project: faceai
-stars: 11004
+stars: 11009
 description: |-
     一款入门级的人脸、视频、文字检测以及识别的项目.
 url: https://github.com/vipstone/faceai

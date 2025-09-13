@@ -1,6 +1,6 @@
 ---
 project: Bella
-stars: 5915
+stars: 5974
 description: |-
     Bella is best
 url: https://github.com/Jackywine/Bella

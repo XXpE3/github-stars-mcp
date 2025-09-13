@@ -1,6 +1,6 @@
 ---
 project: local.ai
-stars: 699
+stars: 698
 description: |-
     🎒 local.ai - Run AI locally on your PC!
 url: https://github.com/louisgv/local.ai

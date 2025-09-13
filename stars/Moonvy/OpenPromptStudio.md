@@ -1,6 +1,6 @@
 ---
 project: OpenPromptStudio
-stars: 6346
+stars: 6353
 description: |-
     🥣 AIGC 提示词可视化编辑器  | OPS | Open Prompt Studio
 url: https://github.com/Moonvy/OpenPromptStudio

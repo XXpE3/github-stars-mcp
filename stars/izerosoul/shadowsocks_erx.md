@@ -1,6 +1,6 @@
 ---
 project: shadowsocks_erx
-stars: 365
+stars: 364
 description: |-
     null
 url: https://github.com/izerosoul/shadowsocks_erx

@@ -1,6 +1,6 @@
 ---
 project: git-tips
-stars: 15816
+stars: 15813
 description: |-
     :trollface:Git的奇技淫巧
 url: https://github.com/521xueweihan/git-tips

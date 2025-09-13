@@ -1,6 +1,6 @@
 ---
 project: fiora
-stars: 7007
+stars: 7020
 description: |-
     An interesting open source chat application. Developed with node.js, mongoDB, socket.io and react
 url: https://github.com/yinxin630/fiora

@@ -1,6 +1,6 @@
 ---
 project: Awesome-TensorFlow-Chinese
-stars: 1374
+stars: 1373
 description: |-
     Awesome-TensorFlow-Chinese，TensorFlow 中文资源精选，官方网站，安装教程，入门教程，视频教程，实战项目，学习路径。QQ群：167122861，公众号：磐创AI，微信群二维码：http://www.tensorflownews.com/
 url: https://github.com/fendouai/Awesome-TensorFlow-Chinese

@@ -1,6 +1,6 @@
 ---
 project: zcf
-stars: 1211
+stars: 1447
 description: |-
     Zero-Config Claude-Code Flow
 url: https://github.com/UfoMiao/zcf
@@ -8,13 +8,15 @@ url: https://github.com/UfoMiao/zcf
 
 # ZCF - Zero-Config Claude-Code Flow
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Claude Code](https://img.shields.io/badge/Claude-Code-blue)](https://claude.ai/code)
-[![Version](https://img.shields.io/npm/v/zcf)](https://www.npmjs.com/package/zcf)
-[![codecov](https://codecov.io/gh/UfoMiao/zcf/graph/badge.svg?token=HZI6K4Y7D7)](https://codecov.io/gh/UfoMiao/zcf)
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/UfoMiao/zcf)
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![License][license-src]][license-href]
+[![Claude Code][claude-code-src]][claude-code-href]
+[![codecov][codecov-src]][codecov-href]
+[![JSDocs][jsdocs-src]][jsdocs-href]
+[![Ask DeepWiki][deepwiki-src]][deepwiki-href]
 
-[中文](README_zh-CN.md) | **English** | [Changelog](CHANGELOG.md)
+[中文](README_zh-CN.md) | **English** | [日本語](README_ja-JP.md) | [Changelog](CHANGELOG.md)
 
 > Zero-config, one-click setup for Claude Code with bilingual support, intelligent agent system and personalized AI assistant
 
@@ -126,7 +128,7 @@ When using `--skip-prompt`, the following parameters are available:
 | `--api-type, -t`             | API configuration type                                   | `auth_token`, `api_key`, `ccr_proxy`, `skip`                                                       | No                                     | `skip`                                                                                                                           |
 | `--api-key, -k`              | API key (for both API key and auth token types)          | string                                                                                             | Required when `api-type` is not `skip` | -                                                                                                                                |
 | `--api-url, -u`              | Custom API URL                                           | URL string                                                                                         | No                                     | official API                                                                                                                     |
-| `--mcp-services, -m`         | MCP services to install (multi-select, comma-separated)  | `context7`, `mcp-deepwiki`, `Playwright`, `exa`, or `skip` for none                                | No                                     | `all`                                                                                                                            |
+| `--mcp-services, -m`         | MCP services to install (multi-select, comma-separated)  | `context7`, `open-websearch`, `spec-workflow`, `mcp-deepwiki`, `Playwright`, `exa`, or `skip` for none | No                                     | `all`                                                                                                                            |
 | `--workflows, -w`            | Workflows to install (multi-select, comma-separated)     | `commonTools`, `sixStepsWorkflow`, `featPlanUx`, `gitWorkflow`, `bmadWorkflow`, or `skip` for none | No                                     | `all`                                                                                                                            |
 | `--output-styles, -o`        | Output styles to install (multi-select, comma-separated) | `engineer-professional`, `nekomata-engineer`, `laowang-engineer`, or `skip` for none               | No                                     | `all`                                                                                                                            |
 | `--default-output-style, -d` | Default output style                                     | Same as output styles plus built-in: `default`, `explanatory`, `learning`                          | No                                     | `engineer-professional`                                                                                                          |
@@ -190,6 +192,16 @@ npx -y @pimzino/spec-workflow-mcp@latest --dashboard
 Alternatively, you can install the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=Pimzino.spec-workflow-mcp) for integrated workflow management.
 
 **Usage Guide**: For detailed usage instructions and best practices, see the [official Spec Workflow documentation](https://github.com/Pimzino/spec-workflow-mcp/blob/main/README.md#quick-start).
+
+#### 🔍 Open Web Search (v2.12.9+ New Feature)
+
+[Open Web Search](https://github.com/Aas-ee/open-webSearch) is a versatile web search MCP service that provides access to multiple search engines:
+
+- **Multi-Engine Support**: Search across DuckDuckGo, Bing, and Brave search engines
+- **Privacy-Focused**: Uses privacy-respecting search engines as defaults
+- **Flexible Configuration**: Customizable search engine preferences
+- **No API Key Required**: Ready to use without additional authentication
+- **Search Aggregation**: Ability to combine results from multiple engines
 
 #### 🚀 CCR (Claude Code Router) Support (v2.8+ Enhanced)
 
@@ -284,7 +296,7 @@ After configuration:
 
 - Auto-detects Claude Code installation status
 - Uses npm for automatic installation (ensures compatibility)
-- Cross-platform support (Windows/macOS/Linux/Termux)
+- Cross-platform support (Windows/macOS/Linux/WSL/Termux)
 - Automatic MCP service configuration
 - Smart configuration merging and partial modification support (v2.0 new)
 - Enhanced command detection mechanism (v2.1 new)
@@ -643,6 +655,17 @@ ZCF fully supports Windows platform:
 
 If you encounter MCP connection issues on Windows, running `npx zcf` will automatically fix the configuration format.
 
+#### WSL Support (v2.12.12+ new)
+
+ZCF now provides comprehensive support for Windows Subsystem for Linux (WSL):
+
+- **Smart Detection**: Multi-layered WSL environment detection using environment variables, system files, and mount points
+- **Distribution Recognition**: Automatically identifies WSL distribution (Ubuntu, Debian, etc.) for optimized configuration
+- **Seamless Installation**: Native Linux-style installation experience within WSL environment
+- **Path Management**: Intelligent handling of WSL-specific configuration paths and file locations
+
+If running in WSL, ZCF will automatically detect the environment and display appropriate installation messages.
+
 #### Termux Support (v2.1 new)
 
 ZCF now supports running in Android Termux environment:
@@ -707,4 +730,21 @@ MIT License
 If this project helps you, please give me a ⭐️ Star!
 
 [![Star History Chart](https://api.star-history.com/svg?repos=UfoMiao/zcf&type=Date)](https://star-history.com/#UfoMiao/zcf&Date)
+
+<!-- Badges -->
+
+[npm-version-src]: https://img.shields.io/npm/v/zcf?style=flat&colorA=080f12&colorB=1fa669
+[npm-version-href]: https://npmjs.com/package/zcf
+[npm-downloads-src]: https://img.shields.io/npm/dm/zcf?style=flat&colorA=080f12&colorB=1fa669
+[npm-downloads-href]: https://npmjs.com/package/zcf
+[license-src]: https://img.shields.io/github/license/ufomiao/zcf.svg?style=flat&colorA=080f12&colorB=1fa669
+[license-href]: https://github.com/ufomiao/zcf/blob/main/LICENSE
+[claude-code-src]: https://img.shields.io/badge/Claude-Code-1fa669?style=flat&colorA=080f12&colorB=1fa669
+[claude-code-href]: https://claude.ai/code
+[codecov-src]: https://codecov.io/gh/UfoMiao/zcf/graph/badge.svg?token=HZI6K4Y7D7&style=flat&colorA=080f12&colorB=1fa669
+[codecov-href]: https://codecov.io/gh/UfoMiao/zcf
+[jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-1fa669?style=flat&colorA=080f12&colorB=1fa669
+[jsdocs-href]: https://www.jsdocs.io/package/zcf
+[deepwiki-src]: https://img.shields.io/badge/Ask-DeepWiki-1fa669?style=flat&colorA=080f12&colorB=1fa669
+[deepwiki-href]: https://deepwiki.com/UfoMiao/zcf
 

@@ -1,6 +1,6 @@
 ---
 project: reor
-stars: 8237
+stars: 8246
 description: |-
     Private & local AI personal knowledge management app for high entropy people.
 url: https://github.com/reorproject/reor

@@ -1,6 +1,6 @@
 ---
 project: tabiew
-stars: 2359
+stars: 2385
 description: |-
     A lightweight TUI application to view and query tabular data files, such as CSV, TSV, and parquet.
 url: https://github.com/shshemi/tabiew
@@ -69,7 +69,7 @@ Note: Please be aware that installing Tabiew from the tap involves compiling it 
 
 Installing Tabiew from *Crates.io*:
  ```bash
-cargo install tabiew
+cargo install --locked tabiew
  ```
 
 ### Build from Source

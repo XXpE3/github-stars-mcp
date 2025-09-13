@@ -1,6 +1,6 @@
 ---
 project: vsc
-stars: 567
+stars: 568
 description: |-
     Visual Studio Code Guide[Simple Chinese][简体中文]
 url: https://github.com/i5ting/vsc

@@ -1,6 +1,6 @@
 ---
 project: Llama-Chinese
-stars: 14687
+stars: 14689
 description: |-
     Llama中文社区，实时汇总最新Llama学习资料，构建最好的中文Llama大模型开源生态，完全开源可商用
 url: https://github.com/LlamaFamily/Llama-Chinese

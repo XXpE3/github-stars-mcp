@@ -1,6 +1,6 @@
 ---
 project: style2paints
-stars: 18205
+stars: 18203
 description: |-
     sketch + style = paints :art: (TOG2018/SIGGRAPH2018ASIA)
 url: https://github.com/lllyasviel/style2paints

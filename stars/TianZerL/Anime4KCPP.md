@@ -1,6 +1,6 @@
 ---
 project: Anime4KCPP
-stars: 1929
+stars: 1931
 description: |-
     A high performance anime upscaler
 url: https://github.com/TianZerL/Anime4KCPP

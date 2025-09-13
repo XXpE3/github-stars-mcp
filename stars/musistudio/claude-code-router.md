@@ -1,17 +1,20 @@
 ---
 project: claude-code-router
-stars: 16882
+stars: 17636
 description: |-
     Use Claude Code as the foundation for coding infrastructure, allowing you to decide how to interact with the model while enjoying updates from Anthropic.
 url: https://github.com/musistudio/claude-code-router
 ---
 
-# Claude Code Router
+![](blog/images/claude-code-router-img.png)
+
+[![](https://img.shields.io/badge/%F0%9F%87%A8%F0%9F%87%B3-%E4%B8%AD%E6%96%87%E7%89%88-ff0000?style=flat)](README_zh.md)
+[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?&logo=discord&logoColor=white)](https://discord.gg/rdftVMaUcS)
+[![](https://img.shields.io/github/license/musistudio/claude-code-router)](https://github.com/musistudio/claude-code-router/blob/main/LICENSE)
+
+<hr>
 
 I am seeking funding support for this project to better sustain its development. If you have any ideas, feel free to reach out to me: [m@musiiot.top](mailto:m@musiiot.top)
-
-
-[中文版](README_zh.md)
 
 > A powerful tool to route Claude Code requests to different models and customize any request.
 
@@ -20,6 +23,8 @@ I am seeking funding support for this project to better sustain its development.
 > If you’d like a better experience, you can try [iFlow CLI](https://cli.iflow.cn).
 
 ![](blog/images/claude-code.png)
+
+![](blog/images/roadmap.svg)
 
 ## ✨ Features
 
@@ -580,7 +585,9 @@ A huge thank you to all our sponsors for their generous support!
 - @\*更
 - @\*.
 - @F\*t
-
+- @\*政
+- @\*铭
+- @\*叶
 
 (If your name is masked, please contact me via my homepage email to update it with your GitHub username.)
 

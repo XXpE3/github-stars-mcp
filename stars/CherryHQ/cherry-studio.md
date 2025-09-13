@@ -1,6 +1,6 @@
 ---
 project: cherry-studio
-stars: 32726
+stars: 32985
 description: |-
     🍒 Cherry Studio is a desktop client that supports for multiple LLM providers.
 url: https://github.com/CherryHQ/cherry-studio
@@ -90,7 +90,7 @@ Cherry Studio is a desktop client that supports multiple LLM providers, availabl
 1. **Diverse LLM Provider Support**:
 
 - ☁️ Major LLM Cloud Services: OpenAI, Gemini, Anthropic, and more
-- 🔗 AI Web Service Integration: Claude, Peplexity, Poe, and others
+- 🔗 AI Web Service Integration: Claude, Perplexity, Poe, and others
 - 💻 Local Model Support with Ollama, LM Studio
 
 2. **AI Assistants & Conversations**:

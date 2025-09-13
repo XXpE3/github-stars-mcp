@@ -1,6 +1,6 @@
 ---
 project: genshin-fps-unlock
-stars: 3023
+stars: 3041
 description: |-
     unlocks the 60 fps cap
 url: https://github.com/34736384/genshin-fps-unlock

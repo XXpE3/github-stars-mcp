@@ -1,6 +1,6 @@
 ---
 project: vultr-cli
-stars: 501
+stars: 502
 description: |-
     Official command line tool for Vultr services
 url: https://github.com/vultr/vultr-cli

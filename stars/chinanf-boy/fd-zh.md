@@ -1,6 +1,6 @@
 ---
 project: fd-zh
-stars: 326
+stars: 324
 description: |-
     🇨🇳翻译: <fd> 一种简单,快速和用户友好的 >find< 替代方案 ❤️ 校对 ✅
 url: https://github.com/chinanf-boy/fd-zh

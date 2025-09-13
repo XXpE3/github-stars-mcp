@@ -1,6 +1,6 @@
 ---
 project: xwwp
-stars: 107
+stars: 108
 description: |-
     Enhance the Emacs xwidget-webkit browser
 url: https://github.com/canatella/xwwp

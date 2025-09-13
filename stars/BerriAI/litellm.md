@@ -1,6 +1,6 @@
 ---
 project: litellm
-stars: 28461
+stars: 28782
 description: |-
     Python SDK, Proxy Server (LLM Gateway) to call 100+ LLM APIs in OpenAI format - [Bedrock, Azure, OpenAI, VertexAI, Cohere, Anthropic, Sagemaker, HuggingFace, Replicate, Groq]
 url: https://github.com/BerriAI/litellm
@@ -33,7 +33,7 @@ url: https://github.com/BerriAI/litellm
     <a href="https://discord.gg/wuPM9dRgDw">
         <img src="https://img.shields.io/static/v1?label=Chat%20on&message=Discord&color=blue&logo=Discord&style=flat-square" alt="Discord">
     </a>
-    <a href="https://join.slack.com/share/enQtOTE0ODczMzk2Nzk4NC01YjUxNjY2YjBlYTFmNDRiZTM3NDFiYTM3MzVkODFiMDVjOGRjMmNmZTZkZTMzOWQzZGQyZWIwYjQ0MWExYmE3">
+    <a href="https://www.litellm.ai/support">
         <img src="https://img.shields.io/static/v1?label=Chat%20on&message=Slack&color=black&logo=Slack&style=flat-square" alt="Slack">
     </a>
 </h4>
@@ -352,6 +352,7 @@ curl 'http://0.0.0.0:4000/key/generate' \
 | [Novita AI](https://novita.ai/models/llm?utm_source=github_litellm&utm_medium=github_readme&utm_campaign=github_link)                     | ✅                                                       | ✅                                                                               | ✅                                                                                   | ✅                                                                                 |                                                                               |                                                                         |
 | [Featherless AI](https://docs.litellm.ai/docs/providers/featherless_ai)                              | ✅                                                       | ✅                                                                               | ✅                                                                                   | ✅                                                                                 |                                                                               |                                                                         |
 | [Nebius AI Studio](https://docs.litellm.ai/docs/providers/nebius)                             | ✅                                                       | ✅                                                                               | ✅                                                                                   | ✅                                                                                 | ✅                                                                             |                                                                         |
+| [Heroku](https://docs.litellm.ai/docs/providers/heroku)                             | ✅                                                       | ✅                                                                               |                                                                                    |                                                                                  |                                                                              |                                                                         |
 
 [**Read the Docs**](https://docs.litellm.ai/docs/)
 
@@ -415,7 +416,7 @@ All these checks must pass before your PR can be merged.
 
 - [Schedule Demo 👋](https://calendly.com/d/4mp-gd3-k5k/berriai-1-1-onboarding-litellm-hosted-version)
 - [Community Discord 💭](https://discord.gg/wuPM9dRgDw)
-- [Community Slack 💭](https://join.slack.com/share/enQtOTE0ODczMzk2Nzk4NC01YjUxNjY2YjBlYTFmNDRiZTM3NDFiYTM3MzVkODFiMDVjOGRjMmNmZTZkZTMzOWQzZGQyZWIwYjQ0MWExYmE3)
+- [Community Slack 💭](https://www.litellm.ai/support)
 - Our numbers 📞 +1 (770) 8783-106 / ‭+1 (412) 618-6238‬
 - Our emails ✉️ ishaan@berri.ai / krrish@berri.ai
 

@@ -1,6 +1,6 @@
 ---
 project: mcp-server-mas-sequential-thinking
-stars: 244
+stars: 245
 description: |-
     An advanced sequential thinking process using a Multi-Agent System (MAS) built with the Agno framework and served via MCP.
 url: https://github.com/FradSer/mcp-server-mas-sequential-thinking

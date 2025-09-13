@@ -1,6 +1,6 @@
 ---
 project: youtube-transcript-api
-stars: 6116
+stars: 6154
 description: |-
     This is a python API which allows you to get the transcript/subtitles for a given YouTube video. It also works for automatically generated subtitles and it does not require an API key nor a headless browser, like other selenium based solutions do!
 url: https://github.com/jdepoix/youtube-transcript-api
@@ -60,6 +60,14 @@ url: https://github.com/jdepoix/youtube-transcript-api
       <source media="(prefers-color-scheme: dark)" srcset="https://www.dumplingai.com/logos/logo-dark.svg">
       <source media="(prefers-color-scheme: light)" srcset="https://www.dumplingai.com/logos/logo-light.svg">
       <img alt="Dumpling AI" src="https://www.dumplingai.com/logos/logo-light.svg" height="40px" style="vertical-align: middle;">
+    </picture>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://vcyon.com">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://vcyon.com/logo/vcyon-logo-text-dark.png">
+      <source media="(prefers-color-scheme: light)" srcset="https://vcyon.com/logo/vcyon-logo-text-light.png">
+      <img alt="Dumpling AI" src="https://vcyon.com/logo/vcyon-logo-text-light.png" height="40px" style="vertical-align: middle;">
     </picture>
   </a>
 </p>
@@ -594,4 +602,5 @@ If this project makes you happy by reducing your development time, you can make 
 coffee, or become a [Sponsor of this project](https://github.com/sponsors/jdepoix) :)  
 
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BAENLEW8VUJ6G&source=url)
+
 

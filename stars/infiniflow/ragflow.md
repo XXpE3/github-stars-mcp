@@ -1,6 +1,6 @@
 ---
 project: ragflow
-stars: 63748
+stars: 64184
 description: |-
     RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs
 url: https://github.com/infiniflow/ragflow
@@ -30,7 +30,7 @@ url: https://github.com/infiniflow/ragflow
         <img alt="Static Badge" src="https://img.shields.io/badge/Online-Demo-4e6b99">
     </a>
     <a href="https://hub.docker.com/r/infiniflow/ragflow" target="_blank">
-        <img src="https://img.shields.io/docker/pulls/infiniflow/ragflow?label=Docker%20Pulls&color=0db7ed&logo=docker&logoColor=white&style=flat-square" alt="docker pull infiniflow/ragflow:v0.20.4">
+        <img src="https://img.shields.io/docker/pulls/infiniflow/ragflow?label=Docker%20Pulls&color=0db7ed&logo=docker&logoColor=white&style=flat-square" alt="docker pull infiniflow/ragflow:v0.20.5">
     </a>
     <a href="https://github.com/infiniflow/ragflow/releases/latest">
         <img src="https://img.shields.io/github/v/release/infiniflow/ragflow?color=blue&label=Latest%20Release" alt="Latest Release">
@@ -195,7 +195,7 @@ releases! 🌟
 > All Docker images are built for x86 platforms. We don't currently offer Docker images for ARM64.
 > If you are on an ARM64 platform, follow [this guide](https://ragflow.io/docs/dev/build_docker_image) to build a Docker image compatible with your system.
 
-   > The command below downloads the `v0.20.4-slim` edition of the RAGFlow Docker image. See the following table for descriptions of different RAGFlow editions. To download a RAGFlow edition different from `v0.20.4-slim`, update the `RAGFLOW_IMAGE` variable accordingly in **docker/.env** before using `docker compose` to start the server. For example: set `RAGFLOW_IMAGE=infiniflow/ragflow:v0.20.4` for the full edition `v0.20.4`.
+   > The command below downloads the `v0.20.5-slim` edition of the RAGFlow Docker image. See the following table for descriptions of different RAGFlow editions. To download a RAGFlow edition different from `v0.20.5-slim`, update the `RAGFLOW_IMAGE` variable accordingly in **docker/.env** before using `docker compose` to start the server. For example: set `RAGFLOW_IMAGE=infiniflow/ragflow:v0.20.5` for the full edition `v0.20.5`.
 
    ```bash
    $ cd ragflow/docker
@@ -208,8 +208,8 @@ releases! 🌟
 
    | RAGFlow image tag | Image size (GB) | Has embedding models? | Stable?                  |
    |-------------------|-----------------|-----------------------|--------------------------|
-   | v0.20.4           | &approx;9       | :heavy_check_mark:    | Stable release           |
-   | v0.20.4-slim      | &approx;2       | ❌                   | Stable release            |
+   | v0.20.5           | &approx;9       | :heavy_check_mark:    | Stable release           |
+   | v0.20.5-slim      | &approx;2       | ❌                   | Stable release            |
    | nightly           | &approx;9       | :heavy_check_mark:    | _Unstable_ nightly build |
    | nightly-slim      | &approx;2       | ❌                   | _Unstable_ nightly build  |
 

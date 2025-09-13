@@ -1,6 +1,6 @@
 ---
 project: Linly
-stars: 3058
+stars: 3059
 description: |-
     Chinese-LLaMA 1&2、Chinese-Falcon 基础模型；ChatFlow中文对话模型；中文OpenLLaMA模型；NLP预训练/指令微调数据集
 url: https://github.com/CVI-SZU/Linly

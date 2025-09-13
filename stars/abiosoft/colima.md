@@ -1,6 +1,6 @@
 ---
 project: colima
-stars: 24433
+stars: 24519
 description: |-
     Container runtimes on macOS (and Linux) with minimal setup
 url: https://github.com/abiosoft/colima
@@ -183,6 +183,10 @@ The logo was contributed by [Daniel Hodvogner](https://github.com/dhodvogner). C
 
 Check [here](docs/FAQ.md) for Frequently Asked Questions.
 
+## How to Contribute?
+
+Check [here](docs/CONTRIBUTE.md) for the instructions on contributing to the project.
+
 ## Community
 - [GitHub Discussions](https://github.com/abiosoft/colima/discussions)
 - [GitHub Issues](https://github.com/abiosoft/colima/issues)
@@ -192,7 +196,7 @@ Check [here](docs/FAQ.md) for Frequently Asked Questions.
 
 ## Help Wanted
 
-- Documentation (wiki pages)
+- Documentation and project website
 
 ## License
 

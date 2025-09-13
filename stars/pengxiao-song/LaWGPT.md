@@ -1,6 +1,6 @@
 ---
 project: LaWGPT
-stars: 6005
+stars: 6006
 description: |-
      🎉 Repo for LaWGPT, Chinese-Llama tuned with Chinese Legal knowledge. 基于中文法律知识的大语言模型
 url: https://github.com/pengxiao-song/LaWGPT

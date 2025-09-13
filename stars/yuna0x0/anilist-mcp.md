@@ -1,6 +1,6 @@
 ---
 project: anilist-mcp
-stars: 53
+stars: 54
 description: |-
     AniList MCP server for accessing anime and manga data
 url: https://github.com/yuna0x0/anilist-mcp
@@ -236,6 +236,13 @@ docker build -t yuna0x0/anilist-mcp .
 Docker multi-platform build (Local Development):
 ```bash
 docker buildx build --platform linux/amd64,linux/arm64 -t yuna0x0/anilist-mcp .
+```
+
+## MCP Bundles (MCPB)
+
+To create an MCP Bundle for this server, run:
+```bash
+pnpm run pack:mcpb
 ```
 
 ## Security Notice

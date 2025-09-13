@@ -1,6 +1,6 @@
 ---
 project: ChatFiles
-stars: 3351
+stars: 3350
 description: |-
     Document Chatbot — multiple files. Powered by GPT / Embedding.
 url: https://github.com/guangzhengli/ChatFiles

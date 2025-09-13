@@ -1,6 +1,6 @@
 ---
 project: Amenoma
-stars: 594
+stars: 593
 description: |-
     A simple desktop application to scan and export Genshin Impact Artifacts and Materials.
 url: https://github.com/daydreaming666/Amenoma

@@ -1,6 +1,6 @@
 ---
 project: awesome-claude-code
-stars: 13440
+stars: 14042
 description: |-
     A curated list of awesome commands, files, and workflows for Claude Code
 url: https://github.com/hesreallyhim/awesome-claude-code
@@ -13,21 +13,22 @@ url: https://github.com/hesreallyhim/awesome-claude-code
   
   <!-- Same ASCII art for all screen sizes, just scales down on mobile -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/logo-dark.svg">
-    <img src="./assets/logo-light.svg" alt="Awesome Claude Code" width="100%" style="max-width: 900px;">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
+    <img src="assets/logo-light.svg" alt="Awesome Claude Code" width="100%" style="max-width: 900px;">
   </picture>
   
 </div>
 
 <!-- Generated with https://github.com/denvercoder1/readme-typing-svg -->
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1000&color=F7080D&random=true&width=435&lines=Fumigating...;Gallivanting...;Matriculating...;Toodleedoodling...;Goo-goo-g'joob-ing...;Excaliburating...;Canoodling...;Doing+the+humpty+dance...;Shiver-me-timbers-ing...;Becoming+sentient...;Opening+the+pod+bay+doors...;Rimraf-ing;23-skidoo-ing)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1000&color=F7080D&random=true&width=435&lines=Fumigating...;Gallivanting...;Matriculating...;Toodleedoodling...;Goo-goo-g'joob-ing...;Excaliburating...;Canoodling...;Doing+the+humpty+dance...;Shiver-me-timbers-ing...;Becoming+sentient...;Opening+the+pod+bay+doors...;Rimraf-ing...;23-skidoo-ing...;Skip-to-my-loo'ing...;High-falutin'...;Disambiguating...;Coagulating...;Undulating...;Just+Clauding+around...)](https://git.io/typing-svg)
 
 <!--lint enable remark-lint:awesome-badge-->
 
-[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![FREEDOM FUNDER](/assets/freedom-funder-badge.svg)](https://bailproject.org)
 
-# [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code) 🤝 [Awesome Claude Code Agents](https://github.com/hesreallyhim/awesome-claude-code-agents)
+
+# Awesome Claude Code
 
 <!--lint enable remark-lint:awesome-badge-->
 
@@ -41,34 +42,36 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 ### Announcements
 
-- 2025-08-16  
+#### 2025-09-12 - 💰💰💰 DONATIONS 💰💰💰
 
-(i) So much happening with Claude Code these days, it is genuinely hard to keep up! Since my last post, let's see... Opus 4.1; status lines; output styles; more sub agents; (plugins??); background shells; lions; tigers... wait sorry that's something else. Anyway, I'm glad to announce that besides some annoying bot messages and small glitches, the new resource submission workflow seems to be working really solidly. It's so much easier for everyone, so if you'd like to contribute to this community resource, make sure you are up to date on [`CONTRIBUTING.md`](../CONTRIBUTING.md) - I will no longer be accepting _resource submission_ PRs (there may be other cases where a PR is appropriate), but you can now submit something to the list without even cloning the repo or knowing how to spell "git". Just head over to the new resource submission [Issue Template](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=submit-resource.yml) and you'll be done in no time. If you have a PR open, please try to open it as an issue instead, although I will of course get through existing PR's before switching over entirely.
+- We've got a few new resources this week, and I've made some good progress on the backlog.
 
-(ii) I started a new section for Status Lines, and will soon open up another one for Output Styles hopefully. *WE WANT TO SEE YOUR STATUS LINES!* Definitely will be prioritizing those items in the short term. I've sadly been neglecting the awesome-claude-code-agents repo due to Claude Code's impressively rapid release cycle, but I haven't forgotten about it, rest assured.
-
-(iii) Still hoping to organize some friendly competition as soon as time allows.
-
-(iv) Considering imposing some more constraints on submissions, in particular I may decide to have your repo (if it is a repo) evaluated by a State-of-the-art language model, primarily for security, and not for awesomeness, as it's getting hard to keep up with all the great stuff coming in while still doing due diligence to make sure that this is not a home for malware or otherwise insecure resources.
-
-(v) Check out some of the latest entries below, and start shipping your status lines! Even small entries are totally welcome, it doesn't have to be a Picasso - if it fits on a single line, that makes it even easier to compose it with another awesome resource.
+- I've created a [DONATING](DONATING.md) page in case anyone want to support this repository. This is _not_ a GitHub sponsorship or a "Buy Me a Coffee" link - I'm trying something a little different. Hopefully it will work out. See the very bottom of the README for an overview, and check out the [DONATING](DONATING.md) page for details. **We get a lot of visitors here at Awesome Claude Code (currently about 100 new stars a day) - can we raise $100 for a good cause by the end of next week??** Let's see what this community can do! 🙏
 
 ## This Week's Additions ✨
 
 > Resources added in the past 7 days
 
-[`claude-code-statusline`](https://github.com/rz1989s/claude-code-statusline) &nbsp; by &nbsp; [rz1989s](https://github.com/rz1989s)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Enhanced 4-line statusline for Claude Code with themes, cost tracking, and MCP server monitoring
+[`stt-mcp-server-linux`](https://github.com/marcindulak/stt-mcp-server-linux) &nbsp; by &nbsp; [marcindulak](https://github.com/marcindulak)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+A push-to-talk speech transcription setup for Linux using a Python MCP server. Runs locally in Docker with no external API calls. Your speech is recorded, transcribed into text, and then sent to Claude running in a Tmux session.
 
-[`Claude Code PM`](https://github.com/automazeio/ccpm) &nbsp; by &nbsp; [Ran Aroussi](https://github.com/ranaroussi)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Really comprehensive and feature-packed project-management workflow for Claude Code. Numerous specialized agents, slash-commands, and strong documentation.
+[`AB Method`](https://github.com/ayoubben18/ab-method) &nbsp; by &nbsp; [Ayoub Bensalah](https://github.com/ayoubben18)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A principled, spec-driven workflow that transforms large problems into focused, incremental missions using Claude Code's specialized sub agents. Includes slash-commands, sub agents, and specialized workflows designed for specific parts of the SDLC.
 
-[`cchistory`](https://github.com/eckardt/cchistory) &nbsp; by &nbsp; [eckardt](https://github.com/eckardt)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Like the shell history command but for your Claude Code sessions. Easily list all Bash or "Bash-mode" (`!`) commands Claude Code ran in a session for reference.
+[`Design Review Workflow`](https://github.com/OneRedOak/claude-code-workflows/tree/main/design-review) &nbsp; by &nbsp; [Patrick Ellis](https://github.com/OneRedOak)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A tailored workflow for enabling automated UI/UX design review, including specialized sub agents, slash commands, `CLAUDE.md` excerpts, and more. Covers a broad range of criteria from responsive design to accessibility.
 
-[`Happy Coder`](https://github.com/slopus/happy) &nbsp; by &nbsp; [GrocerPublishAgent](https://peoplesgrocers.com/en/projects)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Spawn and control multiple Claude Codes in parallel from your phone or desktop. Happy Coder runs Claude Code on your hardware, sends push notifications when Claude needs more input or permission, and costs nothing.
+[`SuperClaude`](https://github.com/SuperClaude-Org/SuperClaude_Framework) &nbsp; by &nbsp; [SuperClaude-Org](https://github.com/SuperClaude-Org)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A versatile configuration framework that enhances Claude Code with specialized commands, cognitive personas, and development methodologies, such as "Introspection" and "Orchestration".
 
+
+## Awesome Claude Code Freedom Funders
+
+- hesreallyhim (repository maintainer)
+
+### Total Amount Raised:
+
+**$???** (Will be disclosed once a non-trivial amount has been raised.)
 
 ## Contents
 
@@ -99,6 +102,9 @@ Spawn and control multiple Claude Codes in parallel from your phone or desktop. 
 
 > A **workflow** is a tightly coupled set of Claude Code-native resources that facilitate specific projects
 
+[`AB Method`](https://github.com/ayoubben18/ab-method) &nbsp; by &nbsp; [Ayoub Bensalah](https://github.com/ayoubben18)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A principled, spec-driven workflow that transforms large problems into focused, incremental missions using Claude Code's specialized sub agents. Includes slash-commands, sub agents, and specialized workflows designed for specific parts of the SDLC.
+
 [`Blogging Platform Instructions`](https://github.com/cloudartisan/cloudartisan.github.io/tree/main/.claude/commands) &nbsp; by &nbsp; [cloudartisan](https://github.com/cloudartisan)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;CC-BY-SA-4.0  
 Provides a well-structured set of commands for publishing and maintaining a blogging platform, including commands for creating posts, managing categories, and handling media files.
 
@@ -110,6 +116,9 @@ A comprehensive knowledge base with detailed breakdowns of advanced [mechanics](
 
 [`Context Priming`](https://github.com/disler/just-prompt/tree/main/.claude/commands) &nbsp; by &nbsp; [disler](https://github.com/disler)    
 Provides a systematic approach to priming Claude Code with comprehensive project context through specialized commands for different project scenarios and development contexts.
+
+[`Design Review Workflow`](https://github.com/OneRedOak/claude-code-workflows/tree/main/design-review) &nbsp; by &nbsp; [Patrick Ellis](https://github.com/OneRedOak)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A tailored workflow for enabling automated UI/UX design review, including specialized sub agents, slash commands, `CLAUDE.md` excerpts, and more. Covers a broad range of criteria from responsive design to accessibility.
 
 [`Laravel TALL Stack AI Development Starter Kit`](https://github.com/tott/laravel-tall-claude-ai-configs) &nbsp; by &nbsp; [tott](https://github.com/tott)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Transform your Laravel TALL (Tailwind, AlpineJS, Laravel, Livewire) stack development with comprehensive Claude Code configurations that provide intelligent assistance, systematic workflows, and domain expert consultation.
@@ -167,6 +176,12 @@ Impressive CLI toolkit providing auto-save checkpointing, code quality hooks, sp
 
 [`Container Use`](https://github.com/dagger/container-use) &nbsp; by &nbsp; [dagger](https://github.com/dagger)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 Development environments for coding agents. Enable multiple agents to work safely and independently with your preferred stack.
+
+[`stt-mcp-server-linux`](https://github.com/marcindulak/stt-mcp-server-linux) &nbsp; by &nbsp; [marcindulak](https://github.com/marcindulak)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+A push-to-talk speech transcription setup for Linux using a Python MCP server. Runs locally in Docker with no external API calls. Your speech is recorded, transcribed into text, and then sent to Claude running in a Tmux session.
+
+[`SuperClaude`](https://github.com/SuperClaude-Org/SuperClaude_Framework) &nbsp; by &nbsp; [SuperClaude-Org](https://github.com/SuperClaude-Org)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A versatile configuration framework that enhances Claude Code with specialized commands, cognitive personas, and development methodologies, such as "Introspection" and "Orchestration".
 
 [`tweakcc`](https://github.com/Piebald-AI/tweakcc) &nbsp; by &nbsp; [Piebald-AI](https://github.com/Piebald-AI)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Command-line tool to customize your Claude Code styling.
@@ -251,7 +266,7 @@ A vim-style powerline statusline for Claude Code with real-time usage tracking, 
 
 **[Experimental]** - The resources listed in this section have not been fully vetted and may not work as expected, given the bleeding-edge nature of Claude Code hooks. Nevertheless, I wished to include them at least as a source of inspiration and to explore this unknown terrain. YMMV!
 
-[`CC Notify`](https://github.com/dazuiba/CCNotify) &nbsp; by &nbsp; [dazuiba](https://github.com/dazuiba)    
+[`CC Notify`](https://github.com/dazuiba/CCNotify) &nbsp; by &nbsp; [dazuiba](https://github.com/dazuiba)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 CCNotify provides desktop notifications for Claude Code, alerting you to input needs or task completion, with one-click jumps back to VS Code and task duration display.
 
 [`cchooks`](https://github.com/GowayLee/cchooks) &nbsp; by &nbsp; [GowayLee](https://github.com/GowayLee)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
@@ -475,7 +490,7 @@ Offers comprehensive build and test commands with detailed TypeScript style guid
 [`Metabase`](https://github.com/metabase/metabase/blob/master/CLAUDE.md) &nbsp; by &nbsp; [metabase](https://github.com/metabase)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
 Details workflow for REPL-driven development in Clojure/ClojureScript with emphasis on incremental development, testing, and step-by-step approach for feature implementation.
 
-[`SG Cars Trends Backend`](https://github.com/sgcarstrends/backend/blob/main/CLAUDE.md) &nbsp; by &nbsp; [sgcarstrends](https://github.com/sgcarstrends)    
+[`SG Cars Trends Backend`](https://github.com/sgcarstrends/backend/blob/main/CLAUDE.md) &nbsp; by &nbsp; [sgcarstrends](https://github.com/sgcarstrends)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Provides comprehensive structure for TypeScript monorepo projects with detailed commands for development, testing, deployment, and AWS/Cloudflare integration.
 
 [`SPy`](https://github.com/spylang/spy/blob/main/CLAUDE.md) &nbsp; by &nbsp; [spylang](https://github.com/spylang)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
@@ -557,11 +572,20 @@ It's easy! Just click the link above and fill out the form. No Git knowledge req
 - Additional libraries and tooling that are built on top of Claude Code
 - Applications of Claude Code outside of the traditional "coding assistant" context (CI/CD, testing, documentation, dev-ops, etc.)
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the complete submission guide and review process.
+See [CONTRIBUTING.md](/CONTRIBUTING.md) for the complete submission guide and review process.
 
 For suggestions about the repository itself, please [open a general issue](https://github.com/hesreallyhim/awesome-claude-code/issues/new).
 
-This project is released with a [Contributor Code of Conduct](code-of-conduct.md). By participating, you agree to abide by its terms.
+This project is released with a [Contributor Code of Conduct](/code-of-conduct.md). By participating, you agree to abide by its terms.
+
+## Donations 💰
+
+I like drinking coffee, but I _really_ like bail relief.
+
+If you want to support this repository, you can do so by making a donation in my name to [The Bail Project](https://bailproject.org/), which helps pay for people's cash bail, so that people who are presumed innocent don't have to sit in a cage waiting for a court appearance. Although that doesn't directly compensate any of my work here, it would motivate me to continue to devote my time, energy, and resources, and any reader or project that donates will receive recognition (including one of these badass badges). Please check out the [DONATING](/DONATING.md) page for detailed information.
+
+**FREEDOM FUNDER BADGE**
+![FREEDOM FUNDER](/assets/freedom-funder-badge.svg)
 
 ### A note about licenses
 

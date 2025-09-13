@@ -1,6 +1,6 @@
 ---
 project: ChatGPT-to-API
-stars: 1127
+stars: 1126
 description: |-
     Scalable unofficial ChatGPT API for production.
 url: https://github.com/acheong08/ChatGPT-to-API

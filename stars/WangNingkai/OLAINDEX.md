@@ -1,6 +1,6 @@
 ---
 project: OLAINDEX
-stars: 2227
+stars: 2230
 description: |-
     ✨ Another OneDrive Directory Index
 url: https://github.com/WangNingkai/OLAINDEX

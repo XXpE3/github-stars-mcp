@@ -1,6 +1,6 @@
 ---
 project: mackup
-stars: 14926
+stars: 14924
 description: |-
     Keep your application settings in sync (OS X/Linux)
 url: https://github.com/lra/mackup
@@ -435,6 +435,7 @@ See the [README](doc/README.md) file in the doc directory for more info.
 - [KeyRemap4MacBook](https://pqrs.org/osx/karabiner/)
 - [Khd](https://github.com/koekeishiya/khd/)
 - [kitty](https://sw.kovidgoyal.net/kitty/)
+- [Kiro](https://kiro.dev/)
 - [Krew](https://github.com/kubernetes-sigs/krew)
 - [Kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)
 - [Kwm](https://koekeishiya.github.io/kwm/)

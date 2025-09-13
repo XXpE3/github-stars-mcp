@@ -1,6 +1,6 @@
 ---
 project: miku
-stars: 153
+stars: 155
 description: |-
     mikugg is a Frontend for "Generative Visual Novels"
 url: https://github.com/miku-gg/miku

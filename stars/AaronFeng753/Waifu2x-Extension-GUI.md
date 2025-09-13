@@ -1,6 +1,6 @@
 ---
 project: Waifu2x-Extension-GUI
-stars: 15242
+stars: 15276
 description: |-
     Video, Image and GIF upscale/enlarge(Super-Resolution) and Video frame interpolation. Achieved with Waifu2x,  Real-ESRGAN, Real-CUGAN, RTX Video Super Resolution VSR, SRMD, RealSR, Anime4K, RIFE, IFRNet, CAIN, DAIN,  and ACNet.
 url: https://github.com/AaronFeng753/Waifu2x-Extension-GUI

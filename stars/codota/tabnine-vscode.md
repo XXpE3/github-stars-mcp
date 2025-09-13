@@ -1,6 +1,6 @@
 ---
 project: tabnine-vscode
-stars: 1417
+stars: 1418
 description: |-
     Visual Studio Code client for Tabnine. https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode
 url: https://github.com/codota/tabnine-vscode

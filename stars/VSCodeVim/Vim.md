@@ -1,6 +1,6 @@
 ---
 project: Vim
-stars: 14792
+stars: 14803
 description: |-
     :star: Vim for Visual Studio Code
 url: https://github.com/VSCodeVim/Vim

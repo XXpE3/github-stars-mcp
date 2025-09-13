@@ -1,6 +1,6 @@
 ---
 project: paperlib
-stars: 1816
+stars: 1821
 description: |-
     An open-source academic paper management tool.
 url: https://github.com/Future-Scholars/paperlib

@@ -1,6 +1,6 @@
 ---
 project: LibreChat
-stars: 29782
+stars: 29962
 description: |-
     Enhanced ChatGPT Clone: Features Agents, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active project.
 url: https://github.com/danny-avila/LibreChat
@@ -83,6 +83,7 @@ url: https://github.com/danny-avila/LibreChat
 - 🔍 **Web Search**:  
   - Search the internet and retrieve relevant information to enhance your AI context
   - Combines search providers, content scrapers, and result rerankers for optimal results
+  - **Customizable Jina Reranking**: Configure custom Jina API URLs for reranking services
   - **[Learn More →](https://www.librechat.ai/docs/features/web_search)**
 
 - 🪄 **Generative UI with Code Artifacts**:  

@@ -1,6 +1,6 @@
 ---
 project: UDPspeeder
-stars: 4992
+stars: 4996
 description: |-
     A Tunnel which Improves your Network Quality on a High-latency Lossy Link by using Forward Error Correction, possible for All Traffics(TCP/UDP/ICMP)
 url: https://github.com/wangyu-/UDPspeeder

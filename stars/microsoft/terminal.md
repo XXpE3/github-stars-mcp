@@ -1,6 +1,6 @@
 ---
 project: terminal
-stars: 99942
+stars: 100242
 description: |-
     The new Windows Terminal and the original Windows console host, all in the same place!
 url: https://github.com/microsoft/terminal
@@ -383,7 +383,7 @@ winget configure .config\configuration.winget
 
 ## Building the Code
 
-OpenConsole.sln may be built from within Visual Studio or from the command-line
+OpenConsole.slnx may be built from within Visual Studio or from the command-line
 using a set of convenience scripts & tools in the **/tools** directory:
 
 ### Building in PowerShell

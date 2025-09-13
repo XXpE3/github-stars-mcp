@@ -1,6 +1,6 @@
 ---
 project: intellimacs
-stars: 564
+stars: 565
 description: |-
     Spacemacs' like key bindings for IntelliJ platform.
 url: https://github.com/marcoieni/intellimacs

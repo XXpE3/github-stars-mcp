@@ -1,6 +1,6 @@
 ---
 project: Pake
-stars: 41957
+stars: 42158
 description: |-
     🤱🏻 Turn any webpage into a desktop app with one command. 🤱🏻 一键打包网页生成轻量桌面应用。
 url: https://github.com/tw93/Pake
@@ -30,7 +30,7 @@ url: https://github.com/tw93/Pake
 - 🎐 **Lightweight**: Nearly 20 times smaller than Electron packages, typically around 5M
 - 🚀 **Fast**: Built with Rust Tauri, much faster than traditional JS frameworks with lower memory usage
 - ⚡ **Easy to use**: One-command packaging via CLI or online building, no complex configuration needed
-- 📦 **Feature-rich**: Supports shortcut pass-through, immersive windows, drag & drop, style customization, ad removal
+- 📦 **Feature-rich**: Supports shortcuts, immersive windows, drag & drop, style customization, ad removal
 
 ## Getting Started
 
@@ -163,17 +163,17 @@ In addition, double-click the title bar to switch to full-screen mode. For Mac u
 
 ## Command-Line Packaging
 
-![Pake](https://raw.githubusercontent.com/tw93/static/main/pake/pake.gif)
+![Pake](https://raw.githubusercontent.com/tw93/static/main/pake/pake1.gif)
 
 ```bash
-# Install
+# Install Pake CLI
 pnpm install -g pake-cli
 
-# Basic usage (auto-fetch website icon)
-pake https://weekly.tw93.fun --name Weekly
+# Basic usage - automatically fetches website icon
+pake https://github.com --name GitHub
 
-# Common options: --name app name, --icon custom icon, --width/--height window size, --hide-title-bar macOS immersive
-pake https://weekly.tw93.fun --name Weekly --icon https://cdn.tw93.fun/pake/weekly.icns --hide-title-bar
+# Advanced usage with custom options
+pake https://weekly.tw93.fun --name Weekly --icon https://cdn.tw93.fun/pake/weekly.icns --width 1200 --height 800 --hide-title-bar
 ```
 
 First-time packaging requires environment setup and may be slower, subsequent builds are fast. For complete parameter documentation, see [CLI Usage Guide](docs/cli-usage.md). Don't want to use CLI? Try [GitHub Actions Online Building](docs/github-actions-usage.md).
@@ -443,12 +443,21 @@ Pake's development can not be without these Hackers. They contributed a lot of c
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/JohannLai">
+                    <img src="https://avatars.githubusercontent.com/u/10769405?v=4" width="90;" alt="JohannLai"/>
+                    <br />
+                    <sub><b>Johannlai</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/Jason6987">
                     <img src="https://avatars.githubusercontent.com/u/140222795?v=4" width="90;" alt="Jason6987"/>
                     <br />
                     <sub><b>Luminall</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/Milo123459">
                     <img src="https://avatars.githubusercontent.com/u/50248166?v=4" width="90;" alt="Milo123459"/>
@@ -456,8 +465,6 @@ Pake's development can not be without these Hackers. They contributed a lot of c
                     <sub><b>Milo</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/princemaple">
                     <img src="https://avatars.githubusercontent.com/u/1329716?v=4" width="90;" alt="princemaple"/>
@@ -500,6 +507,8 @@ Pake's development can not be without these Hackers. They contributed a lot of c
                     <sub><b>Null</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/liudonghua123">
                     <img src="https://avatars.githubusercontent.com/u/2276718?v=4" width="90;" alt="liudonghua123"/>
@@ -507,8 +516,6 @@ Pake's development can not be without these Hackers. They contributed a lot of c
                     <sub><b>Liudonghua</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/liusishan">
                     <img src="https://avatars.githubusercontent.com/u/33129823?v=4" width="90;" alt="liusishan"/>
@@ -537,7 +544,7 @@ Pake's development can not be without these Hackers. They contributed a lot of c
 
 ## Support
 
-1. I have two cats, TangYuan and Coke. If you think Pake delights your life, you can feed them <a href="https://miaoyan.app/cats.html?name=Pake" target="_blank">some canned food 🥩</a>.
+1. I have two cats, TangYuan and Coke. If you think Pake delights your life, you can feed them <a href="https://miaoyan.app/cats.html?name=Pake" target="_blank">food 🥩</a>.
 2. If you like Pake, you can star it on GitHub. Also, welcome to [recommend Pake](https://twitter.com/intent/tweet?url=https://github.com/tw93/Pake&text=Pake%20-%20Turn%20any%20webpage%20into%20a%20desktop%20app%20with%20one%20command.%20Nearly%2020x%20smaller%20than%20Electron%20packages,%20supports%20macOS%20Windows%20Linux) to your friends.
 3. You can follow my [Twitter](https://twitter.com/HiTw93) to get the latest news of Pake or join our [Telegram](https://t.me/+GclQS9ZnxyI2ODQ1) chat group.
 4. I hope that you enjoy playing with it. Let us know if you find a website that would be great for a Mac App!

@@ -1,6 +1,6 @@
 ---
 project: Quake-III-Arena
-stars: 7584
+stars: 7587
 description: |-
     Quake III Arena GPL Source Release
 url: https://github.com/id-Software/Quake-III-Arena

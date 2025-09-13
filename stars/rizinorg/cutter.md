@@ -1,6 +1,6 @@
 ---
 project: cutter
-stars: 17058
+stars: 17083
 description: |-
     Free and Open Source Reverse Engineering Platform powered by rizin
 url: https://github.com/rizinorg/cutter

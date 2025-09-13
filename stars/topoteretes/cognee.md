@@ -1,6 +1,6 @@
 ---
 project: cognee
-stars: 6932
+stars: 7019
 description: |-
     Memory for AI Agents in 5 lines of code
 url: https://github.com/topoteretes/cognee
@@ -51,7 +51,7 @@ url: https://github.com/topoteretes/cognee
 
 
 
-**🚀 We launched Cogwit beta (Fully-hosted AI Memory): Sign up [here](https://platform.cognee.ai/)! 🚀** 
+**🚀 We launched Cogwit beta (Fully-hosted AI Memory): Sign up [here](https://platform.cognee.ai/)! 🚀**
 
 Build dynamic memory for Agents and replace RAG using scalable, modular ECL (Extract, Cognify, Load) pipelines.
 
@@ -182,9 +182,9 @@ Example output:
 
 You can also cognify your files and query using cognee UI.
 
-<img src="assets/cognee-ui-2.webp" width="100%" alt="Cognee UI 2"></a>
+<img src="assets/cognee-new-ui.webp" width="100%" alt="Cognee UI 2"></a>
 
-Try cognee UI out locally [here](https://docs.cognee.ai/how-to-guides/cognee-ui).
+Try cognee UI by runnning ``` cognee-cli -ui ``` command on your terminal.
 
 ## Understand our architecture
 

@@ -1,6 +1,6 @@
 ---
 project: notable
-stars: 23285
+stars: 23288
 description: |-
     The Markdown-based note-taking app that doesn't suck.
 url: https://github.com/notable/notable

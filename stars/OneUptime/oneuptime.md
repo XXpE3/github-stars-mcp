@@ -1,6 +1,6 @@
 ---
 project: oneuptime
-stars: 5965
+stars: 5975
 description: |-
     Complete open-source monitoring and observability platform.
 url: https://github.com/OneUptime/oneuptime
@@ -79,6 +79,7 @@ If you need advanced features, such as API Access, Advanced Workflows, or Advanc
 - [Install on Kubernetes with Helm](https://artifacthub.io/packages/helm/oneuptime/oneuptime) (recommended for production)
 - [Install with Docker Compose](/Docs/Content/installation/docker-compose.md) (single-node install, not recommended for production)
 - [Install for Local Development](/Docs/Content/installation/local-development.md)
+- [Upgrade OneUptime](/Docs/Content/installation/upgrading.md)
 
 ## Philosophy
 

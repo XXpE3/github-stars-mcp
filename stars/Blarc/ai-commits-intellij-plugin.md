@@ -1,6 +1,6 @@
 ---
 project: ai-commits-intellij-plugin
-stars: 666
+stars: 672
 description: |-
     AI Commits for IntelliJ based IDEs/Android Studio.
 url: https://github.com/Blarc/ai-commits-intellij-plugin

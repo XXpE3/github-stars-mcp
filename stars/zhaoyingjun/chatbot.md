@@ -1,6 +1,6 @@
 ---
 project: chatbot
-stars: 3583
+stars: 3582
 description: |-
     ChatGPT带火了聊天机器人，主流的趋势都调整到了GPT类模式，本项目也与时俱进，会在近期更新GPT类版本。基于本项目和自己的语料可以训练出自己想要的聊天机器人，用于智能客服、在线问答、闲聊等场景。
 url: https://github.com/zhaoyingjun/chatbot

@@ -1,6 +1,6 @@
 ---
 project: opencode
-stars: 22199
+stars: 22988
 description: |-
     AI coding agent, built for the terminal.
 url: https://github.com/sst/opencode
@@ -115,5 +115,5 @@ The other confusingly named repo has no relation to this one. You can [read the 
 
 ---
 
-**Join our community** [Discord](https://discord.gg/opencode) | [YouTube](https://www.youtube.com/c/sst-dev) | [X.com](https://x.com/anomaly_inv)
+**Join our community** [Discord](https://discord.gg/opencode) | [X.com](https://x.com/opencode)
 

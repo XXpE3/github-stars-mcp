@@ -1,6 +1,6 @@
 ---
 project: ldr-translate
-stars: 135
+stars: 136
 description: |-
     一个linux/ubuntu版本的翻译软件，主打文献翻译(a translate app for ubuntu/linux)，使用Gtk3开发，python语言；国内看这里：https://gitee.com/yuhldr/ldr-translate
 url: https://github.com/yuhldr/ldr-translate
