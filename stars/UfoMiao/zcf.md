@@ -1,6 +1,6 @@
 ---
 project: zcf
-stars: 1447
+stars: 1574
 description: |-
     Zero-Config Claude-Code Flow
 url: https://github.com/UfoMiao/zcf
@@ -358,7 +358,7 @@ Select function:
 
   ------------ ZCF ------------
   0. Select display language / 更改显示语言 - Change ZCF interface language
-  -. Clear preference cache - Clear preference language and other caches
+  -. Uninstall - Remove Claude Code configurations and tools from system
   +. Check updates - Check and update Claude Code, CCR and CCometixLine versions
   Q. Exit
 
@@ -481,6 +481,7 @@ Enter your choice: _
 | `zcf update`        | `zcf u` | Update workflow-related md files with backup                                          |
 | `zcf ccu`           | -       | Run Claude Code usage analysis tool - [ccusage](https://github.com/ryoppippi/ccusage) |
 | `zcf ccr`           | -       | Open CCR (Claude Code Router) management menu                                         |
+| `zcf uninstall`     | -       | Interactive uninstall tool for Claude Code configurations and tools                   |
 | `zcf check-updates` | -       | Check and update Claude Code, CCR and CCometixLine versions                           |
 
 #### Common Options
@@ -723,7 +724,7 @@ A huge thank you to all our sponsors for their generous support!
 
 ## 📄 License
 
-MIT License
+[MIT License](LICENSE)
 
 ---
 

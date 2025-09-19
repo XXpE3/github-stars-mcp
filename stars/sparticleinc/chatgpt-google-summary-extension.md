@@ -1,6 +1,6 @@
 ---
 project: chatgpt-google-summary-extension
-stars: 2022
+stars: 2024
 description: |-
     Chrome extension to view ChatGPT summaries alongside Google search results and YouTube videos, also supports Yahoo! ニュース、PubMed、PMC、NewsPicks、Github、Nikkei、 Bing、Google Patents, and any page summary.
 url: https://github.com/sparticleinc/chatgpt-google-summary-extension

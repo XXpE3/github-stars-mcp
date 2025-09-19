@@ -1,6 +1,6 @@
 ---
 project: docker-timemachine
-stars: 641
+stars: 640
 description: |-
     A docker container that compiles the lastest Netatalk to run a Time Machine server.
 url: https://github.com/odarriba/docker-timemachine

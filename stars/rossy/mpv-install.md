@@ -1,6 +1,6 @@
 ---
 project: mpv-install
-stars: 455
+stars: 457
 description: |-
     Sets up file associations for mpv on Windows
 url: https://github.com/rossy/mpv-install

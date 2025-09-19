@@ -1,6 +1,6 @@
 ---
 project: Retrieval-based-Voice-Conversion-WebUI
-stars: 31974
+stars: 32056
 description: |-
     Easily train a good VC model with voice data <= 10 mins!
 url: https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI

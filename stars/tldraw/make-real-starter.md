@@ -1,6 +1,6 @@
 ---
 project: make-real-starter
-stars: 1519
+stars: 1520
 description: |-
     Make it real
 url: https://github.com/tldraw/make-real-starter

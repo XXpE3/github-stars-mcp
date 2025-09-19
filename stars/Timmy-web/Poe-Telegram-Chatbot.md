@@ -1,6 +1,6 @@
 ---
 project: Poe-Telegram-Chatbot
-stars: 169
+stars: 168
 description: |-
     调用Poe官方API实现Telegram对话机器人，主要调用GPT-4和Claude-3-Opus模型。
 url: https://github.com/Timmy-web/Poe-Telegram-Chatbot

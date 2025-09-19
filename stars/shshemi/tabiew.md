@@ -1,6 +1,6 @@
 ---
 project: tabiew
-stars: 2385
+stars: 2401
 description: |-
     A lightweight TUI application to view and query tabular data files, such as CSV, TSV, and parquet.
 url: https://github.com/shshemi/tabiew

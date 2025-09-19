@@ -1,6 +1,6 @@
 ---
 project: vscode-vibrancy-continued
-stars: 711
+stars: 713
 description: |-
     Enable Acrylic/Glass effect for your VS Code.
 url: https://github.com/illixion/vscode-vibrancy-continued

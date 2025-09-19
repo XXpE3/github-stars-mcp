@@ -1,6 +1,6 @@
 ---
 project: zotero-arxiv-daily
-stars: 3495
+stars: 3536
 description: |-
     Recommend new arxiv papers of your interest daily according to your Zotero libarary.
 url: https://github.com/TideDra/zotero-arxiv-daily

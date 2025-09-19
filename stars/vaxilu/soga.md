@@ -1,6 +1,6 @@
 ---
 project: soga
-stars: 639
+stars: 638
 description: |-
     soga
 url: https://github.com/vaxilu/soga

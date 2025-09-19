@@ -1,6 +1,6 @@
 ---
 project: goose
-stars: 19528
+stars: 19637
 description: |-
     an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM
 url: https://github.com/block/goose
@@ -8,7 +8,7 @@ url: https://github.com/block/goose
 
 <div align="center">
 
-# codename goose
+# goose
 
 _a local, extensible, open source AI agent that automates engineering tasks_
 

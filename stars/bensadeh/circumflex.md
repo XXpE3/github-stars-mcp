@@ -1,6 +1,6 @@
 ---
 project: circumflex
-stars: 1684
+stars: 1692
 description: |-
     🌿 It's Hacker News in your terminal
 url: https://github.com/bensadeh/circumflex

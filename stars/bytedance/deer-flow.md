@@ -1,6 +1,6 @@
 ---
 project: deer-flow
-stars: 16964
+stars: 17072
 description: |-
     DeerFlow is a community-driven Deep Research framework, combining language models with tools like web search, crawling, and Python execution, while contributing back to the open-source community.
 url: https://github.com/bytedance/deer-flow

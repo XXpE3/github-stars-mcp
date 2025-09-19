@@ -1,6 +1,6 @@
 ---
 project: fetcher-mcp
-stars: 854
+stars: 858
 description: |-
     MCP server for fetch web page content using Playwright headless browser.
 url: https://github.com/jae-jae/fetcher-mcp

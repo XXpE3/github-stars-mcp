@@ -1,6 +1,6 @@
 ---
 project: claude-context
-stars: 3557
+stars: 3659
 description: |-
     Code search MCP for Claude Code. Make entire codebase the context for any coding agent.
 url: https://github.com/zilliztech/claude-context
@@ -81,6 +81,29 @@ claude mcp add claude-context \
 See the [Claude Code MCP documentation](https://docs.anthropic.com/en/docs/claude-code/mcp) for more details about MCP server management.
 
 ### Other MCP Client Configurations
+
+<details>
+<summary><strong>OpenAI Codex CLI</strong></summary>
+
+Codex CLI uses TOML configuration files:
+
+1. Create or edit the `~/.codex/config.toml` file.
+
+2. Add the following configuration:
+
+```toml
+# IMPORTANT: the top-level key is `mcp_servers` rather than `mcpServers`.
+[mcp_servers.claude-context]
+command = "npx"
+args = ["@zilliz/claude-context-mcp@latest"]
+env = { "OPENAI_API_KEY" = "your-openai-api-key", "MILVUS_TOKEN" = "your-zilliz-cloud-api-key" }
+# Optional: override the default 10s startup timeout
+startup_timeout_ms = 20000
+```
+
+3. Save the file and restart Codex CLI to apply the changes.
+
+</details>
 
 <details>
 <summary><strong>Gemini CLI</strong></summary>

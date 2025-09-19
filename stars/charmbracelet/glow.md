@@ -1,6 +1,6 @@
 ---
 project: glow
-stars: 19201
+stars: 19261
 description: |-
     Render markdown on the CLI, with pizzazz! 💅🏻
 url: https://github.com/charmbracelet/glow
@@ -115,7 +115,7 @@ packages. ARM builds are also available for macOS, Linux, FreeBSD and OpenBSD.
 Or just install it with `go`:
 
 ```bash
-go install github.com/charmbracelet/glow@latest
+go install github.com/charmbracelet/glow/v2@latest
 ```
 
 ### Build (requires Go 1.21+)

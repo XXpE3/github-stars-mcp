@@ -1,6 +1,6 @@
 ---
 project: extensions-source
-stars: 3156
+stars: 3176
 description: |-
     Source code of extensions in https://github.com/keiyoushi/extensions
 url: https://github.com/keiyoushi/extensions-source

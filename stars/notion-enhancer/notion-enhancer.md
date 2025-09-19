@@ -1,6 +1,6 @@
 ---
 project: notion-enhancer
-stars: 4952
+stars: 4956
 description: |-
     An enhancer/customiser for the all-in-one productivity workspace Notion
 url: https://github.com/notion-enhancer/notion-enhancer

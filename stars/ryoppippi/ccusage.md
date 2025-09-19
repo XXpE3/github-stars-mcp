@@ -1,6 +1,6 @@
 ---
 project: ccusage
-stars: 7967
+stars: 8093
 description: |-
     A CLI tool for analyzing Claude Code usage from local JSONL files.
 url: https://github.com/ryoppippi/ccusage
@@ -28,6 +28,20 @@ url: https://github.com/ryoppippi/ccusage
 
 > Analyze your Claude Code token usage and costs from local JSONL files — incredibly fast and informative!
 
+## ccusage Family
+
+### 📊 [ccusage](https://www.npmjs.com/package/ccusage) - Claude Code Usage Analyzer
+
+The main CLI tool for analyzing Claude Code usage from local JSONL files. Track daily, monthly, and session-based usage with beautiful tables and live monitoring.
+
+### 🤖 [@ccusage/codex](https://www.npmjs.com/package/@ccusage/codex) - OpenAI Codex Usage Analyzer
+
+Companion tool for analyzing OpenAI Codex usage. Same powerful features as ccusage but tailored for Codex users, including GPT-5 support and 1M token context windows.
+
+### 🔌 [@ccusage/mcp](https://www.npmjs.com/package/@ccusage/mcp) - MCP Server Integration
+
+Model Context Protocol server that exposes ccusage data to Claude Desktop and other MCP-compatible tools. Enable real-time usage tracking directly in your AI workflows.
+
 ## Installation
 
 ### Quick Start (Recommended)
@@ -35,55 +49,81 @@ url: https://github.com/ryoppippi/ccusage
 Thanks to ccusage's incredibly small bundle size ([![install size](https://packagephobia.com/badge?p=ccusage)](https://packagephobia.com/result?p=ccusage)), you can run it directly without installation:
 
 ```bash
-# Using bunx (recommended for speed)
+# Recommended - always include @latest to ensure you get the newest version
+npx ccusage@latest
 bunx ccusage
 
-# Using npx
-npx ccusage@latest
+# Alternative package runners
+pnpm dlx ccusage
+pnpx ccusage
 
 # Using deno (with security flags)
 deno run -E -R=$HOME/.claude/projects/ -S=homedir -N='raw.githubusercontent.com:443' npm:ccusage@latest
 ```
 
-> 💡 **Tip**: We recommend using `bunx` instead of `npx` for a massive speed improvement!
+> 💡 **Important**: We strongly recommend using `@latest` suffix with npx (e.g., `npx ccusage@latest`) to ensure you're running the most recent version with the latest features and bug fixes.
 
-### Local Installation (Optional)
+### Related Tools
 
-Since ccusage has such a small bundle size, installation is entirely optional:
+#### Codex CLI
+
+Analyze OpenAI Codex usage with our companion tool [@ccusage/codex](https://www.npmjs.com/package/@ccusage/codex):
 
 ```bash
-npm install -g ccusage
+# Recommended - always include @latest
+npx @ccusage/codex@latest
+bunx @ccusage/codex@latest  # ⚠️ MUST include @latest with bunx
+
+# Alternative package runners
+pnpm dlx @ccusage/codex
+pnpx @ccusage/codex
+
+# Using deno (with security flags)
+deno run -E -R=$HOME/.codex/ -S=homedir -N='raw.githubusercontent.com:443' npm:@ccusage/codex@latest
 ```
+
+> ⚠️ **Critical for bunx users**: Bun 1.2.x's bunx prioritizes binaries matching the package name suffix when given a scoped package. For `@ccusage/codex`, it looks for a `codex` binary in PATH first. If you have an existing `codex` command installed (e.g., GitHub Copilot's codex), that will be executed instead. **Always use `bunx @ccusage/codex@latest` with the version tag** to force bunx to fetch and run the correct package.
+
+#### MCP Server
+
+Integrate ccusage with Claude Desktop using [@ccusage/mcp](https://www.npmjs.com/package/@ccusage/mcp):
+
+```bash
+# Start MCP server for Claude Desktop integration
+npx @ccusage/mcp@latest --type http --port 8080
+```
+
+This enables real-time usage tracking and analysis directly within Claude Desktop conversations.
 
 ## Usage
 
 ```bash
 # Basic usage
-ccusage          # Show daily report (default)
-ccusage daily    # Daily token usage and costs
-ccusage monthly  # Monthly aggregated report
-ccusage session  # Usage by conversation session
-ccusage blocks   # 5-hour billing windows
-ccusage statusline  # Compact status line for hooks (Beta)
+npx ccusage          # Show daily report (default)
+npx ccusage daily    # Daily token usage and costs
+npx ccusage monthly  # Monthly aggregated report
+npx ccusage session  # Usage by conversation session
+npx ccusage blocks   # 5-hour billing windows
+npx ccusage statusline  # Compact status line for hooks (Beta)
 
 # Live monitoring
-ccusage blocks --live  # Real-time usage dashboard
+npx ccusage blocks --live  # Real-time usage dashboard
 
 # Filters and options
-ccusage daily --since 20250525 --until 20250530
-ccusage daily --json  # JSON output
-ccusage daily --breakdown  # Per-model cost breakdown
-ccusage daily --timezone UTC  # Use UTC timezone
-ccusage daily --locale ja-JP  # Use Japanese locale for date/time formatting
+npx ccusage daily --since 20250525 --until 20250530
+npx ccusage daily --json  # JSON output
+npx ccusage daily --breakdown  # Per-model cost breakdown
+npx ccusage daily --timezone UTC  # Use UTC timezone
+npx ccusage daily --locale ja-JP  # Use Japanese locale for date/time formatting
 
 # Project analysis
-ccusage daily --instances  # Group by project/instance
-ccusage daily --project myproject  # Filter to specific project
-ccusage daily --instances --project myproject --json  # Combined usage
+npx ccusage daily --instances  # Group by project/instance
+npx ccusage daily --project myproject  # Filter to specific project
+npx ccusage daily --instances --project myproject --json  # Combined usage
 
 # Compact mode for screenshots/sharing
-ccusage --compact  # Force compact table mode
-ccusage monthly --compact  # Compact monthly report
+npx ccusage --compact  # Force compact table mode
+npx ccusage monthly --compact  # Compact monthly report
 ```
 
 ## Features
@@ -134,16 +174,6 @@ Check out [ccusage: The Claude Code cost scorecard that went viral](https://www.
         <img src="https://cdn.jsdelivr.net/gh/ryoppippi/sponsors@main/sponsors.svg">
     </a>
 </p>
-
-## Claude Code Resources
-
-[`ClaudeLog`](https://claudelog.com) &nbsp; by &nbsp; [InventorBlack](https://www.reddit.com/user/inventor_black/)
-A comprehensive knowledge base with detailed breakdowns of advanced topics, including:
-
-- Advanced [mechanics](https://claudelog.com/mechanics/you-are-the-main-thread/) and [CLAUDE.md best practices](https://claudelog.com/mechanics/claude-md-supremacy).
-- Practical technique guides for [plan mode](https://claudelog.com/mechanics/plan-mode), [ultrathink](https://claudelog.com/faqs/what-is-ultrathink/), and [sub-agents](https://claudelog.com/mechanics/task-agent-tools/).
-- Concepts like [agent-first design](https://claudelog.com/mechanics/agent-first-design/), [agent engineering](https://claudelog.com/mechanics/agent-engineering/), and [humanizing agents](https://claudelog.com/mechanics/humanising-agents/).
-- [Configuration guides](https://claudelog.com/configuration).
 
 ## Star History
 

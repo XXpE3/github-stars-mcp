@@ -1,6 +1,6 @@
 ---
 project: anything-llm
-stars: 48982
+stars: 49187
 description: |-
     The all-in-one Desktop & Docker AI application with built-in RAG, AI agents, No-code agent builder, MCP compatibility,  and more.
 url: https://github.com/Mintplex-Labs/anything-llm
@@ -110,7 +110,7 @@ AnythingLLM divides your documents into objects called `workspaces`. A Workspace
 - [Novita AI (chat models)](https://novita.ai/model-api/product/llm-api?utm_source=github_anything-llm&utm_medium=github_readme&utm_campaign=link)
 - [PPIO](https://ppinfra.com?utm_source=github_anything-llm)
 - [Moonshot AI](https://www.moonshot.ai/)
-
+- [CometAPI (chat models)](https://api.cometapi.com/)
 **Embedder models:**
 
 - [AnythingLLM Native Embedder](/server/storage/models/README.md) (default)

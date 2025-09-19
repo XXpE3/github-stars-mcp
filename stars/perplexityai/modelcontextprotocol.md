@@ -1,6 +1,6 @@
 ---
 project: modelcontextprotocol
-stars: 1572
+stars: 1589
 description: |-
     A Model Context Protocol Server connector for Perplexity API, to enable web search without leaving the MCP ecosystem.
 url: https://github.com/perplexityai/modelcontextprotocol

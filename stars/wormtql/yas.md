@@ -1,6 +1,6 @@
 ---
 project: yas
-stars: 1350
+stars: 1352
 description: |-
     Blazingly fast Genshin Impact/Honkai: Starrail artifacts scanner
 url: https://github.com/wormtql/yas

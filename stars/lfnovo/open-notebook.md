@@ -1,6 +1,6 @@
 ---
 project: open-notebook
-stars: 4278
+stars: 4356
 description: |-
     An Open Source implementation of Notebook LM with more flexibility and features
 url: https://github.com/lfnovo/open-notebook

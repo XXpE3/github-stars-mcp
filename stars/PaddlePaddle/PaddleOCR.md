@@ -1,8 +1,8 @@
 ---
 project: PaddleOCR
-stars: 53714
+stars: 54798
 description: |-
-    Awesome multilingual OCR and Document Parsing toolkits based on PaddlePaddle (practical ultra lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)
+    Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 80+ languages.
 url: https://github.com/PaddlePaddle/PaddleOCR
 ---
 

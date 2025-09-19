@@ -1,6 +1,6 @@
 ---
 project: MetaGPT
-stars: 58384
+stars: 58471
 description: |-
     🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming
 url: https://github.com/FoundationAgents/MetaGPT

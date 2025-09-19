@@ -1,6 +1,6 @@
 ---
 project: genshin_artifact
-stars: 1255
+stars: 1254
 description: |-
     莫娜占卜铺 | 原神 | 圣遗物搭配 | 圣遗物潜力。多方向圣遗物自动搭配，多方向圣遗物潜力与评分, Genshin Impact artifacts assessment, artifacts auto combination, artifacts statistics, artifacts potential, and more.
 url: https://github.com/wormtql/genshin_artifact

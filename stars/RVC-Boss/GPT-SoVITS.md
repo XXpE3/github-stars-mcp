@@ -1,6 +1,6 @@
 ---
 project: GPT-SoVITS
-stars: 50840
+stars: 50974
 description: |-
     1 min voice data can also be used to train a good TTS model! (few shot voice cloning)
 url: https://github.com/RVC-Boss/GPT-SoVITS

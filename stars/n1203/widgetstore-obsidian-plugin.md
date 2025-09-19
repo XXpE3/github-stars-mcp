@@ -1,6 +1,6 @@
 ---
 project: widgetstore-obsidian-plugin
-stars: 14
+stars: 15
 description: |-
     🌟 将 组件世界 的丰富组件资源直接集成到 Obsidian 中 🌟
 url: https://github.com/n1203/widgetstore-obsidian-plugin

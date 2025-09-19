@@ -1,6 +1,6 @@
 ---
 project: gitkraken-chinese
-stars: 505
+stars: 506
 description: |-
     GitKraken的中文汉化补丁
 url: https://github.com/yk47g/gitkraken-chinese

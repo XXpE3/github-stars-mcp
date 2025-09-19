@@ -1,6 +1,6 @@
 ---
 project: gitingest
-stars: 12414
+stars: 12497
 description: |-
     Replace 'hub' with 'ingest' in any GitHub URL to get a prompt-friendly extract of a codebase 
 url: https://github.com/coderamp-labs/gitingest

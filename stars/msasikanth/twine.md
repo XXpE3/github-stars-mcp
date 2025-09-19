@@ -1,6 +1,6 @@
 ---
 project: twine
-stars: 2151
+stars: 2155
 description: |-
     Twine: A multiplatform RSS reader built using Kotlin and Compose
 url: https://github.com/msasikanth/twine

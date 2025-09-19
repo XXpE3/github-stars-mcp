@@ -1,6 +1,6 @@
 ---
 project: talking-head-anime-3-demo
-stars: 1005
+stars: 1006
 description: |-
     Demo Programs for the "Talking Head(?) Anime from a Single Image 3: Now the Body Too" Project
 url: https://github.com/pkhungurn/talking-head-anime-3-demo

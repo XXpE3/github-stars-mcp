@@ -1,6 +1,6 @@
 ---
 project: verb
-stars: 698
+stars: 703
 description: |-
     HTTP client for Emacs
 url: https://github.com/federicotdn/verb
@@ -1071,6 +1071,7 @@ These are the users that have contributed to developing Verb, via code and/or do
 - [jeff-phil](https://github.com/jeff-phil)
 - [ahungry](https://github.com/ahungry)
 - [blahgeek](https://github.com/blahgeek)
+- [rickyson96](https://github.com/rickyson96)
 
 Thank you!
 

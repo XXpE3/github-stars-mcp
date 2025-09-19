@@ -1,6 +1,6 @@
 ---
 project: elisa
-stars: 179
+stars: 180
 description: |-
     ELISA (Emacs Lisp Information System Assistant) is a system designed to provide informative answers to user queries by leveraging a Retrieval Augmented Generation (RAG) approach.
 url: https://github.com/s-kostyaev/elisa

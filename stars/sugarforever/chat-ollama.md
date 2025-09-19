@@ -1,6 +1,6 @@
 ---
 project: chat-ollama
-stars: 3374
+stars: 3386
 description: |-
     ChatOllama is an open-source AI chatbot that brings cutting-edge language models to your fingertips while keeping your data private and secure.
 url: https://github.com/sugarforever/chat-ollama
@@ -8,7 +8,7 @@ url: https://github.com/sugarforever/chat-ollama
 
 English | [简体中文](README.zh-Hans.md)
 
-# 🧠🤖 ChatOllama + Deep Agents
+# ChatOllama + Deep Agents
 
 > **🔐 New ACL Feature (2025-08-25):** Access Control Lists (ACL) for MCP server management! Control who can configure MCP servers with `ACL_ENABLED` environment variable. [Learn more about ACL configuration →](#mcp-server-management-permissions)
 

@@ -1,6 +1,6 @@
 ---
 project: log
-stars: 2890
+stars: 2897
 description: |-
     A minimal, colorful Go logging library 🪵
 url: https://github.com/charmbracelet/log

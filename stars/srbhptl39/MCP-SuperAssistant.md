@@ -1,6 +1,6 @@
 ---
 project: MCP-SuperAssistant
-stars: 1874
+stars: 1895
 description: |-
     Brings MCP to ChatGPT, DeepSeek, Perplexity, Grok, Gemini, Google AI Studio, OpenRouter, DeepSeek, T3 Chat and more...
 url: https://github.com/srbhptl39/MCP-SuperAssistant

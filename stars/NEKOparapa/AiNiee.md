@@ -1,6 +1,6 @@
 ---
 project: AiNiee
-stars: 3522
+stars: 3710
 description: |-
     一款专注于Ai翻译的工具，一键自动翻译RPG SLG游戏，Epub TXT小说，Srt Vtt Lrc字幕，Word MD文档等等复杂长文本。
 url: https://github.com/NEKOparapa/AiNiee

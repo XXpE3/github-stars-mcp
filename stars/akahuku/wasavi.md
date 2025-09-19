@@ -1,6 +1,6 @@
 ---
 project: wasavi
-stars: 1536
+stars: 1537
 description: |-
     wasavi is an extension for Chrome, Firefox, and Opera. wasavi changes a textarea element to virtual vi editor which supports almost all the vi/ex commands.
 url: https://github.com/akahuku/wasavi

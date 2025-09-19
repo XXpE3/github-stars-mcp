@@ -1,6 +1,6 @@
 ---
 project: mackup
-stars: 14924
+stars: 14934
 description: |-
     Keep your application settings in sync (OS X/Linux)
 url: https://github.com/lra/mackup

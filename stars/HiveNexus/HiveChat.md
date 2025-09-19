@@ -1,6 +1,6 @@
 ---
 project: HiveChat
-stars: 1083
+stars: 1089
 description: |-
     An AI chat bot for small and medium-sized teams, supporting models such as Deepseek, Open AI, Claude, and Gemini. 专为中小团队设计的 AI 聊天应用，支持 Deepseek、Open AI、Claude、Gemini 等模型。
 url: https://github.com/HiveNexus/HiveChat

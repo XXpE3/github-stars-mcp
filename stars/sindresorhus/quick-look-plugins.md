@@ -1,6 +1,6 @@
 ---
 project: quick-look-plugins
-stars: 18380
+stars: 18386
 description: |-
     List of useful Quick Look plugins for developers
 url: https://github.com/sindresorhus/quick-look-plugins

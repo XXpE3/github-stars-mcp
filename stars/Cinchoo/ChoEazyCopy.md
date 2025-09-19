@@ -1,6 +1,6 @@
 ---
 project: ChoEazyCopy
-stars: 1978
+stars: 1979
 description: |-
     Simple and powerful RoboCopy GUI 
 url: https://github.com/Cinchoo/ChoEazyCopy

@@ -1,6 +1,6 @@
 ---
 project: MiaoYan
-stars: 6485
+stars: 6497
 description: |-
     ⛷ Lightweight Markdown app to help you write great sentences. ⛷ 轻灵的 Markdown 笔记本伴你写出妙言
 url: https://github.com/tw93/MiaoYan
@@ -101,10 +101,9 @@ url: https://github.com/tw93/MiaoYan
 - <a href="https://github.com/raspu/Highlightr" target="_blank">raspu/Highlightr</a>：语法高亮能力
 - <a href="https://tsanger.cn/product" target="_blank">仓耳字库</a>：一款漂亮的开源中文字体仓耳今楷，妙言将其作为默认字体
 - <a href="https://github.com/hakimel/reveal.js" target="_blank">hakimel/reveal.js</a>：妙言 PPT 底层渲染依赖此框架
-- 感谢 Vercel 给妙言 [官网](https://miaoyan.app/) 提供静态渲染能力
-    <a href="https://vercel.com?utm_source=tw93&utm_campaign=oss"><img
-        src=https://gw.alipayobjects.com/zos/k/wr/powered-by-vercel.svg
-        width="118px"/></a>
+- 本项目 CDN 加速及安全防护由 Tencent EdgeOne 赞助
+
+  <a href="https://edgeone.ai/zh?from=github"><img src="https://cdn.tw93.fun/img/edgeone.png" width="300"></a>
 
 > **📦 依赖管理**：项目使用 Swift Package Manager 管理依赖，详细信息请查看 [`DEPENDENCIES.md`](DEPENDENCIES.md)
 

@@ -1,6 +1,6 @@
 ---
 project: claude-auto-resume
-stars: 580
+stars: 584
 description: |-
     A shell script utility that automatically resumes Claude CLI tasks when usage limits are lifted.
 url: https://github.com/terryso/claude-auto-resume

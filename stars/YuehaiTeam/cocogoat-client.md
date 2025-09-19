@@ -1,6 +1,6 @@
 ---
 project: cocogoat-client
-stars: 520
+stars: 519
 description: |-
     A toolbox for Genshin Impact to export artifacts automatically.  支持圣遗物全自动导出的原神工具箱，保证每一行代码都是熬夜加班打造。
 url: https://github.com/YuehaiTeam/cocogoat-client
