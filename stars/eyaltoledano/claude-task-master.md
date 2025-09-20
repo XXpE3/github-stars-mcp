@@ -1,6 +1,6 @@
 ---
 project: claude-task-master
-stars: 22095
+stars: 22150
 description: |-
     An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.
 url: https://github.com/eyaltoledano/claude-task-master

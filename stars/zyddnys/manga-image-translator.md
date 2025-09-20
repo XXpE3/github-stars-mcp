@@ -1,6 +1,6 @@
 ---
 project: manga-image-translator
-stars: 8539
+stars: 8545
 description: |-
     Translate manga/image 一键翻译各类图片内文字 https://cotrans.touhou.ai/ (no longer working)
 url: https://github.com/zyddnys/manga-image-translator

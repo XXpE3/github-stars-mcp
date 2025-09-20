@@ -1,6 +1,6 @@
 ---
 project: zoxide
-stars: 29663
+stars: 29688
 description: |-
     A smarter cd command. Supports all major shells.
 url: https://github.com/ajeetdsouza/zoxide

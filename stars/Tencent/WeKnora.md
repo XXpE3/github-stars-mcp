@@ -1,6 +1,6 @@
 ---
 project: WeKnora
-stars: 5895
+stars: 5972
 description: |-
     LLM-powered framework for deep document understanding, semantic retrieval, and context-aware answers using RAG paradigm.
 url: https://github.com/Tencent/WeKnora

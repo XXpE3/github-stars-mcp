@@ -1,6 +1,6 @@
 ---
 project: annas-mcp
-stars: 551
+stars: 552
 description: |-
     MCP server and CLI tool for searching and downloading documents from Anna's Archive
 url: https://github.com/iosifache/annas-mcp

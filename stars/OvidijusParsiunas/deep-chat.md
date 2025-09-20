@@ -1,6 +1,6 @@
 ---
 project: deep-chat
-stars: 2720
+stars: 2883
 description: |-
     Fully customizable AI chatbot component for your website
 url: https://github.com/OvidijusParsiunas/deep-chat

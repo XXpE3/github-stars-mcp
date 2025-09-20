@@ -1,6 +1,6 @@
 ---
 project: sgmodule
-stars: 1192
+stars: 1194
 description: |-
     surge module
 url: https://github.com/Maasea/sgmodule

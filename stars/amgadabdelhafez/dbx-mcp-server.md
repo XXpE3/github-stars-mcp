@@ -1,6 +1,6 @@
 ---
 project: dbx-mcp-server
-stars: 18
+stars: 19
 description: |-
     MCP Server for Dropbox
 url: https://github.com/amgadabdelhafez/dbx-mcp-server

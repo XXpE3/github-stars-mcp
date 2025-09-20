@@ -1,6 +1,6 @@
 ---
 project: cognee
-stars: 7061
+stars: 7074
 description: |-
     Memory for AI Agents in 5 lines of code
 url: https://github.com/topoteretes/cognee
@@ -186,7 +186,7 @@ You can also cognify your files and query using cognee UI.
 
 ### Running the UI
 
-Try cognee UI by running ``` cognee-cli -ui ``` command on your terminal.
+Try cognee UI by setting LLM_API_KEY and running ``` cognee-cli -ui ``` command on your terminal.
 
 ## Understand our architecture
 

@@ -1,6 +1,6 @@
 ---
 project: LunaTranslator
-stars: 8724
+stars: 8750
 description: |-
     视觉小说翻译器 / Visual Novel Translator
 url: https://github.com/HIllya51/LunaTranslator

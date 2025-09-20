@@ -1,6 +1,6 @@
 ---
 project: DB-GPT
-stars: 17348
+stars: 17354
 description: |-
     AI Native Data App Development framework with AWEL(Agentic Workflow Expression Language) and Agents
 url: https://github.com/eosphoros-ai/DB-GPT
@@ -91,6 +91,12 @@ The core capabilities include the following parts:
 - [DB-GPT-Hub](https://github.com/eosphoros-ai/DB-GPT-Hub) Text-to-SQL workflow with high performance by applying Supervised Fine-Tuning (SFT) on Large Language Models (LLMs).
 
 - [dbgpts](https://github.com/eosphoros-ai/dbgpts)  dbgpts is the official repository which contains some data apps、AWEL operators、AWEL workflow templates and agents which build upon DB-GPT.
+
+#### DeepWiki
+- [DB-GPT](https://deepwiki.com/eosphoros-ai/DB-GPT)
+- [DB-GPT-HUB](https://deepwiki.com/eosphoros-ai/DB-GPT-Hub)
+- [dbgpts](https://deepwiki.com/eosphoros-ai/dbgpts)
+
 
 #### Text2SQL Finetune
 

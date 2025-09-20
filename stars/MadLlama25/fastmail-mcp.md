@@ -1,6 +1,6 @@
 ---
 project: fastmail-mcp
-stars: 25
+stars: 26
 description: |-
     A Model Context Protocol (MCP) server that provides access to the Fastmail API, enabling AI assistants to interact with email, contacts, and calendar data. Includes a DXT (desktop extension) for Claude Desktop.
 url: https://github.com/MadLlama25/fastmail-mcp

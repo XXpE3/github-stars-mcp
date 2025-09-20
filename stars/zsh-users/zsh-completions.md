@@ -1,6 +1,6 @@
 ---
 project: zsh-completions
-stars: 7459
+stars: 7461
 description: |-
     Additional completion definitions for Zsh.
 url: https://github.com/zsh-users/zsh-completions

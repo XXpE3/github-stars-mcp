@@ -1,6 +1,6 @@
 ---
 project: Firefly
-stars: 6552
+stars: 6553
 description: |-
     Firefly: 大模型训练工具，支持训练Qwen2.5、Qwen2、Yi1.5、Phi-3、Llama3、Gemma、MiniCPM、Yi、Deepseek、Orion、Xverse、Mixtral-8x7B、Zephyr、Mistral、Baichuan2、Llma2、Llama、Qwen、Baichuan、ChatGLM2、InternLM、Ziya2、Vicuna、Bloom等大模型
 url: https://github.com/yangjianxin1/Firefly

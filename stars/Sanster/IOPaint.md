@@ -1,6 +1,6 @@
 ---
 project: IOPaint
-stars: 22115
+stars: 22118
 description: |-
     Image inpainting tool powered by SOTA AI Model. Remove any unwanted object, defect, people from your pictures or erase and replace(powered by stable diffusion) any thing on your pictures.
 url: https://github.com/Sanster/IOPaint

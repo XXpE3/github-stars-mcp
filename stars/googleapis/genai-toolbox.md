@@ -1,6 +1,6 @@
 ---
 project: genai-toolbox
-stars: 10433
+stars: 10479
 description: |-
     MCP Toolbox for Databases is an open source MCP server for databases.
 url: https://github.com/googleapis/genai-toolbox

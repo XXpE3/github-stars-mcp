@@ -1,6 +1,6 @@
 ---
 project: argos-translate
-stars: 4861
+stars: 4868
 description: |-
     Open-source offline translation library written in Python
 url: https://github.com/argosopentech/argos-translate

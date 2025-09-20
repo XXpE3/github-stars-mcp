@@ -1,6 +1,6 @@
 ---
 project: myclaude
-stars: 658
+stars: 664
 description: |-
     Cladue Code AI Team Workflow Sub Agents
 url: https://github.com/cexll/myclaude

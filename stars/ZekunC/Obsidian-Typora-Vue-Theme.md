@@ -1,6 +1,6 @@
 ---
 project: Obsidian-Typora-Vue-Theme
-stars: 232
+stars: 233
 description: |-
     A theme for Obsidian(https://obsidian.md/), inspired by typora-vue.
 url: https://github.com/ZekunC/Obsidian-Typora-Vue-Theme

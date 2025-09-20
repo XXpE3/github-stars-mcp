@@ -1,6 +1,6 @@
 ---
 project: VX-DBVault
-stars: 2
+stars: 3
 description: |-
     VX-DBVault is a Docker-based automated backup tool for MariaDB and MySQL databases.
 url: https://github.com/tmplink/VX-DBVault

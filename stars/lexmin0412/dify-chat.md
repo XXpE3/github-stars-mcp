@@ -1,6 +1,6 @@
 ---
 project: dify-chat
-stars: 577
+stars: 581
 description: |-
     一个 AI 应用平台，基于 Dify API 构建，提供深度优化的用户端交互界面，支持 Chatflow、Workflow 等多种 Dify 应用类型，适配深度思考、思维链、图表渲染、文件处理等丰富的 AI 输出形式，提供开箱即用的 AI 应用解决方案。
 url: https://github.com/lexmin0412/dify-chat
@@ -18,6 +18,11 @@ url: https://github.com/lexmin0412/dify-chat
 
 - 使用文档：[https://docs.dify-chat.lexmin.cn/](https://docs.dify-chat.lexmin.cn/)
 - 演示站点：[https://lexmin0412.github.io/dify-chat/](https://lexmin0412.github.io/dify-chat/)
+
+另外，如果你想要了解整个项目的架构或技术细节，推荐访问：
+
+- DeepWiki: [https://deepwiki.com/lexmin0412/dify-chat](https://deepwiki.com/lexmin0412/dify-chat)
+- Zread: [https://zread.ai/lexmin0412/dify-chat](https://zread.ai/lexmin0412/dify-chat)
 
 | 加群沟通（人数已超只能邀请，加我微信备注来意） | 喂我花生（请在留言中备注自己的 Github 用户名哦） |
 | --- | --- |
