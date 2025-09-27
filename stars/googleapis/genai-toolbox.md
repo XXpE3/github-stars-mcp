@@ -1,6 +1,6 @@
 ---
 project: genai-toolbox
-stars: 10479
+stars: 10713
 description: |-
     MCP Toolbox for Databases is an open source MCP server for databases.
 url: https://github.com/googleapis/genai-toolbox
@@ -125,7 +125,7 @@ To install Toolbox as a binary:
 <!-- {x-release-please-start-version} -->
 ```sh
 # see releases page for other versions
-export VERSION=0.15.0
+export VERSION=0.16.0
 curl -O https://storage.googleapis.com/genai-toolbox/v$VERSION/linux/amd64/toolbox
 chmod +x toolbox
 ```
@@ -138,7 +138,7 @@ You can also install Toolbox as a container:
 
 ```sh
 # see releases page for other versions
-export VERSION=0.15.0
+export VERSION=0.16.0
 docker pull us-central1-docker.pkg.dev/database-toolbox/toolbox/toolbox:$VERSION
 ```
 
@@ -162,9 +162,20 @@ To install from source, ensure you have the latest version of
 [Go installed](https://go.dev/doc/install), and then run the following command:
 
 ```sh
-go install github.com/googleapis/genai-toolbox@v0.15.0
+go install github.com/googleapis/genai-toolbox@v0.16.0
 ```
 <!-- {x-release-please-end} -->
+
+</details>
+
+<details>
+<summary>Gemini CLI Extensions</summary>
+
+To install Gemini CLI Extensions for MCP Toolbox, run the following command:
+
+```sh
+gemini extensions install https://github.com/gemini-cli-extensions/mcp-toolbox
+```
 
 </details>
 
@@ -238,6 +249,16 @@ command:
 ```sh
 toolbox --tools-file "tools.yaml"
 ```
+
+</details>
+
+<details>
+
+<summary>Gemini CLI</summary>
+
+Interact with your custom tools using natural language. Check
+[gemini-cli-extensions/mcp-toolbox](https://github.com/gemini-cli-extensions/mcp-toolbox)
+for more information.
 
 </details>
 

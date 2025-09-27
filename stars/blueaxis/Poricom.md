@@ -1,6 +1,6 @@
 ---
 project: Poricom
-stars: 383
+stars: 385
 description: |-
     Optical character recognition in manga images. Manga OCR desktop application
 url: https://github.com/blueaxis/Poricom

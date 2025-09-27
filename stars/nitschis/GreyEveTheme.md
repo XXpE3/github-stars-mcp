@@ -1,6 +1,6 @@
 ---
 project: GreyEveTheme
-stars: 150
+stars: 151
 description: |-
     A Dark Grey Windows 10 Theme
 url: https://github.com/nitschis/GreyEveTheme

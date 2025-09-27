@@ -1,6 +1,6 @@
 ---
 project: hello-algo
-stars: 117007
+stars: 117280
 description: |-
     《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 代码。简体版和繁体版同步更新，English version in translation
 url: https://github.com/krahets/hello-algo
@@ -72,6 +72,17 @@ url: https://github.com/krahets/hello-algo
 > “如果我当年学数据结构与算法的时候有《Hello 算法》，学起来应该会简单 10 倍！”
 >
 > **—— 李沐，亚马逊资深首席科学家**
+
+## 鸣谢
+
+<p align="left">
+  <a href="https://go.warp.dev/hello-algo">
+    <img src="https://github.com/warpdotdev/brand-assets/blob/main/Github/Sponsor/Warp-Github-LG-02.png" alt="Warp-Github-LG-02" width="500"></a>
+</p>
+
+[Warp is built for coding with multiple AI agents.](https://go.warp.dev/hello-algo)
+
+强烈推荐 Warp 终端，高颜值 + 好用的 AI，体验非常棒！
 
 ## 贡献
 

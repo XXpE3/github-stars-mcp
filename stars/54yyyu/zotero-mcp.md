@@ -1,6 +1,6 @@
 ---
 project: zotero-mcp
-stars: 526
+stars: 546
 description: |-
     Zotero MCP: Connects your Zotero research library with Claude and other AI assistants via the Model Context Protocol to discuss papers, get summaries, analyze citations, and more.
 url: https://github.com/54yyyu/zotero-mcp

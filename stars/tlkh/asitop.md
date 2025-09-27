@@ -1,6 +1,6 @@
 ---
 project: asitop
-stars: 4222
+stars: 4232
 description: |-
     Perf monitoring CLI tool for Apple Silicon
 url: https://github.com/tlkh/asitop

@@ -1,6 +1,6 @@
 ---
 project: bs-core
-stars: 6304
+stars: 6303
 description: |-
     Easy and blazing-fast book searcher, create and search your private library.
 url: https://github.com/zu1k/bs-core

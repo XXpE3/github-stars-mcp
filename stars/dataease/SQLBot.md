@@ -1,6 +1,6 @@
 ---
 project: SQLBot
-stars: 2582
+stars: 3279
 description: |-
     🔥 基于大模型和 RAG 的智能问数系统。Text-to-SQL Generation via LLMs using RAG.
 url: https://github.com/dataease/SQLBot
@@ -24,7 +24,7 @@ SQLBot 是一款基于大模型和 RAG 的智能问数系统。SQLBot 的优势�
 
 ## 工作原理
 
-<img width="1189" height="624" alt="system-arch" src="https://github.com/user-attachments/assets/cde40783-369e-493e-bb59-44ce43c2e7c5" />
+<img width="1105" height="577" alt="system-arch" src="https://github.com/user-attachments/assets/462603fc-980b-4b8b-a6d4-a821c070a048" />
 
 ## 快速开始
 
@@ -39,6 +39,7 @@ docker run -d \
   -p 8000:8000 \
   -p 8001:8001 \
   -v ./data/sqlbot/excel:/opt/sqlbot/data/excel \
+  -v ./data/sqlbot/file:/opt/sqlbot/data/file \
   -v ./data/sqlbot/images:/opt/sqlbot/images \
   -v ./data/sqlbot/logs:/opt/sqlbot/app/logs \
   -v ./data/postgresql:/var/lib/postgresql/data \

@@ -1,6 +1,6 @@
 ---
 project: alpaca-lora
-stars: 18956
+stars: 18959
 description: |-
     Instruct-tune LLaMA on consumer hardware
 url: https://github.com/tloen/alpaca-lora

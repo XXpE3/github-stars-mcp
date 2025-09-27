@@ -1,6 +1,6 @@
 ---
 project: DesktopCommanderMCP
-stars: 4498
+stars: 4556
 description: |-
     This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities
 url: https://github.com/wonderwhy-er/DesktopCommanderMCP
@@ -962,7 +962,7 @@ External telemetry (sent to analytics services) is enabled by default but can be
 
 **Note:** This only disables external telemetry. Local usage analytics remain active for tool functionality but is not share externally
 
-For complete details about data collection, please see our [Privacy Policy](PRIVACY.md).
+For complete details about data collection, please see our [Privacy Policy](https://legal.desktopcommander.app/privacy_desktop_commander_mcp).
 
 ## Verifications
 [![Verified on MseeP](https://mseep.ai/badge.svg)](https://mseep.ai/app/25ff7a06-58bc-40b8-bd79-ebb715140f1a)

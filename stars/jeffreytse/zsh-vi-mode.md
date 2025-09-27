@@ -1,6 +1,6 @@
 ---
 project: zsh-vi-mode
-stars: 3970
+stars: 3983
 description: |-
     💻 A better and friendly vi(vim) mode plugin for ZSH.
 url: https://github.com/jeffreytse/zsh-vi-mode
@@ -498,9 +498,9 @@ ZVM_SYSTEM_CLIPBOARD_ENABLED=true
 
 Auto-detection:
 
-- macOS: pbcopy/pbpaste
-- Wayland: wl-copy / wl-paste -n
-- X11: xclip or xsel
+- macOS: `pbcopy` and `pbpaste`
+- Wayland: `wl-copy` and `wl-paste -n`
+- X11: `xclip` or `xsel`
 
 Override commands:
 
@@ -1005,7 +1005,7 @@ ZVM_INIT_MODE=sourcing
 
 - [Zsh](https://www.zsh.org/) - A powerful shell that operates as both an interactive shell and as a scripting language interpreter.
 - [Oh-My-Zsh](https://github.com/ohmyzsh/ohmyzsh) - A delightful, open source, community-driven framework for managing your ZSH configuration.
-- [vim-surround](https://github.com/tpope/vim-surround) - A vim plugin that all about "surroundings": parentheses, brackets, quotes, XML tags, and more.
+- [vim-surround](https://github.com/tpope/vim-surround) - A vim plugin all about "surroundings": parentheses, brackets, quotes, XML tags, and more.
 - [vim-sandwich](https://github.com/machakann/vim-sandwich) - A set of operator and textobject plugins to add/delete/replace surroundings of a sandwiched textobject.
 
 ## 🔫 Contributing

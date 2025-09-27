@@ -1,6 +1,6 @@
 ---
 project: text-generation-webui
-stars: 45022
+stars: 45073
 description: |-
     The definitive Web UI for local AI, with powerful features and easy setup.
 url: https://github.com/oobabooga/text-generation-webui

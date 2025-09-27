@@ -1,6 +1,6 @@
 ---
 project: unit-minions
-stars: 1098
+stars: 1099
 description: |-
     《AI 研发提效：自己动手训练 LoRA》，包含 Llama  （Alpaca LoRA）模型、ChatGLM （ChatGLM Tuning）相关 Lora 的训练。训练内容：用户故事生成、测试代码生成、代码辅助生成、文本转 SQL、文本生成代码……
 url: https://github.com/unit-mesh/unit-minions

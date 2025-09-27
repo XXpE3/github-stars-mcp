@@ -1,6 +1,6 @@
 ---
 project: deer-flow
-stars: 17106
+stars: 17220
 description: |-
     DeerFlow is a community-driven Deep Research framework, combining language models with tools like web search, crawling, and Python execution, while contributing back to the open-source community.
 url: https://github.com/bytedance/deer-flow
@@ -176,6 +176,10 @@ DeerFlow supports multiple search engines that can be configured in your `.env` 
 - **Arxiv**: Scientific paper search for academic research
   - No API key required
   - Specialized for scientific and academic papers
+
+- **Searx/SearxNG**: Self-hosted metasearch engine
+  - Requires `SEARX_HOST` to be set in the `.env` file
+  - Supports connecting to either Searx or SearxNG
 
 To configure your preferred search engine, set the `SEARCH_API` variable in your `.env` file:
 

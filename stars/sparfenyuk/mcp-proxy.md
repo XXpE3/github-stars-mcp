@@ -1,6 +1,6 @@
 ---
 project: mcp-proxy
-stars: 1727
+stars: 1777
 description: |-
     A bridge between Streamable HTTP and stdio MCP transports
 url: https://github.com/sparfenyuk/mcp-proxy
@@ -12,7 +12,6 @@ url: https://github.com/sparfenyuk/mcp-proxy
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mcp-proxy)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/mcp-proxy)
 [![codecov](https://codecov.io/gh/sparfenyuk/mcp-proxy/graph/badge.svg?token=31VV9L7AZQ)](https://codecov.io/gh/sparfenyuk/mcp-proxy)
-[![smithery badge](https://smithery.ai/badge/mcp-proxy)](https://smithery.ai/server/mcp-proxy)
 
 - [mcp-proxy](#mcp-proxy)
   - [About](#about)
@@ -24,7 +23,6 @@ url: https://github.com/sparfenyuk/mcp-proxy
     - [2.2 Example usage](#22-example-usage)
   - [Named Servers](#named-servers)
   - [Installation](#installation)
-    - [Installing via Smithery](#installing-via-smithery)
     - [Installing via PyPI](#installing-via-pypi)
     - [Installing via Github repository (latest)](#installing-via-github-repository-latest)
     - [Installing as container](#installing-as-container)
@@ -125,20 +123,20 @@ separator.
 
 Arguments
 
-| Name                                 | Required                   | Description                                                                                 | Example                                     |
-|--------------------------------------|----------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------|
-| `command_or_url`                     | Yes                        | The command to spawn the MCP stdio server                                                   | uvx mcp-server-fetch                        |
-| `--port`                             | No, random available       | The MCP server port to listen on                                                            | 8080                                        |
-| `--host`                             | No, `127.0.0.1` by default | The host IP address that the MCP server will listen on                                      | 0.0.0.0                                     |
+| Name                                 | Required                   | Description                                                                                   | Example                                     |
+| ------------------------------------ | -------------------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| `command_or_url`                     | Yes                        | The command to spawn the MCP stdio server                                                     | uvx mcp-server-fetch                        |
+| `--port`                             | No, random available       | The MCP server port to listen on                                                              | 8080                                        |
+| `--host`                             | No, `127.0.0.1` by default | The host IP address that the MCP server will listen on                                        | 0.0.0.0                                     |
 | `--env`                              | No                         | Additional environment variables to pass to the MCP stdio server. Can be used multiple times. | FOO BAR                                     |
-| `--cwd`                              | No                         | The working directory to pass to the MCP stdio server process.                              | /tmp                                        |
-| `--pass-environment`                 | No                         | Pass through all environment variables when spawning the server                             | --no-pass-environment                       |
-| `--allow-origin`                     | No                         | Allowed origins for the SSE server. Can be used multiple times. Default is no CORS allowed. | --allow-origin "\*"                           |
-| `--stateless`                        | No                         | Enable stateless mode for streamable http transports. Default is False                      | --no-stateless                              |
-| `--named-server NAME COMMAND_STRING` | No                         | Defines a named stdio server.                                                               | --named-server fetch 'uvx mcp-server-fetch' |
-| `--named-server-config FILE_PATH`    | No                         | Path to a JSON file defining named stdio servers.                                           | --named-server-config /path/to/servers.json |
-| `--sse-port` (deprecated)            | No, random available       | The SSE server port to listen on                                                            | 8080                                        |
-| `--sse-host` (deprecated)            | No, `127.0.0.1` by default | The host IP address that the SSE server will listen on                                      | 0.0.0.0                                     |
+| `--cwd`                              | No                         | The working directory to pass to the MCP stdio server process.                                | /tmp                                        |
+| `--pass-environment`                 | No                         | Pass through all environment variables when spawning the server                               | --no-pass-environment                       |
+| `--allow-origin`                     | No                         | Allowed origins for the SSE server. Can be used multiple times. Default is no CORS allowed.   | --allow-origin "\*"                         |
+| `--stateless`                        | No                         | Enable stateless mode for streamable http transports. Default is False                        | --no-stateless                              |
+| `--named-server NAME COMMAND_STRING` | No                         | Defines a named stdio server.                                                                 | --named-server fetch 'uvx mcp-server-fetch' |
+| `--named-server-config FILE_PATH`    | No                         | Path to a JSON file defining named stdio servers.                                             | --named-server-config /path/to/servers.json |
+| `--sse-port` (deprecated)            | No, random available       | The SSE server port to listen on                                                              | 8080                                        |
+| `--sse-host` (deprecated)            | No, `127.0.0.1` by default | The host IP address that the SSE server will listen on                                        | 0.0.0.0                                     |
 
 ### 2.2 Example usage
 
@@ -221,14 +219,6 @@ The JSON file should follow this structure:
 
 ## Installation
 
-### Installing via Smithery
-
-To install MCP Proxy for Claude Desktop automatically via [Smithery](https://smithery.ai/server/mcp-proxy):
-
-```bash
-npx -y @smithery/cli install mcp-proxy --client claude
-```
-
 ### Installing via PyPI
 
 The stable version of the package is available on the PyPI repository. You can install it using the following command:
@@ -262,7 +252,7 @@ uv tool install git+https://github.com/sparfenyuk/mcp-proxy
 Starting from version 0.3.2, it's possible to pull and run the corresponding container image:
 
 ```bash
-docker run -t ghcr.io/sparfenyuk/mcp-proxy:v0.3.2-alpine --help
+docker run --rm -t ghcr.io/sparfenyuk/mcp-proxy:v0.3.2-alpine --help
 ```
 
 ### Troubleshooting
@@ -296,7 +286,7 @@ RUN python3 -m ensurepip && pip install --no-cache-dir uv
 ENV PATH="/usr/local/bin:$PATH" \
     UV_PYTHON_PREFERENCE=only-system
 
-ENTRYPOINT [ "mcp-proxy" ]
+ENTRYPOINT ["catatonit", "--", "mcp-proxy"]
 ```
 
 ## Docker Compose Setup
@@ -325,7 +315,7 @@ services:
 ```bash
 usage: mcp-proxy [-h] [--version] [-H KEY VALUE] [--transport {sse,streamablehttp}]
                  [-e KEY VALUE] [--cwd CWD]
-                 [--pass-environment | --no-pass-environment] [--debug | --no-debug]
+                 [--pass-environment | --no-pass-environment] [--log-level LEVEL] [--debug | --no-debug]
                  [--named-server NAME COMMAND_STRING]
                  [--named-server-config FILE_PATH] [--port PORT] [--host HOST]
                  [--stateless | --no-stateless] [--sse-port SSE_PORT]
@@ -354,7 +344,8 @@ stdio client options:
   --cwd CWD             The working directory to use when spawning the default server process. Named servers inherit the proxy's CWD.
   --pass-environment, --no-pass-environment
                         Pass through all environment variables when spawning all server processes.
-  --debug, --no-debug   Enable debug mode with detailed logging output.
+  --log-level LEVEL     Set the log level. Default is INFO.
+  --debug, --no-debug   Enable debug mode with detailed logging output. Equivalent to --log-level DEBUG. If both --debug and --log-level are provided, --debug takes precedence.
   --named-server NAME COMMAND_STRING
                         Define a named stdio server. NAME is for the URL path /servers/NAME/. COMMAND_STRING is a single string with the command and its arguments (e.g., 'uvx mcp-server-fetch --timeout 10'). These servers inherit the proxy's CWD and environment from --pass-environment.
   --named-server-config FILE_PATH

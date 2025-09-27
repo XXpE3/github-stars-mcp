@@ -1,6 +1,6 @@
 ---
 project: llm-subtrans
-stars: 492
+stars: 496
 description: |-
     Open Source project using LLMs to translate SRT subtitles
 url: https://github.com/machinewrapped/llm-subtrans
@@ -47,7 +47,7 @@ Gemini 2.5 Flash is perhaps the leading model for translation speed and fluency 
 
 You will need a Google Gemini API key from https://ai.google.dev/ or from a project created on https://console.cloud.google.com/. You must ensure that Generative AI is enabled for the api key and project.
 
-Unfortunately Gemini has some censorship and will refuse to translate content that contains certain words or phrases, even with minimal safety settings. If you hit this you will need to use another provider.
+Unfortunately Gemini will refuse to translate content that contains certain words or phrases, even with minimal safety settings. If you hit this you will need to use another provider or split the batch and manually translate the offending lines.
 
 ### OpenAI
 https://openai.com/policies/privacy-policy
@@ -175,24 +175,24 @@ During the installing process, you can choose to input an API key for each selec
     ```
 
 ## Usage
-The program works by dividing the subtitles up into small batches and sending each one to the translation service in turn. It is likely to take time to complete, and can potentially make many API calls for each subtitle file.
+The program works by dividing the subtitles up into batches and sending each one to the translation service in turn. 
+
+It can potentially make many API calls for each subtitle file, depending on the batch size. Speed heavily depends on the selected model.
 
 By default The translated subtitles will be written to a new file in the same directory with the target langugage appended to the original filename.
 
 ### GUI
-The [Subtrans GUI](https://github.com/machinewrapped/llm-subtrans/wiki/GUI#gui-subtrans) is the best and easiest way to use the program. After installation, launch the GUI with the `gui-subtrans` command or shell script, and hopefully the rest should be self-explanatory.
+The [Subtrans GUI](https://github.com/machinewrapped/llm-subtrans/wiki/GUI#gui-subtrans) is the best and easiest way to use the program. 
+
+After installation, launch the GUI with the `gui-subtrans` command or shell script, and hopefully the rest should be self-explanatory.
 
 See the project wiki for further details on how to use the program.
 
 ### Command Line
-
 LLM-Subtrans can be used as a console command or shell script. The install scripts create a cmd or sh file in the project root for each provider, which will take care of activating the virtual environment and calling the corresponding translation script.
 
 The most basic usage is:
 ```sh
-# List supported subtitle formats
-llm-subtrans --list-formats
-
 # Use OpenRouter with automatic model selection
 llm-subtrans --auto -l <language> <path_to_subtitle_file>
 
@@ -206,12 +206,15 @@ llm-subtrans -l <language> -o output.srt input.ass
 llm-subtrans -s <server_address> -e <endpoint> -k <api_key> -l <language> <path_to_subtitle_file>
 
 # Use specific providers
-gpt-subtrans <path_to_subtitle_file> --target_language <target_language>
-gemini-subtrans <path_to_subtitle_file> --target_language <target_language>
-claude-subtrans <path_to_subtitle_file> --target_language <target_language>
+gpt-subtrans --model gpt-5-mini --target_language <target_language> <path_to_subtitle_file>
+gemini-subtrans --model gemini-2.5-flash-latest --target_language <target_language> <path_to_subtitle_file>
+claude-subtrans --model claude-3-5-haiku-latest --target_language <target_language> <path_to_subtitle_file>
 
-# process files in different folders (the script will need editing to configure the path and provider settings)
-python3 batch_process.py
+# List supported subtitle formats
+llm-subtrans --list-formats
+
+# Batch process files in a folder tree (activate the virtual environment first)
+python scripts/batch_translate.py ./subtitles ./translated --provider openai --model gpt-5-mini --apikey sk-... --language Spanish
 ```
 
 The output format is inferred from file extensions. To convert between formats, provide an output path with the desired extension.
@@ -444,7 +447,7 @@ Remember to change the local port to yours and turn on your proxy tools such as 
 
 ### batch process
 
-you can process files with the following struct：
+You can process files with the following directory structure：
 
       #   -SRT
       #   --fold1
@@ -456,10 +459,23 @@ you can process files with the following struct：
       #   ---2.srt
       #   ...
 
+Use the `batch_translate.py` script to process multiple subtitle files:
+
+You can modify the `DEFAULT_OPTIONS` values directly in the script file, or use a combination of script defaults and command line overrides.
+
 ```sh
-python3 batch_process.py  # process files in different folders
+# Preview mode to test settings without making API calls
+python scripts/batch_translate.py --preview
+
+# Basic usage with command line arguments
+python scripts/batch_translate.py ./subtitles ./translated --provider openai --model gpt-5-mini --apikey sk-... --language Spanish
+
+# Override output format
+python scripts/batch_translate.py ./subtitles ./translated --provider openai --output-format srt
+
+# Use additional options
+python scripts/batch_translate.py ./subtitles ./translated --provider openai --option max_batch_size=40 --option preprocess_subtitles=false
 ```
-You need to modify the command line in batch_process.py accordingly.
 
 ### Developers
 It is recommended to use an IDE such as Visual Studio Code to run the program when installed from source, and set up a launch.json file to specify the arguments.
@@ -522,7 +538,7 @@ Translation providers:
 
 For the GUI:
 - pyside6 (https://wiki.qt.io/Qt_for_Python)
-- events (https://pypi.org/project/Events/)
+- blinker (https://pythonhosted.org/blinker/)
 - darkdetect (https://github.com/albertosottile/darkdetect)
 - appdirs (https://github.com/ActiveState/appdirs)
 

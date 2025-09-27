@@ -1,6 +1,6 @@
 ---
 project: raycast-relay
-stars: 104
+stars: 105
 description: |-
     Relay your Raycast AI to an OpenAI compatible API endpoint
 url: https://github.com/szcharlesji/raycast-relay

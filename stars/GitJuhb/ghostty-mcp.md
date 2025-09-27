@@ -1,6 +1,6 @@
 ---
 project: ghostty-mcp
-stars: 1
+stars: 2
 description: |-
     null
 url: https://github.com/GitJuhb/ghostty-mcp

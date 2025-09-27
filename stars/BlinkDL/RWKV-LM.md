@@ -1,6 +1,6 @@
 ---
 project: RWKV-LM
-stars: 13983
+stars: 13992
 description: |-
     RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 "Goose". So it's combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding.
 url: https://github.com/BlinkDL/RWKV-LM
@@ -25,6 +25,10 @@ RWKV is a [Linux Foundation AI project](https://lfaidata.foundation/projects/rwk
 You are welcome to ask the RWKV community (such as [RWKV discord](https://discord.gg/bDSBUMeFpc)) for advice on upgrading your attention/ssm models to rwkv7 models :)
 
 **Improving RNNs (RWKV-8 and beyond)**: https://github.com/BlinkDL/RWKV-LM/blob/main/RWKV-8.md
+
+**Efficient inference project**: https://github.com/BlinkDL/Albatross
+
+**RWKV APP**: https://github.com/RWKV-APP/RWKV_APP (local inference for Android / iOS)
 
 ===
 

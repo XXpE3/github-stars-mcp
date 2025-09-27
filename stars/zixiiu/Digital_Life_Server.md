@@ -1,6 +1,6 @@
 ---
 project: Digital_Life_Server
-stars: 2549
+stars: 2548
 description: |-
     Yet another voice assistant, but alive.
 url: https://github.com/zixiiu/Digital_Life_Server

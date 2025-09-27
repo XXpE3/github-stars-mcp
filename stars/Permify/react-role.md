@@ -1,6 +1,6 @@
 ---
 project: react-role
-stars: 195
+stars: 196
 description: |-
     Lightweight role based access management solution for React applications
 url: https://github.com/Permify/react-role

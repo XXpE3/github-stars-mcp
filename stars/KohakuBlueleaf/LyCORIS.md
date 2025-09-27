@@ -1,6 +1,6 @@
 ---
 project: LyCORIS
-stars: 2404
+stars: 2407
 description: |-
     Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion.
 url: https://github.com/KohakuBlueleaf/LyCORIS

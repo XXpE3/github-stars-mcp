@@ -1,6 +1,6 @@
 ---
 project: AliYunPan
-stars: 398
+stars: 399
 description: |-
     自动备份文件到阿里云盘，备份工具，网盘备份，一款可以自动检测新增文件，自动上传，定时自动备份本地目录文件到【阿里云盘】等于一体的多功能云备份工具
 url: https://github.com/oldchen888/AliYunPan

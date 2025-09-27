@@ -1,6 +1,6 @@
 ---
 project: awesome-claude-code
-stars: 14429
+stars: 14766
 description: |-
     A curated list of awesome commands, files, and workflows for Claude Code
 url: https://github.com/hesreallyhim/awesome-claude-code
@@ -70,7 +70,38 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
-*No new resources added this week.*
+[`run-claude-docker`](https://github.com/icanhasjonas/run-claude-docker) &nbsp; by &nbsp; [Jonas](https://github.com/icanhasjonas/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A self-contained Docker runner that forwards your current workspace into a safe(r) isolated docker container, where you still have access to your Claude Code settings, authentication, ssh agent, pgp, optionally aws keys etc.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for run-claude-docker](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=run-claude-docker&username=icanhasjonas&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`ClaudoPro Directory`](https://github.com/JSONbored/claudepro-directory) &nbsp; by &nbsp; [ghost](https://github.com/JSONbored)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Well-crafted, wide selection of Claude Code hooks, slash commands, subagent files, and more, covering a range of specialized tasks and workflows. Better resources than your average "Claude-template-for-everything" site.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claudepro-directory](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudepro-directory&username=JSONbored&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`ccoutputstyles`](https://github.com/viveknair/ccoutputstyles) &nbsp; by &nbsp; [Vivek Nair](https://github.com/viveknair)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+CLI tool and template gallery for customizing Claude Code output styles with pre-built templates. Features over 15 templates at the time of writing!
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ccoutputstyles](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccoutputstyles&username=viveknair&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 
 ## Awesome Claude Code Freedom Funders [🔝](#awesome-claude-code)
@@ -90,62 +121,67 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 - <details open>
   <summary><a href="#workflows--knowledge-guides-">Workflows & Knowledge Guides</a></summary>
 
-  - [General](#general)
+  - [General](#general-)
 
   </details>
 
 - <details open>
   <summary><a href="#tooling-">Tooling</a></summary>
 
-  - [General](#general)
-  - [IDE Integrations](#ide-integrations)
-  - [Usage Monitors](#usage-monitors)
-  - [Orchestrators](#orchestrators)
+  - [General](#general--1)
+  - [IDE Integrations](#ide-integrations-)
+  - [Usage Monitors](#usage-monitors-)
+  - [Orchestrators](#orchestrators-)
 
   </details>
 
 - <details open>
   <summary><a href="#status-lines-">Status Lines</a></summary>
 
-  - [General](#general)
+  - [General](#general--2)
 
   </details>
 
 - <details open>
   <summary><a href="#hooks-">Hooks</a></summary>
 
-  - [General](#general)
+  - [General](#general--3)
+
+  </details>
+
+- <details open>
+  <summary><a href="#output-styles-">Output Styles</a></summary>
+
+  - [General](#general--4)
 
   </details>
 
 - <details open>
   <summary><a href="#slash-commands-">Slash-Commands</a></summary>
 
-  - [General](#general)
-  - [Version Control & Git](#version-control--git)
-  - [Code Analysis & Testing](#code-analysis--testing)
-  - [Context Loading & Priming](#context-loading--priming)
-  - [Documentation & Changelogs](#documentation--changelogs)
-  - [CI / Deployment](#ci--deployment)
-  - [Project & Task Management](#project--task-management)
-  - [Miscellaneous](#miscellaneous)
+  - [Version Control & Git](#version-control--git-)
+  - [Code Analysis & Testing](#code-analysis--testing-)
+  - [Context Loading & Priming](#context-loading--priming-)
+  - [Documentation & Changelogs](#documentation--changelogs-)
+  - [CI / Deployment](#ci--deployment-)
+  - [Project & Task Management](#project--task-management-)
+  - [Miscellaneous](#miscellaneous-)
 
   </details>
 
 - <details open>
   <summary><a href="#claudemd-files-">CLAUDE.md Files</a></summary>
 
-  - [General](#general)
-  - [Language-Specific](#language-specific)
-  - [Domain-Specific](#domain-specific)
-  - [Project Scaffolding & MCP](#project-scaffolding--mcp)
+  - [Language-Specific](#language-specific-)
+  - [Domain-Specific](#domain-specific-)
+  - [Project Scaffolding & MCP](#project-scaffolding--mcp-)
 
   </details>
 
 - <details open>
-  <summary><a href="#official-documentation-%EF%B8%8F">Official Documentation</a></summary>
+  <summary><a href="#official-documentation-">Official Documentation</a></summary>
 
-  - [General](#general)
+  - [General](#general--5)
 
   </details>
 
@@ -195,6 +231,17 @@ Really comprehensive and feature-packed project-management workflow for Claude C
 
 [`ClaudeLog`](https://claudelog.com) &nbsp; by &nbsp; [InventorBlack](https://www.reddit.com/user/inventor_black/)    
 A comprehensive knowledge base with detailed breakdowns of advanced [mechanics](https://claudelog.com/mechanics/you-are-the-main-thread/) including [CLAUDE.md best practices](https://claudelog.com/mechanics/claude-md-supremacy), practical technique guides like [plan mode](https://claudelog.com/mechanics/plan-mode), [ultrathink](https://claudelog.com/faqs/what-is-ultrathink/), [sub-agents](https://claudelog.com/mechanics/task-agent-tools/), [agent-first design](https://claudelog.com/mechanics/agent-first-design/) and [configuration guides](https://claudelog.com/configuration).
+
+[`ClaudoPro Directory`](https://github.com/JSONbored/claudepro-directory) &nbsp; by &nbsp; [ghost](https://github.com/JSONbored)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Well-crafted, wide selection of Claude Code hooks, slash commands, subagent files, and more, covering a range of specialized tasks and workflows. Better resources than your average "Claude-template-for-everything" site.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claudepro-directory](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudepro-directory&username=JSONbored&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 [`Context Priming`](https://github.com/disler/just-prompt/tree/main/.claude/commands) &nbsp; by &nbsp; [disler](https://github.com/disler)    
 Provides a systematic approach to priming Claude Code with comprehensive project context through specialized commands for different project scenarios and development contexts.
@@ -404,6 +451,17 @@ Development environments for coding agents. Enable multiple agents to work safel
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for container-use](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=container-use&username=dagger&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`run-claude-docker`](https://github.com/icanhasjonas/run-claude-docker) &nbsp; by &nbsp; [Jonas](https://github.com/icanhasjonas/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A self-contained Docker runner that forwards your current workspace into a safe(r) isolated docker container, where you still have access to your Claude Code settings, authentication, ssh agent, pgp, optionally aws keys etc.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for run-claude-docker](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=run-claude-docker&username=icanhasjonas&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -741,6 +799,28 @@ Quality check hook for Node.js TypeScript projects with TypeScript compilation. 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-code-typescript-hooks](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-typescript-hooks&username=bartolli&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+</details>
+
+<br>
+
+## Output Styles 💬 [🔝](#awesome-claude-code)
+
+> **Output styles** allow you to use Claude Code as any type of agent while keeping its core capabilities, such as running local scripts, reading/writing files, and tracking TODOs.
+
+<details open>
+<summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`ccoutputstyles`](https://github.com/viveknair/ccoutputstyles) &nbsp; by &nbsp; [Vivek Nair](https://github.com/viveknair)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+CLI tool and template gallery for customizing Claude Code output styles with pre-built templates. Features over 15 templates at the time of writing!
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ccoutputstyles](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccoutputstyles&username=viveknair&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1296,7 +1376,7 @@ Reformats documentation to use React Stepper component, transforming heading for
 
 ## CLAUDE.md Files 📂 [🔝](#awesome-claude-code)
 
-> **`CLAUDE.md` files** are files that contain important guidelines and context-specfic information or instructions that help Claude Code to better understand your project and your coding standards
+> **`CLAUDE.md` files** are files that contain important guidelines and context-specific information or instructions that help Claude Code to better understand your project and your coding standards
 
 <details open>
 <summary><h3>Language-Specific <a href="#awesome-claude-code">🔝</a></h3></summary>
@@ -1610,16 +1690,16 @@ Offers clear step-by-step installation instructions with multiple configuration 
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
 
-[`Anthropic Documentation`](https://docs.anthropic.com/en/docs/claude-code) &nbsp; by &nbsp; [Anthropic](https://github.com/anthropics)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;&copy;  
+[`Anthropic Documentation`](https://docs.claude.com/en/home) &nbsp; by &nbsp; [Anthropic](https://github.com/anthropics)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;&copy;  
 The official documentation for Claude Code, including installation instructions, usage guidelines, API references, tutorials, examples, loads of information that I won't list individually. Like Claude Code, the documentation is frequently updated.
 
-[`Anthropic Quickstarts`](https://github.com/anthropics/anthropic-quickstarts/blob/main/CLAUDE.md) &nbsp; by &nbsp; [Anthropic](https://github.com/anthropics)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`Anthropic Quickstarts`](https://github.com/anthropics/claude-quickstarts) &nbsp; by &nbsp; [Anthropic](https://github.com/anthropics)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Offers comprehensive development guides for three distinct AI-powered demo projects with standardized workflows, strict code style guidelines, and containerization instructions.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for anthropic-quickstarts](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=anthropic-quickstarts&username=anthropics&all_stats=true&stats_only=true)
+![GitHub Stats for claude-quickstarts](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-quickstarts&username=anthropics&all_stats=true&stats_only=true)
 
 </details>
 <br>

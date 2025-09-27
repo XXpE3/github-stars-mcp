@@ -1,6 +1,6 @@
 ---
 project: OCRmyPDF
-stars: 31231
+stars: 31311
 description: |-
     OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched
 url: https://github.com/ocrmypdf/OCRmyPDF

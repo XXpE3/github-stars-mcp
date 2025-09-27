@@ -1,6 +1,6 @@
 ---
 project: emacs-webkit
-stars: 447
+stars: 448
 description: |-
     An Emacs Dynamic Module for WebKit, aka a fully fledged browser inside emacs
 url: https://github.com/akirakyle/emacs-webkit

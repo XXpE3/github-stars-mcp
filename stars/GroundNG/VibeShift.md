@@ -1,6 +1,6 @@
 ---
 project: VibeShift
-stars: 57
+stars: 59
 description: |-
     [MCP Server] The Security Agent for AI assisted coding
 url: https://github.com/GroundNG/VibeShift

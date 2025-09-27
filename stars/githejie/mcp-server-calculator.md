@@ -1,6 +1,6 @@
 ---
 project: mcp-server-calculator
-stars: 121
+stars: 122
 description: |-
     A Model Context Protocol server for calculating.
 url: https://github.com/githejie/mcp-server-calculator

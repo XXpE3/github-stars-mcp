@@ -1,6 +1,6 @@
 ---
 project: codefever
-stars: 2764
+stars: 2765
 description: |-
     CodeFever 是完全免费开源的 Git 代码托管服务，支持一行命令安装到自己服务器！CodeFever Community Edition (A Self-hosted Git Services)!
 url: https://github.com/PGYER/codefever

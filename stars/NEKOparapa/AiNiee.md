@@ -1,6 +1,6 @@
 ---
 project: AiNiee
-stars: 3729
+stars: 3823
 description: |-
     一款专注于Ai翻译的工具，一键自动翻译RPG SLG游戏，Epub TXT小说，Srt Vtt Lrc字幕，Word MD文档等等复杂长文本。
 url: https://github.com/NEKOparapa/AiNiee
@@ -39,6 +39,8 @@ url: https://github.com/NEKOparapa/AiNiee
 * **长文优化，质量出众**
     * 🎯 **突破局限**：采用轻盈翻译格式、思维链翻译、AI 术语表、上下文关联等技术，确保长文本翻译的连贯性与准确性。
     * 💎 **质量追求**：支持 基础提示、角色介绍、背景设定、翻译风格 等提示词调整，拥有 一键AI润色、一键AI排版、一键提取术语 等功能，满足对翻译质量有更高要求的用户。
+
+* ✨ **姊妹项目推荐**：[**ReaDreamAI**](https://github.com/NEKOparapa/ReaDreamAI) - AI阅读增强工具，一键为轻小说、同人作品生成高一致性的AI插图与视频。
 
 ---
 
@@ -233,6 +235,8 @@ AiNiee能够不断发展迭代至今，其关键功能框架均源于项目创�
 请大家在使用和学习之余，尊重开源精神，署名来源项目，并不忘了给项目点个star。
 
 该款AI翻译工具仅供个人合法用途,任何使用该工具进行直接或者间接非法盈利活动的行为,均不属于授权范围,也不受到任何支持和认可。
+
+* 关于开发者** @neavo **合作说明: 在AiNiee v5.2版本，2月初，已退出AiNiee的开发工作。我们对他在此期间(2024-09至2025-02)，特别是在V5版本的UI改良美化所付出的努力表示非常感谢。[详细说明](https://github.com/NEKOparapa/AiNiee/releases/tag/AiNiee6.2.3)
 
 * **`交♂交流群`**:  QQ交流群(主要活跃，答案：github)：8216248九零，备用TG群：https://t.me/+JVHbDSGo8SI2Njhl ,
 

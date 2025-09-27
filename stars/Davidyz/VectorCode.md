@@ -1,6 +1,6 @@
 ---
 project: VectorCode
-stars: 665
+stars: 673
 description: |-
     A code repository indexing tool to supercharge your LLM experience.
 url: https://github.com/Davidyz/VectorCode
@@ -29,6 +29,7 @@ and integrations for some of the popular plugins.
   * [About Versioning](#about-versioning)
 * [TODOs](#todos)
 * [Credit](#credit)
+  * [Special Thanks](#special-thanks)
 * [Star History](#star-history)
 
 <!-- mtoc-end -->
@@ -118,6 +119,9 @@ This project follows an adapted semantic versioning:
   VectorCode with [MCP](https://modelcontextprotocol.io/introduction);
 - The nix community (especially [@sarahec](https://github.com/sarahec) and [@GaetanLepage](https://github.com/GaetanLepage))
   for maintaining the nix packages.
+
+### Special Thanks
+[![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSource)
 
 ## Star History
 

@@ -1,6 +1,6 @@
 ---
 project: XcodeBuildMCP
-stars: 2574
+stars: 2614
 description: |-
     A Model Context Protocol (MCP) server that provides Xcode-related tools for integration with AI assistants and other MCP clients.
 url: https://github.com/cameroncooke/XcodeBuildMCP
@@ -94,6 +94,7 @@ The XcodeBuildMCP server provides the following tool capabilities:
 - **Log Capture**: Capture run-time logs from a simulator
 - **UI Automation**: Interact with simulator UI elements
 - **Screenshot**: Capture screenshots from a simulator
+- **Video Capture**: Start/stop simulator video capture to MP4 (AXe v1.1.0+)
 
 ### Device management
 - **Device Discovery**: List connected physical Apple devices over USB or Wi-Fi
@@ -125,7 +126,9 @@ For clients that support MCP resources XcodeBuildMCP provides efficient URI-base
 - Xcode 16.x or later
 - Node 18.x or later
 
-### Configure your MCP client
+> Video capture requires the bundled AXe binary (v1.1.0+). Run `npm run bundle:axe` once locally before using `record_sim_video`. This is not required for unit tests.
+
+Configure your MCP client
 
 #### One click install
 
@@ -282,7 +285,7 @@ For clients that don't support MCP Sampling but still want to reduce context win
 **Available Workflows:**
 - `device` (14 tools) - iOS Device Development
 - `simulator` (18 tools) - iOS Simulator Development
-- `simulator-management` (7 tools) - Simulator Management
+- `simulator-management` (8 tools) - Simulator Management
 - `swift-package` (6 tools) - Swift Package Manager
 - `project-discovery` (5 tools) - Project Discovery
 - `macos` (11 tools) - macOS Development
@@ -379,5 +382,4 @@ See our documentation for development:
 ## Licence
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 

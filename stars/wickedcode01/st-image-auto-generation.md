@@ -1,6 +1,6 @@
 ---
 project: st-image-auto-generation
-stars: 32
+stars: 38
 description: |-
     It's a plugin for sillytavern, allows you to generate images automatically.
 url: https://github.com/wickedcode01/st-image-auto-generation

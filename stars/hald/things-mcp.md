@@ -1,6 +1,6 @@
 ---
 project: things-mcp
-stars: 131
+stars: 132
 description: |-
     Things.app MCP Server
 url: https://github.com/hald/things-mcp

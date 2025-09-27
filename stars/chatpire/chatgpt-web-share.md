@@ -1,6 +1,6 @@
 ---
 project: chatgpt-web-share
-stars: 4304
+stars: 4301
 description: |-
     ChatGPT Plus 共享方案。ChatGPT Plus / OpenAI API sharing solution.
 url: https://github.com/chatpire/chatgpt-web-share

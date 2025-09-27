@@ -1,6 +1,6 @@
 ---
 project: Swagger-MCP
-stars: 74
+stars: 79
 description: |-
     MCP wrapper for Swagger/OpenAPI definitions
 url: https://github.com/Vizioz/Swagger-MCP

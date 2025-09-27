@@ -1,6 +1,6 @@
 ---
 project: Diabetes-Prediction-Bot
-stars: 3
+stars: 2
 description: |-
     this repository is part of combined disease prediction repository
 url: https://github.com/Sudhanshu-Ambastha/Diabetes-Prediction-Bot

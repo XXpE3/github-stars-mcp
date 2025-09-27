@@ -1,6 +1,6 @@
 ---
 project: croc
-stars: 31095
+stars: 31134
 description: |-
     Easily and securely send things from one computer to another :crocodile: :package:
 url: https://github.com/schollz/croc
@@ -15,9 +15,12 @@ url: https://github.com/schollz/croc
   <a href="https://github.com/schollz/croc/actions/workflows/ci.yml">
     <img src="https://github.com/schollz/croc/actions/workflows/ci.yml/badge.svg" alt="Build Status">
   </a>
+  <a href="https://github.com/sponsors/schollz"> <img
+alt="GitHub Sponsors" src="https://img.shields.io/github/sponsors/schollz">
+</a>
 </p>
 <p align="center">
-  This project is supported by <a href="https://github.com/sponsors/schollz">GitHub sponsors</a>.
+  <strong>This project’s future depends on community support. <a href="https://github.com/sponsors/schollz">Become a sponsor today</a>.</strong>
 </p>
 
 ## About
@@ -156,6 +159,16 @@ Or install into a particular environment with [`conda`](https://docs.conda.io/pr
 ```bash
 conda install --channel conda-forge croc
 ```
+
+### On Linux, macOS via Docker 
+
+Add the following one-liner function to your ~/.profile (works with any POSIX-compliant shell):
+
+```bash
+croc() { [ $# -eq 0 ] && set -- ""; docker run --rm -it --user "$(id -u):$(id -g)" -v "$(pwd):/c" -v "$HOME/.config/croc:/.config/croc" -w /c -e CROC_SECRET schollz/croc "$@"; }
+```
+
+You can also just paste it in the terminal for current session. On first run Docker will pull the image. `croc` via Docker will only work within the current directory and its subdirectories.
 
 ### Build from Source
 

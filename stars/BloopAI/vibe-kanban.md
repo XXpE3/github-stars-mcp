@@ -1,6 +1,6 @@
 ---
 project: vibe-kanban
-stars: 4990
+stars: 5148
 description: |-
     Kanban board to manage your AI coding agents
 url: https://github.com/BloopAI/vibe-kanban
@@ -82,7 +82,16 @@ pnpm i
 pnpm run dev
 ```
 
-This will start the frontend and backend with live reloading. A blank DB will be copied from the `dev_assets_seed` folder.
+This will start the backend. A blank DB will be copied from the `dev_assets_seed` folder.
+
+### Building the frontend
+
+To build just the frontend:
+
+```bash
+cd frontend
+pnpm build
+```
 
 ### Build from source
 

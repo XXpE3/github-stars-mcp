@@ -1,6 +1,6 @@
 ---
 project: ChainForge
-stars: 2769
+stars: 2779
 description: |-
     An open-source visual programming environment for battle-testing prompts to LLMs.
 url: https://github.com/ianarawjo/ChainForge
@@ -76,7 +76,7 @@ Now you can open the browser of your choice and open `http://127.0.0.1:8000`.
 
 - OpenAI
 - Anthropic
-- Google (Gemini, PaLM2)
+- Google Gemini
 - DeepSeek
 - HuggingFace (Inference and Endpoints)
 - Together.ai

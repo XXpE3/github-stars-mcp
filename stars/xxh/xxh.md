@@ -1,6 +1,6 @@
 ---
 project: xxh
-stars: 5748
+stars: 5763
 description: |-
     🚀 Bring your favorite shell wherever you go through the ssh. Xonsh shell, fish, zsh, osquery and so on.
 url: https://github.com/xxh/xxh
@@ -112,7 +112,7 @@ xxh local [xxh arguments]
 ```
 
 Common examples (use `xxh --help` to get info about arguments):
-```yaml
+```xsh
 xxh anyhost                                       # Connect to the host
 xxh -i id_rsa -p 2222 anyhost                     # Using ssh arguments: port and key
 xxh user@host +c et                               # Using EternalTerminal (https://github.com/MisterTea/EternalTerminal)
@@ -133,7 +133,7 @@ For reusing arguments and simplifying xxh usage (like shortening to `xxh anyhost
 xxh [+I xxh-package +I ...] [+L] [+RI xxh-package +RI ...] [+R xxh-package +R ...]
 ```
 Different ways to set the xxh package source:
-```yaml
+```xsh
 xxh +I xxh-shell-example                                         # install from https://github.com/xxh
 xxh +I https://github.com/xxh/xxh-shell-example                  # short url for github only, for other sources use examples below or add support
 xxh +I https://github.com/xxh/xxh-shell-example/tree/mybranch    # short url for github only, for other sources use examples below or add support
