@@ -1,6 +1,6 @@
 ---
 project: system-prompts-and-models-of-ai-tools
-stars: 88241
+stars: 89705
 description: |-
     FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus Agent Tools, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models
 url: https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools
@@ -38,6 +38,8 @@ url: https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools
 <a href="https://trendshift.io/repositories/14084" target="_blank"><img src="https://trendshift.io/api/badge/repositories/14084" alt="x1xhlol%2Fsystem-prompts-and-models-of-ai-tools | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
 📜 Over **20,000+ lines** of insights into their structure and functionality.  
+
+⭐ **Star to follow updates**
 
 [![Build Status](https://app.cloudback.it/badge/x1xhlol/system-prompts-and-models-of-ai-tools)](https://cloudback.it)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/x1xhlol/system-prompts-and-models-of-ai-tools)
@@ -109,6 +111,8 @@ You can show your support via:
 - [**CodeBuddy**](./CodeBuddy%20Prompts/)
 - [**Poke**](./Poke/)
 - [**Comet Assistant**](./Comet%20Assistant/)
+- [**Anthropic**](./Anthropic/)
+- [**Amp**](./AMp/)
 
 ---
 
@@ -116,7 +120,7 @@ You can show your support via:
 
 > Open an issue.
 
-> **Latest Update:** 25/09/2025
+> **Latest Update:** 02/10/2025
 
 ---
 

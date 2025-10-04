@@ -1,6 +1,6 @@
 ---
 project: nali-cli
-stars: 448
+stars: 447
 description: |-
     :anchor: Parse geoinfo of IP Address without leaving your terminal
 url: https://github.com/SukkaW/nali-cli

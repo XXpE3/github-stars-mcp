@@ -1,6 +1,6 @@
 ---
 project: fq
-stars: 10246
+stars: 10248
 description: |-
     jq for binary formats - tool, language and decoders for working with binary and text formats
 url: https://github.com/wader/fq

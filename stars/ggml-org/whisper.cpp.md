@@ -1,6 +1,6 @@
 ---
 project: whisper.cpp
-stars: 43474
+stars: 43624
 description: |-
     Port of OpenAI's Whisper model in C/C++
 url: https://github.com/ggml-org/whisper.cpp
@@ -15,7 +15,7 @@ url: https://github.com/ggml-org/whisper.cpp
 [![Conan Center](https://shields.io/conan/v/whisper-cpp)](https://conan.io/center/whisper-cpp)
 [![npm](https://img.shields.io/npm/v/whisper.cpp.svg)](https://www.npmjs.com/package/whisper.cpp/)
 
-Stable: [v1.7.6](https://github.com/ggml-org/whisper.cpp/releases/tag/v1.7.6) / [Roadmap](https://github.com/orgs/ggml-org/projects/4/)
+Stable: [v1.8.0](https://github.com/ggml-org/whisper.cpp/releases/tag/v1.8.0) / [Roadmap](https://github.com/orgs/ggml-org/projects/4/)
 
 High-performance inference of [OpenAI's Whisper](https://github.com/openai/whisper) automatic speech recognition (ASR) model:
 

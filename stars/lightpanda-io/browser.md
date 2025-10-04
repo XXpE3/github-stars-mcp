@@ -1,6 +1,6 @@
 ---
 project: browser
-stars: 9809
+stars: 9917
 description: |-
     Lightpanda: the headless browser designed for AI and automation
 url: https://github.com/lightpanda-io/browser

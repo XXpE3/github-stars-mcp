@@ -1,6 +1,6 @@
 ---
 project: DesktopCommanderMCP
-stars: 4556
+stars: 4608
 description: |-
     This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities
 url: https://github.com/wonderwhy-er/DesktopCommanderMCP
@@ -435,7 +435,7 @@ The server provides a comprehensive set of tools organized into several categori
 | | `read_multiple_files` | Read multiple files simultaneously |
 | | `write_file` | Write file contents with options for rewrite or append mode (uses configurable line limits) |
 | | `create_directory` | Create a new directory or ensure it exists |
-| | `list_directory` | Get detailed listing of files and directories |
+| | `list_directory` | Get detailed recursive listing of files and directories (supports depth parameter, default depth=2) |
 | | `move_file` | Move or rename files and directories |
 | | `start_search` | Start streaming search for files by name or content patterns (unified ripgrep-based search) |
 | | `get_more_search_results` | Get paginated results from active search with offset support |
@@ -444,6 +444,7 @@ The server provides a comprehensive set of tools organized into several categori
 | | `get_file_info` | Retrieve detailed metadata about a file or directory |
 | **Text Editing** | `edit_block` | Apply targeted text replacements with enhanced prompting for smaller edits (includes character-level diff feedback) |
 | **Analytics** | `get_usage_stats` | Get usage statistics for your own insight |
+| | `get_recent_tool_calls` | Get recent tool call history with arguments and outputs for debugging and context recovery |
 | | `give_feedback_to_desktop_commander` | Open feedback form in browser to provide feedback to Desktop Commander Team |
 
 ### Quick Examples

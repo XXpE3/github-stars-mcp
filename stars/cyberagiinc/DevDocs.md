@@ -1,6 +1,6 @@
 ---
 project: DevDocs
-stars: 1912
+stars: 1918
 description: |-
     Completely free, private, UI based Tech Documentation MCP server. Designed for coders and software developers in mind. Easily integrate into Cursor, Windsurf, Cline, Roo Code, Claude Desktop App 
 url: https://github.com/cyberagiinc/DevDocs

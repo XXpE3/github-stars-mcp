@@ -1,6 +1,6 @@
 ---
 project: transbridge
-stars: 182
+stars: 180
 description: |-
     TransBridge is a translation API proxy that offers high-quality machine translation via OpenAI-compatible APIs and supports the DeepL API format. TransBridge 是一个强大的翻译 API 代理服务，通过调用兼容 OpenAI 大语言模型的 API，提供高质量的机器翻译功能，并支持 DeepL API 接口格式。
 url: https://github.com/fruitbars/transbridge

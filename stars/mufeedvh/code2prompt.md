@@ -1,6 +1,6 @@
 ---
 project: code2prompt
-stars: 6563
+stars: 6575
 description: |-
     A CLI tool to convert your codebase into a single LLM prompt with source tree, prompt templating, and token counting.
 url: https://github.com/mufeedvh/code2prompt
@@ -16,7 +16,7 @@ url: https://github.com/mufeedvh/code2prompt
 </div>
 
 <h1 align="center">
-  <a href="https://code2prompt.dev"><img src=".assets/CLI.png" alt="code2prompt"></a>
+  <a href="https://code2prompt.dev"><img src=".assets/demo.gif" alt="code2prompt"></a>
 </h1>
 
 <hr />
@@ -39,7 +39,8 @@ url: https://github.com/mufeedvh/code2prompt
 
 ## Quick Install ⚡
 
-### Cargo 
+### Cargo
+
 ```bash
 cargo install code2prompt 
 ```
@@ -51,6 +52,7 @@ cargo install --features wayland code2prompt
 ```
 
 ### Homebrew
+
 ```bash
 brew install code2prompt
 ```

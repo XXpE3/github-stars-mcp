@@ -1,6 +1,6 @@
 ---
 project: opencommit
-stars: 6875
+stars: 6883
 description: |-
     top #1 and most feature rich GPT wrapper for git — generate commit messages with an LLM in 1 sec — works best with Claude or GPT, supports local models too
 url: https://github.com/di-sukharev/opencommit

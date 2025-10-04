@@ -1,6 +1,6 @@
 ---
 project: conda.el
-stars: 159
+stars: 160
 description: |-
     Emacs helper library (and minor mode) to work with conda environments
 url: https://github.com/necaris/conda.el

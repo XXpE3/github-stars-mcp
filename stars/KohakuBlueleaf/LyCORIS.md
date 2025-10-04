@@ -1,6 +1,6 @@
 ---
 project: LyCORIS
-stars: 2407
+stars: 2409
 description: |-
     Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion.
 url: https://github.com/KohakuBlueleaf/LyCORIS
@@ -171,6 +171,10 @@ lycoris_param = lycoris_net.parameters()
 forward_with_lyco = your_model(x)
 ```
 
+You can also layer multiple wrappers on top of the same module. Each call to `apply_to()` stacks a new adapter after the previously attached ones, and invoking `restore()` on a wrapper removes only its contribution while keeping earlier wrappers active. See [example/standalone_example.py](example/standalone_example.py) for an end-to-end demonstration.
+
+For a stacking-specific walkthrough (including selectively removing adapters), see `python example/stacked_wrapper_demo.py --help`.
+
 You can check my [HakuPhi](https://github.com/KohakuBlueleaf/HakuPhi) project to see how I utilize LyCORIS to finetune the Phi-1.5 models.
 
 #### Other method
@@ -267,21 +271,19 @@ See [docs/Conversion-scripts.md](docs/Conversion-scripts.md) for more informatio
 
 For full log, please see [Change.md](Change.md)
 
-### 2025/04/23 update to 3.2.0
+### 2025/10/04 update to 3.3.0
 
 #### New Features
 
-* Support lora-plus learning rate scaling
-* Support HunYuanVideo model and Wan2.1 model
-* LyCORIS now have `onfly_merge` and `onfly_restore` method. Which can be used in inference time to merge the weights of LyCORIS into the original model. This will save the memory and speed up the inference time.
+* Support multi adapter from #266, thanks @bghira !
 
 #### Improvements
 
-* [BREAKING CHANGES] Now LyCORIS will use `wd_on_output=True` by default. This will make the weight norm more consistent with the original paper.
+* Support more model such as Gemma2, HunyuanVideo, Wan ...
 
 #### Bug fixes
 
-* `bypass_mode=False` will turn off the bypass mode correctly now.
+* BOFT shape issue resolved.
 
 ## Todo list
 

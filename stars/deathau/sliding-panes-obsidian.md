@@ -1,6 +1,6 @@
 ---
 project: sliding-panes-obsidian
-stars: 821
+stars: 818
 description: |-
     Andy Matuschak Mode as a plugin
 url: https://github.com/deathau/sliding-panes-obsidian

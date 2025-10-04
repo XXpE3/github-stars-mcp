@@ -1,6 +1,6 @@
 ---
 project: tabiew
-stars: 2421
+stars: 2433
 description: |-
     A lightweight TUI application to view and query tabular data files, such as CSV, TSV, and parquet.
 url: https://github.com/shshemi/tabiew
@@ -21,6 +21,7 @@ Tabiew is a lightweight TUI application that allows users to view and query tabu
 - 📝 Scripting support
 - 🗂️ Multi-table functionality
 - 📈 Plotting
+- 🎨 More than 400 beautiful themes
 
 ## Wiki
 
@@ -84,20 +85,43 @@ cp ./target/release/tw <system_or_local_bin_path>
 
 Start Tabiew with `tw`
 ```bash
-tw <path_to_csv(s)>
+tw <path_to_file(s)>
 ```
 
-To open TSV file(s), use:
+Tabiew automatically detects the file format based on the file extension. Supported formats include:
+- **CSV** (`.csv`) - Comma-separated values
+- **TSV** (`.tsv`) - Tab-separated values
+- **Parquet** (`.parquet`, `.pqt`)
+- **JSON** (`.json`)
+- **JSONL** (`.jsonl`) - JSON Lines
+- **Arrow** (`.arrow`)
+- **FWF** (`.fwf`) - Fixed-width format
+- **SQLite** (`.db`, `.sqlite`)
+- **Excel** (`.xls`, `.xlsx`, `.xlsm`, `.xlsb`)
+
+Examples:
+
+Open various files (format automatically detected):
 ```bash
-tw <path_to_tsv(s)> --separator $'\t' --no-header
+tw data.csv data.tsv data.arrow
 ```
 
-To open parquet file(s), use:
+Open CSV files with custom delimiter (pipe-separated):
 ```bash
-tw <path_to_parquet(s)> -f parquet
+tw data.csv --separator '|'
 ```
 
-To open a URL, use curl to pipe the output directly to Tabiew:
+Open CSV files with custom delimiter and no header row (semicolon-separated):
+```bash
+tw data.csv --separator ';' --no-header
+```
+
+Override format detection:
+```bash
+tw data.txt -f parquet
+```
+
+Open a URL using curl:
 ```bash
 curl -s "https://raw.githubusercontent.com/wiki/shshemi/tabiew/housing.csv" | tw
 ```
@@ -106,6 +130,7 @@ curl -s "https://raw.githubusercontent.com/wiki/shshemi/tabiew/housing.csv" | tw
 
 |Key Combination|Functionality|
 |-|-|
+| `F1`| Show help with all keyboard shortcuts|
 | `Enter`| Open sheet|
 | `h j k l` or `← ↓ ↑ →`| Navigation |
 | `b` / `w` | Previous / next column|
@@ -132,7 +157,7 @@ curl -s "https://raw.githubusercontent.com/wiki/shshemi/tabiew/housing.csv" | tw
 |`q` or `quit` |`q`| Return to table from sheet view otherwise quit|
 |`schema`| `schema`| Show loaded data frame(s) alongside their path(s)|
 |`reset`| `reset`| Reset the table to the original data frame|
-|`help`| `help`| Show help menu|
+|`help`| `help`| Show command reference in a new tab|
 
 
 ## Themes
@@ -160,6 +185,11 @@ curl -s "https://raw.githubusercontent.com/wiki/shshemi/tabiew/housing.csv" | tw
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit pull requests with your features and bug fixes.
+
+## Acknowledgments
+
+This application uses themes from the [Ghostty terminal](https://ghostty.org/).
+
 
 ## License
 

@@ -1,6 +1,6 @@
 ---
 project: SuperClaude_Framework
-stars: 16005
+stars: 16324
 description: |-
     A configuration framework that enhances Claude Code with specialized commands, cognitive personas, and development methodologies.
 url: https://github.com/SuperClaude-Org/SuperClaude_Framework

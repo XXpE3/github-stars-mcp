@@ -1,6 +1,6 @@
 ---
 project: mcp-knowledge-graph
-stars: 663
+stars: 676
 description: |-
     MCP server enabling persistent memory for Claude through a local knowledge graph - fork focused on local development
 url: https://github.com/shaneholloman/mcp-knowledge-graph

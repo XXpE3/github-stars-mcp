@@ -1,6 +1,6 @@
 ---
 project: ImHex
-stars: 50563
+stars: 50614
 description: |-
     🔍 A Hex Editor for Reverse Engineers, Programmers and people who value their retinas when working at 3 AM.
 url: https://github.com/WerWolv/ImHex

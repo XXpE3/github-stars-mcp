@@ -1,6 +1,6 @@
 ---
 project: ACG2vec
-stars: 569
+stars: 570
 description: |-
     ACG2vec (Anime Comics Games to vector) are committed to creating a playground that combines ACG and Deep learning.（文本语义检索、以图搜图、语义搜图、图片超分辨率、推荐系统）
 url: https://github.com/OysterQAQ/ACG2vec

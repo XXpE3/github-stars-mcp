@@ -1,6 +1,6 @@
 ---
 project: deer-flow
-stars: 17220
+stars: 17308
 description: |-
     DeerFlow is a community-driven Deep Research framework, combining language models with tools like web search, crawling, and Python execution, while contributing back to the open-source community.
 url: https://github.com/bytedance/deer-flow
@@ -103,6 +103,7 @@ cp .env.example .env
 
 # Configure conf.yaml for your LLM model and API keys
 # Please refer to 'docs/configuration_guide.md' for more details
+# For local development, you can use Ollama or other local models
 cp conf.yaml.example conf.yaml
 
 # Install marp for ppt generation

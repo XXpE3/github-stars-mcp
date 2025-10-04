@@ -1,6 +1,6 @@
 ---
 project: reference
-stars: 9129
+stars: 9168
 description: |-
     ⭕ Share quick reference cheat sheet for developers.
 url: https://github.com/Fechin/reference
@@ -84,6 +84,7 @@ Reference provides cheat sheets for the following:
   of [SASS](https://sass-lang.com).
 - [TOML](https://cheatsheets.zip/toml.html): This is a quick reference cheat sheet to the TOML format configuration file
   syntax.
+- [VHDL](https://cheatsheets.zip/vhdl.html): VHDL (VHSIC Hardware Description Language) cheat sheet - A comprehensive reference for digital hardware design and simulation.
 - [YAML](https://cheatsheets.zip/yaml.html): This is a quick reference cheat sheet for understanding and writing YAML
   format configuration files.
 

@@ -1,6 +1,6 @@
 ---
 project: vibe-tools
-stars: 4524
+stars: 4525
 description: |-
     Give Cursor Agent an AI Team and Advanced Skills
 url: https://github.com/eastlondoner/vibe-tools

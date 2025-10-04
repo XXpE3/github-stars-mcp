@@ -1,6 +1,6 @@
 ---
 project: ragflow
-stars: 65226
+stars: 65500
 description: |-
     RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs
 url: https://github.com/infiniflow/ragflow
@@ -349,11 +349,13 @@ docker build --platform linux/amd64 -f Dockerfile -t infiniflow/ragflow:nightly 
 5. If your operating system does not have jemalloc, please install it as follows:
 
    ```bash
-   # ubuntu
+   # Ubuntu
    sudo apt-get install libjemalloc-dev
-   # centos
+   # CentOS
    sudo yum install jemalloc
-   # mac
+   # OpenSUSE
+   sudo zypper install jemalloc
+   # macOS
    sudo brew install jemalloc
    ```
 

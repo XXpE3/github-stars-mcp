@@ -1,6 +1,6 @@
 ---
 project: mcp-link
-stars: 543
+stars: 550
 description: |-
     Convert Any OpenAPI V3 API to MCP Server
 url: https://github.com/automation-ai-labs/mcp-link

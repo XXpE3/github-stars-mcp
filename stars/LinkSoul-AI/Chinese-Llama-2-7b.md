@@ -1,6 +1,6 @@
 ---
 project: Chinese-Llama-2-7b
-stars: 2232
+stars: 2230
 description: |-
     开源社区第一个能下载、能运行的中文 LLaMA2 模型！
 url: https://github.com/LinkSoul-AI/Chinese-Llama-2-7b

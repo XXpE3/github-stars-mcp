@@ -1,6 +1,6 @@
 ---
 project: supergateway
-stars: 2088
+stars: 2106
 description: |-
     Run MCP stdio servers over SSE and SSE over stdio. AI gateway.
 url: https://github.com/supercorp-ai/supergateway
@@ -303,6 +303,7 @@ Supergateway emphasizes modularity:
 
 ## Contributors
 
+- [@longfin](https://github.com/longfin)
 - [@griffinqiu](https://github.com/griffinqiu)
 - [@folkvir](https://github.com/folkvir)
 - [@wizizm](https://github.com/wizizm)

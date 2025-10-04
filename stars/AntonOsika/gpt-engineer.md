@@ -1,6 +1,6 @@
 ---
 project: gpt-engineer
-stars: 54899
+stars: 54908
 description: |-
     CLI platform to experiment with codegen. Precursor to: https://lovable.dev
 url: https://github.com/AntonOsika/gpt-engineer

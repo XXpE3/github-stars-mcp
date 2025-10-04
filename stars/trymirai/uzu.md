@@ -1,6 +1,6 @@
 ---
 project: uzu
-stars: 1323
+stars: 1328
 description: |-
     A high-performance inference engine for AI models
 url: https://github.com/trymirai/uzu
@@ -107,7 +107,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             return true;
         }),
     )?;
-    println!("{}", output.text);
+    println!("{}", output.text.original);
     Ok(())
 }
 ```

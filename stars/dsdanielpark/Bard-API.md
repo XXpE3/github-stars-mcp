@@ -1,6 +1,6 @@
 ---
 project: Bard-API
-stars: 5245
+stars: 5241
 description: |-
     The unofficial python package that returns response of Google Bard through cookie value.
 url: https://github.com/dsdanielpark/Bard-API

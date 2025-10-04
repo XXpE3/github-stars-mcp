@@ -1,6 +1,6 @@
 ---
 project: aliyundrive-fuse
-stars: 953
+stars: 952
 description: |-
     阿里云盘 FUSE 磁盘挂载
 url: https://github.com/messense/aliyundrive-fuse

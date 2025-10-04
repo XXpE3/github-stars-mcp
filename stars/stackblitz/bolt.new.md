@@ -1,6 +1,6 @@
 ---
 project: bolt.new
-stars: 15740
+stars: 15769
 description: |-
     Prompt, run, edit, and deploy full-stack web applications. -- bolt.new -- Help Center: https://support.bolt.new/ -- Community Support: https://discord.com/invite/stackblitz
 url: https://github.com/stackblitz/bolt.new

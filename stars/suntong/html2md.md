@@ -1,6 +1,6 @@
 ---
 project: html2md
-stars: 265
+stars: 266
 description: |-
     HTML to Markdown converter
 url: https://github.com/suntong/html2md

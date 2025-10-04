@@ -1,6 +1,6 @@
 ---
 project: devpod
-stars: 14053
+stars: 14077
 description: |-
     Codespaces but open-source, client-only and unopinionated: Works with any IDE and lets you use any cloud, kubernetes or just localhost docker.
 url: https://github.com/loft-sh/devpod

@@ -1,6 +1,6 @@
 ---
 project: digital-garden-jekyll-template
-stars: 1175
+stars: 1172
 description: |-
     Start your own digital garden using this Jekyll template 🌱
 url: https://github.com/maximevaillancourt/digital-garden-jekyll-template

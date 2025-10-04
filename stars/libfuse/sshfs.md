@@ -1,6 +1,6 @@
 ---
 project: sshfs
-stars: 6976
+stars: 6981
 description: |-
     A network filesystem client to connect to SSH servers
 url: https://github.com/libfuse/sshfs

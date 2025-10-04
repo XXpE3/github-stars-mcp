@@ -1,6 +1,6 @@
 ---
 project: claude-auto-resume
-stars: 591
+stars: 595
 description: |-
     A shell script utility that automatically resumes Claude CLI tasks when usage limits are lifted.
 url: https://github.com/terryso/claude-auto-resume
@@ -11,6 +11,12 @@ url: https://github.com/terryso/claude-auto-resume
 A shell script utility that automatically resumes Claude CLI tasks when usage limits are lifted, or executes custom shell commands after waiting periods. It detects Claude usage restrictions, waits intelligently, and resumes task execution automatically.
 
 English | [中文](README_zh.md)
+
+### Claude/Codex 拼车服务
+
+| 平台 | 类型 | 服务 | 扫码拼团 |
+|:---|:---|:---|:---|
+| **ctok.ai** | 🤝 合作伙伴 | <small>✅ Claude Code<br>✅ Codex CLI</small> | ![](https://i.v2ex.co/5fFFN356.png) |
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F11HO935)
 

@@ -1,6 +1,6 @@
 ---
 project: pastemax
-stars: 1052
+stars: 1058
 description: |-
     A simple tool to select files from a repository to copy/paste into an LLM
 url: https://github.com/kleneway/pastemax

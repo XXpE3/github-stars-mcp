@@ -1,6 +1,6 @@
 ---
 project: ChatFred
-stars: 377
+stars: 376
 description: |-
     Alfred workflow using ChatGPT, DALL·E 2 and other models for chatting, image generation and more.
 url: https://github.com/chrislemke/ChatFred

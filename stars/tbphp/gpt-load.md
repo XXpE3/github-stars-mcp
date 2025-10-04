@@ -1,6 +1,6 @@
 ---
 project: gpt-load
-stars: 5124
+stars: 5203
 description: |-
     Multi-channel AI proxy with intelligent key rotation. 智能密钥轮询的多渠道 AI 代理。
 url: https://github.com/tbphp/gpt-load
@@ -566,6 +566,10 @@ response = client.messages.create(
 > **Important Note**: As a transparent proxy service, GPT-Load completely preserves the native API formats and authentication methods of various AI services. You only need to replace the endpoint address and use the **Proxy Key** configured in the management interface for seamless migration.
 
 </details>
+
+## Related Projects
+
+- **[New API](https://github.com/QuantumNous/new-api)** - Excellent AI model aggregation management and distribution system
 
 ## Contributing
 

@@ -1,6 +1,6 @@
 ---
 project: coze2openai
-stars: 650
+stars: 649
 description: |-
     Turn Coze API into OpenAI
 url: https://github.com/fatwang2/coze2openai

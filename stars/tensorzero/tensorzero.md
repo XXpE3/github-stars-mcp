@@ -1,6 +1,6 @@
 ---
 project: tensorzero
-stars: 10343
+stars: 10370
 description: |-
     TensorZero is an open-source stack for industrial-grade LLM applications. It unifies an LLM gateway, observability, optimization, evaluation, and experimentation.
 url: https://github.com/tensorzero/tensorzero

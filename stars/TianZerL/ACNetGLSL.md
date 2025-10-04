@@ -1,6 +1,6 @@
 ---
 project: ACNetGLSL
-stars: 145
+stars: 142
 description: |-
     ACNet (Anime4KCPP Net) re-implemented in GLSL for real-time anime upscaling
 url: https://github.com/TianZerL/ACNetGLSL

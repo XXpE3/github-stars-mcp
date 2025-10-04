@@ -1,6 +1,6 @@
 ---
 project: claude-code-router
-stars: 18499
+stars: 18917
 description: |-
     Use Claude Code as the foundation for coding infrastructure, allowing you to decide how to interact with the model while enjoying updates from Anthropic.
 url: https://github.com/musistudio/claude-code-router
@@ -14,7 +14,7 @@ url: https://github.com/musistudio/claude-code-router
 
 <hr>
 
-> Recently, we noticed an authentication issue with the API endpoint used to fetch the config file, which resulted in some users’ API keys being exposed. We strongly recommend updating to version v1.0.50 to prevent such issues!!!
+> I am currently seeking **Agent development related job opportunities**, either **based in Hangzhou** or **remote**. If you are interested in my projects or have suitable opportunities, feel free to reach out! 📧 Email: m@musiiot.top
 
 > A powerful tool to route Claude Code requests to different models and customize any request.
 
@@ -588,6 +588,13 @@ A huge thank you to all our sponsors for their generous support!
 - @\*政
 - @\*铭
 - @\*叶
+- @七\*o
+- @\*青
+- @\*\*晨
+- @\*远
+- @\*霄
+- @\*\*吉
+- @\*\*飞
 
 (If your name is masked, please contact me via my homepage email to update it with your GitHub username.)
 

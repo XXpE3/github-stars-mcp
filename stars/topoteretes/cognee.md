@@ -1,6 +1,6 @@
 ---
 project: cognee
-stars: 7315
+stars: 7553
 description: |-
     Memory for AI Agents in 6 lines of code
 url: https://github.com/topoteretes/cognee
@@ -83,6 +83,9 @@ Get started quickly with a Google Colab  <a href="https://colab.research.google.
 
 
 ## About cognee
+
+cognee works locally and stores your data on your device.
+Our hosted solution is just our deployment of OSS cognee on Modal, with the goal of making development and productionization easier.
 
 Self-hosted package:
 

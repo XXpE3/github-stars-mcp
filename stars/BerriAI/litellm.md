@@ -1,6 +1,6 @@
 ---
 project: litellm
-stars: 29346
+stars: 29530
 description: |-
     Python SDK, Proxy Server (LLM Gateway) to call 100+ LLM APIs in OpenAI format - [Bedrock, Azure, OpenAI, VertexAI, Cohere, Anthropic, Sagemaker, HuggingFace, Replicate, Groq]
 url: https://github.com/BerriAI/litellm
@@ -281,7 +281,7 @@ echo 'LITELLM_SALT_KEY="sk-1234"' >> .env
 source .env
 
 # Start
-docker-compose up
+docker compose up
 ```
 
 

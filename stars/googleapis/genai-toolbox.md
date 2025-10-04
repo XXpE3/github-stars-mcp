@@ -1,6 +1,6 @@
 ---
 project: genai-toolbox
-stars: 10713
+stars: 10800
 description: |-
     MCP Toolbox for Databases is an open source MCP server for databases.
 url: https://github.com/googleapis/genai-toolbox
@@ -41,7 +41,6 @@ documentation](https://googleapis.github.io/genai-toolbox/).
 - [Getting Started](#getting-started)
   - [Installing the server](#installing-the-server)
   - [Running the server](#running-the-server)
-    - [Homebrew Users](#homebrew-users)
   - [Integrating your application](#integrating-your-application)
 - [Configuration](#configuration)
   - [Sources](#sources)
@@ -123,13 +122,53 @@ following instructions for your OS and CPU architecture.
 To install Toolbox as a binary:
 
 <!-- {x-release-please-start-version} -->
-```sh
-# see releases page for other versions
-export VERSION=0.16.0
-curl -O https://storage.googleapis.com/genai-toolbox/v$VERSION/linux/amd64/toolbox
-chmod +x toolbox
-```
-
+> <details>
+> <summary>Linux (AMD64)</summary>
+>
+> To install Toolbox as a binary on Linux (AMD64):
+> ```sh
+> # see releases page for other versions
+> export VERSION=0.16.0
+> curl -L -o toolbox https://storage.googleapis.com/genai-toolbox/v$VERSION/linux/amd64/toolbox
+> chmod +x toolbox
+> ```
+>
+> </details>
+> <details>
+> <summary>macOS (Apple Silicon)</summary>
+>
+> To install Toolbox as a binary on macOS (Apple Silicon):
+> ```sh
+> # see releases page for other versions
+> export VERSION=0.16.0
+> curl -L -o toolbox https://storage.googleapis.com/genai-toolbox/v$VERSION/darwin/arm64/toolbox
+> chmod +x toolbox
+> ```
+>
+> </details>
+> <details>
+> <summary>macOS (Intel)</summary>
+>
+> To install Toolbox as a binary on macOS (Intel):
+> ```sh
+> # see releases page for other versions
+> export VERSION=0.16.0
+> curl -L -o toolbox https://storage.googleapis.com/genai-toolbox/v$VERSION/darwin/amd64/toolbox
+> chmod +x toolbox
+> ```
+>
+> </details>
+> <details>
+> <summary>Windows (AMD64)</summary>
+>
+> To install Toolbox as a binary on Windows (AMD64):
+> ```powershell
+> # see releases page for other versions
+> $VERSION = "0.16.0"
+> Invoke-WebRequest -Uri "https://storage.googleapis.com/genai-toolbox/v$VERSION/windows/amd64/toolbox.exe" -OutFile "toolbox.exe"
+> ```
+>
+> </details>
 </details>
 
 <details>

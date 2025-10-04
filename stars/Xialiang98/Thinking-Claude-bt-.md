@@ -1,6 +1,6 @@
 ---
 project: Thinking-Claude-bt-
-stars: 8
+stars: 9
 description: |-
     null
 url: https://github.com/Xialiang98/Thinking-Claude-bt-

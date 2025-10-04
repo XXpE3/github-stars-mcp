@@ -1,6 +1,6 @@
 ---
 project: zoxide
-stars: 30176
+stars: 30306
 description: |-
     A smarter cd command. Supports all major shells.
 url: https://github.com/ajeetdsouza/zoxide
@@ -20,12 +20,12 @@ url: https://github.com/ajeetdsouza/zoxide
 <sup>Special thanks to:</sup>
 
 <!-- markdownlint-disable-next-line MD013 -->
-<div><img alt="Sponsored by Warp" width="230" src="https://raw.githubusercontent.com/warpdotdev/brand-assets/refs/heads/main/Github/Sponsor/Warp-Github-LG-03.png" /></div>
+<div><a href="https://go.warp.dev/zoxide"><img alt="Sponsored by Warp" width="230" src="https://raw.githubusercontent.com/warpdotdev/brand-assets/refs/heads/main/Github/Sponsor/Warp-Github-LG-03.png" /></a></div>
 <div><sup><b>Warp, built for coding with multiple AI agents.</b></sup></div>
 <div><sup>Available for macOS, Linux, and Windows.</sup></div>
 <div><sup>
   Visit
-  <a href="https://www.warp.dev/?utm_source=github&utm_medium=referral&utm_campaign=zoxide_20231001"><u>warp.dev</u></a>
+  <a href="https://go.warp.dev/zoxide"><u>warp.dev</u></a>
   to learn more.
 </sup></div>
 

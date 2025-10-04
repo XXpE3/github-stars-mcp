@@ -1,6 +1,6 @@
 ---
 project: api-for-open-llm
-stars: 2457
+stars: 2456
 description: |-
     Openai style api for open large language models, using LLMs just as chatgpt! Support for LLaMA, LLaMA-2, BLOOM, Falcon, Baichuan, Qwen, Xverse, SqlCoder, CodeLLaMA, ChatGLM, ChatGLM2, ChatGLM3 etc. 开源大模型的统一后端接口
 url: https://github.com/xusenlinzy/api-for-open-llm

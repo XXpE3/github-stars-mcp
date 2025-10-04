@@ -1,6 +1,6 @@
 ---
 project: hcache
-stars: 649
+stars: 650
 description: |-
     showing top X biggest cache files global
 url: https://github.com/silenceshell/hcache

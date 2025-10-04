@@ -1,6 +1,6 @@
 ---
 project: PulsePro
-stars: 486
+stars: 487
 description: |-
     A macOS app for viewing logs from Pulse
 url: https://github.com/kean/PulsePro

@@ -1,6 +1,6 @@
 ---
 project: Genshin
-stars: 103
+stars: 104
 description: |-
     原神反和谐
 url: https://github.com/BunnySakura/Genshin

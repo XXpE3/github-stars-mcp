@@ -1,6 +1,6 @@
 ---
 project: marker
-stars: 28936
+stars: 29039
 description: |-
     Convert PDF to markdown + JSON quickly with high accuracy
 url: https://github.com/datalab-to/marker

@@ -1,6 +1,6 @@
 ---
 project: gpt-code-ui
-stars: 3589
+stars: 3585
 description: |-
     An open source implementation of OpenAI's ChatGPT Code interpreter
 url: https://github.com/ricklamers/gpt-code-ui

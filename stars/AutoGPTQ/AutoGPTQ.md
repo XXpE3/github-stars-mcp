@@ -1,6 +1,6 @@
 ---
 project: AutoGPTQ
-stars: 4951
+stars: 4948
 description: |-
     An easy-to-use LLMs quantization package with user-friendly apis, based on GPTQ algorithm.
 url: https://github.com/AutoGPTQ/AutoGPTQ

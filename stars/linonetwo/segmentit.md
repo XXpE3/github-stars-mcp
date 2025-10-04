@@ -1,6 +1,6 @@
 ---
 project: segmentit
-stars: 303
+stars: 302
 description: |-
     任何 JS 环境可用的中文分词包，fork from leizongmin/node-segment
 url: https://github.com/linonetwo/segmentit
