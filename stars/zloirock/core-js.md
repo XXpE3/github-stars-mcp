@@ -1,6 +1,6 @@
 ---
 project: core-js
-stars: 25255
+stars: 25266
 description: |-
     Standard Library
 url: https://github.com/zloirock/core-js
@@ -14,14 +14,17 @@ url: https://github.com/zloirock/core-js
 
 </div>
 
-**I highly recommend reading this: [So, what's next?](https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md)**
+**Welcome to our new website, [core-js.io](https://core-js.io/), where our documentation is moving!**
+---
+
+**I highly recommend reading this: [So, what's next?](https://core-js.io/blog/2023-02-14-so-whats-next)**
 ---
 
 > Modular standard library for JavaScript. Includes polyfills for [ECMAScript up to 2025](#ecmascript): [promises](#ecmascript-promise), [symbols](#ecmascript-symbol), [collections](#ecmascript-collections), iterators, [typed arrays](#ecmascript-typed-arrays), many other features, [ECMAScript proposals](#ecmascript-proposals), [some cross-platform WHATWG / W3C features and proposals](#web-standards) like [`URL`](#url-and-urlsearchparams). You can load only required features or use it without global namespace pollution.
 
 **If you are looking for documentation for obsolete `core-js@2`, please, check [this branch](https://github.com/zloirock/core-js/tree/v2).**
 
-## [core-js@3, babel and a look into the future](https://github.com/zloirock/core-js/tree/master/docs/2019-03-19-core-js-3-babel-and-a-look-into-the-future.md)
+## [core-js@3, babel and a look into the future](https://core-js.io/blog/2019-03-19-core-js-3-babel-and-a-look-into-the-future)
 
 ## Raising funds
 
@@ -227,11 +230,11 @@ structuredClone(new Set([1, 2, 3])); // => new Set([1, 2, 3])
 ### Installation:[⬆](#index)
 ```sh
 // global version
-npm install --save core-js@3.45.1
+npm install --save core-js@3.46.0
 // version without global namespace pollution
-npm install --save core-js-pure@3.45.1
+npm install --save core-js-pure@3.46.0
 // bundled global version
-npm install --save core-js-bundle@3.45.1
+npm install --save core-js-bundle@3.46.0
 ```
 
 Or you can use `core-js` [from CDN](https://www.jsdelivr.com/package/npm/core-js-bundle).
@@ -329,10 +332,10 @@ import 'regenerator-runtime/runtime';
 
 #### `@babel/preset-env`[⬆](#index)
 
-[`@babel/preset-env`](https://github.com/babel/babel/tree/master/packages/babel-preset-env) has `useBuiltIns` option, which optimizes the use of the global version of `core-js`. With `useBuiltIns` option, you should also set `corejs` option to the used version of `core-js`, like `corejs: '3.45'`.
+[`@babel/preset-env`](https://github.com/babel/babel/tree/master/packages/babel-preset-env) has `useBuiltIns` option, which optimizes the use of the global version of `core-js`. With `useBuiltIns` option, you should also set `corejs` option to the used version of `core-js`, like `corejs: '3.46'`.
 
 > [!IMPORTANT]
-> It is recommended to specify the used minor `core-js` version, like `corejs: '3.45'`, instead of `corejs: 3`, since with `corejs: 3` will not be injected modules which were added in minor `core-js` releases.
+> It is recommended to specify the used minor `core-js` version, like `corejs: '3.46'`, instead of `corejs: 3`, since with `corejs: 3` will not be injected modules which were added in minor `core-js` releases.
 
 ---
 
@@ -393,7 +396,7 @@ import 'core-js/modules/es.array.of';
 var array = Array.of(1, 2, 3);
 ```
 
-By default, `@babel/preset-env` with `useBuiltIns: 'usage'` option only polyfills stable features, but you can enable polyfilling of proposals by the `proposals` option, as `corejs: { version: '3.45', proposals: true }`.
+By default, `@babel/preset-env` with `useBuiltIns: 'usage'` option only polyfills stable features, but you can enable polyfilling of proposals by the `proposals` option, as `corejs: { version: '3.46', proposals: true }`.
 
 > [!IMPORTANT]
 > In the case of `useBuiltIns: 'usage'`, you should not add `core-js` imports by yourself, they will be added automatically.
@@ -431,7 +434,7 @@ Fast JavaScript transpiler `swc` [contains integration with `core-js`](https://s
   "env": {
     "targets": "> 0.25%, not dead",
     "mode": "entry",
-    "coreJs": "3.45"
+    "coreJs": "3.46"
   }
 }
 ```

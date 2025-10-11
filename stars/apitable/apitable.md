@@ -1,6 +1,6 @@
 ---
 project: apitable
-stars: 14924
+stars: 14936
 description: |-
     🚀🎉📚 APITable, an API-oriented low-code platform for building collaborative apps and better than all other Airtable open-source alternatives. 
 url: https://github.com/apitable/apitable

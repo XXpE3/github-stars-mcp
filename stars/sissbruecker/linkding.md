@@ -1,6 +1,6 @@
 ---
 project: linkding
-stars: 9173
+stars: 9256
 description: |-
     Self-hosted bookmark manager that is designed be to be minimal, fast, and easy to set up using Docker.
 url: https://github.com/sissbruecker/linkding

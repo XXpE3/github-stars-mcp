@@ -1,6 +1,6 @@
 ---
 project: cursor-ai-downloads
-stars: 2994
+stars: 3005
 description: |-
     All Cursor AI's official download links for both the latest and older versions, making it easy for you to update, downgrade, and choose any version. 🚀
 url: https://github.com/oslook/cursor-ai-downloads
@@ -95,16 +95,16 @@ List some key features and the versions they were introduced in for reference wh
 <!-- LATEST_VERSION_CARD_START -->
 <div align="center">
 <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
-<h1 style="text-align: center; margin-bottom: 0;">🚀 Cursor 1.7.33</h1>
-<p style="text-align: center; color: #666; margin-top: 10px; margin-bottom: 20px;">Release Date: 2025-10-03</p>
+<h1 style="text-align: center; margin-bottom: 0;">🚀 Cursor 1.7.44</h1>
+<p style="text-align: center; color: #666; margin-top: 10px; margin-bottom: 20px;">Release Date: 2025-10-10</p>
 
 | Windows | macOS | Linux |
 |:---:|:---:|:---:|
 | ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) | ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white) | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) |
-| <a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/win32/x64/system-setup/CursorSetup-x64-1.7.33.exe"><img src="https://img.shields.io/badge/Windows%20x64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 User"></a> | <a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS%20Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a> | <a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/linux/x64/Cursor-1.7.33-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux%20x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux x64"></a> |
-| <a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/win32/arm64/system-setup/CursorSetup-arm64-1.7.33.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 User"></a> | <a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS%20Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a> | <a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/linux/arm64/Cursor-1.7.33-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux%20ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux ARM64"></a> |
-| <a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/win32/arm64/system-setup/CursorSetup-arm64-1.7.33.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 System"></a> | <a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS%20Apple%20Silicon-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Apple Silicon"></a> |  |
-| <a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/win32/x64/system-setup/CursorSetup-x64-1.7.33.exe"><img src="https://img.shields.io/badge/Windows%20x64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 System"></a> |  |  |
+| <a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/x64/system-setup/CursorSetup-x64-1.7.44.exe"><img src="https://img.shields.io/badge/Windows%20x64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 User"></a> | <a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS%20Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a> | <a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/linux/x64/Cursor-1.7.44-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux%20x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux x64"></a> |
+| <a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/arm64/system-setup/CursorSetup-arm64-1.7.44.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 User"></a> | <a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS%20Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a> | <a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/linux/arm64/Cursor-1.7.44-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux%20ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux ARM64"></a> |
+| <a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/arm64/system-setup/CursorSetup-arm64-1.7.44.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 System"></a> | <a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS%20Apple%20Silicon-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Apple Silicon"></a> |  |
+| <a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/x64/system-setup/CursorSetup-x64-1.7.44.exe"><img src="https://img.shields.io/badge/Windows%20x64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 System"></a> |  |  |
 
 </div>
 </div>
@@ -116,6 +116,12 @@ List some key features and the versions they were introduced in for reference wh
 <!-- ALL_VERSIONS_TABLE_START -->
 | Version | Date | Windows Installer | Mac Installer | Linux Installer |
 | --- | --- | --- | --- | --- |
+| 1.7.44 | 2025-10-10 | <a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/x64/system-setup/CursorSetup-x64-1.7.44.exe">win32-x64-system</a><br><a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/arm64/system-setup/CursorSetup-arm64-1.7.44.exe">win32-arm64-system</a><br><a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/x64/user-setup/CursorUserSetup-x64-1.7.44.exe">win32-x64-user</a><br><a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/arm64/user-setup/CursorUserSetup-arm64-1.7.44.exe">win32-arm64-user</a><br><a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/x64/system-setup/CursorSetup-x64-1.7.44.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/arm64/system-setup/CursorSetup-arm64-1.7.44.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/linux/x64/Cursor-1.7.44-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/linux/arm64/Cursor-1.7.44-aarch64.AppImage">linux-arm64</a> |
+| 1.7.43 | 2025-10-10 | <a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/win32/x64/system-setup/CursorSetup-x64-1.7.43.exe">win32-x64-system</a><br><a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/win32/arm64/system-setup/CursorSetup-arm64-1.7.43.exe">win32-arm64-system</a><br><a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/win32/x64/user-setup/CursorUserSetup-x64-1.7.43.exe">win32-x64-user</a><br><a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/win32/arm64/user-setup/CursorUserSetup-arm64-1.7.43.exe">win32-arm64-user</a><br><a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/win32/x64/system-setup/CursorSetup-x64-1.7.43.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/win32/arm64/system-setup/CursorSetup-arm64-1.7.43.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/linux/x64/Cursor-1.7.43-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/linux/arm64/Cursor-1.7.43-aarch64.AppImage">linux-arm64</a> |
+| 1.7.40 | 2025-10-09 | <a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/win32/x64/system-setup/CursorSetup-x64-1.7.40.exe">win32-x64-system</a><br><a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/win32/arm64/system-setup/CursorSetup-arm64-1.7.40.exe">win32-arm64-system</a><br><a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/win32/x64/user-setup/CursorUserSetup-x64-1.7.40.exe">win32-x64-user</a><br><a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/win32/arm64/user-setup/CursorUserSetup-arm64-1.7.40.exe">win32-arm64-user</a><br><a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/win32/x64/system-setup/CursorSetup-x64-1.7.40.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/win32/arm64/system-setup/CursorSetup-arm64-1.7.40.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/linux/x64/Cursor-1.7.40-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/linux/arm64/Cursor-1.7.40-aarch64.AppImage">linux-arm64</a> |
+| 1.7.39 | 2025-10-08 | <a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/win32/x64/system-setup/CursorSetup-x64-1.7.39.exe">win32-x64-system</a><br><a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/win32/arm64/system-setup/CursorSetup-arm64-1.7.39.exe">win32-arm64-system</a><br><a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/win32/x64/user-setup/CursorUserSetup-x64-1.7.39.exe">win32-x64-user</a><br><a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/win32/arm64/user-setup/CursorUserSetup-arm64-1.7.39.exe">win32-arm64-user</a><br><a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/win32/x64/system-setup/CursorSetup-x64-1.7.39.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/win32/arm64/system-setup/CursorSetup-arm64-1.7.39.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/linux/x64/Cursor-1.7.39-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/linux/arm64/Cursor-1.7.39-aarch64.AppImage">linux-arm64</a> |
+| 1.7.38 | 2025-10-06 | <a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/win32/x64/system-setup/CursorSetup-x64-1.7.38.exe">win32-x64-system</a><br><a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/win32/arm64/system-setup/CursorSetup-arm64-1.7.38.exe">win32-arm64-system</a><br><a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/win32/x64/user-setup/CursorUserSetup-x64-1.7.38.exe">win32-x64-user</a><br><a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/win32/arm64/user-setup/CursorUserSetup-arm64-1.7.38.exe">win32-arm64-user</a><br><a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/win32/x64/system-setup/CursorSetup-x64-1.7.38.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/win32/arm64/system-setup/CursorSetup-arm64-1.7.38.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/linux/x64/Cursor-1.7.38-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/linux/arm64/Cursor-1.7.38-aarch64.AppImage">linux-arm64</a> |
+| 1.7.36 | 2025-10-05 | <a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/win32/x64/system-setup/CursorSetup-x64-1.7.36.exe">win32-x64-system</a><br><a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/win32/arm64/system-setup/CursorSetup-arm64-1.7.36.exe">win32-arm64-system</a><br><a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/win32/x64/user-setup/CursorUserSetup-x64-1.7.36.exe">win32-x64-user</a><br><a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/win32/arm64/user-setup/CursorUserSetup-arm64-1.7.36.exe">win32-arm64-user</a><br><a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/win32/x64/system-setup/CursorSetup-x64-1.7.36.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/win32/arm64/system-setup/CursorSetup-arm64-1.7.36.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/linux/x64/Cursor-1.7.36-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/linux/arm64/Cursor-1.7.36-aarch64.AppImage">linux-arm64</a> |
 | 1.7.33 | 2025-10-03 | <a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/win32/x64/system-setup/CursorSetup-x64-1.7.33.exe">win32-x64-system</a><br><a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/win32/arm64/system-setup/CursorSetup-arm64-1.7.33.exe">win32-arm64-system</a><br><a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/win32/x64/user-setup/CursorUserSetup-x64-1.7.33.exe">win32-x64-user</a><br><a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/win32/arm64/user-setup/CursorUserSetup-arm64-1.7.33.exe">win32-arm64-user</a><br><a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/win32/x64/system-setup/CursorSetup-x64-1.7.33.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/win32/arm64/system-setup/CursorSetup-arm64-1.7.33.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/linux/x64/Cursor-1.7.33-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/a84f941711ad680a635c8a3456002833186c484f/linux/arm64/Cursor-1.7.33-aarch64.AppImage">linux-arm64</a> |
 | 1.7.28 | 2025-10-01 | <a href="https://downloads.cursor.com/production/adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd8/win32/x64/system-setup/CursorSetup-x64-1.7.28.exe">win32-x64-system</a><br><a href="https://downloads.cursor.com/production/adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd8/win32/arm64/system-setup/CursorSetup-arm64-1.7.28.exe">win32-arm64-system</a><br><a href="https://downloads.cursor.com/production/adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd8/win32/x64/user-setup/CursorUserSetup-x64-1.7.28.exe">win32-x64-user</a><br><a href="https://downloads.cursor.com/production/adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd8/win32/arm64/user-setup/CursorUserSetup-arm64-1.7.28.exe">win32-arm64-user</a><br><a href="https://downloads.cursor.com/production/adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd8/win32/x64/system-setup/CursorSetup-x64-1.7.28.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd8/win32/arm64/system-setup/CursorSetup-arm64-1.7.28.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd8/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd8/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd8/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd8/linux/x64/Cursor-1.7.28-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd8/linux/arm64/Cursor-1.7.28-aarch64.AppImage">linux-arm64</a> |
 | 1.7.25 | 2025-09-30 | <a href="https://downloads.cursor.com/production/429604585b94ab2b96a4dabff4660f41d5b7fb8f/win32/x64/system-setup/CursorSetup-x64-1.7.25.exe">win32-x64-system</a><br><a href="https://downloads.cursor.com/production/429604585b94ab2b96a4dabff4660f41d5b7fb8f/win32/arm64/system-setup/CursorSetup-arm64-1.7.25.exe">win32-arm64-system</a><br><a href="https://downloads.cursor.com/production/429604585b94ab2b96a4dabff4660f41d5b7fb8f/win32/x64/user-setup/CursorUserSetup-x64-1.7.25.exe">win32-x64-user</a><br><a href="https://downloads.cursor.com/production/429604585b94ab2b96a4dabff4660f41d5b7fb8f/win32/arm64/user-setup/CursorUserSetup-arm64-1.7.25.exe">win32-arm64-user</a><br><a href="https://downloads.cursor.com/production/429604585b94ab2b96a4dabff4660f41d5b7fb8f/win32/x64/system-setup/CursorSetup-x64-1.7.25.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/429604585b94ab2b96a4dabff4660f41d5b7fb8f/win32/arm64/system-setup/CursorSetup-arm64-1.7.25.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/429604585b94ab2b96a4dabff4660f41d5b7fb8f/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/429604585b94ab2b96a4dabff4660f41d5b7fb8f/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/429604585b94ab2b96a4dabff4660f41d5b7fb8f/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/429604585b94ab2b96a4dabff4660f41d5b7fb8f/linux/x64/Cursor-1.7.25-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/429604585b94ab2b96a4dabff4660f41d5b7fb8f/linux/arm64/Cursor-1.7.25-aarch64.AppImage">linux-arm64</a> |
@@ -210,12 +216,6 @@ List some key features and the versions they were introduced in for reference wh
 | 0.47.7 | 2025-03-18 | <a href="https://downloads.cursor.com/production/33ec0dad159bc0ad620f6bbda539efe90c39748d/win32/x64/user-setup/CursorUserSetup-x64-0.47.7.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/33ec0dad159bc0ad620f6bbda539efe90c39748d/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.7.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/33ec0dad159bc0ad620f6bbda539efe90c39748d/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/33ec0dad159bc0ad620f6bbda539efe90c39748d/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/33ec0dad159bc0ad620f6bbda539efe90c39748d/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.7-33ec0dad159bc0ad620f6bbda539efe90c39748d.deb.glibc2.25-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.7-33ec0dad159bc0ad620f6bbda539efe90c39748d.deb.glibc2.28-aarch64.AppImage">linux-arm64</a> |
 | 0.47.6 | 2025-03-17 | <a href="https://downloads.cursor.com/production/6a1a6fbc55483584e7022f491c8a167ccac86f22/win32/x64/user-setup/CursorUserSetup-x64-0.47.6.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/6a1a6fbc55483584e7022f491c8a167ccac86f22/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.6.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/6a1a6fbc55483584e7022f491c8a167ccac86f22/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/6a1a6fbc55483584e7022f491c8a167ccac86f22/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/6a1a6fbc55483584e7022f491c8a167ccac86f22/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.6-6a1a6fbc55483584e7022f491c8a167ccac86f22.deb.glibc2.25-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.6-6a1a6fbc55483584e7022f491c8a167ccac86f22.deb.glibc2.28-aarch64.AppImage">linux-arm64</a> |
 | 0.47.5 | 2025-03-14 | <a href="https://downloads.cursor.com/production/53d6da1322f934a1058e7569ee0847b24879d18c/win32/x64/user-setup/CursorUserSetup-x64-0.47.5.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/53d6da1322f934a1058e7569ee0847b24879d18c/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.5.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/53d6da1322f934a1058e7569ee0847b24879d18c/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/53d6da1322f934a1058e7569ee0847b24879d18c/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/53d6da1322f934a1058e7569ee0847b24879d18c/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.5-53d6da1322f934a1058e7569ee0847b24879d18c.deb.glibc2.25-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.5-53d6da1322f934a1058e7569ee0847b24879d18c.deb.glibc2.28-aarch64.AppImage">linux-arm64</a> |
-| 0.47.4 | 2025-03-14 | <a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/win32/x64/user-setup/CursorUserSetup-x64-0.47.4.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.4.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.4-8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2.deb.glibc2.25-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.4-8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2.deb.glibc2.28-aarch64.AppImage">linux-arm64</a> |
-| 0.47.3 | 2025-03-13 | <a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/win32/x64/user-setup/CursorUserSetup-x64-0.47.3.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.3.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.3-dab1538cd064aebd4292f9de48b05022c974aff6.deb.glibc2.25-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.3-dab1538cd064aebd4292f9de48b05022c974aff6.deb.glibc2.28-aarch64.AppImage">linux-arm64</a> |
-| 0.47.2 | 2025-03-13 | <a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/win32/x64/user-setup/CursorUserSetup-x64-0.47.2.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.2.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.2-bed609aa4a57e9d82664006f152d3f77589eed10.deb.glibc2.25-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.2-bed609aa4a57e9d82664006f152d3f77589eed10.deb.glibc2.28-aarch64.AppImage">linux-arm64</a> |
-| 0.47.1 | 2025-03-11 | <a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/win32/x64/user-setup/CursorUserSetup-x64-0.47.1.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.1.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.1-aafb3fe1326c939656bd06f325a9e17679aeec7f.deb.glibc2.25-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.1-aafb3fe1326c939656bd06f325a9e17679aeec7f.deb.glibc2.28-aarch64.AppImage">linux-arm64</a> |
-| 0.47.0 | 2025-03-11 | <a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/win32/x64/user-setup/CursorUserSetup-x64-0.47.0.exe">win32-x64</a><br><a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.0.exe">win32-arm64</a> | <a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.0-4a602340d7b014d700647120bae9079607f2ae9b.deb.glibc2.25-x86_64.AppImage">linux-x64</a><br><a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.0-4a602340d7b014d700647120bae9079607f2ae9b.deb.glibc2.28-aarch64.AppImage">linux-arm64</a> |
-| 0.46.11 | 2025-03-07 | <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/win32/x64/user-setup/CursorUserSetup-x64-0.46.11.exe">win32-x64</a><br><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.11.exe">win32-arm64</a> | <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/darwin/universal/Cursor-darwin-universal.dmg">darwin-universal</a><br><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/darwin/x64/Cursor-darwin-x64.dmg">darwin-x64</a><br><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/darwin/arm64/Cursor-darwin-arm64.dmg">darwin-arm64</a> | <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.11-ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19.deb.glibc2.25-x86_64.AppImage">linux-x64</a><br><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.11-ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19.deb.glibc2.28-aarch64.AppImage">linux-arm64</a> |
 <!-- ALL_VERSIONS_TABLE_END -->
 
 ---
@@ -223,6 +223,156 @@ List some key features and the versions they were introduced in for reference wh
 ## Detailed Version Card View
 
 <!-- DETAILED_CARDS_START -->
+<details>
+<summary><b>Version 1.7.44</b> (2025-10-10)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px;">
+<h3>Cursor 1.7.44 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/x64/user-setup/CursorUserSetup-x64-1.7.44.exe"><img src="https://img.shields.io/badge/Windows%20x64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 User"></a>
+<a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/arm64/user-setup/CursorUserSetup-arm64-1.7.44.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 User"></a>
+<a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/x64/system-setup/CursorSetup-x64-1.7.44.exe"><img src="https://img.shields.io/badge/Windows%20x64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 System"></a>
+<a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/arm64/system-setup/CursorSetup-arm64-1.7.44.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 System"></a>
+<a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/x64/system-setup/CursorSetup-x64-1.7.44.exe"><img src="https://img.shields.io/badge/Windows%20x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/win32/arm64/system-setup/CursorSetup-arm64-1.7.44.exe"><img src="https://img.shields.io/badge/Windows%20ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS%20Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS%20Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS%20Apple%20Silicon-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Apple Silicon"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/linux/x64/Cursor-1.7.44-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux%20x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/9d178a4a5589981b62546448bb32920a8219a5de/linux/arm64/Cursor-1.7.44-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux%20ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux ARM64"></a>
+
+</div>
+</details>
+<details>
+<summary><b>Version 1.7.43</b> (2025-10-10)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px;">
+<h3>Cursor 1.7.43 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/win32/x64/user-setup/CursorUserSetup-x64-1.7.43.exe"><img src="https://img.shields.io/badge/Windows%20x64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 User"></a>
+<a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/win32/arm64/user-setup/CursorUserSetup-arm64-1.7.43.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 User"></a>
+<a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/win32/x64/system-setup/CursorSetup-x64-1.7.43.exe"><img src="https://img.shields.io/badge/Windows%20x64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 System"></a>
+<a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/win32/arm64/system-setup/CursorSetup-arm64-1.7.43.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 System"></a>
+<a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/win32/x64/system-setup/CursorSetup-x64-1.7.43.exe"><img src="https://img.shields.io/badge/Windows%20x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/win32/arm64/system-setup/CursorSetup-arm64-1.7.43.exe"><img src="https://img.shields.io/badge/Windows%20ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS%20Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS%20Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS%20Apple%20Silicon-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Apple Silicon"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/linux/x64/Cursor-1.7.43-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux%20x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/df279210b53cf4686036054b15400aa2fe06d6dd/linux/arm64/Cursor-1.7.43-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux%20ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux ARM64"></a>
+
+</div>
+</details>
+<details>
+<summary><b>Version 1.7.40</b> (2025-10-09)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px;">
+<h3>Cursor 1.7.40 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/win32/x64/user-setup/CursorUserSetup-x64-1.7.40.exe"><img src="https://img.shields.io/badge/Windows%20x64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 User"></a>
+<a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/win32/arm64/user-setup/CursorUserSetup-arm64-1.7.40.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 User"></a>
+<a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/win32/x64/system-setup/CursorSetup-x64-1.7.40.exe"><img src="https://img.shields.io/badge/Windows%20x64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 System"></a>
+<a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/win32/arm64/system-setup/CursorSetup-arm64-1.7.40.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 System"></a>
+<a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/win32/x64/system-setup/CursorSetup-x64-1.7.40.exe"><img src="https://img.shields.io/badge/Windows%20x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/win32/arm64/system-setup/CursorSetup-arm64-1.7.40.exe"><img src="https://img.shields.io/badge/Windows%20ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS%20Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS%20Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS%20Apple%20Silicon-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Apple Silicon"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/linux/x64/Cursor-1.7.40-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux%20x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/df79b2380cd32922cad03529b0dc0c946c311856/linux/arm64/Cursor-1.7.40-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux%20ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux ARM64"></a>
+
+</div>
+</details>
+<details>
+<summary><b>Version 1.7.39</b> (2025-10-08)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px;">
+<h3>Cursor 1.7.39 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/win32/x64/user-setup/CursorUserSetup-x64-1.7.39.exe"><img src="https://img.shields.io/badge/Windows%20x64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 User"></a>
+<a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/win32/arm64/user-setup/CursorUserSetup-arm64-1.7.39.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 User"></a>
+<a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/win32/x64/system-setup/CursorSetup-x64-1.7.39.exe"><img src="https://img.shields.io/badge/Windows%20x64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 System"></a>
+<a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/win32/arm64/system-setup/CursorSetup-arm64-1.7.39.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 System"></a>
+<a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/win32/x64/system-setup/CursorSetup-x64-1.7.39.exe"><img src="https://img.shields.io/badge/Windows%20x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/win32/arm64/system-setup/CursorSetup-arm64-1.7.39.exe"><img src="https://img.shields.io/badge/Windows%20ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS%20Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS%20Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS%20Apple%20Silicon-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Apple Silicon"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/linux/x64/Cursor-1.7.39-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux%20x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/a9c77ceae65b77ff772d6adfe05f24d8ebcb2794/linux/arm64/Cursor-1.7.39-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux%20ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux ARM64"></a>
+
+</div>
+</details>
+<details>
+<summary><b>Version 1.7.38</b> (2025-10-06)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px;">
+<h3>Cursor 1.7.38 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/win32/x64/user-setup/CursorUserSetup-x64-1.7.38.exe"><img src="https://img.shields.io/badge/Windows%20x64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 User"></a>
+<a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/win32/arm64/user-setup/CursorUserSetup-arm64-1.7.38.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 User"></a>
+<a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/win32/x64/system-setup/CursorSetup-x64-1.7.38.exe"><img src="https://img.shields.io/badge/Windows%20x64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 System"></a>
+<a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/win32/arm64/system-setup/CursorSetup-arm64-1.7.38.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 System"></a>
+<a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/win32/x64/system-setup/CursorSetup-x64-1.7.38.exe"><img src="https://img.shields.io/badge/Windows%20x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/win32/arm64/system-setup/CursorSetup-arm64-1.7.38.exe"><img src="https://img.shields.io/badge/Windows%20ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS%20Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS%20Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS%20Apple%20Silicon-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Apple Silicon"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/linux/x64/Cursor-1.7.38-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux%20x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/fe5d1728063e86edeeda5bebd2c8e14bf4d0f96a/linux/arm64/Cursor-1.7.38-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux%20ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux ARM64"></a>
+
+</div>
+</details>
+<details>
+<summary><b>Version 1.7.36</b> (2025-10-05)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px;">
+<h3>Cursor 1.7.36 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/win32/x64/user-setup/CursorUserSetup-x64-1.7.36.exe"><img src="https://img.shields.io/badge/Windows%20x64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 User"></a>
+<a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/win32/arm64/user-setup/CursorUserSetup-arm64-1.7.36.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20User-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 User"></a>
+<a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/win32/x64/system-setup/CursorSetup-x64-1.7.36.exe"><img src="https://img.shields.io/badge/Windows%20x64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64 System"></a>
+<a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/win32/arm64/system-setup/CursorSetup-arm64-1.7.36.exe"><img src="https://img.shields.io/badge/Windows%20ARM64%20System-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64 System"></a>
+<a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/win32/x64/system-setup/CursorSetup-x64-1.7.36.exe"><img src="https://img.shields.io/badge/Windows%20x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/win32/arm64/system-setup/CursorSetup-arm64-1.7.36.exe"><img src="https://img.shields.io/badge/Windows%20ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS%20Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS%20Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS%20Apple%20Silicon-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Apple Silicon"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/linux/x64/Cursor-1.7.36-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux%20x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/493c403e4a45c5f971d1c76cc74febd0968d57d8/linux/arm64/Cursor-1.7.36-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux%20ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux ARM64"></a>
+
+</div>
+</details>
 <details>
 <summary><b>Version 1.7.33</b> (2025-10-03)</summary>
 
@@ -2490,132 +2640,6 @@ List some key features and the versions they were introduced in for reference wh
 #### Linux
 <a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.5-53d6da1322f934a1058e7569ee0847b24879d18c.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux%20x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux x64"></a>
 <a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.5-53d6da1322f934a1058e7569ee0847b24879d18c.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux%20ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux ARM64"></a>
-
-</div>
-</details>
-<details>
-<summary><b>Version 0.47.4</b> (2025-03-14)</summary>
-
-<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px;">
-<h3>Cursor 0.47.4 Download Links</h3>
-
-#### Windows
-<a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/win32/x64/user-setup/CursorUserSetup-x64-0.47.4.exe"><img src="https://img.shields.io/badge/Windows%20x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
-<a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.4.exe"><img src="https://img.shields.io/badge/Windows%20ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
-
-#### macOS
-<a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS%20Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
-<a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS%20Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
-<a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS%20Apple%20Silicon-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Apple Silicon"></a>
-
-#### Linux
-<a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.4-8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux%20x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux x64"></a>
-<a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.4-8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux%20ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux ARM64"></a>
-
-</div>
-</details>
-<details>
-<summary><b>Version 0.47.3</b> (2025-03-13)</summary>
-
-<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px;">
-<h3>Cursor 0.47.3 Download Links</h3>
-
-#### Windows
-<a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/win32/x64/user-setup/CursorUserSetup-x64-0.47.3.exe"><img src="https://img.shields.io/badge/Windows%20x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
-<a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.3.exe"><img src="https://img.shields.io/badge/Windows%20ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
-
-#### macOS
-<a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS%20Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
-<a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS%20Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
-<a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS%20Apple%20Silicon-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Apple Silicon"></a>
-
-#### Linux
-<a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.3-dab1538cd064aebd4292f9de48b05022c974aff6.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux%20x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux x64"></a>
-<a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.3-dab1538cd064aebd4292f9de48b05022c974aff6.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux%20ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux ARM64"></a>
-
-</div>
-</details>
-<details>
-<summary><b>Version 0.47.2</b> (2025-03-13)</summary>
-
-<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px;">
-<h3>Cursor 0.47.2 Download Links</h3>
-
-#### Windows
-<a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/win32/x64/user-setup/CursorUserSetup-x64-0.47.2.exe"><img src="https://img.shields.io/badge/Windows%20x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
-<a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.2.exe"><img src="https://img.shields.io/badge/Windows%20ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
-
-#### macOS
-<a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS%20Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
-<a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS%20Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
-<a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS%20Apple%20Silicon-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Apple Silicon"></a>
-
-#### Linux
-<a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.2-bed609aa4a57e9d82664006f152d3f77589eed10.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux%20x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux x64"></a>
-<a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.2-bed609aa4a57e9d82664006f152d3f77589eed10.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux%20ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux ARM64"></a>
-
-</div>
-</details>
-<details>
-<summary><b>Version 0.47.1</b> (2025-03-11)</summary>
-
-<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px;">
-<h3>Cursor 0.47.1 Download Links</h3>
-
-#### Windows
-<a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/win32/x64/user-setup/CursorUserSetup-x64-0.47.1.exe"><img src="https://img.shields.io/badge/Windows%20x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
-<a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.1.exe"><img src="https://img.shields.io/badge/Windows%20ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
-
-#### macOS
-<a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS%20Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
-<a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS%20Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
-<a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS%20Apple%20Silicon-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Apple Silicon"></a>
-
-#### Linux
-<a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.1-aafb3fe1326c939656bd06f325a9e17679aeec7f.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux%20x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux x64"></a>
-<a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.1-aafb3fe1326c939656bd06f325a9e17679aeec7f.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux%20ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux ARM64"></a>
-
-</div>
-</details>
-<details>
-<summary><b>Version 0.47.0</b> (2025-03-11)</summary>
-
-<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px;">
-<h3>Cursor 0.47.0 Download Links</h3>
-
-#### Windows
-<a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/win32/x64/user-setup/CursorUserSetup-x64-0.47.0.exe"><img src="https://img.shields.io/badge/Windows%20x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
-<a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.0.exe"><img src="https://img.shields.io/badge/Windows%20ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
-
-#### macOS
-<a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS%20Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
-<a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS%20Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
-<a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS%20Apple%20Silicon-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Apple Silicon"></a>
-
-#### Linux
-<a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.0-4a602340d7b014d700647120bae9079607f2ae9b.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux%20x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux x64"></a>
-<a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.0-4a602340d7b014d700647120bae9079607f2ae9b.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux%20ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux ARM64"></a>
-
-</div>
-</details>
-<details>
-<summary><b>Version 0.46.11</b> (2025-03-07)</summary>
-
-<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px;">
-<h3>Cursor 0.46.11 Download Links</h3>
-
-#### Windows
-<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/win32/x64/user-setup/CursorUserSetup-x64-0.46.11.exe"><img src="https://img.shields.io/badge/Windows%20x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
-<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.11.exe"><img src="https://img.shields.io/badge/Windows%20ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
-
-#### macOS
-<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS%20Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
-<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS%20Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
-<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS%20Apple%20Silicon-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Apple Silicon"></a>
-
-#### Linux
-<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.11-ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux%20x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux x64"></a>
-<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.11-ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux%20ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=white" alt="Linux ARM64"></a>
 
 </div>
 </details><!-- DETAILED_CARDS_END -->

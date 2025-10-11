@@ -1,6 +1,6 @@
 ---
 project: web-check
-stars: 26567
+stars: 26621
 description: |-
     🕵️‍♂️ All-in-one OSINT tool for analysing any website
 url: https://github.com/Lissy93/web-check

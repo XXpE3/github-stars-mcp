@@ -1,6 +1,6 @@
 ---
 project: gpt-cli
-stars: 720
+stars: 721
 description: |-
     Command-line interface for ChatGPT, Claude and Bard
 url: https://github.com/kharvd/gpt-cli

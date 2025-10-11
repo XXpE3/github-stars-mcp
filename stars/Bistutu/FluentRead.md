@@ -1,6 +1,6 @@
 ---
 project: FluentRead
-stars: 5772
+stars: 5812
 description: |-
     Open Immersive Translate. A revolutionary open-source browser translation plugin that enables everyone to have a native-like reading experience. 开源的沉浸式翻译，一款革命性的浏览器翻译插件，让所有人都能够拥有母语般的阅读体验。
 url: https://github.com/Bistutu/FluentRead

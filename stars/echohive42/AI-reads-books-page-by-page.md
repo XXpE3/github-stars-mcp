@@ -1,6 +1,6 @@
 ---
 project: AI-reads-books-page-by-page
-stars: 1549
+stars: 1550
 description: |-
     AI reads books: Page-by-Page PDF Knowledge Extractor & Summarizer. script performs an intelligent page-by-page analysis of PDF books, methodically extracting knowledge points and generating progressive summaries at specified intervals
 url: https://github.com/echohive42/AI-reads-books-page-by-page

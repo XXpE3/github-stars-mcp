@@ -1,6 +1,6 @@
 ---
 project: opencode
-stars: 26580
+stars: 27312
 description: |-
     The AI coding agent built for the terminal.
 url: https://github.com/sst/opencode

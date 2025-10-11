@@ -1,6 +1,6 @@
 ---
 project: Surge
-stars: 3063
+stars: 3078
 description: |-
     Surge自用配置以及模块和脚本
 url: https://github.com/Rabbit-Spec/Surge

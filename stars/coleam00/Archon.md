@@ -1,6 +1,6 @@
 ---
 project: Archon
-stars: 12423
+stars: 12521
 description: |-
     Beta release of Archon OS - the knowledge and task management backbone for AI coding assistants.
 url: https://github.com/coleam00/Archon
@@ -8,6 +8,10 @@ url: https://github.com/coleam00/Archon
 
 <p align="center">
   <img src="./archon-ui-main/public/archon-main-graphic.png" alt="Archon Main Graphic" width="853" height="422">
+</p>
+
+<p align="center">
+   <a href="https://trendshift.io/repositories/13964" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13964" alt="coleam00%2FArchon | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 </p>
 
 <p align="center">

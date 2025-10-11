@@ -1,6 +1,6 @@
 ---
 project: DeepResearch
-stars: 15387
+stars: 15777
 description: |-
     Tongyi Deep Research, the Leading Open-source Deep Research Agent
 url: https://github.com/Alibaba-NLP/DeepResearch

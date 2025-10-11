@@ -1,6 +1,6 @@
 ---
 project: aider
-stars: 37768
+stars: 37888
 description: |-
     aider is AI pair programming in your terminal
 url: https://github.com/Aider-AI/aider

@@ -1,6 +1,6 @@
 ---
 project: LazyTyper-releases
-stars: 68
+stars: 74
 description: |-
     null
 url: https://github.com/oldcai/LazyTyper-releases

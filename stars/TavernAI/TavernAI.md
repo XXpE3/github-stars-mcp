@@ -1,6 +1,6 @@
 ---
 project: TavernAI
-stars: 2547
+stars: 2551
 description: |-
     Atmospheric adventure chat for AI language models (KoboldAI, NovelAI, Pygmalion, OpenAI chatgpt, gpt-4)
 url: https://github.com/TavernAI/TavernAI

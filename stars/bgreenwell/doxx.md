@@ -1,6 +1,6 @@
 ---
 project: doxx
-stars: 3001
+stars: 3045
 description: |-
     Expose the contents of .docx files without leaving your terminal. Fast, safe, and smart — no Office required!
 url: https://github.com/bgreenwell/doxx
@@ -40,6 +40,12 @@ A fast, terminal-native document viewer for Word files. View, search, and export
         <br><em>Lists and formatting</em>
       </td>
     </tr>
+    <tr>
+      <td align="center" colspan="2">
+        <img src="assets/screenshot5-equations.png" alt="Equation support" width="400">
+        <br><em>Inline and display equations</em>
+      </td>
+    </tr>
   </table>
 </div>
 
@@ -53,6 +59,7 @@ A fast, terminal-native document viewer for Word files. View, search, and export
 ## ✨ Features
 
 - **Beautiful terminal rendering** with formatting, tables, and lists
+- **Equation support** — LaTeX rendering for inline and display equations 📐
 - **Fast search** with highlighting 🔍
 - **Smart tables** with proper alignment and Unicode borders
 - **Copy to clipboard** — grab content directly from the terminal
@@ -270,6 +277,7 @@ Current terminal tools for Word documents:
 **doxx** gives you:
 - ✅ Rich formatting preserved (bold, italic, headers)
 - ✅ Professional table rendering with alignment
+- ✅ Equation support (inline and display LaTeX)
 - ✅ Interactive navigation and search
 - ✅ Multiple export formats for workflows
 - ✅ Terminal image display for modern terminals

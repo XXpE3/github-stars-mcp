@@ -1,6 +1,6 @@
 ---
 project: categorized-raycast-extensions
-stars: 586
+stars: 589
 description: |-
     Easily find Raycast Extensions!🚀
 url: https://github.com/marekbrze/categorized-raycast-extensions

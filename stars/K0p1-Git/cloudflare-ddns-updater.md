@@ -1,6 +1,6 @@
 ---
 project: cloudflare-ddns-updater
-stars: 1726
+stars: 1730
 description: |-
     Dynamic DNS (DDNS) service based on Cloudflare! Access your home network remotely via a custom domain name without a static IP! Written in pure BASH~
 url: https://github.com/K0p1-Git/cloudflare-ddns-updater

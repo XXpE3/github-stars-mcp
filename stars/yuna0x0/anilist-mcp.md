@@ -1,6 +1,6 @@
 ---
 project: anilist-mcp
-stars: 55
+stars: 57
 description: |-
     AniList MCP server for accessing anime and manga data
 url: https://github.com/yuna0x0/anilist-mcp

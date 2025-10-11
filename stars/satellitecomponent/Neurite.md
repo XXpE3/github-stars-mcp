@@ -1,6 +1,6 @@
 ---
 project: Neurite
-stars: 1894
+stars: 1904
 description: |-
     Fractal Graph-of-Thought. Rhizomatic Mind-Mapping for Ai-Agents, Web-Links, Notes, and Code.
 url: https://github.com/satellitecomponent/Neurite

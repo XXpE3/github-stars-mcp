@@ -1,6 +1,6 @@
 ---
 project: markdown-preview-mode
-stars: 172
+stars: 171
 description: |-
     Minor mode to preview markdown output as you save
 url: https://github.com/ancane/markdown-preview-mode

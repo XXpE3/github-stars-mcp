@@ -1,6 +1,6 @@
 ---
 project: obsidian-copilot
-stars: 5408
+stars: 5435
 description: |-
     THE Copilot in Obsidian
 url: https://github.com/logancyang/obsidian-copilot
@@ -53,7 +53,7 @@ After months of hard work, we have revamped the codebase and adopted a new parad
 
 - FOR ALL USERS: You can do vault search out-of-the-box **without building an index first** (Indexing is still available but optional behind the "Semantic Search" toggle in QA settings).
 - FOR FREE USERS: Image support and chat context menu are available to all users starting from v3.0.0!
-- FOR PLUS USERS: Autonomous agent is available with vault search, web search, youtube, composer and soon a lot other tools!
+- FOR PLUS USERS: **Autonomous agent** is available with vault search, web search, youtube, composer and soon a lot other tools! **Long-term memory** is also a tool the agent can use by itself starting from 3.1.0!
 
 Read the [Changelog](https://github.com/logancyang/obsidian-copilot/releases/tag/3.0.0).
 
@@ -202,7 +202,7 @@ First, go to https://www.obsidiancopilot.com/en to subscribe to Copilot Plus. Th
 
   > "Please write a short intro of Kiwi birds based on the following information I collected about this animal.
 
-  > @youtube Summarize [](https://www.youtube.com/watch?v=tZ2jm_UPc6c&t=417s)[https://www.youtube.com/watch?v=tZ2jm_UPc6c&t=417s](https://www.youtube.com/watch?v=ABTfc5wUT1U)
+  > Summarize [](https://www.youtube.com/watch?v=tZ2jm_UPc6c&t=417s)[https://www.youtube.com/watch?v=tZ2jm_UPc6c&t=417s](https://www.youtube.com/watch?v=ABTfc5wUT1U)
   > in a short paragraph.
 
   > @websearch where can I find Kiwi birds?

@@ -1,6 +1,6 @@
 ---
 project: rao-pics
-stars: 787
+stars: 788
 description: |-
     :electron: 帮助你远程访问 Eagle 的素材库。
 url: https://github.com/meetqy/rao-pics

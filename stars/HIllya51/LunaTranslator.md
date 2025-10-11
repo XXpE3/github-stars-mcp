@@ -1,20 +1,21 @@
 ---
 project: LunaTranslator
-stars: 8992
+stars: 9106
 description: |-
     视觉小说翻译器 / Visual Novel Translator
 url: https://github.com/HIllya51/LunaTranslator
 ---
 
+# [【软件下载 & 常见问题】](https://docs.lunatranslator.org/zh/README.html)
+
 ### 简体中文  | [English](https://docs.lunatranslator.org/en/) | [繁體中文](https://docs.lunatranslator.org/cht/) | [한국어](https://docs.lunatranslator.org/ko/) | [日本語](https://docs.lunatranslator.org/ja/) | [Tiếng Việt](https://docs.lunatranslator.org/vi/) | [Русский язык](https://docs.lunatranslator.org/ru/)
+# LunaTranslator 
 
-# LunaTranslator [下载 & 启动 & 更新](https://docs.lunatranslator.org/zh/README.html)
+> **视觉小说翻译器**
 
-> **一款视觉小说翻译器**
+**如果使用中遇到困难，可以查阅[使用说明](https://docs.lunatranslator.org/zh)、观看[我的B站视频](https://space.bilibili.com/592120404/video)，也欢迎加入[QQ群](https://qm.qq.com/q/I5rr3uEpi2)。**
 
 ## 功能支持
-
-> 如果使用中遇到困难，可以查阅[使用说明](https://docs.lunatranslator.org/zh)、观看[我的B站视频](https://space.bilibili.com/592120404/video)，也欢迎加入[QQ群](https://qm.qq.com/q/I5rr3uEpi2)。
 
 - **[HOOK](https://docs.lunatranslator.org/zh/hooksettings.html)** 主要使用HOOK提取游戏文本，几乎适配了所有的常见和冷门的视觉小说
 

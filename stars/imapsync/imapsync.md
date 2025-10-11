@@ -1,6 +1,6 @@
 ---
 project: imapsync
-stars: 3768
+stars: 3781
 description: |-
     Imapsync is an IMAP transfers tool. The purpose of imapsync is to migrate IMAP accounts or to backup IMAP accounts. IMAP is one of the three current standard protocols to access mailboxes, the two others are POP3 and HTTP with webmails, webmails are often tied to an IMAP server. Upstream website is 
 url: https://github.com/imapsync/imapsync

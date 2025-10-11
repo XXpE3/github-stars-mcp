@@ -1,6 +1,6 @@
 ---
 project: tiny-rdm
-stars: 11294
+stars: 11314
 description: |-
     Tiny RDM (Tiny Redis Desktop Manager) - A modern, colorful, super lightweight Redis GUI client for Mac, Windows, and Linux.
 url: https://github.com/tiny-craft/tiny-rdm

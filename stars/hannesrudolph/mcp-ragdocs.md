@@ -1,6 +1,6 @@
 ---
 project: mcp-ragdocs
-stars: 228
+stars: 230
 description: |-
     An MCP server implementation that provides tools for retrieving and processing documentation through vector search, enabling AI assistants to augment their responses with relevant documentation context.
 url: https://github.com/hannesrudolph/mcp-ragdocs

@@ -1,6 +1,6 @@
 ---
 project: myclaude
-stars: 721
+stars: 758
 description: |-
     Cladue Code AI Team Workflow Sub Agents
 url: https://github.com/cexll/myclaude
@@ -10,7 +10,8 @@ url: https://github.com/cexll/myclaude
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude-Code-blue)](https://claude.ai/code)
-[![Version](https://img.shields.io/badge/Version-3.1-green)](https://github.com/)
+[![Version](https://img.shields.io/badge/Version-3.2-green)](https://github.com/)
+[![Plugin Ready](https://img.shields.io/badge/Plugin-Ready-purple)](https://docs.claude.com/en/docs/claude-code/plugins)
 
 > Enterprise-grade agile development workflow automation with multi-agent orchestration
 
@@ -60,7 +61,25 @@ graph LR
 
 ## 🚀 Quick Start
 
-### One-Command Installation
+### Installation Methods
+
+#### Method 1: Plugin System (Recommended) 🎯
+
+```bash
+# List available plugins
+/plugin list
+
+# Install specific workflow plugins
+/plugin install bmad-agile-workflow         # BMAD methodology
+/plugin install requirements-driven-development  # Requirements workflow
+/plugin install development-essentials      # Core dev commands
+/plugin install advanced-ai-agents         # GPT-5 integration
+
+# View plugin details
+/plugin info bmad-agile-workflow
+```
+
+#### Method 2: Traditional Installation
 
 ```bash
 # Clone the repository
@@ -115,7 +134,44 @@ The BMAD workflow uses a specialized output style that:
 - Handles approval gates
 - Supports Codex CLI integration
 
-## ⚡ v3.1 New Features
+## ⚡ v3.2 Plugin System
+
+### 🔌 Native Plugin Support (NEW)
+This project now includes native Claude Code plugin support with 4 ready-to-use plugin packages:
+
+#### Available Plugins
+
+| Plugin | Description | Commands | Agents |
+|--------|------------|----------|--------|
+| **bmad-agile-workflow** | Full BMAD methodology with role-based agents | `/bmad-pilot` | bmad-po, bmad-architect, bmad-sm, bmad-dev, bmad-qa |
+| **requirements-driven-development** | Streamlined requirements workflow | `/requirements-pilot` | requirements-generate, requirements-code, requirements-review |
+| **development-essentials** | Core development commands | `/code`, `/debug`, `/test`, `/optimize` | code, bugfix, debug, develop |
+| **advanced-ai-agents** | GPT-5 deep analysis integration | - | gpt5 |
+
+#### Using Plugins
+
+```bash
+# List all available plugins
+/plugin list
+
+# Get detailed information about a plugin
+/plugin info bmad-agile-workflow
+
+# Install a plugin to activate its commands and agents
+/plugin install requirements-driven-development
+
+# Remove an installed plugin
+/plugin remove development-essentials
+```
+
+#### Plugin Configuration
+Plugins are defined in `.claude-plugin/marketplace.json` following the Claude Code plugin specification. Each plugin includes:
+- Commands (slash commands)
+- Agents (specialized AI agents)
+- Metadata (version, author, keywords)
+- Category classification
+
+## ⚡ v3.1 Features
 
 ### Independent Code Review Agent
 - **bmad-review**: Automated review between Dev and QA
@@ -222,8 +278,10 @@ MIT License - see [LICENSE](LICENSE) file
 ## 🙋 Support
 
 - **Documentation**: Check `/commands/` and `/agents/` directories
+- **Plugin Guide**: See [PLUGIN_README.md](PLUGIN_README.md) for plugin system details
 - **Issues**: GitHub issues for bugs and features
 - **Makefile Help**: Run `make help` for all deployment options
+- **Claude Code Docs**: [Plugin System](https://docs.claude.com/en/docs/claude-code/plugins)
 
 ### Available Make Commands
 
@@ -242,6 +300,8 @@ make help               # Show all available commands
 ---
 
 **Transform your development with BMAD** - One command, complete agile workflow, quality assured.
+
+*Install with `/plugin install bmad-agile-workflow` or use traditional installation methods.*
 
 *Let specialized AI agents handle specialized work.*
 

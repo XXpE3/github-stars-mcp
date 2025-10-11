@@ -1,6 +1,6 @@
 ---
 project: atlas
-stars: 7385
+stars: 7405
 description: |-
     Manage your database schema as code
 url: https://github.com/ariga/atlas

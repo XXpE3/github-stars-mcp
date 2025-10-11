@@ -1,6 +1,6 @@
 ---
 project: RigNet
-stars: 1478
+stars: 1479
 description: |-
     Code for SIGGRAPH 2020 paper "RigNet: Neural Rigging for Articulated Characters"
 url: https://github.com/zhan-xu/RigNet

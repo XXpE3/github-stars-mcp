@@ -1,6 +1,6 @@
 ---
 project: zed
-stars: 66645
+stars: 67041
 description: |-
     Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.
 url: https://github.com/zed-industries/zed

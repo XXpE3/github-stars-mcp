@@ -1,6 +1,6 @@
 ---
 project: MediaCrawler
-stars: 37596
+stars: 37791
 description: |-
     小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫
 url: https://github.com/NanmiCoder/MediaCrawler
@@ -250,16 +250,6 @@ uv run main.py --platform xhs --lt qrcode --type search --save_data_option db
 ---
 
 ### 💰 赞助商展示
-
-<a href="https://www.swiftproxy.net/?ref=nanmi">
-<img src="docs/static/images/img_5.png">
-<br>
-Swiftproxy - 90M+ 全球高质量纯净住宅IP，注册可领免费 500MB 测试流量，动态流量不过期！
-> 专属折扣码：**GHB5** 立享九折优惠！
-</a>
-
-<br>
-<br>
 
 <a href="https://h.wandouip.com">
 <img src="docs/static/images/img_8.jpg">

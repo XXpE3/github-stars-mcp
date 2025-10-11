@@ -1,6 +1,6 @@
 ---
 project: eaf-browser
-stars: 185
+stars: 188
 description: |-
     A modern, customizable and extensible browser in Emacs
 url: https://github.com/emacs-eaf/eaf-browser

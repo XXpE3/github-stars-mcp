@@ -1,6 +1,6 @@
 ---
 project: Thinking-Claude
-stars: 16047
+stars: 16089
 description: |-
     Let your Claude able to think
 url: https://github.com/richards199999/Thinking-Claude

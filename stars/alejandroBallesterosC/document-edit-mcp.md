@@ -1,6 +1,6 @@
 ---
 project: document-edit-mcp
-stars: 39
+stars: 40
 description: |-
     A lightweight MCP server for processing, editing, and interacting with PDF, Word, Excel, and CSV documents.
 url: https://github.com/alejandroBallesterosC/document-edit-mcp

@@ -1,6 +1,6 @@
 ---
 project: claude-code-configs
-stars: 503
+stars: 508
 description: |-
     null
 url: https://github.com/Matt-Dionis/claude-code-configs

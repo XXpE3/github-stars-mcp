@@ -6,11 +6,11 @@ description: |-
 url: https://github.com/vicgarcia/pinboard-mcp
 ---
 
-I've been using pinboard for years to save bookmarks and wanted an easy way to access them directly in Claude Desktop.
+I've been using [Pinboard](https://pinboard.in]) for years to save bookmarks. I've recently been working on a project to explore business operations data from Claude Desktop with an MCP server. Inspired by this, I've been experimenting with ideas for personal productivity tools to build for myself.
 
-The MCP server is intentionally minimal. I expose only the most basic bookmark operations (get, add, update) without any opinionated filtering or analysis features. This keeps the context usage low and lets claude do the interpretation work.
+This MCP server implements a minimal set of tools for interacting with the [pinboard api](https://pinboard.in/api). There are tools to get/add/update bookmarks, list/rename tags, and get tag suggestions.
 
-Once set up, you can ask Claude things like:
+Once set up, you can make queries like:
 
 - "show me all my bookmarks from december 2023"
 - "what were the main topics i was bookmarking last month?"
@@ -46,9 +46,7 @@ add this to your claude desktop mcp settings:
     "pinboard": {
       "command": "docker",
       "args": [
-        "run",
-        "-i",
-        "--rm",
+        "run", "-i", "--rm",
         "-e", "PINBOARD_TOKEN=your-username:your-api-token",
         "pinboard-mcp:local"
       ]
@@ -108,6 +106,49 @@ update an existing bookmark by url
 **example usage in claude:**
 > "update the bookmark for https://example.com to add the tag 'important'"
 
+### get_tags
+
+retrieve all tags with usage counts
+
+**returns:**
+- list of all tags sorted by usage count (descending)
+- each tag includes name and count of bookmarks using it
+
+**example usage in claude:**
+> "show me all my tags and how often i use them"
+
+### rename_tag
+
+rename a tag across all bookmarks
+
+**parameters:**
+- `old_tag` (required): existing tag name to rename
+- `new_tag` (required): new tag name
+
+**validation:**
+- both tags must be non-empty
+- tags are normalized to lowercase
+- old and new tags cannot be identical
+
+**example usage in claude:**
+> "rename the tag 'ppython' to 'python'"
+
+### suggest_tags
+
+get suggested tags for a url from pinboard
+
+**parameters:**
+- `url` (required): web address to get tag suggestions for
+
+**returns:**
+- popular tags: site-wide tags commonly used by others for this url
+- recommended tags: personalized suggestions based on your tagging history
+- counts for both popular and recommended tags
+
+**example usage in claude:**
+> "suggest tags for https://example.com/article"
+> "what tags should i use for bookmarking https://github.com/repo/project"
+
 ## dev
 
 if you want to work on this locally:
@@ -125,8 +166,8 @@ pip install -e .
 ```
 src/
   pinboard_mcp/
-    __init__.py       # server startup and connection testing
-    server.py         # mcp tools implementation
+    __init__.py       # package marker
+    server.py         # mcp tools implementation + run() entry point
     pinboard.py       # pinboard api client and utilities
     utils.py          # validation helpers
 ```

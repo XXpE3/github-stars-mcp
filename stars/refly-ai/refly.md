@@ -1,6 +1,6 @@
 ---
 project: refly
-stars: 4712
+stars: 4723
 description: |-
     The Open-Source Agentic Workspace for Human-AI Collaboration.
 url: https://github.com/refly-ai/refly

@@ -1,6 +1,6 @@
 ---
 project: argon-theme
-stars: 5282
+stars: 5291
 description: |-
     📖 Argon - 一个轻盈、简洁的 WordPress 主题
 url: https://github.com/solstice23/argon-theme

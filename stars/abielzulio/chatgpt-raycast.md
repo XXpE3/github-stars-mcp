@@ -1,6 +1,6 @@
 ---
 project: chatgpt-raycast
-stars: 604
+stars: 606
 description: |-
     ChatGPT raycast extension
 url: https://github.com/abielzulio/chatgpt-raycast

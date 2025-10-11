@@ -1,6 +1,6 @@
 ---
 project: BaiduPCS-Go
-stars: 3970
+stars: 4001
 description: |-
     iikira/BaiduPCS-Go原版基础上集成了分享链接/秒传链接转存功能
 url: https://github.com/qjfoidnh/BaiduPCS-Go

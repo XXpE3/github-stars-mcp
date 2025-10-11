@@ -1,6 +1,6 @@
 ---
 project: rainbow-csv
-stars: 31
+stars: 32
 description: |-
     🌈Highlight CSV and TSV spreadsheet files in different rainbow colors
 url: https://github.com/emacs-vs/rainbow-csv

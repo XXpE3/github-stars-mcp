@@ -1,6 +1,6 @@
 ---
 project: arxiv-mcp-server
-stars: 1743
+stars: 1760
 description: |-
     A Model Context Protocol server for searching and analyzing arXiv papers
 url: https://github.com/blazickjp/arxiv-mcp-server

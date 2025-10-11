@@ -1,6 +1,6 @@
 ---
 project: ollama
-stars: 153521
+stars: 153908
 description: |-
     Get up and running with OpenAI gpt-oss, DeepSeek-R1, Gemma 3 and other models.
 url: https://github.com/ollama/ollama

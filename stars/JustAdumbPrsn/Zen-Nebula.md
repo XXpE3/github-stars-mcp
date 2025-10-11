@@ -1,6 +1,6 @@
 ---
 project: Zen-Nebula
-stars: 1101
+stars: 1115
 description: |-
     A minimalist Glassmorphism based theme to elevate the UI of Zen browser
 url: https://github.com/JustAdumbPrsn/Zen-Nebula

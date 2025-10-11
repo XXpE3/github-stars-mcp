@@ -1,6 +1,6 @@
 ---
 project: epub-translator
-stars: 469
+stars: 477
 description: |-
     Use LLM to losslessly translate EPUB e-books, retain the original layout, and generate bilingual comparisons.
 url: https://github.com/oomol-lab/epub-translator

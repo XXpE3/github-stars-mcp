@@ -1,6 +1,6 @@
 ---
 project: RTranslator
-stars: 9217
+stars: 9238
 description: |-
     Open source real-time translation app for Android that runs locally
 url: https://github.com/niedev/RTranslator

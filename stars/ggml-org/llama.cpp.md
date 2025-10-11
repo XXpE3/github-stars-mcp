@@ -1,6 +1,6 @@
 ---
 project: llama.cpp
-stars: 87195
+stars: 87477
 description: |-
     LLM inference in C/C++
 url: https://github.com/ggml-org/llama.cpp

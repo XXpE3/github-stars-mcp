@@ -1,6 +1,6 @@
 ---
 project: RWKV-LM
-stars: 13997
+stars: 14011
 description: |-
     RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 "Goose". So it's combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding.
 url: https://github.com/BlinkDL/RWKV-LM
@@ -41,6 +41,10 @@ This is because RWKV-7 is the whole model with carefully set stuffs, including d
 But the price to pay is there is no good simple "RWKV-7 layer" because a pytorch layer can't make sure itself is using correct init and hyperparameters.
 
 So if you need to use RWKV-7 for another task, please study train_temp code (only several hundred lines) and change it to suit you.
+
+===
+
+<img src="RWKV-8-ROSA.png">
 
 ===
 

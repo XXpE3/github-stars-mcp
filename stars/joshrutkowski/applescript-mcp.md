@@ -1,6 +1,6 @@
 ---
 project: applescript-mcp
-stars: 315
+stars: 317
 description: |-
     A macOS AppleScript MCP server
 url: https://github.com/joshrutkowski/applescript-mcp

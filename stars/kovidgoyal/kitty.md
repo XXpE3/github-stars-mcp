@@ -1,12 +1,14 @@
 ---
 project: kitty
-stars: 29179
+stars: 29263
 description: |-
-    Cross-platform, fast, feature-rich, GPU based terminal
+    If you live in the terminal, kitty is made for you! Cross-platform, fast, feature-rich, GPU based.
 url: https://github.com/kovidgoyal/kitty
 ---
 
 = kitty - the fast, feature-rich, cross-platform, GPU based terminal
+
+If you live in the terminal, *kitty* is made for **you**!
 
 See https://sw.kovidgoyal.net/kitty/[the kitty website].
 

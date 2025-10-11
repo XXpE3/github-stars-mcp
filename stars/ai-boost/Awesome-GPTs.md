@@ -1,6 +1,6 @@
 ---
 project: Awesome-GPTs
-stars: 3316
+stars: 3319
 description: |-
     Curated list of awesome GPTs 👍.
 url: https://github.com/ai-boost/Awesome-GPTs

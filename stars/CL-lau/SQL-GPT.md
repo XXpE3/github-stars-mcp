@@ -1,6 +1,6 @@
 ---
 project: SQL-GPT
-stars: 350
+stars: 349
 description: |-
     Use ChatGPT to generate SQL and perform execution. Optimization and error correction of SQL is also possible.
 url: https://github.com/CL-lau/SQL-GPT
