@@ -1,6 +1,6 @@
 ---
 project: EldenRingSaveCopier
-stars: 526
+stars: 527
 description: |-
     null
 url: https://github.com/BenGrn/EldenRingSaveCopier

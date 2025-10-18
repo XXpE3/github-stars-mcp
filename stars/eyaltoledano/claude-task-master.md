@@ -1,6 +1,6 @@
 ---
 project: claude-task-master
-stars: 22724
+stars: 23011
 description: |-
     An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.
 url: https://github.com/eyaltoledano/claude-task-master
@@ -317,6 +317,12 @@ git clone https://github.com/eyaltoledano/claude-task-master.git
 cd claude-task-master
 node scripts/init.js
 ```
+
+## Join Our Team
+
+<a href="https://tryhamster.com" target="_blank">
+  <img src="./images/hamster-hiring.png" alt="Join Hamster's founding team" />
+</a>
 
 ## Contributors
 

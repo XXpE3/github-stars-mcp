@@ -1,6 +1,6 @@
 ---
 project: BitRemote
-stars: 194
+stars: 195
 description: |-
     A downloaders remote app for Apple platforms built with SwiftUI & TCA.
 url: https://github.com/BitRemote-Team/BitRemote

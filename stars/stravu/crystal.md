@@ -1,6 +1,6 @@
 ---
 project: crystal
-stars: 2160
+stars: 2240
 description: |-
     Run multiple Codex and Claude Code AI sessions in parallel git worktrees. Test, compare approaches & manage AI-assisted development workflows in one desktop app.
 url: https://github.com/stravu/crystal
@@ -20,39 +20,49 @@ url: https://github.com/stravu/crystal
 
 </div>
 
-Crystal is an Electron desktop application that lets you run, inspect, and test multiple AI coding assistant instances simultaneously using git worktrees. Crystal supports both **Claude Code** (Anthropic) and **Codex** (OpenAI) assistants. Crystal is an independent project created by [Stravu](https://stravu.com/?utm_source=Crystal&utm_medium=OS&utm_campaign=Crystal&utm_id=1). Stravu provides editable, collaborate AI notebooks with text, tables, diagrams.
+<div align="center">
+  <strong>Crystal lets you use AI on isolated copies of your code so you can work on multiple tasks instead of waiting for your agents to finish.</strong>
+</div>
 
+<br>
+<br>
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/45ca7166-e69a-4ed2-8ef5-ef83dc52ffd6" alt="Run one or more sessions with Claude Code, Codex, or both" width="400"/>
+  <p><em>Run one or more sessions with Claude Code, Codex, or both</em></p>
+</div>
 
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <img src="https://github.com/user-attachments/assets/e180691e-aaa3-4171-bdae-3b0459dcc495" alt="Rich output for your agents" width="400"/>
+        <p><em>Rich output for your agents</em></p>
+      </td>
+      <td align="center" width="50%">
+        <img src="https://github.com/user-attachments/assets/1f64ac92-9158-4e83-997e-6650a9bc9072" alt="Run your code and test before merging" width="400"/>
+        <p><em>Run your code and test before merging</em></p>
+      </td>
+    </tr>
+  </table>
+</div>
 
-
-
+<div align="center" style="max-width: 600px; margin: 0 auto;">
 
 https://github.com/user-attachments/assets/5ca66e5b-8d05-4570-8417-5e8dcd7726ef
 
+</div>
 
-
-
-
-
+---
 
 ## The Crystal Workflow
 
 1. Create sessions from prompts, each in an isolated git worktree
 2. Iterate with your AI assistant (Claude Code or Codex) inside your sessions. Each iteration will make a commit so you can always go back.
 3. Review the diff changes and make manual edits as needed
-4. Squash your commits together with a new message and rebase to your main branch.
+4. Squash your commits together with a new message and merge to your main branch.
 
-## ✨ Key Features
-
-- **🤖 Multiple AI Assistants** - Support for Claude Code (Anthropic) and Codex (OpenAI)
-- **🚀 Parallel Sessions** - Run multiple AI assistant instances at once
-- **🌳 Git Worktree Isolation** - Each session gets its own branch
-- **💾 Session Persistence** - Resume conversations anytime
-- **🔧 Git Integration** - Built-in rebase and squash operations
-- **📊 Change Tracking** - View diffs and track modifications
-- **🔔 Notifications** - Desktop alerts when sessions need input
-- **🏗️ Run Scripts** - Test changes instantly without leaving Crystal
+---
 
 ## 🚀 Quick Start
 
@@ -85,7 +95,7 @@ When everything looks good:
 - **Squash and rebase to main**: Combine all commits and rebase onto main
 - Always preview commands with tooltips before executing
 
-
+---
 
 ## Installation
 
@@ -98,10 +108,12 @@ When everything looks good:
 - **Windows** (Unofficial - Build from source): Windows is currently supported through local builds only. An installer will be provided in future releases.
   - Follow the "Building from Source" instructions below
 
-### Homebrew 
+### Homebrew
 ```bash
 brew install --cask stravu-crystal
 ```
+
+---
 
 ## Building from Source
 
@@ -117,14 +129,14 @@ pnpm run setup
 pnpm run electron-dev
 ```
 
-## Building for Production
+### Building for Production
 
 ```bash
 # Build for macOS
 pnpm build:mac
 ```
 
-
+---
 
 ## 🤝 Contributing
 
@@ -145,7 +157,7 @@ This ensures:
 - Worktrees won't conflict between the two instances
 - You can safely test changes without affecting your primary Crystal setup
 
-## Using with Third-Party Deployments
+### Using with Third-Party Deployments
 
 To use Crystal with cloud providers or via corporate infrastructure, you should create a [settings](https://docs.anthropic.com/en/docs/claude-code/settings) file with `ENV` values to correctly connect to the provider.
 
@@ -162,6 +174,8 @@ For example, here is a minimal configuration to use Amazon Bedrock via an AWS Pr
 ```
 
 Check the [deployment documentation](https://docs.anthropic.com/en/docs/claude-code/third-party-integrations) for more information on getting setup with your particular deployment.
+
+---
 
 ## Additional Documentation
 

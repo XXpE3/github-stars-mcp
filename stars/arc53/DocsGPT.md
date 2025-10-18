@@ -1,6 +1,6 @@
 ---
 project: DocsGPT
-stars: 17179
+stars: 17209
 description: |-
     Private AI platform for agents, assistants and enterprise search. Built-in Agent Builder, Deep research, Document analysis, Multi-model support, and API connectivity for agents.
 url: https://github.com/arc53/DocsGPT
@@ -76,7 +76,7 @@ url: https://github.com/arc53/DocsGPT
 - [x] MCP support (August 2025)
 - [x] Google Drive integration (September 2025)
 - [x] Add OAuth 2.0 authentication for MCP (September 2025)
-- [ ] Sharepoint integration (October 2025)
+- [ ] SharePoint integration (October 2025)
 - [ ] Deep Agents (October 2025)
 - [ ] Agent scheduling
 

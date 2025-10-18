@@ -1,6 +1,6 @@
 ---
 project: semantic-code-search
-stars: 370
+stars: 372
 description: |-
     Search your codebase with natural language • CLI • No data leaves your computer
 url: https://github.com/sturdy-dev/semantic-code-search

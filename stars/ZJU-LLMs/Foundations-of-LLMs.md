@@ -1,6 +1,6 @@
 ---
 project: Foundations-of-LLMs
-stars: 12004
+stars: 12066
 description: |-
     null
 url: https://github.com/ZJU-LLMs/Foundations-of-LLMs

@@ -1,6 +1,6 @@
 ---
 project: remoteapptool
-stars: 3577
+stars: 3587
 description: |-
     Create and manage RemoteApps hosted on Windows 7, 8, 10, 11, XP and Server. Generate RDP and MSI files for clients.
 url: https://github.com/kimmknight/remoteapptool

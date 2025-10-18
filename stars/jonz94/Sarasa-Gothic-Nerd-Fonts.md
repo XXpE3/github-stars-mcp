@@ -1,6 +1,6 @@
 ---
 project: Sarasa-Gothic-Nerd-Fonts
-stars: 284
+stars: 287
 description: |-
     Nerd fonts patched Sarasa Gothic font.
 url: https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts

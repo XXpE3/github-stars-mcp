@@ -1,6 +1,6 @@
 ---
 project: claude-context
-stars: 4034
+stars: 4145
 description: |-
     Code search MCP for Claude Code. Make entire codebase the context for any coding agent.
 url: https://github.com/zilliztech/claude-context

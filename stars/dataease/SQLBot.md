@@ -1,8 +1,8 @@
 ---
 project: SQLBot
-stars: 3795
+stars: 4014
 description: |-
-    🔥 基于大模型和 RAG 的智能问数系统。Text-to-SQL Generation via LLMs using RAG.
+    🔥 基于大模型和 RAG 的智能问数系统，对话式数据分析神器。Text-to-SQL Generation via LLMs using RAG.
 url: https://github.com/dataease/SQLBot
 ---
 

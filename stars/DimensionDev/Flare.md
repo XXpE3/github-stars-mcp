@@ -1,6 +1,6 @@
 ---
 project: Flare
-stars: 309
+stars: 341
 description: |-
     All your Mastodon, Bluesky, Misskey, X, RSS feeds, in one APP.
 url: https://github.com/DimensionDev/Flare
@@ -14,7 +14,7 @@ url: https://github.com/DimensionDev/Flare
 [![Discord](https://img.shields.io/badge/-discord-blue?logo=discord&color=white)](https://discord.gg/De9NhXBryT)
 
 ![badge-Android](https://img.shields.io/badge/Android-6.0-3DDC84)
-![badge-iOS](https://img.shields.io/badge/iOS-18.0-black)
+![badge-iOS](https://img.shields.io/badge/iOS-17.0-black)
 ![badge-Windows](https://img.shields.io/badge/Windows_10-1809-blue)
 ![badge-macOS](https://img.shields.io/badge/macOS-Sonoma-black)
 

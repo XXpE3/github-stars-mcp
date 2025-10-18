@@ -1,6 +1,6 @@
 ---
 project: mcp-proxy
-stars: 1855
+stars: 1887
 description: |-
     A bridge between Streamable HTTP and stdio MCP transports
 url: https://github.com/sparfenyuk/mcp-proxy

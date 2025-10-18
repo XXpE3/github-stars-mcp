@@ -1,6 +1,6 @@
 ---
 project: docker-samba
-stars: 571
+stars: 583
 description: |-
     Samba Docker image
 url: https://github.com/crazy-max/docker-samba

@@ -1,6 +1,6 @@
 ---
 project: ExcalidrawZ
-stars: 833
+stars: 851
 description: |-
     Excalidraw app for mac. Powered by pure SwiftUI.
 url: https://github.com/chocoford/ExcalidrawZ

@@ -1,6 +1,6 @@
 ---
 project: Suwayomi-Server
-stars: 5761
+stars: 5803
 description: |-
     A rewrite of Tachiyomi for the Desktop
 url: https://github.com/Suwayomi/Suwayomi-Server
@@ -136,7 +136,7 @@ Check our Official Docker release [Suwayomi Container](https://github.com/orgs/S
 ### Arch Linux
 You can install Suwayomi from the AUR:
 ```
-yay -S tachidesk
+yay -S suwayomi-server-bin
 ```
 
 ### Debian/Ubuntu

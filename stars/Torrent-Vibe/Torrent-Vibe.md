@@ -1,6 +1,6 @@
 ---
 project: Torrent-Vibe
-stars: 106
+stars: 109
 description: |-
     Torrent Vibe, a modern, elegant web interface for qBittorrent that transforms your torrent management experience with enhanced performance, intuitive design, and cross-platform compatibility.
 url: https://github.com/Torrent-Vibe/Torrent-Vibe

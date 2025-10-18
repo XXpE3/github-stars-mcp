@@ -1,6 +1,6 @@
 ---
 project: Blender-miHoYo-Shaders
-stars: 1034
+stars: 1036
 description: |-
     Shader for Blender attempting to replicate the shading of Genshin Impact. These are for datamined assets, not custom-made ones nor the MMD variants.
 url: https://github.com/festivities/Blender-miHoYo-Shaders

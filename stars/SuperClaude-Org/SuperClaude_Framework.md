@@ -1,6 +1,6 @@
 ---
 project: SuperClaude_Framework
-stars: 16699
+stars: 17032
 description: |-
     A configuration framework that enhances Claude Code with specialized commands, cognitive personas, and development methodologies.
 url: https://github.com/SuperClaude-Org/SuperClaude_Framework
@@ -31,8 +31,11 @@ url: https://github.com/SuperClaude-Org/SuperClaude_Framework
   <a href="https://superclaude.netlify.app/">
     <img src="https://img.shields.io/badge/🌐_Visit_Website-blue" alt="Website">
   </a>
-  <a href="https://pypi.org/project/SuperClaude/">
+  <a href="https://pypi.org/project/superclaude/">
     <img src="https://img.shields.io/pypi/v/SuperClaude.svg?" alt="PyPI">
+  </a>
+  <a href="https://pepy.tech/projects/superclaude">
+    <img src="https://static.pepy.tech/personalized-badge/superclaude?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads" alt="PyPI sats">
   </a>
   <a href="https://www.npmjs.com/package/@bifrost_inc/superclaude">
     <img src="https://img.shields.io/npm/v/@bifrost_inc/superclaude.svg" alt="npm">
@@ -69,7 +72,7 @@ url: https://github.com/SuperClaude-Org/SuperClaude_Framework
 
 | **Commands** | **Agents** | **Modes** | **MCP Servers** |
 |:------------:|:----------:|:---------:|:---------------:|
-| **25** | **15** | **7** | **8** |
+| **26** | **16** | **7** | **8** |
 | Slash Commands | Specialized AI | Behavioral | Integrations |
 
 Use the new `/sc:help` command to see a full list of all available commands.
@@ -87,8 +90,21 @@ SuperClaude is a **meta-programming configuration framework** that transforms Cl
 
 ## Disclaimer
 
-This project is not affiliated with or endorsed by Anthropic.  
+This project is not affiliated with or endorsed by Anthropic.
 Claude Code is a product built and maintained by [Anthropic](https://www.anthropic.com/).
+
+## 📖 **For Developers & Contributors**
+
+**Essential documentation for working with SuperClaude Framework:**
+
+| Document | Purpose | When to Read |
+|----------|---------|--------------|
+| **[PLANNING.md](PLANNING.md)** | Architecture, design principles, absolute rules | Session start, before implementation |
+| **[TASK.md](TASK.md)** | Current tasks, priorities, backlog | Daily, before starting work |
+| **[KNOWLEDGE.md](KNOWLEDGE.md)** | Accumulated insights, best practices, troubleshooting | When encountering issues, learning patterns |
+| **[CONTRIBUTING.md](CONTRIBUTING.md)** | Contribution guidelines, workflow | Before submitting PRs |
+
+> **💡 Pro Tip**: Claude Code reads these files at session start to ensure consistent, high-quality development aligned with project standards.
 
 ## ⚡ **Quick Installation**
 
@@ -212,7 +228,8 @@ pip install --break-system-packages SuperClaude
 <td width="50%">
 
 ### 🤖 **Smarter Agent System**
-**15 specialized agents** with domain expertise:
+**16 specialized agents** with domain expertise:
+- PM Agent ensures continuous learning through systematic documentation
 - Deep Research agent for autonomous web research
 - Security engineer catches real vulnerabilities
 - Frontend architect understands UI patterns
@@ -396,51 +413,51 @@ The Deep Research system intelligently coordinates multiple tools:
 <tr>
 <td valign="top">
 
-- 📝 [**Quick Start Guide**](Docs/Getting-Started/quick-start.md)  
+- 📝 [**Quick Start Guide**](docs/getting-started/quick-start.md)  
   *Get up and running fast*
 
-- 💾 [**Installation Guide**](Docs/Getting-Started/installation.md)  
+- 💾 [**Installation Guide**](docs/getting-started/installation.md)  
   *Detailed setup instructions*
 
 </td>
 <td valign="top">
 
-- 🎯 [**Commands Reference**](Docs/User-Guide/commands.md)  
+- 🎯 [**Commands Reference**](docs/user-guide/commands.md)  
   *All 25 slash commands*
 
-- 🤖 [**Agents Guide**](Docs/User-Guide/agents.md)  
+- 🤖 [**Agents Guide**](docs/user-guide/agents.md)  
   *15 specialized agents*
 
-- 🎨 [**Behavioral Modes**](Docs/User-Guide/modes.md)  
+- 🎨 [**Behavioral Modes**](docs/user-guide/modes.md)  
   *7 adaptive modes*
 
-- 🚩 [**Flags Guide**](Docs/User-Guide/flags.md)  
+- 🚩 [**Flags Guide**](docs/user-guide/flags.md)  
   *Control behaviors*
 
-- 🔧 [**MCP Servers**](Docs/User-Guide/mcp-servers.md)  
+- 🔧 [**MCP Servers**](docs/user-guide/mcp-servers.md)  
   *7 server integrations*
 
-- 💼 [**Session Management**](Docs/User-Guide/session-management.md)  
+- 💼 [**Session Management**](docs/user-guide/session-management.md)  
   *Save & restore state*
 
 </td>
 <td valign="top">
 
-- 🏗️ [**Technical Architecture**](Docs/Developer-Guide/technical-architecture.md)  
+- 🏗️ [**Technical Architecture**](docs/developer-guide/technical-architecture.md)  
   *System design details*
 
-- 💻 [**Contributing Code**](Docs/Developer-Guide/contributing-code.md)  
+- 💻 [**Contributing Code**](docs/developer-guide/contributing-code.md)  
   *Development workflow*
 
-- 🧪 [**Testing & Debugging**](Docs/Developer-Guide/testing-debugging.md)  
+- 🧪 [**Testing & Debugging**](docs/developer-guide/testing-debugging.md)  
   *Quality assurance*
 
 </td>
 <td valign="top">
-- 📓 [**Examples Cookbook**](Docs/Reference/examples-cookbook.md)  
+- 📓 [**Examples Cookbook**](docs/reference/examples-cookbook.md)  
   *Real-world recipes*
 
-- 🔍 [**Troubleshooting**](Docs/Reference/troubleshooting.md)  
+- 🔍 [**Troubleshooting**](docs/reference/troubleshooting.md)  
   *Common issues & fixes*
 
 </td>

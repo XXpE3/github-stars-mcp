@@ -1,6 +1,6 @@
 ---
 project: zotero-immersivetranslate
-stars: 170
+stars: 176
 description: |-
     Zotero BabelDOC plugin, for Immersive Translate Pro members.
 url: https://github.com/immersive-translate/zotero-immersivetranslate

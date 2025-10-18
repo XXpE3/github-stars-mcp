@@ -1,6 +1,6 @@
 ---
 project: opengist
-stars: 2736
+stars: 2747
 description: |-
     Self-hosted pastebin powered by Git, open-source alternative to Github Gist.
 url: https://github.com/thomiceli/opengist

@@ -1,6 +1,6 @@
 ---
 project: huntly
-stars: 2172
+stars: 2179
 description: |-
     Huntly, information management tool, rss reader, automatic saving browsed contents include tweets, github stars management tool. 信息管理工具、RSS 阅读器、GitHub stars 管理、推文管理、自动记录浏览过的文章。
 url: https://github.com/lcomplete/huntly
@@ -172,3 +172,7 @@ java -Xms128m -Xmx1024m -jar huntly-server.jar --server.port=80
 <a href="https://www.jetbrains.com/?from=huntly">
   <img src="static/images/jb_beam.png" height="200" />
 </a>
+
+----
+
+[Huntly DeepWiki](https://deepwiki.com/lcomplete/huntly)

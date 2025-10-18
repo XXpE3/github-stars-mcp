@@ -1,6 +1,6 @@
 ---
 project: MemoryMesh
-stars: 304
+stars: 307
 description: |-
     A knowledge graph server that uses the Model Context Protocol (MCP) to provide structured memory persistence for AI models. v0.2.8
 url: https://github.com/CheMiguel23/MemoryMesh

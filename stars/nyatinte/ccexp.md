@@ -1,6 +1,6 @@
 ---
 project: ccexp
-stars: 191
+stars: 198
 description: |-
     interactive terminal interface for discovering, previewing, and managing Claude Code configuration files and slash commands.
 url: https://github.com/nyatinte/ccexp

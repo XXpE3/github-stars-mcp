@@ -1,6 +1,6 @@
 ---
 project: awesome-chatgpt-prompts
-stars: 135176
+stars: 135482
 description: |-
     This repo includes ChatGPT prompt curation to use ChatGPT and other LLM tools better.
 url: https://github.com/f/awesome-chatgpt-prompts

@@ -1,6 +1,6 @@
 ---
 project: clash-verge-rev
-stars: 77499
+stars: 78415
 description: |-
     A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience
 url: https://github.com/clash-verge-rev/clash-verge-rev

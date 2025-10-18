@@ -1,6 +1,6 @@
 ---
 project: modelcontextprotocol
-stars: 1682
+stars: 1699
 description: |-
     The official MCP server implementation for the Perplexity API Platform
 url: https://github.com/perplexityai/modelcontextprotocol
@@ -10,13 +10,7 @@ url: https://github.com/perplexityai/modelcontextprotocol
 
 The official MCP server implementation for the Perplexity API Platform, providing AI assistants with real-time web search, reasoning, and research capabilities through Sonar models and the Search API.
 
-Please refer to the official [DeepWiki page](https://deepwiki.com/ppl-ai/modelcontextprotocol) for assistance with implementation. 
-
-## Quick Start
-
-```bash
-npx @perplexity-ai/mcp-server
-```
+Please refer to the official [DeepWiki page](https://deepwiki.com/ppl-ai/modelcontextprotocol) for assistance with implementation.
 
 ## Available Tools
 
@@ -37,8 +31,64 @@ Advanced reasoning and problem-solving using the `sonar-reasoning-pro` model. Pe
 ### Get Your API Key
 1. Get your Perplexity API Key from the [API Portal](https://www.perplexity.ai/account/api/group)
 2. Set it as an environment variable: `PERPLEXITY_API_KEY=your_key_here`
+3. (Optional) Set a timeout for requests: `PERPLEXITY_TIMEOUT_MS=600000`. The default is 5 minutes.
+
+### Claude Code
+
+Run in your terminal:
+
+```bash
+claude mcp add perplexity --transport stdio --env PERPLEXITY_API_KEY=your_key_here -- npx -y perplexity-mcp
+```
+
+Or add to your `claude.json`:
+
+```json
+"mcpServers": {
+  "perplexity": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "perplexity-mcp"
+    ],
+    "env": {
+      "PERPLEXITY_API_KEY": "your_key_here",
+      "PERPLEXITY_TIMEOUT_MS": "600000"
+    }
+  }
+}
+```
+
+### Cursor
+
+Add to your `mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "perplexity": {
+      "command": "npx",
+      "args": ["-y", "@perplexity-ai/mcp-server"],
+      "env": {
+        "PERPLEXITY_API_KEY": "your_key_here",
+        "PERPLEXITY_TIMEOUT_MS": "600000"
+      }
+    }
+  }
+}
+```
+
+### Codex
+
+Run in your terminal:
+
+```bash
+codex mcp add perplexity --env PERPLEXITY_API_KEY=your_key_here -- npx -y @perplexity-ai/mcp-server
+```
 
 ### Claude Desktop
+
 Add to your `claude_desktop_config.json`:
 
 ```json
@@ -48,24 +98,8 @@ Add to your `claude_desktop_config.json`:
       "command": "npx",
       "args": ["-y", "@perplexity-ai/mcp-server"],
       "env": {
-        "PERPLEXITY_API_KEY": "your_key_here"
-      }
-    }
-  }
-}
-```
-
-### Cursor & Claude Code
-Use the HTTP-based configuration:
-
-```json
-{
-  "mcpServers": {
-    "perplexity": {
-      "type": "http", 
-      "url": "http://localhost:3000/mcp",
-      "env": {
-        "PERPLEXITY_API_KEY": "your_key_here"
+        "PERPLEXITY_API_KEY": "your_key_here",
+        "PERPLEXITY_TIMEOUT_MS": "600000"
       }
     }
   }
@@ -73,6 +107,7 @@ Use the HTTP-based configuration:
 ```
 
 ### Other MCP Clients
+
 For any MCP-compatible client, use:
 
 ```bash
@@ -84,6 +119,7 @@ npx @perplexity-ai/mcp-server
 - **API Key Issues**: Ensure `PERPLEXITY_API_KEY` is set correctly
 - **Connection Errors**: Check your internet connection and API key validity
 - **Tool Not Found**: Make sure the package is installed and the command path is correct
+- **Timeout Errors**: For very long research queries, set `PERPLEXITY_TIMEOUT_MS` to a higher value
 
 For support, visit [community.perplexity.ai](https://community.perplexity.ai) or [file an issue](https://github.com/perplexityai/modelcontextprotocol/issues).
 

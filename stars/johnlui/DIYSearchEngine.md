@@ -1,6 +1,6 @@
 ---
 project: DIYSearchEngine
-stars: 682
+stars: 684
 description: |-
     🔍 Go 开发的开源互联网搜索引擎，附教程《自己动手开发互联网搜索引擎》
 url: https://github.com/johnlui/DIYSearchEngine

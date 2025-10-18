@@ -1,6 +1,6 @@
 ---
 project: VectorCode
-stars: 692
+stars: 695
 description: |-
     A code repository indexing tool to supercharge your LLM experience.
 url: https://github.com/Davidyz/VectorCode

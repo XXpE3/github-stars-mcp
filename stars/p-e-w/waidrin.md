@@ -1,6 +1,6 @@
 ---
 project: waidrin
-stars: 255
+stars: 257
 description: |-
     Next-generation AI roleplay system
 url: https://github.com/p-e-w/waidrin

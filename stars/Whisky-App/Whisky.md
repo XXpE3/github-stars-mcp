@@ -1,6 +1,6 @@
 ---
 project: Whisky
-stars: 14696
+stars: 14705
 description: |-
     A modern Wine wrapper for macOS built with SwiftUI
 url: https://github.com/Whisky-App/Whisky

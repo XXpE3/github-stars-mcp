@@ -1,6 +1,6 @@
 ---
 project: hello-algo
-stars: 117675
+stars: 117909
 description: |-
     《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 代码。简体版和繁体版同步更新，English version in translation
 url: https://github.com/krahets/hello-algo
@@ -51,6 +51,8 @@ url: https://github.com/krahets/hello-algo
   <a href="https://github.com/krahets/hello-algo/blob/main/zh-hant/README.md">繁體中文</a>
   ｜
   <a href="https://github.com/krahets/hello-algo/blob/main/en/README.md">English</a>
+  ｜
+  <a href="https://github.com/krahets/hello-algo/blob/main/ja/README.md">日本語</a>
 </p>
 
 ## 关于本书

@@ -1,6 +1,6 @@
 ---
 project: toolong
-stars: 3594
+stars: 3601
 description: |-
     A terminal application to view, tail, merge, and search log files (plus JSONL).
 url: https://github.com/Textualize/toolong

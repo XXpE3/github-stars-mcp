@@ -1,6 +1,6 @@
 ---
 project: MiaoYan
-stars: 6633
+stars: 6701
 description: |-
     ⛷ Lightweight Markdown app to help you write great sentences. 轻灵的 Markdown 笔记本伴你写出妙言
 url: https://github.com/tw93/MiaoYan

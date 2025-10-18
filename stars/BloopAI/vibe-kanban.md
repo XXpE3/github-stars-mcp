@@ -1,6 +1,6 @@
 ---
 project: vibe-kanban
-stars: 5494
+stars: 5569
 description: |-
     Kanban board to manage your AI coding agents
 url: https://github.com/BloopAI/vibe-kanban

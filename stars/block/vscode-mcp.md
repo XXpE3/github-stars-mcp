@@ -1,6 +1,6 @@
 ---
 project: vscode-mcp
-stars: 74
+stars: 75
 description: |-
     null
 url: https://github.com/block/vscode-mcp

@@ -1,6 +1,6 @@
 ---
 project: whodb
-stars: 4099
+stars: 4183
 description: |-
     A lightweight next-gen data explorer - Postgres, MySQL, SQLite, MongoDB, Redis, MariaDB, Elastic Search, and Clickhouse with Chat interface
 url: https://github.com/clidey/whodb

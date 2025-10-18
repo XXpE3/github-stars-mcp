@@ -1,6 +1,6 @@
 ---
 project: CursorFocus
-stars: 170
+stars: 171
 description: |-
     A lightweight tool that maintains a focused view of your project structure and environment. CursorFocus automatically tracks your project files, functions, and environment variables, updating every 60 seconds to keep you informed of changes.
 url: https://github.com/RenjiYuusei/CursorFocus

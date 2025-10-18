@@ -1,6 +1,6 @@
 ---
 project: prompt-optimizer
-stars: 15931
+stars: 16102
 description: |-
     一款提示词优化器，助力于编写高质量的提示词
 url: https://github.com/linshenkx/prompt-optimizer

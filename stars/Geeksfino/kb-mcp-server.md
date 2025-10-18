@@ -1,6 +1,6 @@
 ---
 project: kb-mcp-server
-stars: 50
+stars: 52
 description: |-
     Build a knowledge base into a tar.gz and give it to this MCP server, and it is ready to serve.
 url: https://github.com/Geeksfino/kb-mcp-server

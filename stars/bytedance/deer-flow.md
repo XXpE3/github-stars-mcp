@@ -1,6 +1,6 @@
 ---
 project: deer-flow
-stars: 17439
+stars: 17569
 description: |-
     DeerFlow is a community-driven Deep Research framework, combining language models with tools like web search, crawling, and Python execution, while contributing back to the open-source community.
 url: https://github.com/bytedance/deer-flow
@@ -230,6 +230,13 @@ DeerFlow support private knowledgebase such as ragflow and vikingdb, so that you
   - Facilitates integration of diverse research tools and methodologies
 
 ### Human Collaboration
+
+- 💬 **Intelligent Clarification Feature**
+  - Multi-turn dialogue to clarify vague research topics
+  - Improve research precision and report quality
+  - Reduce ineffective searches and token usage
+  - Configurable switch for flexible enable/disable control
+  - See [Configuration Guide - Clarification](./docs/configuration_guide.md#multi-turn-clarification-feature) for details
 
 - 🧠 **Human-in-the-loop**
   - Supports interactive modification of research plans using natural language

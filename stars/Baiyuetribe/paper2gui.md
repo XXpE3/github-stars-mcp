@@ -1,6 +1,6 @@
 ---
 project: paper2gui
-stars: 10669
+stars: 10678
 description: |-
     Convert AI papers to GUI，Make it easy and convenient for everyone to use artificial intelligence technology。让每个人都简单方便的使用前沿人工智能技术
 url: https://github.com/Baiyuetribe/paper2gui

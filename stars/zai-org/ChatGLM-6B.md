@@ -1,6 +1,6 @@
 ---
 project: ChatGLM-6B
-stars: 41135
+stars: 41138
 description: |-
     ChatGLM-6B: An Open Bilingual Dialogue Language Model | 开源双语对话语言模型
 url: https://github.com/zai-org/ChatGLM-6B

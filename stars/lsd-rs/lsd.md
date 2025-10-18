@@ -1,6 +1,6 @@
 ---
 project: lsd
-stars: 14921
+stars: 14961
 description: |-
     The next gen ls command
 url: https://github.com/lsd-rs/lsd
@@ -34,7 +34,7 @@ url: https://github.com/lsd-rs/lsd
 **IMPORTANT**: This is the development documents,
 please check the docs in [Tags](https://github.com/lsd-rs/lsd/tags) if you installed from the released ones.
 
-The current newest release is: [v1.1.5](https://github.com/lsd-rs/lsd/tree/v1.1.5)
+The current newest release is: [v1.2.0](https://github.com/lsd-rs/lsd/tree/v1.2.0)
 
 ---
 
