@@ -1,6 +1,6 @@
 ---
 project: buzee-tauri
-stars: 1129
+stars: 1131
 description: |-
     A superfast full-text search application
 url: https://github.com/gsidhu/buzee-tauri

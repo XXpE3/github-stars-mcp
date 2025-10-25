@@ -1,6 +1,6 @@
 ---
 project: OpenGPTS
-stars: 190
+stars: 191
 description: |-
     OpenGPTs- Powerful GPTs Colipot | 强大的gpts浏览器插件|多窗口|批量对话|chatgpt3.5|chatgpt4.0
 url: https://github.com/hzeyuan/OpenGPTS

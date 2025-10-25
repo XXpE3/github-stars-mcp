@@ -1,6 +1,6 @@
 ---
 project: fq
-stars: 10263
+stars: 10274
 description: |-
     jq for binary formats - tool, language and decoders for working with binary and text formats
 url: https://github.com/wader/fq
@@ -149,6 +149,7 @@ prores_frame,
 protobuf_widevine,
 pssh_playready,
 [rtmp](doc/formats.md#rtmp),
+safetensors,
 sll2_packet,
 sll_packet,
 [tap](doc/formats.md#tap),

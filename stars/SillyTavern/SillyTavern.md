@@ -1,6 +1,6 @@
 ---
 project: SillyTavern
-stars: 19242
+stars: 19466
 description: |-
     LLM Frontend for Power Users.
 url: https://github.com/SillyTavern/SillyTavern

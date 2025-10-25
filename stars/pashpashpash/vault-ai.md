@@ -1,6 +1,6 @@
 ---
 project: vault-ai
-stars: 3387
+stars: 3394
 description: |-
     OP Vault ChatGPT: Give ChatGPT long-term memory using the OP Stack (OpenAI + Pinecone Vector Database). Upload your own custom knowledge base files (PDF, txt, epub, etc) using a simple React frontend.
 url: https://github.com/pashpashpash/vault-ai

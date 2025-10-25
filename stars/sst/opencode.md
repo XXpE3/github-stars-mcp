@@ -1,6 +1,6 @@
 ---
 project: opencode
-stars: 28231
+stars: 29072
 description: |-
     The AI coding agent built for the terminal.
 url: https://github.com/sst/opencode
@@ -34,6 +34,8 @@ curl -fsSL https://opencode.ai/install | bash
 
 # Package managers
 npm i -g opencode-ai@latest        # or bun/pnpm/yarn
+scoop bucket add extras; scoop install extras/opencode  # Windows
+choco install opencode             # Windows
 brew install sst/tap/opencode      # macOS and Linux
 paru -S opencode-bin               # Arch Linux
 ```

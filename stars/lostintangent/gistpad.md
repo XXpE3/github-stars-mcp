@@ -1,6 +1,6 @@
 ---
 project: gistpad
-stars: 1029
+stars: 1030
 description: |-
     📘 VS Code extension for managing and sharing code snippets, notes and interactive samples using GitHub Gists
 url: https://github.com/lostintangent/gistpad

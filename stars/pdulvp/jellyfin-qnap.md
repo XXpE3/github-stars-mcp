@@ -1,6 +1,6 @@
 ---
 project: jellyfin-qnap
-stars: 668
+stars: 669
 description: |-
     Jellyfin server packaging for QNAP NAS
 url: https://github.com/pdulvp/jellyfin-qnap

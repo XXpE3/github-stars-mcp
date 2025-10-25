@@ -1,6 +1,6 @@
 ---
 project: copilot-cli
-stars: 3803
+stars: 4074
 description: |-
     GitHub Copilot CLI brings the power of Copilot coding agent directly to your terminal. 
 url: https://github.com/github/copilot-cli

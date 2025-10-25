@@ -1,6 +1,6 @@
 ---
 project: xxh
-stars: 5779
+stars: 5788
 description: |-
     🚀 Bring your favorite shell wherever you go through the ssh. Xonsh shell, fish, zsh, osquery and so on.
 url: https://github.com/xxh/xxh

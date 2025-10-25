@@ -1,6 +1,6 @@
 ---
 project: verb
-stars: 712
+stars: 713
 description: |-
     HTTP client for Emacs
 url: https://github.com/federicotdn/verb

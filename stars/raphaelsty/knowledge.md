@@ -1,6 +1,6 @@
 ---
 project: knowledge
-stars: 689
+stars: 690
 description: |-
     Open-source personal bookmarks search engine
 url: https://github.com/raphaelsty/knowledge

@@ -1,12 +1,10 @@
 ---
 project: zcf
-stars: 2471
+stars: 2973
 description: |-
     Zero-Config Code Flow for Claude code & Codex
 url: https://github.com/UfoMiao/zcf
 ---
-
-# ZCF - Zero-Config Code Flow
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -16,13 +14,26 @@ url: https://github.com/UfoMiao/zcf
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![Ask DeepWiki][deepwiki-src]][deepwiki-href]
 
-[中文](README_zh-CN.md) | **English** | [日本語](README_ja-JP.md) | [Changelog](CHANGELOG.md)
+<div align="center">
+  <img src="./src/assets/banner.webp" alt="Banner"/>
 
-**✨ Quick Links**: [Codex Support](#-codex-support-v300-new) | [BMad Workflow](#-bmad-workflow-v27-new-feature) | [Spec Workflow](#-spec-workflow-v2124-new-feature) | [Open Web Search](#-open-web-search-v2129-new-feature) | [CCR Router](#-ccr-claude-code-router-support-v28-enhanced) | [CCometixLine](#-ccometixline-support-status-bar-tool-v299-new) | [Output Styles](#-ai-output-styles-v212-new-feature)
+  <h1>
+    ZCF - Zero-Config Code Flow
+  </h1>
+
+  <p align="center">
+  <b>English</b> | <a href="README_zh-CN.md">中文</a> | <a href="README_ja-JP.md">日本語</a> | <a href="CHANGELOG.md">Changelog</a>
+
+**✨ Quick Links**: [Codex Support](#-codex-support-v300-new) | [BMad Workflow](#-bmad-workflow-v27-new-feature) | [Spec Workflow](#-spec-workflow-v2124-new-feature) | [Open Web Search](#-open-web-search-v2129-new-feature) | [CCR Router](#-ccr-claude-code-router-support-v28-enhanced) | [CCometixLine](#-ccometixline-support-status-bar-tool-v299-new) | [Output Styles](#-ai-output-styles-v212-new-feature) | [Multi-Configuration Management](#-multi-configuration-management-v320-new)
 
 > Zero-config, one-click setup for Claude Code & Codex with bilingual support, intelligent agent system and personalized AI assistant
+</p>
+</div>
 
-![Rendering](./src/assets/screenshot-en.webp)
+## ♥️ Sponsor AI API
+
+[![Sponsor AI API](./src/assets/302.ai-en.jpg)](https://share.302.ai/gAT9VG)
+[302.AI](https://share.302.ai/gAT9VG) is a pay-as-you-go enterprise AI resource hub that offers the latest and most comprehensive AI models and APIs on the market, along with a variety of ready-to-use online AI applications.
 
 ## 🚀 Quick Start
 
@@ -91,7 +102,7 @@ ZCF supports bilingual operation with automatic language switching for all comma
 # Use Chinese for all operations
 npx zcf --lang zh-CN          # Interactive menu in Chinese
 npx zcf init --lang zh-CN      # Initialize with Chinese interface  
-npx zcf ccr --allLang zh-CN    # Configure CCR in Chinese
+npx zcf ccr --all-lang zh-CN    # Configure CCR in Chinese
 
 # Language parameter priority (highest to lowest):
 # --all-lang > --lang > saved user preference > interactive prompt
@@ -113,6 +124,17 @@ npx zcf i -s -g zh-CN -t api_key -k "sk-xxx" -u "https://xxx.xxx"
 
 # Complete version
 npx zcf i --skip-prompt --all-lang zh-CN --api-type api_key --api-key "sk-xxx" --api-url "https://xxx.xxx"
+
+# Shorthand version (with custom models)
+npx zcf i -s -t api_key -k "sk-xxx" -M "claude-sonnet-4-5" -F "claude-haiku-4-5"
+
+# Complete version (with custom models)
+npx zcf i --skip-prompt \
+  --api-type api_key \
+  --api-key "sk-xxx" \
+  --api-url "https://xxx.xxx" \
+  --api-model "claude-sonnet-4-5" \
+  --api-fast-model "claude-haiku-4-5"
 ```
 
 #### Non-interactive Mode Parameters
@@ -125,12 +147,14 @@ When using `--skip-prompt`, the following parameters are available:
 | `--lang, -l`                 | ZCF display language (applies to all commands)           | `zh-CN`, `en`                                                                                      | No                                     | `en` or user's saved preference                                                                                                  |
 | `--config-lang, -c`          | Configuration language (template files language)         | `zh-CN`, `en`                                                                                      | No                                     | `en`                                                                                                                             |
 | `--ai-output-lang, -a`       | AI output language                                       | `zh-CN`, `en`, custom string                                                                       | No                                     | `en`                                                                                                                             |
-| `--all-lang, -g`             | Set all language parameters (applies to all commands)    | `zh-CN`, `en`, custom string                                                                       | No                                     | - (Priority: allLang > lang > user preference > prompt. Custom string sets AI output language to custom while interaction and config languages remain 'en') |
+| `--all-lang, -g`             | Set all language parameters (applies to all commands)    | `zh-CN`, `en`, custom string                                                                       | No                                     | - (Priority: `--all-lang` > `--lang` > saved user preference > interactive prompt. Custom string sets AI output language to custom while interaction and config languages remain 'en') |
 | `--config-action, -r`        | Config handling                                          | `new`, `backup`, `merge`, `docs-only`, `skip`                                                      | No                                     | `backup`                                                                                                                         |
 | `--api-type, -t`             | API configuration type                                   | `auth_token`, `api_key`, `ccr_proxy`, `skip`                                                       | No                                     | `skip`                                                                                                                           |
 | `--api-key, -k`              | API key (for both API key and auth token types)          | string                                                                                             | Required when `api-type` is not `skip` | -                                                                                                                                |
 | `--api-url, -u`              | Custom API URL                                           | URL string                                                                                         | No                                     | official API                                                                                                                     |
-| `--mcp-services, -m`         | MCP services to install (multi-select, comma-separated)  | `context7`, `open-websearch`, `spec-workflow`, `mcp-deepwiki`, `Playwright`, `exa`, or `skip` for none | No                                     | `all`                                                                                                                            |
+| `--api-model, -M`            | Primary API model                                        | string (e.g., `claude-sonnet-4-5`)                                                                 | No                                     | -                                                                                                                                |
+| `--api-fast-model, -F`       | Fast API model (Claude Code only)                        | string (e.g., `claude-haiku-4-5`)                                                                  | No                                     | -                                                                                                                                |
+| `--mcp-services, -m`         | MCP services to install (multi-select, comma-separated)  | `context7`, `open-websearch`, `spec-workflow`, `mcp-deepwiki`, `Playwright`, `exa`, `serena`, or `skip` for none | No                                     | `all`                                                                                                                            |
 | `--workflows, -w`            | Workflows to install (multi-select, comma-separated)     | `commonTools`, `sixStepsWorkflow`, `featPlanUx`, `gitWorkflow`, `bmadWorkflow`, or `skip` for none | No                                     | `all`                                                                                                                            |
 | `--output-styles, -o`        | Output styles to install (multi-select, comma-separated) | `engineer-professional`, `nekomata-engineer`, `laowang-engineer`, `ojousama-engineer`, or `skip` for none               | No                                     | `all`                                                                                                                            |
 | `--default-output-style, -d` | Default output style                                     | Same as output styles plus built-in: `default`, `explanatory`, `learning`                          | No                                     | `engineer-professional`                                                                                                          |
@@ -187,6 +211,7 @@ npx zcf → Select 4  # Configure Codex MCP services
 4. **MCP Services**: Full compatibility with existing MCP services including:
    - Context7, Open WebSearch, Spec Workflow
    - DeepWiki, Playwright, EXA search
+   - Serena Assistant for semantic code retrieval and editing
    - Automatic service configuration with API key management
 
 **File Locations:**
@@ -196,18 +221,6 @@ npx zcf → Select 4  # Configure Codex MCP services
 - System Prompts: `~/.codex/AGENTS.md`
 - Workflows: `~/.codex/prompts/`
 - Backups: `~/.codex/backup/`
-
-**Command Line Operations:**
-
-Dedicated command line tool for Codex (v3.0.0+ New):
-
-```bash
-# Codex API provider switching
-npx zcf config-switch     # Interactive provider selection
-npx zcf cs                # Using alias
-npx zcf cs provider-name  # Direct switch to specified provider
-npx zcf cs --list         # List all available providers
-```
 
 **Migration Between Tools:**
 
@@ -310,8 +323,6 @@ CCR menu options:
 
 After CCR setup, ZCF automatically configures Claude Code to use CCR as the API proxy.
 
-**Important Notice for v2.9.9 Users**: If you previously installed CCometixLine using ZCF v2.9.9, please rerun the installation process to ensure that the CCometixLine configuration is correctly added. Run `npx zcf` -> `Select L` -> `Select 1` to add the CCometixLine configuration.
-
 
 #### 📊 CCometixLine Support (Status Bar Tool) (v2.9.9+ New)
 
@@ -408,6 +419,50 @@ After configuration:
 - Default model configuration (v2.0 new)
 - AI memory management (v2.0 new)
 - ZCF cache cleanup (v2.0 new)
+
+### 🧩 Multi-Configuration Management (v3.2.0 New)
+
+Unified, incremental, interactive management for both Claude Code and Codex:
+
+- Claude Code: Manage API profiles (add/edit/delete, default profile, duplicate detection)
+- Codex: Manage model providers (list/switch, official login via interactive)
+- Safe backups; prevents deleting the last profile (Claude Code)
+- Applies environment to `~/.claude/settings.json` and restarts CCR when needed
+- Config storage: `~/.ufomiao/zcf/config.toml` (backups `config.backup.YYYY-MM-DD_HH-mm-ss.toml`)
+
+Choose tool type explicitly:
+
+```bash
+# -T accepts: claude-code|codex or short aliases cc|cx
+npx zcf cs --list -T cc    # List Claude Code profiles
+npx zcf cs --list -T cx    # List Codex providers
+npx zcf cs -l -T cc        # Short option for --list
+npx zcf cs -l -T cx        # Short option for --list
+```
+
+Claude Code usage:
+
+```bash
+# Quick switch
+npx zcf cs official -T cc  # Switch to official login
+npx zcf cs ccr -T cc       # Switch to CCR proxy
+npx zcf cs my-profile -T cc
+```
+
+Codex usage:
+
+```bash
+# List and switch providers
+npx zcf cs --list -T cx
+npx zcf cs my-provider -T cx
+
+# Switch to official login (interactive selection)
+npx zcf config-switch -T cx
+```
+
+Notes:
+- ENV mapping (Claude Code): API Key → `ANTHROPIC_API_KEY`, Auth Token → `ANTHROPIC_AUTH_TOKEN`, Base URL → `ANTHROPIC_BASE_URL`.
+- Active code tool type is stored in ZCF config; use `-T cc/cx` only when targeting a different tool than the current one.
 
 ## 📖 Usage Instructions
 
@@ -521,6 +576,7 @@ Enter your choice: _
 ◉ DeepWiki - Query GitHub repository docs and examples
 ◉ Playwright Browser Control - Direct browser automation control
 ◉ Exa AI Search - Web search using Exa AI
+◉ Serena Assistant - Semantic code retrieval and editing akin to an IDE
 ◯ Install all services
 
 ✔ MCP services configured
@@ -544,7 +600,7 @@ Enter your choice: _
 | `zcf update`        | `zcf u` | Update workflow-related md files with backup                                          |
 | `zcf ccu`           | -       | Run Claude Code usage analysis tool - [ccusage](https://github.com/ryoppippi/ccusage) |
 | `zcf ccr`           | -       | Open CCR (Claude Code Router) management menu                                         |
-| `zcf config-switch` | `zcf cs` | Codex API provider switching tool - Switch between official login and custom providers |
+| `zcf config-switch` | `zcf cs` | API provider/config switching for Claude Code and Codex (`-T cc` / `-T cx`) |
 | `zcf uninstall`     | -       | Interactive uninstall tool for Claude Code configurations and tools                   |
 | `zcf check-updates` | -       | Check and update Claude Code, CCR and CCometixLine versions                           |
 
@@ -786,20 +842,41 @@ If you find this project helpful, please consider sponsoring its development. Yo
 ### Our Sponsors
 
 A huge thank you to all our sponsors for their generous support!
-
+- [302.AI](https://share.302.ai/gAT9VG) (first corporate sponsorship 🤠)
 - Tc (first sponsor)
 - Argolinhas (first ko-fi sponsor ٩(•̤̀ᵕ•̤́๑))
-- r\*r (first anonymous sponsor🤣)
-- \*\*康 (first KFC sponsor🍗)
-- \*东 (first coffee sponsor☕️)
-- 炼\*3 (first Termux user sponsor📱)
-- 16°C coffee (My best friend🤪, offered Claude Code max $200 package)
+- r\*r (first anonymous sponsor 🤣)
+- \*\*康 (first KFC sponsor 🍗)
+- \*东 (first coffee sponsor ☕️)
+- 炼\*3 (first Termux user sponsor 📱)
+- [chamo101](https://github.com/chamo101) (first GitHub issue sponsor 🎉)
+- 初屿贤 (first Codex user sponsor 🙅🏻‍♂️)
+- Protein (first 1688 sponsor 😏)
+- [BeatSeat](https://github.com/BeatSeat) (community expert 😎, provided $1000 Claude credits)
+- [wenwen](https://github.com/wenwen12345) (community expert 🤓, provided daily $100 Claude&GPT credits)
+- 16°C coffee (My best friend 🤪, offered ChatGPT Pro $200 package)
+
+### Promotion Thanks
+
+Thanks to the following authors for promoting this project:
+
+- 逛逛 GitHub, article: https://mp.weixin.qq.com/s/phqwSRb16MKCHHVozTFeiQ
+- Geek, tweet: https://x.com/geekbb/status/1955174718618866076
 
 ## 📄 License
 
 [MIT License](LICENSE)
 
 ---
+
+## 🚀 Contributors
+
+<a href="https://github.com/UfoMiao/zcf/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=UfoMiao/zcf" />
+</a>
+<br /><br />
+
+## ⭐️ Star History
 
 If this project helps you, please give me a ⭐️ Star!
 

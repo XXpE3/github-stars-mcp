@@ -1,6 +1,6 @@
 ---
 project: NextChat
-stars: 86152
+stars: 86220
 description: |-
     ✨ Light and Fast AI Assistant. Support: Web | iOS | MacOS | Android |  Linux | Windows
 url: https://github.com/ChatGPTNextWeb/NextChat

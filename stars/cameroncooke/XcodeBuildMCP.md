@@ -1,6 +1,6 @@
 ---
 project: XcodeBuildMCP
-stars: 2729
+stars: 2759
 description: |-
     A Model Context Protocol (MCP) server that provides Xcode-related tools for integration with AI assistants and other MCP clients.
 url: https://github.com/cameroncooke/XcodeBuildMCP

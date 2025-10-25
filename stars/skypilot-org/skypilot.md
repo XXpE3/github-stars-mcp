@@ -1,6 +1,6 @@
 ---
 project: skypilot
-stars: 8850
+stars: 8866
 description: |-
     Run, manage, and scale AI workloads on any AI infrastructure. Use one system to access & manage all AI compute (Kubernetes, 17+ clouds, or on-prem).
 url: https://github.com/skypilot-org/skypilot
@@ -47,6 +47,7 @@ url: https://github.com/skypilot-org/skypilot
 ----
 
 :fire: *News* :fire:
+- [Jul 2025] Run **RL training for LLMs** with SkyRL on your Kubernetes or clouds: [**example**](./llm/skyrl/)
 - [Oct 2025] Train and serve [Andrej Karpathy's](https://x.com/karpathy/status/1977755427569111362) **nanochat** - the best ChatGPT that $100 can buy: [**example**](./llm/nanochat)
 - [Oct 2025] Run large-scale **LLM training with TorchTitan** on any AI infra: [**example**](./examples/training/torchtitan)
 - [Sep 2025] Scaling AI infrastructure at Abridge - **10x faster development** with SkyPilot: [**blog**](https://blog.skypilot.co/abridge/)
@@ -114,8 +115,7 @@ pip install "skypilot-nightly[kubernetes,aws,gcp,azure,oci,nebius,lambda,runpod,
 </p>
 
 Current supported infra: Kubernetes, AWS, GCP, Azure, OCI, Nebius, Lambda Cloud, RunPod, Fluidstack,
-Cudo, Digital Ocean, Paperspace, Cloudflare, Samsung, IBM, Vast.ai,
-VMware vSphere, Seeweb.
+Cudo, Digital Ocean, Paperspace, Cloudflare, Samsung, IBM, Vast.ai, VMware vSphere, Seeweb, Prime Intellect.
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/skypilot-org/skypilot/master/docs/source/images/cloud-logos-dark.png">

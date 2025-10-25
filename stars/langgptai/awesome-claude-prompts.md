@@ -1,6 +1,6 @@
 ---
 project: awesome-claude-prompts
-stars: 3653
+stars: 3688
 description: |-
     This repo includes Claude prompt curation to use Claude better.
 url: https://github.com/langgptai/awesome-claude-prompts

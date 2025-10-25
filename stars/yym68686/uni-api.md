@@ -1,6 +1,6 @@
 ---
 project: uni-api
-stars: 1113
+stars: 1120
 description: |-
     This is a project that unifies the management of LLM APIs. It can call multiple backend services through a unified API interface, convert them to the OpenAI format uniformly, and support load balancing. Currently supported backend services include: OpenAI, Anthropic, DeepBricks, OpenRouter, Gemini, Vertex, etc.
 url: https://github.com/yym68686/uni-api

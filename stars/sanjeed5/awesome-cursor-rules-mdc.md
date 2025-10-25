@@ -1,6 +1,6 @@
 ---
 project: awesome-cursor-rules-mdc
-stars: 2859
+stars: 2877
 description: |-
     Curated list of awesome Cursor Rules .mdc files
 url: https://github.com/sanjeed5/awesome-cursor-rules-mdc

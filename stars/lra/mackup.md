@@ -1,6 +1,6 @@
 ---
 project: mackup
-stars: 14942
+stars: 14944
 description: |-
     Backup and keep your application settings in sync.
 url: https://github.com/lra/mackup
@@ -84,6 +84,8 @@ Copy config files from the Mackup folder to your home folder.
 Move your local config files into the Mackup folder,
 and link them to their original place.
 
+$${\color{red}warning}$$ _the `link` strategy [doesn't work correctly on macOS](#link-mode)_
+
 `mackup link`
 
 On another workstation, links local config files from the Mackup folder.
@@ -123,6 +125,13 @@ It is covered by the 2 commands:
 - `mackup restore`
 
 ### Link mode
+
+> [!WARNING]
+> If you are using Mackup on a current version of macOS, link mode will BREAK
+  YOUR PREFERENCES. macOS Sonoma (macOS 14) and later don't support symlinked
+  preferences, see [issue #2035](https://github.com/lra/mackup/issues/2035) for
+  additional information. [PR #2085](<https://github.com/lra/mackup/pull/2085>)
+  added copy mode, which should be used instead.
 
 Link mode is used to move your config files into the Mackup folder,
 and link them back to their original place.
@@ -338,6 +347,7 @@ See the [README](doc/README.md) file in the doc directory for more info.
 - [Exercism](http://exercism.io/)
 - [ExpanDrive](http://www.expandrive.com/)
 - [Factorio](https://www.factorio.com)
+- [Factory Droid](https://factory.ai/)
 - [Fantastical](http://flexibits.com/fantastical)
 - [fasd](https://github.com/clvv/fasd)
 - [fastlane](https://fastlane.tools)
@@ -371,6 +381,7 @@ See the [README](doc/README.md) file in the doc directory for more info.
 - [Git](http://git-scm.com/)
 - [Gitbox](http://gitboxapp.com/)
 - [GitFox](https://www.gitfox.app)
+- [GitHub CLI](https://cli.github.com/)
 - [GitKraken](https://www.gitkraken.com)
 - [GitUp](http://gitup.co/)
 - [Gmail Notifr](http://ashchan.com/projects/gmail-notifr)
@@ -378,6 +389,7 @@ See the [README](doc/README.md) file in the doc directory for more info.
 - [GMVault](http://gmvault.org/)
 - [Gnome SSH Tunnel Manager](http://sourceforge.net/projects/gstm/)
 - [GnuPG](https://www.gnupg.org/)
+- [GNU Stow](https://www.gnu.org/software/stow/)
 - [Go2Shell](http://zipzapmac.com/Go2Shell)
 - [Goku](https://github.com/yqrashawn/GokuRakuJoudo)
 - [GoLand](https://www.jetbrains.com/go/)
@@ -400,6 +412,7 @@ See the [README](doc/README.md) file in the doc directory for more info.
 - [Homebrew](https://brew.sh)
 - [Houdini](http://uglyapps.co.uk/houdini/)
 - [Hstr](https://github.com/dvorka/hstr)
+- [HTML Tidy](https://www.html-tidy.org/)
 - [Htop](http://htop.sourceforge.net/)
 - [HTTPie](https://httpie.org/)
 - [hub](https://hub.github.com)
@@ -456,10 +469,12 @@ See the [README](doc/README.md) file in the doc directory for more info.
 - [lazydocker](https://github.com/jesseduffield/lazydocker)
 - [lazygit](https://github.com/jesseduffield/lazygit)
 - [Ledger](http://ledger-cli.org)
+- [Leiningen](http://leiningen.org/)
 - [lf](https://github.com/gokcehan/lf)
 - [LibreOffice](https://www.libreoffice.org/)
 - [Liftoff](https://github.com/thoughtbot/liftoff)
 - [Light Table](http://lighttable.com/)
+- [LightPaper](https://getlightpaper.com/)
 - [LimeChat](http://limechat.net/mac/)
 - [Liquid Prompt](https://github.com/nojhan/liquidprompt)
 - [LittleSnitch](http://www.obdev.at/products/littlesnitch/)
@@ -538,6 +553,7 @@ See the [README](doc/README.md) file in the doc directory for more info.
 - [nvm](https://github.com/nvm-sh/nvm)
 - [nvpy](https://github.com/cpbotha/nvpy)
 - [OBS](https://obsproject.com)
+- [OfflineIMAP](https://www.offlineimap.org/)
 - [Oh My Fish](https://github.com/bpinto/oh-my-fish)
 - [Oh My Tmux](https://github.com/gpakosz/.tmux)
 - [OmniFocus](https://www.omnigroup.com/omnifocus/)
@@ -546,6 +562,7 @@ See the [README](doc/README.md) file in the doc directory for more info.
 - [OpenCode](https://opencode.ai)
 - [OpenEmu](http://openemu.org)
 - [OpenSSH](http://www.openssh.com/)
+- [Opera](http://www.opera.com)
 - [Oracle Cloud Infrastructure CLI](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/cliconcepts.htm)
 - [Paintbrush](http://paintbrush.sourceforge.net/)
 - [Pandoc](http://pandoc.org)
@@ -565,6 +582,7 @@ See the [README](doc/README.md) file in the doc directory for more info.
 - [PixelSnap](https://getpixelsnap.com/)
 - [PixelSnap 2](https://getpixelsnap.com/)
 - [Planner](https://useplanner.com/)
+- [Plover](http://www.openstenoproject.org/plover/)
 - [Pnpm](https://pnpm.js.org/)
 - [Pock](https://pock.pigigaldi.com)
 - [Poedit](http://poedit.net/)
@@ -636,6 +654,7 @@ See the [README](doc/README.md) file in the doc directory for more info.
 - [Seil](https://pqrs.org/osx/karabiner/seil.html.en)
 - [SelfControl](http://selfcontrolapp.com/)
 - [Sequel Pro](http://www.sequelpro.com/)
+- [ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG)
 - [ShiftIt](https://github.com/fikovnik/ShiftIt)
 - [Shifty](https://shifty.natethompson.io/)
 - [Shimo](https://www.feingeist.io/shimo/)
@@ -696,6 +715,7 @@ See the [README](doc/README.md) file in the doc directory for more info.
 - [TextExpander](https://smilesoftware.com/textexpander)
 - [TextMate](http://macromates.com/)
 - [Textual](http://www.codeux.com/textual/)
+- [Things](https://culturedcode.com/things/)
 - [Tig](https://github.com/jonas/tig)
 - [Tiles](https://www.sempliva.com/tiles/)
 - [Tilix](https://github.com/gnunn1/tilix)
@@ -725,6 +745,7 @@ See the [README](doc/README.md) file in the doc directory for more info.
 - [Versions](http://www.versionsapp.com)
 - [Vim](http://www.vim.org/)
 - [Vimperator](http://www.vimperator.org/vimperator)
+- [Vimwiki](https://vimwiki.github.io/)
 - [Viscosity](http://www.sparklabs.com/viscosity/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Visual Studio Code - Insiders](https://code.visualstudio.com/insiders)
@@ -760,6 +781,7 @@ See the [README](doc/README.md) file in the doc directory for more info.
 - [yabai](https://github.com/koekeishiya/yabai)
 - [yarn](https://yarnpkg.com)
 - [yazi](https://github.com/sxyazi/yazi)
+- [youtube-dl](https://ytdl-org.github.io/youtube-dl/)
 - [Yummy FTP](http://www.yummysoftware.com/)
 - [zabbix-cli](https://github.com/usit-gd/zabbix-cli)
 - [zathura](https://pwmt.org/projects/zathura/)

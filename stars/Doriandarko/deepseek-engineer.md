@@ -1,6 +1,6 @@
 ---
 project: deepseek-engineer
-stars: 2248
+stars: 2251
 description: |-
     A powerful coding assistant application that integrates with the DeepSeek API to process user conversations and generate structured JSON responses. Through an intuitive command-line interface, it can read local file contents, create new files, and apply diff edits to existing files in real time.
 url: https://github.com/Doriandarko/deepseek-engineer

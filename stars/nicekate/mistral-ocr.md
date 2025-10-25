@@ -1,6 +1,6 @@
 ---
 project: mistral-ocr
-stars: 157
+stars: 158
 description: |-
     null
 url: https://github.com/nicekate/mistral-ocr

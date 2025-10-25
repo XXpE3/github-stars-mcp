@@ -1,6 +1,6 @@
 ---
 project: SuperClaude_Framework
-stars: 17032
+stars: 17246
 description: |-
     A configuration framework that enhances Claude Code with specialized commands, cognitive personas, and development methodologies.
 url: https://github.com/SuperClaude-Org/SuperClaude_Framework
@@ -90,31 +90,39 @@ SuperClaude is a **meta-programming configuration framework** that transforms Cl
 
 ## Disclaimer
 
-This project is not affiliated with or endorsed by Anthropic.
+This project is not affiliated with or endorsed by Anthropic.  
 Claude Code is a product built and maintained by [Anthropic](https://www.anthropic.com/).
-
-## 📖 **For Developers & Contributors**
-
-**Essential documentation for working with SuperClaude Framework:**
-
-| Document | Purpose | When to Read |
-|----------|---------|--------------|
-| **[PLANNING.md](PLANNING.md)** | Architecture, design principles, absolute rules | Session start, before implementation |
-| **[TASK.md](TASK.md)** | Current tasks, priorities, backlog | Daily, before starting work |
-| **[KNOWLEDGE.md](KNOWLEDGE.md)** | Accumulated insights, best practices, troubleshooting | When encountering issues, learning patterns |
-| **[CONTRIBUTING.md](CONTRIBUTING.md)** | Contribution guidelines, workflow | Before submitting PRs |
-
-> **💡 Pro Tip**: Claude Code reads these files at session start to ensure consistent, high-quality development aligned with project standards.
 
 ## ⚡ **Quick Installation**
 
-### **Choose Your Installation Method**
+### **Minimal Setup - Works Immediately (No MCPs Required)**
+
+SuperClaude works **fully functional** without any MCP servers. Install and start using immediately:
 
 | Method | Command | Best For |
 |:------:|---------|----------|
 | **🐍 pipx** | `pipx install SuperClaude && pipx upgrade SuperClaude && SuperClaude install` | **✅ Recommended** - Linux/macOS |
 | **📦 pip** | `pip install SuperClaude && pip upgrade SuperClaude && SuperClaude install` | Traditional Python environments |
 | **🌐 npm** | `npm install -g @bifrost_inc/superclaude && superclaude install` | Cross-platform, Node.js users |
+
+### **Recommended Setup - Enhanced Performance (Optional MCPs)**
+
+For **2-3x faster** execution and **30-50% fewer tokens**, optionally install MCP servers:
+
+```bash
+# After basic installation, enhance with MCP servers:
+# - Mindbase: Cross-session memory (automatic)
+# - Serena: Faster code understanding (2-3x faster)
+# - Sequential: Token-efficient reasoning (30-50% fewer tokens)
+# - Context7: Curated official documentation
+# - Tavily: Optimized web search
+
+# See docs/mcp/mcp-integration-policy.md for MCP installation guides
+```
+
+**Performance Comparison:**
+- **Without MCPs**: Fully functional, standard performance ✅
+- **With MCPs**: 2-3x faster, 30-50% fewer tokens ⚡
 
 </div>
 

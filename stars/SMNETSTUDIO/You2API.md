@@ -1,6 +1,6 @@
 ---
 project: You2API
-stars: 107
+stars: 106
 description: |-
     null
 url: https://github.com/SMNETSTUDIO/You2API

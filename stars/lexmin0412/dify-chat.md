@@ -1,6 +1,6 @@
 ---
 project: dify-chat
-stars: 614
+stars: 623
 description: |-
     一个 AI 应用平台，基于 Dify API 构建，提供深度优化的用户端交互界面，支持 Chatflow、Workflow 等多种 Dify 应用类型，适配深度思考、思维链、图表渲染、文件处理等丰富的 AI 输出形式，提供开箱即用的 AI 应用解决方案。
 url: https://github.com/lexmin0412/dify-chat
@@ -14,7 +14,26 @@ url: https://github.com/lexmin0412/dify-chat
 
 如果你觉得这个项目还不错的话，请动动你的小手指点个 Star ⭐️ 吧～
 
-相关站点：
+## 快速开始
+
+使用 Docker Compose 启动 `Dify Chat` 是最便捷的方式。在执行以下命令前，请确保你的机器已安装 Docker 和 Docker Compose：
+
+```shell
+# 创建项目目录并进入
+mkdir dify-chat && cd dify-chat
+# 下载 Docker Compose 文件
+curl -O https://raw.githubusercontent.com/lexmin0412/dify-chat/main/docker-compose.yml
+# 修改环境变量，主要是 DATABASE_URL
+nano docker-compose.yml
+# 启动服务
+docker compose up -d
+```
+
+更多部署方式，详见 [官方文档](https://docs.dify-chat.lexmin.cn/guide/quick-start/docker-compose.html)。
+
+## 相关链接
+
+官方站点：
 
 - 使用文档：[https://docs.dify-chat.lexmin.cn/](https://docs.dify-chat.lexmin.cn/)
 - 演示站点：[https://lexmin0412.github.io/dify-chat/](https://lexmin0412.github.io/dify-chat/)
@@ -39,7 +58,9 @@ url: https://github.com/lexmin0412/dify-chat
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->

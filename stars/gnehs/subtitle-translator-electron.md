@@ -1,6 +1,6 @@
 ---
 project: subtitle-translator-electron
-stars: 1653
+stars: 1655
 description: |-
     ↔️ Translate subtitle using LLM
 url: https://github.com/gnehs/subtitle-translator-electron

@@ -1,6 +1,6 @@
 ---
 project: llama-fs
-stars: 5664
+stars: 5668
 description: |-
     A self-organizing file system with llama 3
 url: https://github.com/iyaja/llama-fs

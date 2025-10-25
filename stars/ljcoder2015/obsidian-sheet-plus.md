@@ -1,6 +1,6 @@
 ---
 project: obsidian-sheet-plus
-stars: 277
+stars: 279
 description: |-
     obsidian spreadsheets solutions
 url: https://github.com/ljcoder2015/obsidian-sheet-plus

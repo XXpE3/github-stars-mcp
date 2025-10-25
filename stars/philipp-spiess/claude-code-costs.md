@@ -1,6 +1,6 @@
 ---
 project: claude-code-costs
-stars: 176
+stars: 177
 description: |-
     null
 url: https://github.com/philipp-spiess/claude-code-costs

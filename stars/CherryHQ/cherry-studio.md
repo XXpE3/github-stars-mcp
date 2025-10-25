@@ -1,6 +1,6 @@
 ---
 project: cherry-studio
-stars: 34361
+stars: 34636
 description: |-
     🍒 Cherry Studio is a desktop client that supports for multiple LLM providers.
 url: https://github.com/CherryHQ/cherry-studio
@@ -45,7 +45,7 @@ url: https://github.com/CherryHQ/cherry-studio
 <p align="center">English | <a href="./docs/README.zh.md">中文</a> | <a href="https://cherry-ai.com">Official Site</a> | <a href="https://docs.cherry-ai.com/cherry-studio-wen-dang/en-us">Documents</a> | <a href="./docs/dev.md">Development</a> | <a href="https://github.com/CherryHQ/cherry-studio/issues">Feedback</a><br></p>
 
 <div align="center">
-  
+
 [![][deepwiki-shield]][deepwiki-link]
 [![][twitter-shield]][twitter-link]
 [![][discord-shield]][discord-link]
@@ -53,7 +53,7 @@ url: https://github.com/CherryHQ/cherry-studio
 
 </div>
 <div align="center">
-  
+
 [![][github-release-shield]][github-release-link]
 [![][github-nightly-shield]][github-nightly-link]
 [![][github-contributors-shield]][github-contributors-link]
@@ -149,6 +149,7 @@ We're actively working on the following features and improvements:
 - iOS App (Phase 1)
 - Multi-Window support
 - Window Pinning functionality
+- Intel AI PC (Core Ultra) Support
 
 4. 🔌 **Advanced Features**
 
@@ -255,10 +256,10 @@ The Enterprise Edition addresses core challenges in team collaboration by centra
 
 | Feature           | Community Edition                          | Enterprise Edition                                                                                                                      |
 | :---------------- | :----------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
-| **Open Source**   | ✅ Yes                                     | ⭕️ Partially released to customers                                                                                                      |
+| **Open Source**   | ✅ Yes                                      | ⭕️ Partially released to customers                                                                                                       |
 | **Cost**          | Free for Personal Use / Commercial License | Buyout / Subscription Fee                                                                                                               |
 | **Admin Backend** | —                                          | ● Centralized **Model** Access<br>● **Employee** Management<br>● Shared **Knowledge Base**<br>● **Access** Control<br>● **Data** Backup |
-| **Server**        | —                                          | ✅ Dedicated Private Deployment                                                                                                         |
+| **Server**        | —                                          | ✅ Dedicated Private Deployment                                                                                                          |
 
 ## Get the Enterprise Edition
 
@@ -293,6 +294,14 @@ We believe the Enterprise Edition will become your team's AI productivity engine
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CherryHQ/cherry-studio&type=Date" />
  </picture>
 </a>
+
+# 📜 License
+
+The Cherry Studio Community Edition is governed by the standard GNU Affero General Public License v3.0 (AGPL-3.0), available at https://www.gnu.org/licenses/agpl-3.0.html.
+
+Use of the Cherry Studio Community Edition for commercial purposes is permitted, subject to full compliance with the terms and conditions of the AGPL-3.0 license.
+
+Should you require a commercial license that provides an exemption from the AGPL-3.0 requirements, please contact us at bd@cherry-ai.com.
 
 <!-- Links & Images -->
 

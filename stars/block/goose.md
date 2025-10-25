@@ -1,6 +1,6 @@
 ---
 project: goose
-stars: 20371
+stars: 20489
 description: |-
     an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM
 url: https://github.com/block/goose
@@ -16,7 +16,7 @@ _a local, extensible, open source AI agent that automates engineering tasks_
   <a href="https://opensource.org/licenses/Apache-2.0">
     <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg">
   </a>
-  <a href="https://discord.gg/7GaTvbDwga">
+  <a href="https://discord.gg/goose-oss">
     <img src="https://img.shields.io/discord/1287729918100246654?logo=discord&logoColor=white&label=Join+Us&color=blueviolet" alt="Discord">
   </a>
   <a href="https://github.com/block/goose/actions/workflows/ci.yml">
@@ -35,7 +35,7 @@ _a local, extensible, open source AI agent that automates engineering tasks_
 3. Read the [full Responsible AI-Assisted Coding Guide](./ai-assisted-coding-guide.md).
 4. Choose a task from this project's Hacktoberfest issues in our [Project Hub](https://github.com/block/goose/issues/4705) and follow the instructions. Each issue has the 🏷️ `hacktoberfest` label.
 
-Have questions? Connecting with us in our [Discord community](https://discord.gg/block-opensource) in the `#hacktoberfest` project channel.
+Have questions? Connecting with us in our [Discord community](https://discord.gg/goose-oss) in the `#hacktoberfest` project channel.
 
 ---
 
@@ -61,7 +61,7 @@ Designed for maximum flexibility, goose works with any LLM and supports multi-mo
 > Because it always helps them "migrate" their code to production! 🚀
 
 # goose around with us  
-- [Discord](https://discord.gg/block-opensource)
+- [Discord](https://discord.gg/goose-oss)
 - [YouTube](https://www.youtube.com/@goose-oss)
 - [LinkedIn](https://www.linkedin.com/company/goose-oss)
 - [Twitter/X](https://x.com/goose_oss)

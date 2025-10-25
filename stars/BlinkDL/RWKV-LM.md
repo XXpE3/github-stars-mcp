@@ -1,6 +1,6 @@
 ---
 project: RWKV-LM
-stars: 14040
+stars: 14065
 description: |-
     RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 "Goose". So it's combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding.
 url: https://github.com/BlinkDL/RWKV-LM

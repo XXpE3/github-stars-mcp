@@ -1,6 +1,6 @@
 ---
 project: aliyundrive-webdav
-stars: 9801
+stars: 9803
 description: |-
     阿里云盘 WebDAV 服务
 url: https://github.com/messense/aliyundrive-webdav

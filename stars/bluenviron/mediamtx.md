@@ -1,6 +1,6 @@
 ---
 project: mediamtx
-stars: 16702
+stars: 16767
 description: |-
     Ready-to-use SRT / WebRTC / RTSP / RTMP / LL-HLS / MPEG-TS / RTP media server and media proxy that allows to read, publish, proxy, record and playback video and audio streams.
 url: https://github.com/bluenviron/mediamtx

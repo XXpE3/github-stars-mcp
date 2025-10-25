@@ -1,14 +1,14 @@
 ---
 project: Web
-stars: 613
+stars: 620
 description: |-
     null
 url: https://github.com/nuance-dev/Web
 ---
 
-# Web - macOS AI Browser
+# Web - a webkit AI Browser for macOS
 
-Built natively with SwiftUI to delivers a minimal, progressive browsing experience with integrated AI capabilities.
+Powered by webkit and built natively with SwiftUI to delivers a minimal, progressive browsing experience with integrated local and remote AI capabilities.
 
 <img width="4694" height="2379" alt="image" src="https://github.com/user-attachments/assets/b54a2937-09d5-480a-9ca6-eae7967af30c" />
 

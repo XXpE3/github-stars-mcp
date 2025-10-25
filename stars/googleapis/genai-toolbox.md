@@ -1,6 +1,6 @@
 ---
 project: genai-toolbox
-stars: 10989
+stars: 11075
 description: |-
     MCP Toolbox for Databases is an open source MCP server for databases.
 url: https://github.com/googleapis/genai-toolbox
@@ -129,7 +129,7 @@ To install Toolbox as a binary:
 >
 > ```sh
 > # see releases page for other versions
-> export VERSION=0.17.0
+> export VERSION=0.18.0
 > curl -L -o toolbox https://storage.googleapis.com/genai-toolbox/v$VERSION/linux/amd64/toolbox
 > chmod +x toolbox
 > ```
@@ -142,7 +142,7 @@ To install Toolbox as a binary:
 >
 > ```sh
 > # see releases page for other versions
-> export VERSION=0.17.0
+> export VERSION=0.18.0
 > curl -L -o toolbox https://storage.googleapis.com/genai-toolbox/v$VERSION/darwin/arm64/toolbox
 > chmod +x toolbox
 > ```
@@ -155,7 +155,7 @@ To install Toolbox as a binary:
 >
 > ```sh
 > # see releases page for other versions
-> export VERSION=0.17.0
+> export VERSION=0.18.0
 > curl -L -o toolbox https://storage.googleapis.com/genai-toolbox/v$VERSION/darwin/amd64/toolbox
 > chmod +x toolbox
 > ```
@@ -168,7 +168,7 @@ To install Toolbox as a binary:
 >
 > ```powershell
 > # see releases page for other versions
-> $VERSION = "0.17.0"
+> $VERSION = "0.18.0"
 > Invoke-WebRequest -Uri "https://storage.googleapis.com/genai-toolbox/v$VERSION/windows/amd64/toolbox.exe" -OutFile "toolbox.exe"
 > ```
 >
@@ -181,7 +181,7 @@ You can also install Toolbox as a container:
 
 ```sh
 # see releases page for other versions
-export VERSION=0.17.0
+export VERSION=0.18.0
 docker pull us-central1-docker.pkg.dev/database-toolbox/toolbox/toolbox:$VERSION
 ```
 
@@ -205,7 +205,7 @@ To install from source, ensure you have the latest version of
 [Go installed](https://go.dev/doc/install), and then run the following command:
 
 ```sh
-go install github.com/googleapis/genai-toolbox@v0.17.0
+go install github.com/googleapis/genai-toolbox@v0.18.0
 ```
 <!-- {x-release-please-end} -->
 

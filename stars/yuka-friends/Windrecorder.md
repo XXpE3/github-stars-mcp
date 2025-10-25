@@ -1,6 +1,6 @@
 ---
 project: Windrecorder
-stars: 3659
+stars: 3667
 description: |-
     Windrecorder is a memory search app by records everything on your screen in small size, to let you rewind what you have seen, query through OCR text or image description, and get activity statistics, like Microsoft's Windows Recall or Rewind.
 url: https://github.com/yuka-friends/Windrecorder

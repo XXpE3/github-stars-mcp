@@ -1,6 +1,6 @@
 ---
 project: transok-wails
-stars: 577
+stars: 578
 description: |-
     An efficient LAN file sharing tool
 url: https://github.com/bent2685/transok-wails

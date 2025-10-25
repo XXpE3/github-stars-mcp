@@ -1,6 +1,6 @@
 ---
 project: gptel-quick
-stars: 117
+stars: 118
 description: |-
     Quick LLM lookups in Emacs
 url: https://github.com/karthink/gptel-quick

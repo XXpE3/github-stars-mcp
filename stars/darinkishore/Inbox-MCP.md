@@ -1,6 +1,6 @@
 ---
 project: Inbox-MCP
-stars: 15
+stars: 16
 description: |-
     A Model Context Protocol (MCP) server for email integration via Nylas. Enables AI assistants to effortlessly batch-triage, organize, and automate email through natural language interactions.
 url: https://github.com/darinkishore/Inbox-MCP

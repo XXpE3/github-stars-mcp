@@ -1,6 +1,6 @@
 ---
 project: Elisp
-stars: 136
+stars: 137
 description: |-
     null
 url: https://github.com/advanceflow/Elisp

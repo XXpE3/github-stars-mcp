@@ -1,6 +1,6 @@
 ---
 project: pinboard-mcp
-stars: 1
+stars: 2
 description: |-
     a Claude Desktop MCP server for Pinboard.in
 url: https://github.com/vicgarcia/pinboard-mcp

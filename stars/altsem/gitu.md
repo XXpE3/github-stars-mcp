@@ -1,6 +1,6 @@
 ---
 project: gitu
-stars: 2495
+stars: 2506
 description: |-
     A TUI Git client inspired by Magit
 url: https://github.com/altsem/gitu

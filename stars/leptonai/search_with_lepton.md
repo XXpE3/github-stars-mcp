@@ -1,6 +1,6 @@
 ---
 project: search_with_lepton
-stars: 8131
+stars: 8133
 description: |-
     Building a quick conversation-based search demo with Lepton AI.
 url: https://github.com/leptonai/search_with_lepton

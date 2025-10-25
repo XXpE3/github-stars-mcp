@@ -1,6 +1,6 @@
 ---
 project: zsh-vi-mode
-stars: 4008
+stars: 4021
 description: |-
     💻 A better and friendly vi(vim) mode plugin for ZSH.
 url: https://github.com/jeffreytse/zsh-vi-mode

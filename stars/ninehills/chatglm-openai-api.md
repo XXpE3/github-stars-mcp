@@ -1,6 +1,6 @@
 ---
 project: chatglm-openai-api
-stars: 513
+stars: 512
 description: |-
     Provide OpenAI style API for  ChatGLM-6B and Chinese Embeddings Model
 url: https://github.com/ninehills/chatglm-openai-api

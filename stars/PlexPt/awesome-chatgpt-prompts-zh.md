@@ -1,6 +1,6 @@
 ---
 project: awesome-chatgpt-prompts-zh
-stars: 56575
+stars: 56648
 description: |-
     ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。
 url: https://github.com/PlexPt/awesome-chatgpt-prompts-zh

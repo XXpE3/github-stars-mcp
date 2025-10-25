@@ -1,6 +1,6 @@
 ---
 project: Finetune_LLAMA
-stars: 405
+stars: 406
 description: |-
     简单易懂的LLaMA微调指南。
 url: https://github.com/chaoyi-wu/Finetune_LLAMA

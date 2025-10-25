@@ -1,6 +1,6 @@
 ---
 project: Obsidian-Task-Genius
-stars: 436
+stars: 443
 description: |-
     Comprehensive task management plugin for Obsidian
 url: https://github.com/Quorafind/Obsidian-Task-Genius
@@ -11,7 +11,7 @@ url: https://github.com/Quorafind/Obsidian-Task-Genius
 
   **The Ultimate Task Management Plugin for Obsidian**
 
-  [![Version](https://img.shields.io/badge/version-9.0.0-blue.svg)](https://github.com/Quorafind/Obsidian-Task-Genius)
+  [![Version](https://img.shields.io/badge/version-8.9.0-blue.svg)](https://github.com/Quorafind/Obsidian-Task-Genius)
   [![Discord](https://img.shields.io/discord/1382008288706695229?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/ARR2rHHX6b)
 
   [Documentation](https://taskgenius.md) • [Installation](#installation) • [Discord Community](https://discord.gg/ARR2rHHX6b)
@@ -90,3 +90,10 @@ Task Genius is developed with passion and dedication. If you find it valuable, c
 </div>
 
 Your support enables faster development, better documentation, and priority feature implementation.
+
+## License
+
+[FSL-1.1-ALv2](./LICENSE)
+
+Feel free to use any part in the `src/components`, such as the Inline Markdown Editor or the Kanban component.
+

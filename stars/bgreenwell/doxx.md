@@ -1,6 +1,6 @@
 ---
 project: doxx
-stars: 3070
+stars: 3086
 description: |-
     Expose the contents of .docx files without leaving your terminal. Fast, safe, and smart — no Office required!
 url: https://github.com/bgreenwell/doxx
@@ -336,8 +336,13 @@ cargo test
 cargo run -- tests/fixtures/minimal.docx
 ```
 
-## 📋 Roadmap
+## Known limitations
 
+**Equation positioning:** Display equations may not appear at exact positions due to limitations in the underlying docx-rs parsing library. We've filed an [upstream issue](https://github.com/bokuweb/docx-rs/issues) and are planning a complete fix for v0.2.0 using direct XML parsing.
+
+## Roadmap
+
+- Perfect equation positioning (v0.2.0)
 - Image support in TUI via ratatui-image crate
 - Enhanced table support (merged cells, complex layouts)
 - Performance improvements for large documents

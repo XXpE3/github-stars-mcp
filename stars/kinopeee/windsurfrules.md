@@ -1,6 +1,6 @@
 ---
 project: windsurfrules
-stars: 298
+stars: 299
 description: |-
     null
 url: https://github.com/kinopeee/windsurfrules
