@@ -1,6 +1,6 @@
 ---
 project: DeepResearch
-stars: 16370
+stars: 16645
 description: |-
     Tongyi Deep Research, the Leading Open-source Deep Research Agent
 url: https://github.com/Alibaba-NLP/DeepResearch
@@ -19,23 +19,25 @@ url: https://github.com/Alibaba-NLP/DeepResearch
 [![MODELS](https://img.shields.io/badge/Models-5EDDD2?style=for-the-badge&logo=huggingface&logoColor=ffffff&labelColor)](https://huggingface.co/Alibaba-NLP/Tongyi-DeepResearch-30B-A3B)
 [![GITHUB](https://img.shields.io/badge/Github-24292F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Alibaba-NLP/DeepResearch)
 [![Blog](https://img.shields.io/badge/Blog-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/)
+[![Paper](https://img.shields.io/badge/Paper-red?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2510.24701)
 
 </div>
 <p align="center">
 <p align="center">
 🤗 <a href="https://huggingface.co/Alibaba-NLP/Tongyi-DeepResearch-30B-A3B" target="_blank">HuggingFace</a> ｜
-<img src="./assets/tongyi.png" width="14px" style="display:inline;"> <a href="https://modelscope.cn/models/iic/Tongyi-DeepResearch-30B-A3B" target="_blank">ModelScope</a> |  💬 <a href="./assets/wechat_new.jpg">WeChat(微信)</a>
+<img src="./assets/tongyi.png" width="14px" style="display:inline;"> <a href="https://modelscope.cn/models/iic/Tongyi-DeepResearch-30B-A3B" target="_blank">ModelScope</a> |  💬 <a href="./assets/wechat_new.jpg">WeChat(微信)</a> 📰 <a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/">Blog</a> | 📑 <a href="https://arxiv.org/pdf/2510.24701">Paper</a>
+
 <p align="center">
 <a href="https://trendshift.io/repositories/14895" target="_blank"><img src="https://trendshift.io/api/badge/repositories/14895" alt="Alibaba-NLP%2FDeepResearch | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
+👏 Welcome to try Tongyi DeepResearch via our **[<img src="./assets/tongyi.png" width="14px" style="display:inline;"> Modelscope online demo](https://www.modelscope.cn/studios/jialongwu/Tongyi-DeepResearch)** or **[🤗 Huggingface online demo](https://huggingface.co/spaces/Alibaba-NLP/Tongyi-DeepResearch)** or <img src="./WebAgent/assets/aliyun.png" width="14px" style="display:inline;"> **[bailian service](https://bailian.console.aliyun.com/?spm=a2ty02.31808181.d_app-market.1.6c4974a1tFmoFc&tab=app#/app/app-market/deep-search/)**!
 
-👏 Welcome to try Tongyi DeepResearch via our **[<img src="./assets/tongyi.png" width="14px" style="display:inline;"> Modelscope online demo](https://www.modelscope.cn/studios/jialongwu/Tongyi-DeepResearch)** or **[🤗 Huggingface online demo](https://huggingface.co/spaces/Alibaba-NLP/Tongyi-DeepResearch)** or <img src="./WebAgent/assets/aliyun.png" width="14px" style="display:inline;">  **[bailian service](https://bailian.console.aliyun.com/?spm=a2ty02.31808181.d_app-market.1.6c4974a1tFmoFc&tab=app#/app/app-market/deep-search/)**!
 > [!NOTE]
-> This demo is for quick exploration only. Response times may vary or fail intermittently due to model latency and tool QPS limits. For a stable experience we recommend local deployment; for a production-ready service, visit  <img src="./WebAgent/assets/aliyun.png" width="14px" style="display:inline;"> [bailian](https://bailian.console.aliyun.com/?spm=a2ty02.31808181.d_app-market.1.6c4974a1tFmoFc&tab=app#/app/app-market/deep-search/) and follow the guided setup.
+> This demo is for quick exploration only. Response times may vary or fail intermittently due to model latency and tool QPS limits. For a stable experience we recommend local deployment; for a production-ready service, visit <img src="./WebAgent/assets/aliyun.png" width="14px" style="display:inline;"> [bailian](https://bailian.console.aliyun.com/?spm=a2ty02.31808181.d_app-market.1.6c4974a1tFmoFc&tab=app#/app/app-market/deep-search/) and follow the guided setup.
 
 # Introduction
 
-We present <img src="./assets/tongyi.png" width="14px" style="display:inline;"> **Tongyi DeepResearch**, an agentic large language model featuring 30.5 billion total parameters, with only 3.3 billion activated per token. Developed by Tongyi Lab, the model is specifically designed for **long-horizon, deep information-seeking** tasks. Tongyi DeepResearch demonstrates state-of-the-art performance across a range of agentic search benchmarks, including Humanity's Last Exam, BrowserComp, BrowserComp-ZH, WebWalkerQA,xbench-DeepSearch, FRAMES and SimpleQA.
+We present <img src="./assets/tongyi.png" width="14px" style="display:inline;"> **Tongyi DeepResearch**, an agentic large language model featuring 30.5 billion total parameters, with only 3.3 billion activated per token. Developed by Tongyi Lab, the model is specifically designed for **long-horizon, deep information-seeking** tasks. Tongyi DeepResearch demonstrates state-of-the-art performance across a range of agentic search benchmarks, including Humanity's Last Exam, BrowseComp, BrowseComp-ZH, WebWalkerQA,xbench-DeepSearch, FRAMES and SimpleQA.
 
 > Tongyi DeepResearch builds upon our previous work on the <img src="./assets/tongyi.png" width="14px" style="display:inline;"> [WebAgent](./WebAgent/) project.
 
@@ -56,9 +58,9 @@ More details can be found in our 📰&nbsp;<a href="https://tongyi-agent.github.
 
 You can directly download the model by following the links below.
 
-| Model             | Download Links                            | Model Size | Context Length |
-| :-----------------: | :-----------------------------------------: | :----------: | :--------------: |
-| Tongyi-DeepResearch-30B-A3B | [🤗 HuggingFace](https://huggingface.co/Alibaba-NLP/Tongyi-DeepResearch-30B-A3B)<br> [🤖 ModelScope](https://modelscope.cn/models/iic/Tongyi-DeepResearch-30B-A3B) | 30B-A3B | 128K |
+|            Model            |                                                                           Download Links                                                                           | Model Size | Context Length |
+| :-------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------: | :------------: |
+| Tongyi-DeepResearch-30B-A3B | [🤗 HuggingFace](https://huggingface.co/Alibaba-NLP/Tongyi-DeepResearch-30B-A3B)<br> [🤖 ModelScope](https://modelscope.cn/models/iic/Tongyi-DeepResearch-30B-A3B) |  30B-A3B   |      128K      |
 
 # News
 
@@ -67,6 +69,7 @@ You can directly download the model by following the links below.
 [2025/09/17]🔥 We have released **Tongyi-DeepResearch-30B-A3B**.
 
 # Deep Research Benchmark Results
+
 <p align="center">
   <img width="100%" src="./assets/benchmark.png">
 </p>
@@ -76,6 +79,7 @@ You can directly download the model by following the links below.
 This guide provides instructions for setting up the environment and running inference scripts located in the [inference](./inference/) folder.
 
 ### 1. Environment Setup
+
 - Recommended Python version: **3.10.0** (using other versions may cause dependency issues).
 - It is strongly advised to create an isolated environment using `conda` or `virtualenv`.
 
@@ -88,13 +92,15 @@ conda activate react_infer_env
 ### 2. Installation
 
 Install the required dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
-
 ### 3. Environment Configuration and Prepare Evaluation Data
+
 #### Environment Configuration
+
 Configure your API keys and settings by copying the example environment file:
 
 ```bash
@@ -122,6 +128,7 @@ The system supports two input file formats: **JSON** and **JSONL**.
 #### Supported File Formats:
 
 **Option 1: JSONL Format (recommended)**
+
 - Create your data file with `.jsonl` extension (e.g., `my_questions.jsonl`)
 - Each line must be a valid JSON object with `question` and `answer` keys:
   ```json
@@ -130,23 +137,26 @@ The system supports two input file formats: **JSON** and **JSONL**.
   ```
 
 **Option 2: JSON Format**
+
 - Create your data file with `.json` extension (e.g., `my_questions.json`)
 - File must contain a JSON array of objects, each with `question` and `answer` keys:
   ```json
   [
-    {"question": "What is the capital of France?", "answer": "Paris"},
-    {"question": "Explain quantum computing", "answer": ""}
+    { "question": "What is the capital of France?", "answer": "Paris" },
+    { "question": "Explain quantum computing", "answer": "" }
   ]
   ```
 
 **Important Note:** The `answer` field contains the **ground truth/reference answer** used for evaluation. The system generates its own responses to the questions, and these reference answers are used to automatically judge the quality of the generated responses during benchmark evaluation.
 
 #### File References for Document Processing:
-- If using the *file parser* tool, **prepend the filename to the `question` field**
+
+- If using the _file parser_ tool, **prepend the filename to the `question` field**
 - Place referenced files in `eval_data/file_corpus/` directory
 - Example: `{"question": "report.pdf What are the key findings?", "answer": "..."}`
 
 #### File Organization:
+
 ```
 project_root/
 ├── eval_data/
@@ -157,38 +167,45 @@ project_root/
 ```
 
 ### 4. Configure the Inference Script
-- Open `run_react_infer.sh` and modify the following variables as instructed in the comments:
-  * `MODEL_PATH`  - path to the local or remote model weights.
-  * `DATASET`     - full path to your evaluation file, e.g. `eval_data/my_questions.jsonl` or `/path/to/my_questions.json`.
-  * `OUTPUT_PATH` - path for saving the prediction results, e.g. `./outputs`.
-- Depending on the tools you enable (retrieval, calculator, web search, etc.), provide the required `API_KEY`, `BASE_URL`, or other credentials. Each key is explained inline in the bash script.
 
+- Open `run_react_infer.sh` and modify the following variables as instructed in the comments:
+  - `MODEL_PATH` - path to the local or remote model weights.
+  - `DATASET` - full path to your evaluation file, e.g. `eval_data/my_questions.jsonl` or `/path/to/my_questions.json`.
+  - `OUTPUT_PATH` - path for saving the prediction results, e.g. `./outputs`.
+- Depending on the tools you enable (retrieval, calculator, web search, etc.), provide the required `API_KEY`, `BASE_URL`, or other credentials. Each key is explained inline in the bash script.
 
 ### 5. Run the Inference Script
 
 ```bash
 bash run_react_infer.sh
 ```
+
 ---
 
 With these steps, you can fully prepare the environment, configure the dataset, and run the model. For more details, consult the inline comments in each script or open an issue.
 
 ### 6. You can use OpenRouter's API to call our model
+
 Tongyi-DeepResearch-30B-A3B is now available at [OpenRouter](https://openrouter.ai/alibaba/tongyi-deepresearch-30b-a3b). You can run the inference without any GPUs.
 
 You need to modify the following in the file [inference/react_agent.py](https://github.com/Alibaba-NLP/DeepResearch/blob/main/inference/react_agent.py):
- - In the call_server function: Set the API key and URL to your OpenRouter account’s API and URL.
- - Change the model name to alibaba/tongyi-deepresearch-30b-a3b.
- - Adjust the content concatenation way as described in the comments on lines **88–90.**
+
+- In the call_server function: Set the API key and URL to your OpenRouter account’s API and URL.
+- Change the model name to alibaba/tongyi-deepresearch-30b-a3b.
+- Adjust the content concatenation way as described in the comments on lines **88–90.**
 
 ## Benchmark Evaluation
 
 We provide benchmark evaluation scripts for various datasets. Please refer to the [evaluation scripts](./evaluation/) directory for more details.
 
+## FAQ
+
+Please refer to the [FAQ](./FAQ.md) for more details.
+
 ## Deep Research Agent Family
 
 <p align="center">
-  <img width="100%" src="./assets/family.png">
+  <img width="100%" src="./assets/family17.png">
 </p>
 
 Tongyi DeepResearch also has an extensive deep research agent family. You can find more information in the following paper:
@@ -203,8 +220,8 @@ Tongyi DeepResearch also has an extensive deep research agent family. You can fi
 [8] [WebWeaver: Structuring Web-Scale Evidence with Dynamic Outlines for Open-Ended Deep Research](https://arxiv.org/pdf/2509.13312)<br>
 [9] [WebSailor-V2: Bridging the Chasm to Proprietary Agents via Synthetic Data and Scalable Reinforcement Learning](https://arxiv.org/pdf/2509.13305)<br>
 [10] [Scaling Agents via Continual Pre-training](https://arxiv.org/pdf/2509.13310)<br>
-[11] [Towards General Agentic Intelligence via Environment Scaling](https://arxiv.org/pdf/2509.13311)
-
+[11] [Towards General Agentic Intelligence via Environment Scaling](https://arxiv.org/pdf/2509.13311)<br>
+[12] [WebLeaper: Empowering Efficient, Info-Rich Seeking for Web Agents](https://arxiv.org/pdf/2510.24697)
 
 ## 🌟 Misc
 
@@ -227,6 +244,7 @@ Tongyi DeepResearch also has an extensive deep research agent family. You can fi
 For communications, please contact Yong Jiang (yongjiang.jy@alibaba-inc.com).
 
 ## Citation
+
 ```bibtex
 @misc{tongyidr,
   author={Tongyi DeepResearch Team},

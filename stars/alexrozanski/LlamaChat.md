@@ -1,6 +1,6 @@
 ---
 project: LlamaChat
-stars: 1515
+stars: 1516
 description: |-
     Chat with your favourite LLaMA models in a native macOS app
 url: https://github.com/alexrozanski/LlamaChat

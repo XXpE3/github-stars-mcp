@@ -1,6 +1,6 @@
 ---
 project: gptel
-stars: 2962
+stars: 2981
 description: |-
     A simple LLM client for Emacs
 url: https://github.com/karthink/gptel

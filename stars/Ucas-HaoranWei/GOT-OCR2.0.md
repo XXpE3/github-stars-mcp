@@ -1,6 +1,6 @@
 ---
 project: GOT-OCR2.0
-stars: 7971
+stars: 7981
 description: |-
     Official code implementation of General OCR Theory:  Towards OCR-2.0 via a Unified End-to-end Model
 url: https://github.com/Ucas-HaoranWei/GOT-OCR2.0

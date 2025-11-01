@@ -1,6 +1,6 @@
 ---
 project: chat-ui
-stars: 10096
+stars: 10193
 description: |-
     Open source codebase powering the HuggingChat app
 url: https://github.com/huggingface/chat-ui

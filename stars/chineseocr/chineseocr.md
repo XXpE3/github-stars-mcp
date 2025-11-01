@@ -1,6 +1,6 @@
 ---
 project: chineseocr
-stars: 6100
+stars: 6102
 description: |-
     yolo3+ocr
 url: https://github.com/chineseocr/chineseocr

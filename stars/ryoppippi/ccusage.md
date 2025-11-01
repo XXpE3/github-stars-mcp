@@ -1,6 +1,6 @@
 ---
 project: ccusage
-stars: 8682
+stars: 8772
 description: |-
     A CLI tool for analyzing Claude Code/Codex CLI usage from local JSONL files.
 url: https://github.com/ryoppippi/ccusage

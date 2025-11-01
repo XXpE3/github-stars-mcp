@@ -1,6 +1,6 @@
 ---
 project: Cerebr
-stars: 264
+stars: 269
 description: |-
     Chat with web content by AI. web demo url: https://cerebr.yym68686.top
 url: https://github.com/yym68686/Cerebr

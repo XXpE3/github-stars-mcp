@@ -1,6 +1,6 @@
 ---
 project: claude-code-router
-stars: 20155
+stars: 20669
 description: |-
     Use Claude Code as the foundation for coding infrastructure, allowing you to decide how to interact with the model while enjoying updates from Anthropic.
 url: https://github.com/musistudio/claude-code-router
@@ -543,6 +543,7 @@ A huge thank you to all our sponsors for their generous support!
 - [AIHubmix](https://aihubmix.com/)
 - [BurnCloud](https://ai.burncloud.com)
 - [302.AI](https://share.302.ai/ZGVF9w)
+- [Z智谱](https://www.bigmodel.cn/claude-code?ic=FPF9IVAGFJ)
 - @Simon Leischnig
 - [@duanshuaimin](https://github.com/duanshuaimin)
 - [@vrgitadmin](https://github.com/vrgitadmin)
@@ -629,6 +630,9 @@ A huge thank you to all our sponsors for their generous support!
 - @\*落
 - @哆\*k
 - @\*涛
+- [@苗大](https://github.com/WitMiao)
+- @\*呢
+- @\d*u
 
 (If your name is masked, please contact me via my homepage email to update it with your GitHub username.)
 

@@ -1,6 +1,6 @@
 ---
 project: awesome-cursorrules
-stars: 34842
+stars: 35058
 description: |-
     📄  Configuration files that enhance Cursor AI editor experience with custom rules and behaviors
 url: https://github.com/PatrickJS/awesome-cursorrules

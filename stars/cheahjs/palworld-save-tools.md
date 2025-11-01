@@ -1,6 +1,6 @@
 ---
 project: palworld-save-tools
-stars: 854
+stars: 855
 description: |-
     Tools for converting Palworld .sav files to JSON and back
 url: https://github.com/cheahjs/palworld-save-tools

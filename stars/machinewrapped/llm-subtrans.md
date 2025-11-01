@@ -1,6 +1,6 @@
 ---
 project: llm-subtrans
-stars: 511
+stars: 512
 description: |-
     Open Source project using LLMs to translate SRT subtitles
 url: https://github.com/machinewrapped/llm-subtrans

@@ -1,6 +1,6 @@
 ---
 project: AyuGramDesktop
-stars: 3382
+stars: 3410
 description: |-
     Desktop Telegram client with good customization and Ghost mode.
 url: https://github.com/AyuGram/AyuGramDesktop

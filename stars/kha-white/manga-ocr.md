@@ -1,6 +1,6 @@
 ---
 project: manga-ocr
-stars: 2395
+stars: 2404
 description: |-
     Optical character recognition for Japanese text, with the main focus being Japanese manga
 url: https://github.com/kha-white/manga-ocr

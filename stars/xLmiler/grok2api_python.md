@@ -1,6 +1,6 @@
 ---
 project: grok2api_python
-stars: 528
+stars: 530
 description: |-
     null
 url: https://github.com/xLmiler/grok2api_python

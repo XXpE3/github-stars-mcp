@@ -1,6 +1,6 @@
 ---
 project: nq
-stars: 3046
+stars: 3048
 description: |-
     Unix command line queue utility
 url: https://github.com/leahneukirchen/nq

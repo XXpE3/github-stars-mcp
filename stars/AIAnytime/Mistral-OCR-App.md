@@ -1,6 +1,6 @@
 ---
 project: Mistral-OCR-App
-stars: 84
+stars: 85
 description: |-
     An OCR App built using Mistral OCR API and Streamlit.
 url: https://github.com/AIAnytime/Mistral-OCR-App

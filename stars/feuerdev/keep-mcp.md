@@ -1,6 +1,6 @@
 ---
 project: keep-mcp
-stars: 50
+stars: 51
 description: |-
     MCP server for Google Keep
 url: https://github.com/feuerdev/keep-mcp

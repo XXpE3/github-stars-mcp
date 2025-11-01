@@ -1,6 +1,6 @@
 ---
 project: ghostty-config
-stars: 1568
+stars: 1598
 description: |-
     A beautiful config generator for Ghostty terminal.
 url: https://github.com/zerebos/ghostty-config

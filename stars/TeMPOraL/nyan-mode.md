@@ -1,6 +1,6 @@
 ---
 project: nyan-mode
-stars: 835
+stars: 836
 description: |-
     Nyan Cat for Emacs! Nyanyanyanyanyanyanyanyanyan!
 url: https://github.com/TeMPOraL/nyan-mode

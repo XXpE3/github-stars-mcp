@@ -1,6 +1,6 @@
 ---
 project: Chinese-LLaMA-Alpaca-2
-stars: 7173
+stars: 7175
 description: |-
     中文LLaMA-2 & Alpaca-2大模型二期项目 + 64K超长上下文模型 (Chinese LLaMA-2 & Alpaca-2 LLMs with 64K long context models)
 url: https://github.com/ymcui/Chinese-LLaMA-Alpaca-2

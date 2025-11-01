@@ -1,6 +1,6 @@
 ---
 project: telegram-files
-stars: 1715
+stars: 1720
 description: |-
     A self-hosted Telegram file downloader for continuous, stable, and unattended downloads.
 url: https://github.com/jarvis2f/telegram-files

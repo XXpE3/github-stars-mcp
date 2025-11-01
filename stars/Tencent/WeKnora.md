@@ -1,6 +1,6 @@
 ---
 project: WeKnora
-stars: 6585
+stars: 7170
 description: |-
     LLM-powered framework for deep document understanding, semantic retrieval, and context-aware answers using RAG paradigm.
 url: https://github.com/Tencent/WeKnora
@@ -178,6 +178,8 @@ git clone https://github.com/Tencent/WeKnora
 ```
 
 #### 2️⃣ Configure MCP Server
+> It is recommended to directly refer to the [MCP Configuration Guide](./mcp-server/MCP_CONFIG.md) for configuration.
+
 Configure the MCP client to connect to the server:
 ```json
 {

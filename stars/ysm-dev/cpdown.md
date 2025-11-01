@@ -1,6 +1,6 @@
 ---
 project: cpdown
-stars: 482
+stars: 485
 description: |-
     📥 cpdown - Copy to clipboard any webpage content/youtube subtitle as clean markdown with one click or shortcut
 url: https://github.com/ysm-dev/cpdown

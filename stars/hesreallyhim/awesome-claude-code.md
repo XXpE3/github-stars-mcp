@@ -1,6 +1,6 @@
 ---
 project: awesome-claude-code
-stars: 15917
+stars: 16286
 description: |-
     A curated list of awesome commands, files, and workflows for Claude Code
 url: https://github.com/hesreallyhim/awesome-claude-code
@@ -22,7 +22,9 @@ url: https://github.com/hesreallyhim/awesome-claude-code
 
 <!-- Generated with https://github.com/denvercoder1/readme-typing-svg -->
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1000&color=F7080D&random=true&width=435&lines=Fumigating...;Gallivanting...;Matriculating...;Toodleedoodling...;Goo-goo-g'joob-ing...;Excaliburating...;Canoodling...;Doing+the+humpty+dance...;Shiver-me-timbers-ing...;Becoming+sentient...;Opening+the+pod+bay+doors...;Rimraf-ing...;23-skidoo-ing...;Skip-to-my-loo'ing...;High-falutin'...;Disambiguating...;Coagulating...;Undulating...;Just+Clauding+around...)](https://git.io/typing-svg)
+<!-- Daft Punk Typing SVG -->
+
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&duration=1500&pause=100&color=F7080D&width=680&lines=Work%20it;Make%20it;Do%20it;%20Makes%20us;...;...;...;...;Harder;Better;Faster;Stronger;...;...;...;...;)](https://git.io/typing-svg)
 
 <!--lint enable remark-lint:awesome-badge-->
 
@@ -41,30 +43,31 @@ This is a curated list of slash-commands, `CLAUDE.md` files, CLI tools, and othe
 
 Claude Code is a cutting-edge CLI-based coding assistant and agent released by [Anthropic](https://www.anthropic.com/) that you can access in your terminal or IDE. It is a rapidly evolving tool that offers a number of powerful capabilities, and allows for a lot of configuration, in a lot of different ways. Users are actively working out best practices and workflows. It is the hope that this repo will help the community share knowledge and understand how to get the most out of Claude Code.
 
+<div align="center"><a href="https://github.com/hesreallyhim/awesome-claude-code/discussions/287" align="center"><img src="assets/awesome-claude-code-feature-bounty.png" alt="Feature Bounty Banner" width="750px" align="center" /></a></div>
+
+<div align="center"><h2 align="center">I'm throwing the challenge down for a <strong>"FEATURE BOUNTY"</strong> with a <strong>cash prize</strong> to solve a problem that Claude Code users have been <a href="https://github.com/anthropics/claude-code/issues/2112">posting about on GitHub</a> for a while - want to join the fun? Check out the <a href="https://github.com/hesreallyhim/awesome-claude-code/discussions/287">announcement</a> and let me know you're in! Coding, Clauding, Collaborating, Cash... Let's get together and build something!</h2></div>
+
 ### Announcements [🔝](#awesome-claude-code)
 
 <details open>
 <summary>View Announcements</summary>
 
 - <details open>
-  <summary>2025-10-16 - **AGENT SKILLS**</summary>
+  <summary>2025-10-27 - Defending Your Rights</summary>
 
   - <details open>
-    <summary>Claude Got Skills</summary>
+    <summary>Shoutout to prpm</summary>
 
-    - In my previous announcement, I encouraged people to submit resources that explored features specific to _Claude Code_. So Claude read the post (he checks the list a lot), and was like "hold my martini" - and as of version 2.0.20 it looks like we've got a **new** set of toys for users to play with: [**Agent Skills**](https://docs.claude.com/en/docs/claude-code/skills). So for now I'm going to be focusing a lot on figuring out what you can do with this new feature set, and Skills submissions will be prioritized. Watch this space for updates.
+    - When you publish a LICENSE file to your repo, you are asserting certain legal rights. Well, marketplaces are popping up left and right, and not all of them are respecting these rights. Rather than focus on the negatives, I'd like to give special praise to user [khaliqgant](https://github.com/khaliqgant), who recently submitted his project [prpm](https://prpm.dev) for inclusion in the list. `prpm` is something like a marketplace, but with ambitions to support interoperability between diferent providers as well. After I pointed out to him that I wasn't able to find any license information about the resources he was sharing, he very quickly took action and updated the UI so that in the same card where you view information about one of the resources on his platform, you can click directly to that author's LICENSE file - or even just view it in a dropdown! <br>
+      <div align="center"><a href="https://prpm.dev/search"><img src="/assets/prpm-license-ui.png" width="600" /></a><br></div>
+      In my opinion this is a pretty awesome thing to do for the community, and sets a great example for other people who are aiming to set up their own marketplaces. So thanks very much to khaliqgant for taking this whole "open source" thing seriously, and I hope you'll give his site a visit - and if you notice other sites that are failing to uphold this standard, I encourage you to kindly remind them of their legal obligations - frankly, I presume a lot of people probably just don't know what a specific LICENSE requires of them, so let's just assume that everybody is acting in good faith.
 
     </details>
 
-  </details>
-
-- <details open>
-  <summary>2025-10-06 - Awesome Claude Code 2.0</summary>
-
   - <details open>
-    <summary>Fundraising update</summary>
+    <summary>Review Policy - Reminder</summary>
 
-    - I've managed at last to secure a dedicated, direct-link, one-click fundraising widget for my campaign to support [The Bail Project](https://bailproject.org/). See <a href="#support">Support</a> below for more details, and click [here](https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN) to contribute.
+    - > ...due to personal factors and social ailments such as "rent", I must be mindful of the time I devote to this project, which is non-trivial ... For now, I am temporarily suspending any commitment to maintaining the Issue submissions as a FIFO _queue_ of items that must be evaluated in a timely fashion. You are absolutely encouraged to submit your projects, and I respect everybody's hard work and will make my best effort to review submissions as they come in.
 
     </details>
 
@@ -76,58 +79,69 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
-[`claude-mem`](https://github.com/thedotmack/claude-mem) &nbsp; by &nbsp; [Alex Newman](https://github.com/thedotmack)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
-Persistent memory compression system that captures tool usage, generates AI-powered session summaries, and injects relevant context into future Claude Code sessions through SQLite storage and full-text search across project history (and no extra-cost dependencies!). 🦾
+[`Claudex`](https://github.com/kunwar-shah/claudex) &nbsp; by &nbsp; [Kunwar Shah](https://github.com/kunwar-shah)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Claudex - A web-based browser for exploring your Claude Code conversation history across projects. Indexes your codebase for full-text search. Nice, easy-to-navigate UI. Simple dashboard interface for high-level analytics, and multiple export options as well. (And completely local w/ no telemetry!)
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-mem](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-mem&username=thedotmack&all_stats=true&stats_only=true)
+![GitHub Stats for claudex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudex&username=kunwar-shah&all_stats=true&stats_only=true)
 
 </details>
 <br>
 
-[`cc-sessions`](https://github.com/GWUDCAP/cc-sessions) &nbsp; by &nbsp; [toastdev](https://github.com/satoastshi)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-An opinionated approach to produce development with Claude Code
+[`Omnara`](https://github.com/omnara-ai/omnara) &nbsp; by &nbsp; [Ishaan Sehgal](https://github.com/ishaansehgal99)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+A command center for AI agents that syncs Claude Code sessions across terminal, web, and mobile. Allows for remote monitoring, human-in-the-loop interaction, and team collaboration.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for cc-sessions](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=cc-sessions&username=GWUDCAP&all_stats=true&stats_only=true)
+![GitHub Stats for omnara](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=omnara&username=omnara-ai&all_stats=true&stats_only=true)
 
 </details>
 <br>
 
-[`fcakyon Collection (Code Quality and Tool Usage)`](https://github.com/fcakyon/claude-codex-settings/tree/main/.claude/hooks) &nbsp; by &nbsp; [Fatih Akyon](https://github.com/fcakyon)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
-Very well-written set of hooks for code quality and tool usage regulation (e.g. force Tavily over WebFetch tool).
+[`Claudable`](https://github.com/opactorai/Claudable) &nbsp; by &nbsp; [Ethan Park](https://www.linkedin.com/in/seongil-park/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Claudable is an open-source web builder that leverages local CLI agents, such as Claude Code and Cursor Agent, to build and deploy products effortlessly.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-codex-settings](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codex-settings&username=fcakyon&all_stats=true&stats_only=true)
+![GitHub Stats for Claudable](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claudable&username=opactorai&all_stats=true&stats_only=true)
 
 </details>
 <br>
 
-[`/linux-desktop-slash-commands`](https://github.com/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands) &nbsp; by &nbsp; [Daniel Rosehill](https://github.com/danielrosehill)    
-A library of slash commands intended specifically to facilitate common and advanced operations on Linux desktop environments (although many would also be useful on Linux servers). Command groups include hardware benchmarking, filesystem organisation, and security posture validation.
+[`Web Assets Generator Skill`](https://github.com/alonw0/web-asset-generator) &nbsp; by &nbsp; [Alon Wolenitz](https://github.com/alonw0)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Easily generate web assets from Claude Code including favicons, app icons (PWA), and social media meta images (Open Graph) for Facebook, Twitter, WhatsApp, and LinkedIn. Handles image resizing, text-to-image generation, emojis, and provides proper HTML meta tags.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for Claude-Code-Linux-Desktop-Slash-Commands](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claude-Code-Linux-Desktop-Slash-Commands&username=danielrosehill&all_stats=true&stats_only=true)
+![GitHub Stats for web-asset-generator](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=web-asset-generator&username=alonw0&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)    
+Enables users to prompt codex from claude code. Unlike the raw codex mcp server, this skill infers parameters such as model, reasoning effort, sandboxing from your prompt or asks you to specify them. It also simplifies continuing prior codex sessions so that codex can continue with the prior context.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for skill-codex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=skill-codex&username=skills-directory&all_stats=true&stats_only=true)
 
 </details>
 <br>
 
 
-# **Support**
+<!-- # **Support**
 
-You can easily offer support by making a charitable donation in honor of Awesome Claude Code by visiting the [fundraising page](https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN) I've set up for [The Bail Project](https://bailproject.org/). One click will take you straight to the donation widget, and a few seconds later your contribution will be completed - even $1 will truly make an impact. (If you are on GitHub, and you want your donation to be recognized, you will have to take about two more minutes to complete a follow-up email which actually notifies me of the dedication. As a reward you can show one of our nice Freedom Funder badges.) Sadly, this repo cannot be actively maintained without some direct support to this fund. Luckily there are loads of other resources devoted to Claude and his amazing Code, and it's up to you whether you think this one is particularly valuable or not.
+You can easily offer support by making a charitable donation in honor of Awesome Claude Code by visiting the [fundraising page](https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN) I've set up for [The Bail Project](https://bailproject.org/). One click will take you straight to the donation widget, and a few seconds later your contribution will be completed - even $1 will truly make an impact. (If you are on GitHub, and you want your donation to be recognized, you will have to take about two more minutes to complete a follow-up email which actually notifies me of the dedication. As a reward you can show one of our nice Freedom Funder badges.) Sadly, this repo cannot be actively maintained without some direct support to this fund. Luckily there are loads of other resources devoted to Claude and his amazing Code, and it's up to you whether you think this one is particularly valuable or not. -->
 
-<a href="https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN" text-align="center">
+<!-- <a href="https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN" text-align="center">
   <img src="./assets/fundraising-link-img.jpg" alt="Awesome Claude Code Freedom Funders" width="200" margin="auto" />
-</a>
+</a> -->
 
 ## Contents [🔝](#awesome-claude-code)
 
@@ -137,20 +151,21 @@ You can easily offer support by making a charitable donation in honor of Awesome
 - <details open>
   <summary><a href="#agent-skills-">Agent Skills</a></summary>
 
+  - [General](#general-)
 
   </details>
 
 - <details open>
   <summary><a href="#workflows--knowledge-guides-">Workflows & Knowledge Guides</a></summary>
 
-  - [General](#general-)
+  - [General](#general--1)
 
   </details>
 
 - <details open>
   <summary><a href="#tooling-">Tooling</a></summary>
 
-  - [General](#general--1)
+  - [General](#general--2)
   - [IDE Integrations](#ide-integrations-)
   - [Usage Monitors](#usage-monitors-)
   - [Orchestrators](#orchestrators-)
@@ -160,28 +175,28 @@ You can easily offer support by making a charitable donation in honor of Awesome
 - <details open>
   <summary><a href="#status-lines-">Status Lines</a></summary>
 
-  - [General](#general--2)
+  - [General](#general--3)
 
   </details>
 
 - <details open>
   <summary><a href="#hooks-">Hooks</a></summary>
 
-  - [General](#general--3)
+  - [General](#general--4)
 
   </details>
 
 - <details open>
   <summary><a href="#output-styles-">Output Styles</a></summary>
 
-  - [General](#general--4)
+  - [General](#general--5)
 
   </details>
 
 - <details open>
   <summary><a href="#slash-commands-">Slash-Commands</a></summary>
 
-  - [General](#general--5)
+  - [General](#general--6)
   - [Version Control & Git](#version-control--git-)
   - [Code Analysis & Testing](#code-analysis--testing-)
   - [Context Loading & Priming](#context-loading--priming-)
@@ -204,13 +219,14 @@ You can easily offer support by making a charitable donation in honor of Awesome
 - <details open>
   <summary><a href="#alternative-clients-">Alternative Clients</a></summary>
 
+  - [General](#general--7)
 
   </details>
 
 - <details open>
   <summary><a href="#official-documentation-">Official Documentation</a></summary>
 
-  - [General](#general--6)
+  - [General](#general--8)
 
   </details>
 
@@ -221,6 +237,33 @@ You can easily offer support by making a charitable donation in honor of Awesome
 ## Agent Skills 🤖 [🔝](#awesome-claude-code)
 
 > **Agent skills** are model-controlled configurations (files, scripts, resources, etc.) that enable Claude Code to perform specialized tasks requiring specific knowledge or capabilities.
+
+<details open>
+<summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)    
+Enables users to prompt codex from claude code. Unlike the raw codex mcp server, this skill infers parameters such as model, reasoning effort, sandboxing from your prompt or asks you to specify them. It also simplifies continuing prior codex sessions so that codex can continue with the prior context.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for skill-codex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=skill-codex&username=skills-directory&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Web Assets Generator Skill`](https://github.com/alonw0/web-asset-generator) &nbsp; by &nbsp; [Alon Wolenitz](https://github.com/alonw0)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Easily generate web assets from Claude Code including favicons, app icons (PWA), and social media meta images (Open Graph) for Facebook, Twitter, WhatsApp, and LinkedIn. Handles image resizing, text-to-image generation, emojis, and provides proper HTML meta tags.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for web-asset-generator](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=web-asset-generator&username=alonw0&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+</details>
 
 <br>
 
@@ -263,9 +306,6 @@ Really comprehensive and feature-packed project-management workflow for Claude C
 
 </details>
 <br>
-
-[`ClaudeLog`](https://claudelog.com) &nbsp; by &nbsp; [InventorBlack](https://www.reddit.com/user/inventor_black/)    
-A comprehensive knowledge base with detailed breakdowns of advanced [mechanics](https://claudelog.com/mechanics/you-are-the-main-thread/) including [CLAUDE.md best practices](https://claudelog.com/mechanics/claude-md-supremacy), practical technique guides like [plan mode](https://claudelog.com/mechanics/plan-mode), [ultrathink](https://claudelog.com/faqs/what-is-ultrathink/), [sub-agents](https://claudelog.com/mechanics/task-agent-tools/), [agent-first design](https://claudelog.com/mechanics/agent-first-design/) and [configuration guides](https://claudelog.com/configuration).
 
 [`ClaudoPro Directory`](https://github.com/JSONbored/claudepro-directory) &nbsp; by &nbsp; [ghost](https://github.com/JSONbored)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Well-crafted, wide selection of Claude Code hooks, slash commands, subagent files, and more, covering a range of specialized tasks and workflows. Better resources than your average "Claude-template-for-everything" site.
@@ -690,6 +730,17 @@ A real-time terminal-based tool for monitoring Claude Code token usage. It shows
 </details>
 <br>
 
+[`Claudex`](https://github.com/kunwar-shah/claudex) &nbsp; by &nbsp; [Kunwar Shah](https://github.com/kunwar-shah)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Claudex - A web-based browser for exploring your Claude Code conversation history across projects. Indexes your codebase for full-text search. Nice, easy-to-navigate UI. Simple dashboard interface for high-level analytics, and multiple export options as well. (And completely local w/ no telemetry!)
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claudex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudex&username=kunwar-shah&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`viberank`](https://github.com/sculptdotfun/viberank) &nbsp; by &nbsp; [nikshepsvn](https://github.com/nikshepsvn)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A community-driven leaderboard tool that enables developers to visualize, track, and compete based on their Claude Code usage statistics. It features robust data analytics, GitHub OAuth, data validation, and user-friendly CLI/web submission methods.
 
@@ -900,17 +951,6 @@ A TypeScript-based system for configuring and customizing Claude Code hooks with
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-hooks](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-hooks&username=johnlindquist&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`claude-mem`](https://github.com/thedotmack/claude-mem) &nbsp; by &nbsp; [Alex Newman](https://github.com/thedotmack)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
-Persistent memory compression system that captures tool usage, generates AI-powered session summaries, and injects relevant context into future Claude Code sessions through SQLite storage and full-text search across project history (and no extra-cost dependencies!). 🦾
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-mem](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-mem&username=thedotmack&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1487,17 +1527,6 @@ A convenient command to quickly manage project todo items without leaving the Cl
 <details open>
 <summary><h3>Miscellaneous <a href="#awesome-claude-code">🔝</a></h3></summary>
 
-[`/five`](https://github.com/TuckerTucker/tkr-portfolio/blob/main/.claude/commands/five.md) &nbsp; by &nbsp; [TuckerTucker](https://github.com/TuckerTucker)    
-Applies the "five whys" methodology to perform root cause analysis, identify underlying issues, and create solution approaches for complex problems.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for tkr-portfolio](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=tkr-portfolio&username=TuckerTucker&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
 [`/fixing_go_in_graph`](https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/fixing_go_in_graph.md) &nbsp; by &nbsp; [Mjvolk3](https://github.com/Mjvolk3)    
 Focuses on Gene Ontology annotation integration in graph databases, handling multiple data sources, addressing graph representation issues, and ensuring correct data incorporation.
 
@@ -1849,6 +1878,33 @@ Offers clear step-by-step installation instructions with multiple configuration 
 ## Alternative Clients 📱 [🔝](#awesome-claude-code)
 
 > **Alternative Clients** are alternative UIs and front-ends for interacting with Claude Code, either on mobile or on the desktop.
+
+<details open>
+<summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`Claudable`](https://github.com/opactorai/Claudable) &nbsp; by &nbsp; [Ethan Park](https://www.linkedin.com/in/seongil-park/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Claudable is an open-source web builder that leverages local CLI agents, such as Claude Code and Cursor Agent, to build and deploy products effortlessly.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for Claudable](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claudable&username=opactorai&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Omnara`](https://github.com/omnara-ai/omnara) &nbsp; by &nbsp; [Ishaan Sehgal](https://github.com/ishaansehgal99)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+A command center for AI agents that syncs Claude Code sessions across terminal, web, and mobile. Allows for remote monitoring, human-in-the-loop interaction, and team collaboration.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for omnara](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=omnara&username=omnara-ai&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+</details>
 
 <br>
 

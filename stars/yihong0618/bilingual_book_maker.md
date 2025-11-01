@@ -1,6 +1,6 @@
 ---
 project: bilingual_book_maker
-stars: 8904
+stars: 8915
 description: |-
     Make bilingual epub books Using AI translate
 url: https://github.com/yihong0618/bilingual_book_maker

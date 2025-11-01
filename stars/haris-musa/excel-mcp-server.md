@@ -1,6 +1,6 @@
 ---
 project: excel-mcp-server
-stars: 2679
+stars: 2723
 description: |-
     A Model Context Protocol server for Excel file manipulation
 url: https://github.com/haris-musa/excel-mcp-server

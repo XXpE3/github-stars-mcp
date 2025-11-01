@@ -1,6 +1,6 @@
 ---
 project: huntly
-stars: 2180
+stars: 2183
 description: |-
     Huntly, information management tool, rss reader, automatic saving browsed contents include tweets, github stars management tool. 信息管理工具、RSS 阅读器、GitHub stars 管理、推文管理、自动记录浏览过的文章。
 url: https://github.com/lcomplete/huntly

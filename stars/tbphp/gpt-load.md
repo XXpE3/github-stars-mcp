@@ -1,6 +1,6 @@
 ---
 project: gpt-load
-stars: 5399
+stars: 5428
 description: |-
     Multi-channel AI proxy with intelligent key rotation. 智能密钥轮询的多渠道 AI 代理。
 url: https://github.com/tbphp/gpt-load

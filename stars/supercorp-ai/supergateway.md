@@ -1,6 +1,6 @@
 ---
 project: supergateway
-stars: 2176
+stars: 2200
 description: |-
     Run MCP stdio servers over SSE and SSE over stdio. AI gateway.
 url: https://github.com/supercorp-ai/supergateway

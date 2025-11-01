@@ -1,6 +1,6 @@
 ---
 project: dash-mcp-server
-stars: 66
+stars: 72
 description: |-
     MCP server for Dash, the macOS documentation browser
 url: https://github.com/Kapeli/dash-mcp-server

@@ -1,6 +1,6 @@
 ---
 project: BrowserOS
-stars: 5412
+stars: 6785
 description: |-
     🌐 The open-source Agentic browser; privacy-first alternative to ChatGPT Atlas, Perplexity Comet, Dia.
 url: https://github.com/browseros-ai/BrowserOS

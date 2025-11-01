@@ -1,6 +1,6 @@
 ---
 project: crush
-stars: 14242
+stars: 14451
 description: |-
     The glamourous AI coding agent for your favourite terminal 💘
 url: https://github.com/charmbracelet/crush
@@ -375,7 +375,7 @@ Local models can also be configured via OpenAI-compatible API. Here are two comm
     "ollama": {
       "name": "Ollama",
       "base_url": "http://localhost:11434/v1/",
-      "type": "openai",
+      "type": "openai-compat",
       "models": [
         {
           "name": "Qwen 3 30B",
@@ -397,7 +397,7 @@ Local models can also be configured via OpenAI-compatible API. Here are two comm
     "lmstudio": {
       "name": "LM Studio",
       "base_url": "http://localhost:1234/v1/",
-      "type": "openai",
+      "type": "openai-compat",
       "models": [
         {
           "name": "Qwen 3 30B",
@@ -416,6 +416,12 @@ Local models can also be configured via OpenAI-compatible API. Here are two comm
 Crush supports custom provider configurations for both OpenAI-compatible and
 Anthropic-compatible APIs.
 
+> [!NOTE]
+> Note that we support two "types" for OpenAI. Make sure to choose the right one
+> to ensure the best experience!
+> * `openai` should be used when proxying or routing requests through OpenAI.
+> * `openai-compat` should be used when using non-OpenAI providers that have OpenAI-compatible APIs.
+
 #### OpenAI-Compatible APIs
 
 Here’s an example configuration for Deepseek, which uses an OpenAI-compatible
@@ -426,7 +432,7 @@ API. Don't forget to set `DEEPSEEK_API_KEY` in your environment.
   "$schema": "https://charm.land/crush.json",
   "providers": {
     "deepseek": {
-      "type": "openai",
+      "type": "openai-compat",
       "base_url": "https://api.deepseek.com/v1",
       "api_key": "$DEEPSEEK_API_KEY",
       "models": [

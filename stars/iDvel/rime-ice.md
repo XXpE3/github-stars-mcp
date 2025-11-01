@@ -1,6 +1,6 @@
 ---
 project: rime-ice
-stars: 13511
+stars: 13594
 description: |-
     Rime 配置：雾凇拼音 | 长期维护的简体词库
 url: https://github.com/iDvel/rime-ice
@@ -180,6 +180,12 @@ git clone https://github.com/rime/plum.git plum
 cd ~/plum
 bash rime-install <recipe_name>
 ```
+部分发行版可能需要手动指定安装位置
+
+```bash
+rime_frontend=fcitx5-rime bash rime-install <recipe_name>
+```
+
 ---
 
 </details>
@@ -322,5 +328,6 @@ Thanks to JetBrains for the OSS development license.
 
 如果觉得项目不错，可以请 Dvel 吃个煎饼馃子。
 
-<img src="./others/sponsor.webp" alt="请 Dvel 吃个煎饼馃子" width=600 />
+<img src="./others/sponsor.webp" alt="请 Dvel 吃个煎饼馃子" width=300 />
+
 

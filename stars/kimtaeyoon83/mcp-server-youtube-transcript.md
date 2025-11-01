@@ -1,6 +1,6 @@
 ---
 project: mcp-server-youtube-transcript
-stars: 335
+stars: 336
 description: |-
     This is an MCP server that allows you to directly download transcripts of YouTube videos.
 url: https://github.com/kimtaeyoon83/mcp-server-youtube-transcript
@@ -9,6 +9,7 @@ url: https://github.com/kimtaeyoon83/mcp-server-youtube-transcript
 [![MseeP.ai Security Assessment Badge](https://mseep.net/pr/kimtaeyoon83-mcp-server-youtube-transcript-badge.png)](https://mseep.ai/app/kimtaeyoon83-mcp-server-youtube-transcript)
 
 # YouTube Transcript Server
+[![Trust Score](https://archestra.ai/mcp-catalog/api/badge/quality/kimtaeyoon83/mcp-server-youtube-transcript)](https://archestra.ai/mcp-catalog/kimtaeyoon83__mcp-server-youtube-transcript)
 
 [![smithery badge](https://smithery.ai/badge/@kimtaeyoon83/mcp-server-youtube-transcript)](https://smithery.ai/server/@kimtaeyoon83/mcp-server-youtube-transcript)
 

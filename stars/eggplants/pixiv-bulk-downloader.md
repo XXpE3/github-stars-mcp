@@ -1,6 +1,6 @@
 ---
 project: pixiv-bulk-downloader
-stars: 23
+stars: 24
 description: |-
     Pixiv Bulk Downloader
 url: https://github.com/eggplants/pixiv-bulk-downloader

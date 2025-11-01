@@ -1,6 +1,6 @@
 ---
 project: crystal
-stars: 2311
+stars: 2362
 description: |-
     Run multiple Codex and Claude Code AI sessions in parallel git worktrees. Test, compare approaches & manage AI-assisted development workflows in one desktop app.
 url: https://github.com/stravu/crystal

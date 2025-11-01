@@ -1,6 +1,6 @@
 ---
 project: GhostText
-stars: 3516
+stars: 3519
 description: |-
     👻 Use your text editor to write in your browser. Everything you type in the editor will be instantly updated in the browser (and vice versa).
 url: https://github.com/fregante/GhostText

@@ -1,6 +1,6 @@
 ---
 project: zcf
-stars: 2973
+stars: 3350
 description: |-
     Zero-Config Code Flow for Claude code & Codex
 url: https://github.com/UfoMiao/zcf
@@ -119,14 +119,17 @@ npx zcf ccr --all-lang zh-CN    # Configure CCR in Chinese
 For CI/CD and automated setups, use `--skip-prompt` with parameters:
 
 ```bash
-# Shorthand version
+# Using API provider preset (v3.3.0+ New - Simplified)
+npx zcf i -s -p 302ai -k "sk-xxx"
+
+# Shorthand version (traditional)
 npx zcf i -s -g zh-CN -t api_key -k "sk-xxx" -u "https://xxx.xxx"
 
-# Complete version
+# Complete version (traditional)
 npx zcf i --skip-prompt --all-lang zh-CN --api-type api_key --api-key "sk-xxx" --api-url "https://xxx.xxx"
 
-# Shorthand version (with custom models)
-npx zcf i -s -t api_key -k "sk-xxx" -M "claude-sonnet-4-5" -F "claude-haiku-4-5"
+# Using provider preset with custom models
+npx zcf i -s -p 302ai -k "sk-xxx" -M "claude-sonnet-4-5" -F "claude-haiku-4-5"
 
 # Complete version (with custom models)
 npx zcf i --skip-prompt \
@@ -135,7 +138,65 @@ npx zcf i --skip-prompt \
   --api-url "https://xxx.xxx" \
   --api-model "claude-sonnet-4-5" \
   --api-fast-model "claude-haiku-4-5"
+
+# Multiple API configurations (JSON string)
+npx zcf i -s --api-configs '[
+  {"provider":"302ai","key":"sk-xxx"},
+  {"provider":"glm","key":"sk-yyy"},
+  {"name":"custom","type":"api_key","key":"sk-zzz","url":"https://custom.api.com","primaryModel":"claude-sonnet-4-5","fastModel":"claude-haiku-4-5","default":true}
+]'
+
+# Multiple API configurations (JSON file)
+npx zcf i -s --api-configs-file ./api-configs.json
+
+# For Codex with multiple providers
+npx zcf i -s -T cx --api-configs '[
+  {"provider":"302ai","key":"sk-xxx"},
+  {"name":"custom","type":"api_key","key":"sk-yyy","url":"https://custom.api.com","primaryModel":"gpt-5","default":true}
+]'
 ```
+
+#### 🎯 API Provider Presets (v3.3.0+ New)
+
+ZCF now supports API provider presets that automatically configure baseUrl and models, simplifying configuration from 5+ parameters to just 2:
+
+**Supported Providers:**
+- `302ai` - [302.AI](https://share.302.ai/gAT9VG) API Service
+- `glm` - GLM (z.ai)
+- `minimax` - MiniMax API Service
+- `kimi` - Kimi (Moonshot AI)
+- `custom` - Custom API endpoint (requires manual URL configuration)
+
+**Usage Examples:**
+
+```bash
+# Using 302.AI provider
+npx zcf i --skip-prompt --provider 302ai --api-key "sk-xxx"
+# or shorthand
+npx zcf i -s -p 302ai -k "sk-xxx"
+
+# Using GLM provider
+npx zcf i -s -p glm -k "sk-xxx"
+
+# Using MiniMax provider
+npx zcf i -s -p minimax -k "sk-xxx"
+
+# Using Kimi provider
+npx zcf i -s -p kimi -k "sk-xxx"
+
+# Using custom provider (requires URL)
+npx zcf i -s -p custom -k "sk-xxx" -u "https://api.example.com"
+
+# For Codex
+npx zcf i -s -T cx -p 302ai -k "sk-xxx"
+```
+
+**Benefits:**
+- ✅ Automatic baseUrl configuration
+- ✅ Automatic authType selection
+- ✅ Automatic model configuration (if available)
+- ✅ Reduces configuration from 5+ parameters to 2
+- ✅ Supports both Claude Code and Codex
 
 #### Non-interactive Mode Parameters
 
@@ -144,21 +205,25 @@ When using `--skip-prompt`, the following parameters are available:
 | Parameter                    | Description                                              | Values                                                                                             | Required                               | Default                                                                                                                          |
 | ---------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `--skip-prompt, -s`          | Skip all interactive prompts                             | -                                                                                                  | Yes (for non-interactive mode)         | -                                                                                                                                |
+| `--provider, -p`             | API provider preset (v3.3.0+ New)                        | `302ai`, `glm`, `minimax`, `kimi`, `custom`                                                        | No                                     | - (Simplifies configuration by auto-filling baseUrl and models)                                                                  |
 | `--lang, -l`                 | ZCF display language (applies to all commands)           | `zh-CN`, `en`                                                                                      | No                                     | `en` or user's saved preference                                                                                                  |
 | `--config-lang, -c`          | Configuration language (template files language)         | `zh-CN`, `en`                                                                                      | No                                     | `en`                                                                                                                             |
 | `--ai-output-lang, -a`       | AI output language                                       | `zh-CN`, `en`, custom string                                                                       | No                                     | `en`                                                                                                                             |
 | `--all-lang, -g`             | Set all language parameters (applies to all commands)    | `zh-CN`, `en`, custom string                                                                       | No                                     | - (Priority: `--all-lang` > `--lang` > saved user preference > interactive prompt. Custom string sets AI output language to custom while interaction and config languages remain 'en') |
 | `--config-action, -r`        | Config handling                                          | `new`, `backup`, `merge`, `docs-only`, `skip`                                                      | No                                     | `backup`                                                                                                                         |
-| `--api-type, -t`             | API configuration type                                   | `auth_token`, `api_key`, `ccr_proxy`, `skip`                                                       | No                                     | `skip`                                                                                                                           |
+| `--api-type, -t`             | API configuration type                                   | `auth_token`, `api_key`, `ccr_proxy`, `skip`                                                       | No                                     | `skip` (auto-set to `api_key` when `--provider` is specified)                                                                   |
 | `--api-key, -k`              | API key (for both API key and auth token types)          | string                                                                                             | Required when `api-type` is not `skip` | -                                                                                                                                |
-| `--api-url, -u`              | Custom API URL                                           | URL string                                                                                         | No                                     | official API                                                                                                                     |
-| `--api-model, -M`            | Primary API model                                        | string (e.g., `claude-sonnet-4-5`)                                                                 | No                                     | -                                                                                                                                |
-| `--api-fast-model, -F`       | Fast API model (Claude Code only)                        | string (e.g., `claude-haiku-4-5`)                                                                  | No                                     | -                                                                                                                                |
+| `--api-url, -u`              | Custom API URL                                           | URL string                                                                                         | No                                     | official API (auto-filled when using `--provider`)                                                                               |
+| `--api-model, -M`            | Primary API model                                        | string (e.g., `claude-sonnet-4-5`)                                                                 | No                                     | - (auto-filled when using `--provider` if available)                                                                             |
+| `--api-fast-model, -F`       | Fast API model (Claude Code only)                        | string (e.g., `claude-haiku-4-5`)                                                                  | No                                     | - (auto-filled when using `--provider` if available)                                                                             |
 | `--mcp-services, -m`         | MCP services to install (multi-select, comma-separated)  | `context7`, `open-websearch`, `spec-workflow`, `mcp-deepwiki`, `Playwright`, `exa`, `serena`, or `skip` for none | No                                     | `all`                                                                                                                            |
 | `--workflows, -w`            | Workflows to install (multi-select, comma-separated)     | `commonTools`, `sixStepsWorkflow`, `featPlanUx`, `gitWorkflow`, `bmadWorkflow`, or `skip` for none | No                                     | `all`                                                                                                                            |
 | `--output-styles, -o`        | Output styles to install (multi-select, comma-separated) | `engineer-professional`, `nekomata-engineer`, `laowang-engineer`, `ojousama-engineer`, or `skip` for none               | No                                     | `all`                                                                                                                            |
 | `--default-output-style, -d` | Default output style                                     | Same as output styles plus built-in: `default`, `explanatory`, `learning`                          | No                                     | `engineer-professional`                                                                                                          |
 | `--install-cometix-line, -x` | Install CCometixLine statusline tool                     | `true`, `false`                                                                                    | No                                     | `true`                                                                                                                           |
+| `--code-type, -T`            | Target code tool type                                    | `claude-code`, `codex`, `cc`, `cx`                                                                 | No                                     | Current active tool type from ZCF config                                                                                         |
+| `--api-configs`              | Multiple API configurations (JSON string)                | JSON array string of API configuration objects                                                     | No                                     | - (Mutually exclusive with `--api-configs-file`)                                                                                 |
+| `--api-configs-file`         | Multiple API configurations (JSON file path)             | Path to JSON file containing API configuration array                                               | No                                     | - (Mutually exclusive with `--api-configs`)                                                                                      |
 
 #### 🤖 Codex Support (v3.0.0+ New)
 
@@ -229,6 +294,13 @@ ZCF allows seamless switching between Claude Code and Codex while preserving you
 #### 🎨 AI Output Styles (v2.12+ New Feature)
 
 ZCF now supports customizable AI output styles to personalize your Claude Code experience:
+
+<p align="center">
+<a href="https://github.com/Haleclipse">
+<img src="./src/assets/Haleclipse.gif" alt="Halley-chan" width="200"/>
+</a>
+<div align="center">Tsundere <a href="https://github.com/Haleclipse">Halley-chan</a> Ojou-sama (￣▽￣)ゞ</div>
+</p>
 
 **Available Output Styles:**
 
@@ -403,12 +475,35 @@ After configuration:
 
 ### 🔐 API Configuration
 
-- Supports two authentication methods:
-  - **Auth Token**: For tokens obtained via OAuth or browser login
-  - **API Key**: For API keys from Anthropic Console
-- Custom API URL support
-- Support for manual configuration later
-- Partial modification: Update only needed configuration items (v2.0 new)
+ZCF provides flexible API configuration options for both Claude Code and Codex:
+
+**Quick Setup with API Provider Presets (v3.3.0+ New):**
+
+Choose from popular API providers with pre-configured settings:
+- **302.AI** - Pay-as-you-go AI service with comprehensive model support
+- **GLM (智谱AI)** - Zhipu AI's GLM models
+- **MiniMax** - MiniMax AI service
+- **Kimi (Moonshot AI)** - Moonshot's Kimi models
+- **Custom Configuration** - Full manual configuration for any provider
+
+When using a preset provider, you only need to:
+1. Select the provider from the list
+2. Enter your API key
+
+The system automatically configures:
+- API base URL
+- Authentication type (API Key or Auth Token)
+- Default models (if applicable)
+- Wire API protocol (for Codex)
+
+**Traditional Configuration Methods:**
+
+- **Official Login**: Use official authentication system (no API configuration needed)
+- **Auth Token**: For tokens obtained via OAuth or browser login
+- **API Key**: For API keys from Anthropic Console or custom providers
+- **CCR Proxy**: Configure Claude Code Router proxy
+- **Custom API URL**: Support for any compatible API endpoint
+- **Partial Modification**: Update only needed configuration items (v2.0+)
 
 ### 💾 Configuration Management
 
@@ -852,6 +947,7 @@ A huge thank you to all our sponsors for their generous support!
 - [chamo101](https://github.com/chamo101) (first GitHub issue sponsor 🎉)
 - 初屿贤 (first Codex user sponsor 🙅🏻‍♂️)
 - Protein (first 1688 sponsor 😏)
+- [musistudio](https://github.com/musistudio) (first open source project author sponsor, the author of [CCR](https://github.com/musistudio/claude-code-router) 🤩)
 - [BeatSeat](https://github.com/BeatSeat) (community expert 😎, provided $1000 Claude credits)
 - [wenwen](https://github.com/wenwen12345) (community expert 🤓, provided daily $100 Claude&GPT credits)
 - 16°C coffee (My best friend 🤪, offered ChatGPT Pro $200 package)

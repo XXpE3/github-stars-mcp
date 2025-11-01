@@ -1,6 +1,6 @@
 ---
 project: Obsidian-Task-Genius
-stars: 443
+stars: 448
 description: |-
     Comprehensive task management plugin for Obsidian
 url: https://github.com/Quorafind/Obsidian-Task-Genius

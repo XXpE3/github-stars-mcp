@@ -1,6 +1,6 @@
 ---
 project: casibase
-stars: 4157
+stars: 4176
 description: |-
     ⚡️AI Cloud OS: Open-source enterprise-level AI knowledge base and MCP (model-context-protocol)/A2A (agent-to-agent) management platform with admin UI, user management and Single-Sign-On⚡️, supports ChatGPT, Claude, Llama, Ollama, HuggingFace, etc., chat bot demo: https://ai.casibase.com, admin UI demo: https://ai-admin.casibase.com
 url: https://github.com/casibase/casibase
@@ -119,6 +119,19 @@ Casibase contains 2 parts:
 | MiniMax      | embo-01                                                                                                          | [MiniMax](https://api.minimax.chat/)                                 |
 | Hunyuan      | hunyuan-embedding                                                                                                | [Hunyuan](https://hunyuan.tencent.com/)                              |
 | Jina         | jina-embeddings-v2-base-zh, jina-embeddings-v2-base-en, jina-embeddings-v2-base-de, jina-embeddings-v2-base-code | [Jina](https://jina.ai/)                                             |
+
+**Speech-to-Text Model**
+
+| Model | Sub Type               | Link                                          |
+|-------|------------------------|-----------------------------------------------|
+| Qwen  | paraformer-realtime-v1 | [Qwen](https://www.aliyun.com/product/tongyi) |
+
+
+**Text-to-Speech Model**
+
+| Model | Sub Type     | Link                                          |
+|-------|--------------|-----------------------------------------------|
+| Qwen  | cosyvoice-v1 | [Qwen](https://www.aliyun.com/product/tongyi) |
 
 ## Documentation
 

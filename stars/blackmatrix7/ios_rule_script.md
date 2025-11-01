@@ -1,6 +1,6 @@
 ---
 project: ios_rule_script
-stars: 22951
+stars: 23040
 description: |-
     分流规则、重写写规则及脚本。
 url: https://github.com/blackmatrix7/ios_rule_script

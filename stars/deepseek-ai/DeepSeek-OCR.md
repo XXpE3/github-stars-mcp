@@ -1,6 +1,6 @@
 ---
 project: DeepSeek-OCR
-stars: 17080
+stars: 19007
 description: |-
     Contexts Optical Compression
 url: https://github.com/deepseek-ai/DeepSeek-OCR

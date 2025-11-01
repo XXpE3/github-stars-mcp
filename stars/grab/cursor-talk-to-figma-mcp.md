@@ -1,8 +1,8 @@
 ---
 project: cursor-talk-to-figma-mcp
-stars: 5579
+stars: 5613
 description: |-
-    CTTF: MCP integration between Cursor and Figma, allowing Cursor Agentic AI to communicate with Figma for reading designs and modifying them programmatically.
+    TalkToFigma: MCP integration between Cursor and Figma, allowing Cursor Agentic AI to communicate with Figma for reading designs and modifying them programmatically.
 url: https://github.com/grab/cursor-talk-to-figma-mcp
 ---
 

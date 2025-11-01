@@ -1,6 +1,6 @@
 ---
 project: copilot-analysis
-stars: 2181
+stars: 2184
 description: |-
     本文详细分析了 Github Copilot 这个基于机器学习的代码自动补全工具的实现原理。作者通过逆向工程的方式,深入探索了 Copilot 的核心逻辑,包括代码提示的入口、获取提示的核心方法、以及相关的缓存策略、实验特性等。
 url: https://github.com/mengjian-github/copilot-analysis

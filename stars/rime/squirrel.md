@@ -1,6 +1,6 @@
 ---
 project: squirrel
-stars: 5280
+stars: 5291
 description: |-
     【鼠鬚管】Rime for macOS
 url: https://github.com/rime/squirrel

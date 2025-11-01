@@ -1,6 +1,6 @@
 ---
 project: Atlas
-stars: 17980
+stars: 18340
 description: |-
     🚀 An open and lightweight modification to Windows, designed to optimize performance, privacy and usability.
 url: https://github.com/Atlas-OS/Atlas

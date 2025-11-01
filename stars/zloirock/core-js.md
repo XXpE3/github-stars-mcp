@@ -1,6 +1,6 @@
 ---
 project: core-js
-stars: 25289
+stars: 25305
 description: |-
     Standard Library
 url: https://github.com/zloirock/core-js
@@ -10,7 +10,7 @@ url: https://github.com/zloirock/core-js
 
 <div align="center">
 
-[![fundraising](https://opencollective.com/core-js/all/badge.svg?label=fundraising)](https://opencollective.com/core-js) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/zloirock/core-js/blob/master/CONTRIBUTING.md) [![version](https://img.shields.io/npm/v/core-js.svg)](https://www.npmjs.com/package/core-js) [![core-js downloads](https://img.shields.io/npm/dm/core-js.svg?label=npm%20i%20core-js)](https://npm-stat.com/charts.html?package=core-js&package=core-js-pure&package=core-js-compat&from=2014-11-18) [![core-js-pure downloads](https://img.shields.io/npm/dm/core-js-pure.svg?label=npm%20i%20core-js-pure)](https://npm-stat.com/charts.html?package=core-js&package=core-js-pure&package=core-js-compat&from=2014-11-18) [![jsDelivr](https://data.jsdelivr.com/v1/package/npm/core-js-bundle/badge?style=rounded)](https://www.jsdelivr.com/package/npm/core-js-bundle)
+[![fundraising](https://opencollective.com/core-js/all/badge.svg?label=fundraising)](https://opencollective.com/core-js) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/zloirock/core-js/blob/master/CONTRIBUTING.md) [![version](https://img.shields.io/npm/v/core-js.svg)](https://www.npmjs.com/package/core-js) [![core-js downloads](https://img.shields.io/npm/dm/core-js.svg?label=npm%20i%20core-js)](https://npm-stat.com/charts.html?package=core-js&package=core-js-pure&package=core-js-compat&from=2014-11-18) [![core-js-pure downloads](https://img.shields.io/npm/dm/core-js-pure.svg?label=npm%20i%20core-js-pure)](https://npm-stat.com/charts.html?package=core-js&package=core-js-pure&package=core-js-compat&from=2014-11-18)
 
 </div>
 
@@ -234,8 +234,6 @@ npm install --save core-js-pure@3.46.0
 // bundled global version
 npm install --save core-js-bundle@3.46.0
 ```
-
-Or you can use `core-js` [from CDN](https://www.jsdelivr.com/package/npm/core-js-bundle).
 
 ### `postinstall` message[⬆](#index)
 The `core-js` project needs your help, so the package shows a message about it after installation. If it causes problems for you, you can disable it:
@@ -1584,15 +1582,11 @@ Symbol().description;      // => undefined
 You can disable defining setters in `Object.prototype`. [Example](https://tinyurl.com/2blse6aa):
 ```js
 Symbol.useSimple();
-let symbol1 = Symbol('symbol1');
-let object1 = {};
-object1[symbol1] = true;
+let object1 = { [Symbol('symbol1')]: true };
 for (let key in object1) console.log(key); // => 'Symbol(symbol1)_t.qamkg9f3q', w/o native Symbol
 
 Symbol.useSetter();
-let symbol2 = Symbol('symbol2');
-let object2 = {};
-object2[symbol2] = true;
+let object2 = { [Symbol('symbol2')]: true };
 for (let key in object2) console.log(key); // nothing
 ```
 - Currently, `core-js` does not add setters to `Object.prototype` for well-known symbols for correct work something like `Symbol.iterator in foo`. It can cause problems with their enumerability.

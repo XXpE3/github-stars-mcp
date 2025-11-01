@@ -1,6 +1,6 @@
 ---
 project: mackup
-stars: 14944
+stars: 14948
 description: |-
     Backup and keep your application settings in sync.
 url: https://github.com/lra/mackup
@@ -285,6 +285,7 @@ See the [README](doc/README.md) file in the doc directory for more info.
 - [Cider](https://github.com/msanders/cider)
 - [ClashX](https://github.com/yichengchen/clashX)
 - [Clasp](https://github.com/google/clasp)
+- [Claude Code](https://www.claude.com/product/claude-code)
 - [CleanShot](https://cleanshot.com/)
 - [Clementine](https://www.clementine-player.org/)
 - [CLion](https://www.jetbrains.com/clion/)
@@ -292,6 +293,7 @@ See the [README](doc/README.md) file in the doc directory for more info.
 - [Clipy](https://clipy-app.com/)
 - [CloudApp](http://getcloudapp.com/)
 - [Coda 2](http://panic.com/coda/)
+- [Codex](https://openai.com/codex/)
 - [Colloquy](http://colloquy.info/)
 - [ColorSchemer Studio 2](http://www.colorschemer.com/osx_info.php)
 - [ColorSlurp](http://colorslurp.com/)

@@ -1,6 +1,6 @@
 ---
 project: devin.cursorrules
-stars: 5903
+stars: 5907
 description: |-
     Magic to turn Cursor/Windsurf as 90% of Devin
 url: https://github.com/grapeot/devin.cursorrules

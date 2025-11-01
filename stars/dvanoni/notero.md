@@ -1,6 +1,6 @@
 ---
 project: notero
-stars: 2933
+stars: 2942
 description: |-
     A Zotero plugin for syncing items and notes into Notion
 url: https://github.com/dvanoni/notero

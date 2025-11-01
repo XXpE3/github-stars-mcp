@@ -1,6 +1,6 @@
 ---
 project: DockFlare
-stars: 1773
+stars: 1781
 description: |-
     DockFlare: Automate Cloudflare Tunnels with Docker Labels
 url: https://github.com/ChrispyBacon-dev/DockFlare

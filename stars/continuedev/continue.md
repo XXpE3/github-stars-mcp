@@ -1,6 +1,6 @@
 ---
 project: continue
-stars: 29472
+stars: 29600
 description: |-
     ⏩ Ship faster with Continuous AI. Build and run custom agents across your IDE, terminal, and CI
 url: https://github.com/continuedev/continue

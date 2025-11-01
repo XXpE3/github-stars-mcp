@@ -1,6 +1,6 @@
 ---
 project: lsd
-stars: 20
+stars: 21
 description: |-
     📁 Soothing pastel theme for LSD
 url: https://github.com/catppuccin/lsd

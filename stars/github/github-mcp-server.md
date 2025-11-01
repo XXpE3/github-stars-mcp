@@ -1,6 +1,6 @@
 ---
 project: github-mcp-server
-stars: 23902
+stars: 24130
 description: |-
     GitHub's official MCP Server
 url: https://github.com/github/github-mcp-server
@@ -619,6 +619,9 @@ The following sets of tools are available:
   - `filename`: Filename for simple single-file gist creation (string, required)
   - `public`: Whether the gist is public (boolean, optional)
 
+- **get_gist** - Get Gist Content
+  - `gist_id`: The ID of the gist (string, required)
+
 - **list_gists** - List Gists
   - `page`: Page number for pagination (min 1) (number, optional)
   - `perPage`: Results per page for pagination (min 1, max 100) (number, optional)
@@ -684,7 +687,7 @@ Options are:
   - `state`: New state (string, optional)
   - `state_reason`: Reason for the state change. Ignored unless state is changed. (string, optional)
   - `title`: Issue title (string, optional)
-  - `type`: Type of this issue (string, optional)
+  - `type`: Type of this issue. Only use if the repository has issue types configured. Use list_issue_types tool to get valid type values for the organization. If the repository doesn't support issue types, omit this parameter. (string, optional)
 
 - **list_issue_types** - List available issue types
   - `owner`: The organization owner of the repository (string, required)

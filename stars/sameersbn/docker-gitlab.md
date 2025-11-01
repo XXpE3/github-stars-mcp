@@ -1,6 +1,6 @@
 ---
 project: docker-gitlab
-stars: 8046
+stars: 8047
 description: |-
     Dockerized GitLab
 url: https://github.com/sameersbn/docker-gitlab

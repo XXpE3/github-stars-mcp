@@ -1,6 +1,6 @@
 ---
 project: modelcontextprotocol
-stars: 1725
+stars: 1745
 description: |-
     The official MCP server implementation for the Perplexity API Platform
 url: https://github.com/perplexityai/modelcontextprotocol

@@ -1,6 +1,6 @@
 ---
 project: JavSP
-stars: 4550
+stars: 4568
 description: |-
     汇总多站点数据的AV元数据刮削器
 url: https://github.com/Yuukiy/JavSP

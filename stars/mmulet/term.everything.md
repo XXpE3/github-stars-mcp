@@ -1,6 +1,6 @@
 ---
 project: term.everything
-stars: 6697
+stars: 6760
 description: |-
     Run any GUI app in the terminal❗
 url: https://github.com/mmulet/term.everything

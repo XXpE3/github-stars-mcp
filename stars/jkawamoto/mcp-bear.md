@@ -1,6 +1,6 @@
 ---
 project: mcp-bear
-stars: 49
+stars: 50
 description: |-
     A MCP server for interacting with Bear note-taking software.
 url: https://github.com/jkawamoto/mcp-bear

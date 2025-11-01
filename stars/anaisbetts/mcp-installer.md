@@ -1,6 +1,6 @@
 ---
 project: mcp-installer
-stars: 1451
+stars: 1456
 description: |-
     An MCP server that installs other MCP servers for you
 url: https://github.com/anaisbetts/mcp-installer

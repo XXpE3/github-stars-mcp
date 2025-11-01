@@ -1,6 +1,6 @@
 ---
 project: Claude-Code-Usage-Monitor
-stars: 5535
+stars: 5594
 description: |-
     Real-time Claude Code usage monitor with predictions and warnings
 url: https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor

@@ -1,6 +1,6 @@
 ---
 project: SwiftPamphletApp
-stars: 2559
+stars: 2561
 description: |-
     戴铭的小册子，一本活的知识手册。使用 SwiftUI + SwiftData + Swift Concurrency Aysnc/Await Actor + GitHub API 开发的 macOS 应用
 url: https://github.com/ming1016/SwiftPamphletApp

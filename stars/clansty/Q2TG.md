@@ -1,6 +1,6 @@
 ---
 project: Q2TG
-stars: 835
+stars: 836
 description: |-
     QQ 与 Telegram 群相互转发的 bot
 url: https://github.com/clansty/Q2TG
