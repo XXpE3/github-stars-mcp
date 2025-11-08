@@ -1,6 +1,6 @@
 ---
 project: onefilellm
-stars: 1784
+stars: 1792
 description: |-
     Specify a github or local repo, github pull request,  arXiv or Sci-Hub paper, Youtube transcript or documentation URL on the web and scrape into a text file and clipboard  for easier LLM ingestion
 url: https://github.com/jimmc414/onefilellm

@@ -1,6 +1,6 @@
 ---
 project: AyuGramDesktop
-stars: 3410
+stars: 3697
 description: |-
     Desktop Telegram client with good customization and Ghost mode.
 url: https://github.com/AyuGram/AyuGramDesktop
@@ -28,11 +28,18 @@ And many more. Check out our [Documentation](https://docs.ayugram.one/desktop/).
 
 <h3>
   <details>
-    <summary>Preferences screenshots</summary>
-    <img src='.github/demos/demo1.png' width='268'>
-    <img src='.github/demos/demo2.png' width='268'>
-    <img src='.github/demos/demo3.png' width='268'>
-    <img src='.github/demos/demo4.png' width='268'>
+    <summary>Preview</summary>
+    <table>
+      <tr>
+        <td><img src='.github/demos/demo1.png' width='268' alt='Preferences'></td>
+        <td><img src='.github/demos/demo2.png' width='268' alt='AyuGram Options'></td>
+        <td><img src='.github/demos/demo3.png' width='268' alt='Message Filters'></td>
+      </tr>
+      <tr>
+        <td><img src='.github/demos/demo4.png' width='268' alt='Appearance'></td>
+        <td><img src='.github/demos/demo5.png' width='268' alt='Chats'></td>
+      </tr>
+    </table>
   </details>
 </h3>
 

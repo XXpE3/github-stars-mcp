@@ -1,6 +1,6 @@
 ---
 project: ssh3
-stars: 4869
+stars: 4874
 description: |-
     SSH3: faster and rich secure shell using HTTP/3, checkout our article here: https://arxiv.org/abs/2312.08396 and our Internet-Draft: https://datatracker.ietf.org/doc/draft-michel-ssh3/
 url: https://github.com/francoismichel/ssh3

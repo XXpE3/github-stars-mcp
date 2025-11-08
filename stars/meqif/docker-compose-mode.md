@@ -1,6 +1,6 @@
 ---
 project: docker-compose-mode
-stars: 60
+stars: 61
 description: |-
     Major mode for editing docker-compose files
 url: https://github.com/meqif/docker-compose-mode

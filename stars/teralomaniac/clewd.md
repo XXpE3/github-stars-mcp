@@ -1,6 +1,6 @@
 ---
 project: clewd
-stars: 737
+stars: 735
 description: |-
     clewd修改版 by tera
 url: https://github.com/teralomaniac/clewd

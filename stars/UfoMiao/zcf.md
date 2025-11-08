@@ -1,6 +1,6 @@
 ---
 project: zcf
-stars: 3350
+stars: 3682
 description: |-
     Zero-Config Code Flow for Claude code & Codex
 url: https://github.com/UfoMiao/zcf

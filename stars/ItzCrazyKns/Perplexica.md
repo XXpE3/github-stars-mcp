@@ -1,6 +1,6 @@
 ---
 project: Perplexica
-stars: 27072
+stars: 27163
 description: |-
     Perplexica is an AI-powered answering engine. It is an Open source alternative to Perplexity AI
 url: https://github.com/ItzCrazyKns/Perplexica

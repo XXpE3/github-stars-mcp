@@ -1,6 +1,6 @@
 ---
 project: ClearDNS
-stars: 347
+stars: 348
 description: |-
     容器化的无污染DNS服务
 url: https://github.com/dnomd343/ClearDNS

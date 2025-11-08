@@ -1,6 +1,6 @@
 ---
 project: gptel-quick
-stars: 119
+stars: 121
 description: |-
     Quick LLM lookups in Emacs
 url: https://github.com/karthink/gptel-quick
@@ -52,6 +52,9 @@ This package requires [[https://github.com/karthink/gptel][gptel]] and access to
 Install this package however you install packages, either via straight/elpaca/quelpa, or the built-in =package-vc-install=, or by cloning this repo and running =package-install=file= on the repository directory.
 
 Once installed, you can call =gptel-quick= at any time on a word/region.
+
+- =gptel-quick= will use the model specified in =gptel-model= by default.  If you want to specify a model explicitly and only for =gptel-quick=, set =gptel-quick-model=
+- =gptel-quick= will not work with "reasoning" models that generate a lot of text before their final answer.  Please use a non-reasoning model, or a model in a non-reasoning mode.
 
 It might be useful to add this command as an Embark action if you use Embark:
 

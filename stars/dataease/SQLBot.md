@@ -1,6 +1,6 @@
 ---
 project: SQLBot
-stars: 4188
+stars: 4424
 description: |-
     🔥 基于大模型和 RAG 的智能问数系统，对话式数据分析神器。Text-to-SQL Generation via LLMs using RAG.
 url: https://github.com/dataease/SQLBot
@@ -12,9 +12,12 @@ url: https://github.com/dataease/SQLBot
   <a href="https://github.com/dataease/SQLBot/releases/latest"><img src="https://img.shields.io/github/v/release/dataease/SQLBot" alt="Latest release"></a>
   <a href="https://github.com/dataease/SQLBot"><img src="https://img.shields.io/github/stars/dataease/SQLBot?color=%231890FF&style=flat-square" alt="Stars"></a>    
   <a href="https://hub.docker.com/r/dataease/SQLbot"><img src="https://img.shields.io/docker/pulls/dataease/sqlbot?label=downloads" alt="Download"></a><br/>
-
+</p>
+<p align="center">
+  <a href="https://trendshift.io/repositories/14540" target="_blank"><img src="https://trendshift.io/api/badge/repositories/14540" alt="dataease%2FSQLBot | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 </p>
 <hr/>
+
 
 SQLBot 是一款基于大模型和 RAG 的智能问数系统。SQLBot 的优势包括：
 

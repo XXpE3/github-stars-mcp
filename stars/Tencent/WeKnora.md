@@ -1,6 +1,6 @@
 ---
 project: WeKnora
-stars: 7170
+stars: 7443
 description: |-
     LLM-powered framework for deep document understanding, semantic retrieval, and context-aware answers using RAG paradigm.
 url: https://github.com/Tencent/WeKnora
@@ -333,8 +333,24 @@ test: Add retrieval engine test cases
 refactor: Restructure document parsing module
 ```
 
+## 👥 Contributors
+
+Thanks to these excellent contributors:
+
+[![Contributors](https://contrib.rocks/image?repo=Tencent/WeKnora)](https://github.com/Tencent/WeKnora/graphs/contributors)
+
 ## 📄 License
 
 This project is licensed under the [MIT License](./LICENSE).
 You are free to use, modify, and distribute the code with proper attribution.
+
+## 📈 Project Statistics
+
+<a href="https://www.star-history.com/#Tencent/WeKnora&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Tencent/WeKnora&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Tencent/WeKnora&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Tencent/WeKnora&type=date&legend=top-left" />
+ </picture>
+</a>
 

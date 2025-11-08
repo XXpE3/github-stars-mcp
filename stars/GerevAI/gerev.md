@@ -1,6 +1,6 @@
 ---
 project: gerev
-stars: 2807
+stars: 2808
 description: |-
     🧠 AI-powered enterprise search engine 🔎
 url: https://github.com/GerevAI/gerev

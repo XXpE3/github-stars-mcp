@@ -1,6 +1,6 @@
 ---
 project: mcp-feedback-enhanced
-stars: 3331
+stars: 3345
 description: |-
     Enhanced MCP server for interactive user feedback and command execution in AI-assisted development, featuring dual interface support (Web UI and Desktop Application) with intelligent environment detection and cross-platform compatibility.
 url: https://github.com/Minidoracat/mcp-feedback-enhanced

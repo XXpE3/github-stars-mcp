@@ -1,6 +1,6 @@
 ---
 project: Gomoon
-stars: 506
+stars: 509
 description: |-
     Gomoon 基于大模型的桌面端效率工具
 url: https://github.com/wizardAEI/Gomoon

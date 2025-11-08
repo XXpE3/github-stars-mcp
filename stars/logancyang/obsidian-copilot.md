@@ -1,6 +1,6 @@
 ---
 project: obsidian-copilot
-stars: 5541
+stars: 5568
 description: |-
     THE Copilot in Obsidian
 url: https://github.com/logancyang/obsidian-copilot

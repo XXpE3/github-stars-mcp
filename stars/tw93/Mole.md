@@ -1,6 +1,6 @@
 ---
 project: Mole
-stars: 3876
+stars: 4035
 description: |-
     🐹 Dig deep like a mole to clean you Mac. 像鼹鼠一样深入挖掘来清理你的 Mac
 url: https://github.com/tw93/Mole

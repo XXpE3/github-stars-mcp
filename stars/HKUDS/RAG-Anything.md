@@ -1,6 +1,6 @@
 ---
 project: RAG-Anything
-stars: 9829
+stars: 10044
 description: |-
     "RAG-Anything: All-in-One RAG Framework"
 url: https://github.com/HKUDS/RAG-Anything

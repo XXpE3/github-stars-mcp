@@ -1,6 +1,6 @@
 ---
 project: code
-stars: 2322
+stars: 2368
 description: |-
     Fast, effective, mind-blowing, coding CLI. Browser integration, multi-agents, theming, and reasoning control. Orchestrate agents from OpenAI, Claude, Gemini or any provider.
 url: https://github.com/just-every/code

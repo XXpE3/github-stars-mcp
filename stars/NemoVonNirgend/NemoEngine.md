@@ -1,6 +1,6 @@
 ---
 project: NemoEngine
-stars: 100
+stars: 103
 description: |-
     A achieve of my SillyTavern Preset.
 url: https://github.com/NemoVonNirgend/NemoEngine

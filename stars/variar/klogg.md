@@ -1,6 +1,6 @@
 ---
 project: klogg
-stars: 3064
+stars: 3073
 description: |-
     Really fast log explorer based on glogg project
 url: https://github.com/variar/klogg

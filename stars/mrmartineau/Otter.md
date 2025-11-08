@@ -1,6 +1,6 @@
 ---
 project: Otter
-stars: 176
+stars: 179
 description: |-
     Otter is a self-hosted bookmark manager made with Next.js and Supabase with Mastodon integration.
 url: https://github.com/mrmartineau/Otter

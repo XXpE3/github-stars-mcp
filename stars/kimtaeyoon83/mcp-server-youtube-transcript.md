@@ -1,6 +1,6 @@
 ---
 project: mcp-server-youtube-transcript
-stars: 336
+stars: 342
 description: |-
     This is an MCP server that allows you to directly download transcripts of YouTube videos.
 url: https://github.com/kimtaeyoon83/mcp-server-youtube-transcript

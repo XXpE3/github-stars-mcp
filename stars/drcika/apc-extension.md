@@ -1,6 +1,6 @@
 ---
 project: apc-extension
-stars: 729
+stars: 728
 description: |-
     null
 url: https://github.com/drcika/apc-extension

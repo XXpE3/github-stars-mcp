@@ -1,6 +1,6 @@
 ---
 project: git-who
-stars: 2556
+stars: 2562
 description: |-
     Git blame for file trees
 url: https://github.com/sinclairtarget/git-who

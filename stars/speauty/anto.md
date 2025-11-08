@@ -1,6 +1,6 @@
 ---
 project: anto
-stars: 673
+stars: 675
 description: |-
     字幕文件(srt)翻译工具，Windows专用
 url: https://github.com/speauty/anto

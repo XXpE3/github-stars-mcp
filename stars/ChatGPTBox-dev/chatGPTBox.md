@@ -1,6 +1,6 @@
 ---
 project: chatGPTBox
-stars: 10695
+stars: 10699
 description: |-
     Integrating ChatGPT into your browser deeply, everything you need is here
 url: https://github.com/ChatGPTBox-dev/chatGPTBox

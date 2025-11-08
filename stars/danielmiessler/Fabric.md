@@ -1,6 +1,6 @@
 ---
 project: Fabric
-stars: 34084
+stars: 34196
 description: |-
     Fabric is an open-source framework for augmenting humans using AI. It provides a modular system for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere.
 url: https://github.com/danielmiessler/Fabric

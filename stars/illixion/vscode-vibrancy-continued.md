@@ -1,6 +1,6 @@
 ---
 project: vscode-vibrancy-continued
-stars: 726
+stars: 729
 description: |-
     Enable Acrylic/Glass effect for your VS Code.
 url: https://github.com/illixion/vscode-vibrancy-continued
@@ -216,7 +216,7 @@ A reinstallation will also fix this issue without any loss of settings.
 
 ### `EROFS: read-only file system` when enabling Vibrancy on macOS?
 
-Your installation of VSCode is affected by [App Translocation](https://eclecticlight.co/2023/05/09/what-causes-app-translocation/).
+Your installation of VSCode is affected by [App Translocation](https://developer.apple.com/forums/thread/724969).
 
 To fix this, either use the Finder and move VSCode to `/Applications` (or move it out of `/Applications` and then back in), or run the following terminal command:
 

@@ -1,6 +1,6 @@
 ---
 project: PasteBarApp
-stars: 1705
+stars: 1711
 description: |-
     PasteBar - Limitless, Free Clipboard Manager for Mac and Windows
 url: https://github.com/PasteBar/PasteBarApp

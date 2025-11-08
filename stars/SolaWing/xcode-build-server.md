@@ -1,6 +1,6 @@
 ---
 project: xcode-build-server
-stars: 816
+stars: 823
 description: |-
     a build server protocol implementation for integrate xcode with sourcekit-lsp
 url: https://github.com/SolaWing/xcode-build-server
@@ -56,7 +56,7 @@ If your compile info is outdated and something is not working properly, just bui
 
 > PS: xcodebuild can generate same build log as xcode if you don't overwrite build dir and specify a -resultBundlePath. This way you don't have to open xcode to build. eg:
 ```bash
-rm .bundle; xcodebuild -workspace *.xcworkspace -scheme <XXX> -destination 'generic/platform=iOS Simulator' -resultBundlePath .bundle build
+rm -rf .bundle; xcodebuild -workspace *.xcworkspace -scheme <XXX> -destination 'generic/platform=iOS Simulator' -resultBundlePath .bundle build
 ```
 
 ### Manual Parse Xcodebuild log

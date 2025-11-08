@@ -1,6 +1,6 @@
 ---
 project: gitsummarize
-stars: 401
+stars: 406
 description: |-
     Get beautiful, world-class documentation for any repo
 url: https://github.com/antarixxx/gitsummarize

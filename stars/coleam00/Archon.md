@@ -1,6 +1,6 @@
 ---
 project: Archon
-stars: 13064
+stars: 13148
 description: |-
     Beta release of Archon OS - the knowledge and task management backbone for AI coding assistants.
 url: https://github.com/coleam00/Archon
@@ -333,7 +333,6 @@ By default, Archon services run on the following ports:
 - **archon-mcp**: 8051
 - **archon-agents**: 8052 (optional)
 - **archon-agent-work-orders**: 8053 (optional)
-- **archon-docs**: 3838 (optional)
 
 ### Changing Ports
 
@@ -346,7 +345,6 @@ ARCHON_SERVER_PORT=8181
 ARCHON_MCP_PORT=8051
 ARCHON_AGENTS_PORT=8052
 AGENT_WORK_ORDERS_PORT=8053
-ARCHON_DOCS_PORT=3838
 ```
 
 Example: Running on different ports:

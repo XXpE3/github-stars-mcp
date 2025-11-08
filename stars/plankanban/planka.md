@@ -1,6 +1,6 @@
 ---
 project: planka
-stars: 10885
+stars: 10942
 description: |-
     PLANKA is the kanban-style project mastering tool for everyone.
 url: https://github.com/plankanban/planka

@@ -1,6 +1,6 @@
 ---
 project: Chinese-LLaMA-Alpaca
-stars: 18937
+stars: 18942
 description: |-
     中文LLaMA&Alpaca大语言模型+本地CPU/GPU训练部署 (Chinese LLaMA & Alpaca LLMs)
 url: https://github.com/ymcui/Chinese-LLaMA-Alpaca

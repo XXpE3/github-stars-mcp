@@ -1,6 +1,6 @@
 ---
 project: colima
-stars: 25256
+stars: 25336
 description: |-
     Container runtimes on macOS (and Linux) with minimal setup
 url: https://github.com/abiosoft/colima

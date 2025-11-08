@@ -1,6 +1,6 @@
 ---
 project: zen-mcp-server
-stars: 9415
+stars: 9536
 description: |-
     The power of Claude Code / GeminiCLI / CodexCLI + [Gemini / OpenAI / OpenRouter / Azure / Grok / Ollama / Custom Model / All Of The Above] working as one.
 url: https://github.com/BeehiveInnovations/zen-mcp-server

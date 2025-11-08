@@ -1,6 +1,6 @@
 ---
 project: crush
-stars: 14451
+stars: 14693
 description: |-
     The glamourous AI coding agent for your favourite terminal 💘
 url: https://github.com/charmbracelet/crush
@@ -219,7 +219,7 @@ or globally, with the following priority:
 
 1. `.crush.json`
 2. `crush.json`
-3. `$HOME/.config/crush/crush.json` (Windows: `%USERPROFILE%\AppData\Local\crush\crush.json`)
+3. `$HOME/.config/crush/crush.json`
 
 Configuration itself is stored as a JSON object:
 
@@ -289,11 +289,11 @@ using `$(echo $VAR)` syntax.
     },
     "github": {
       "type": "http",
-      "url": "https://example.com/mcp/",
+      "url": "https://api.githubcopilot.com/mcp/",
       "timeout": 120,
       "disabled": false,
       "headers": {
-        "Authorization": "$(echo Bearer $EXAMPLE_MCP_TOKEN)"
+        "Authorization": "Bearer $GH_PAT"
       }
     },
     "streaming-service": {

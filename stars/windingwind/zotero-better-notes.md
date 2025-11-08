@@ -1,6 +1,6 @@
 ---
 project: zotero-better-notes
-stars: 6947
+stars: 6970
 description: |-
     Everything about note management. All in Zotero.
 url: https://github.com/windingwind/zotero-better-notes
