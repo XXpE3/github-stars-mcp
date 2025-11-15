@@ -1,6 +1,6 @@
 ---
 project: claude-code-router
-stars: 21168
+stars: 21708
 description: |-
     Use Claude Code as the foundation for coding infrastructure, allowing you to decide how to interact with the model while enjoying updates from Anthropic.
 url: https://github.com/musistudio/claude-code-router
@@ -17,10 +17,11 @@ url: https://github.com/musistudio/claude-code-router
 ![](blog/images/sponsors/glm-en.jpg)
 > This project is sponsored by Z.ai, supporting us with their GLM CODING PLAN.    
 > GLM CODING PLAN is a subscription service designed for AI coding, starting at just $3/month. It provides access to their flagship GLM-4.6 model across 10+ popular AI coding tools (Claude Code, Cline, Roo Code, etc.), offering developers top-tier, fast, and stable coding experiences.     
-> Get 10% OFF GLM CODING PLAN：https://z.ai/subscribe?ic=8JVLJQFSKB
-
+> Get 10% OFF GLM CODING PLAN：https://z.ai/subscribe?ic=8JVLJQFSKB     
 
 > A powerful tool to route Claude Code requests to different models and customize any request.
+
+> [GLM-4.6 Supports Reasoning and Interleaved Thinking](blog/en/glm-4.6-supports-reasoning.md)
 
 ![](blog/images/claude-code.png)
 
@@ -261,6 +262,32 @@ This command provides an interactive interface to:
      - Provider-specific routing (e.g., OpenRouter provider preferences)
 
 The CLI tool validates all inputs and provides helpful prompts to guide you through the configuration process, making it easy to manage complex setups without editing JSON files manually.
+
+### 6. Activate Command (Environment Variables Setup)
+
+The `activate` command allows you to set up environment variables globally in your shell, enabling you to use the `claude` command directly or integrate Claude Code Router with applications built using the Agent SDK.
+
+To activate the environment variables, run:
+
+```shell
+eval "$(ccr activate)"
+```
+
+This command outputs the necessary environment variables in shell-friendly format, which are then set in your current shell session. After activation, you can:
+
+- **Use `claude` command directly**: Run `claude` commands without needing to use `ccr code`. The `claude` command will automatically route requests through Claude Code Router.
+- **Integrate with Agent SDK applications**: Applications built with the Anthropic Agent SDK will automatically use the configured router and models.
+
+The `activate` command sets the following environment variables:
+
+- `ANTHROPIC_AUTH_TOKEN`: API key from your configuration
+- `ANTHROPIC_BASE_URL`: The local router endpoint (default: `http://127.0.0.1:3456`)
+- `NO_PROXY`: Set to `127.0.0.1` to prevent proxy interference
+- `DISABLE_TELEMETRY`: Disables telemetry
+- `DISABLE_COST_WARNINGS`: Disables cost warnings
+- `API_TIMEOUT_MS`: API timeout from your configuration
+
+> **Note**: Make sure the Claude Code Router service is running (`ccr start`) before using the activated environment variables. The environment variables are only valid for the current shell session. To make them persistent, you can add `eval "$(ccr activate)"` to your shell configuration file (e.g., `~/.zshrc` or `~/.bashrc`).
 
 #### Providers
 
@@ -517,6 +544,7 @@ This setup allows for interesting automations, like running tasks during off-pea
 
 - [Project Motivation and How It Works](blog/en/project-motivation-and-how-it-works.md)
 - [Maybe We Can Do More with the Router](blog/en/maybe-we-can-do-more-with-the-route.md)
+- [GLM-4.6 Supports Reasoning and Interleaved Thinking](blog/en/glm-4.6-supports-reasoning.md)
 
 ## ❤️ Support & Sponsoring
 

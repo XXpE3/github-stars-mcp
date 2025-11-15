@@ -1,6 +1,6 @@
 ---
 project: Tachidesk-Sorayomi
-stars: 1364
+stars: 1367
 description: |-
     A free and open source manga reader app to read manga from a Tachidesk-Server instance.
 url: https://github.com/Suwayomi/Tachidesk-Sorayomi

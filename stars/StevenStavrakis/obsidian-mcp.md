@@ -1,6 +1,6 @@
 ---
 project: obsidian-mcp
-stars: 573
+stars: 578
 description: |-
     A simple MCP server for Obsidian
 url: https://github.com/StevenStavrakis/obsidian-mcp

@@ -1,6 +1,6 @@
 ---
 project: mcp-ical
-stars: 200
+stars: 203
 description: |-
     A Model Context Protocol Server that allows you to interact with your MacOS Calendar through natural language.
 url: https://github.com/Omar-V2/mcp-ical

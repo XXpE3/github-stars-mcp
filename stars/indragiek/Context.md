@@ -1,6 +1,6 @@
 ---
 project: Context
-stars: 731
+stars: 736
 description: |-
     Native macOS client for Model Context Protocol (MCP)
 url: https://github.com/indragiek/Context

@@ -1,6 +1,6 @@
 ---
 project: atlas-mcp-server
-stars: 269
+stars: 271
 description: |-
     A Model Context Protocol (MCP) server for ATLAS, a Neo4j-powered task management system for LLM Agents - implementing a three-tier architecture (Projects, Tasks, Knowledge) to manage complex workflows. Now with Deep Research.
 url: https://github.com/cyanheads/atlas-mcp-server

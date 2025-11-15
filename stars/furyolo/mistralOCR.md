@@ -1,6 +1,6 @@
 ---
 project: mistralOCR
-stars: 88
+stars: 87
 description: |-
     该仓库是一个基于Mistral API的文档识别工具，支持处理PDF和图片文件（如JPG、JPEG、PNG）。它提供图形用户界面和命令行界面，能够自动保存处理结果为Markdown格式，并支持配置文件管理和批量处理文件
 url: https://github.com/furyolo/mistralOCR

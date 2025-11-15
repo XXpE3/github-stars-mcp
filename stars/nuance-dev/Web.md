@@ -1,6 +1,6 @@
 ---
 project: Web
-stars: 625
+stars: 626
 description: |-
     null
 url: https://github.com/nuance-dev/Web

@@ -1,6 +1,6 @@
 ---
 project: nexus-terminal
-stars: 1575
+stars: 1581
 description: |-
      一款现代化的 Web SSH / RDP / VNC 客户端，提供独立桌面端，支持人机验证、2FA、界面定制、操作审计等强大功能。
 url: https://github.com/Heavrnl/nexus-terminal

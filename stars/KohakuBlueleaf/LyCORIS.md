@@ -1,6 +1,6 @@
 ---
 project: LyCORIS
-stars: 2424
+stars: 2428
 description: |-
     Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion.
 url: https://github.com/KohakuBlueleaf/LyCORIS
@@ -239,6 +239,8 @@ $ python3 merge.py --help
 usage: merge.py [-h] [--is_v2] [--is_sdxl] [--device DEVICE] [--dtype DTYPE] [--weight WEIGHT] base_model lycoris_model output_name
 ```
 
+**Note**: The `merge_to()` method has an opt-in parameter, `precise` that uses more CPU memory to store an original snapshot of the modified weights, allowing us to restore the original weights exactly when calling `restore()`. This is useful when you want to merge multiple LyCORIS models sequentially to the same base model without accumulating numerical errors in a production environment. See this [model merge example](example/high_precision_merge_demo.py) for context.
+
 ### Conversion of LoRA, LyCORIS and full models between HCP and sd-webui format
 
 This script allows you to use the LyCORIS models trained with HCP-Diffusion in sd-webui.
@@ -271,19 +273,16 @@ See [docs/Conversion-scripts.md](docs/Conversion-scripts.md) for more informatio
 
 For full log, please see [Change.md](Change.md)
 
-### 2025/10/04 update to 3.3.0
+### 2025/11/12 update to 3.4.0
 
 #### New Features
 
-* Support multi adapter from #266, thanks @bghira !
+* Support high precision merge/unmerge, thanks @bghira !
 
 #### Improvements
 
-* Support more model such as Gemma2, HunyuanVideo, Wan ...
+* LyCORIS now use [config_sdk](/lycoris/config_sdk.py) for configuration related operation
 
-#### Bug fixes
-
-* BOFT shape issue resolved.
 
 ## Todo list
 

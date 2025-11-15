@@ -1,6 +1,6 @@
 ---
 project: sublime-scheme-alabaster
-stars: 586
+stars: 601
 description: |-
     Minimalist color scheme for Sublime Text 3
 url: https://github.com/tonsky/sublime-scheme-alabaster

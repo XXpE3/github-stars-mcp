@@ -1,6 +1,6 @@
 ---
 project: nvitop
-stars: 6267
+stars: 6291
 description: |-
     An interactive NVIDIA-GPU process viewer and beyond, the one-stop solution for GPU process management.
 url: https://github.com/XuehaiPan/nvitop
@@ -210,7 +210,7 @@ Install from conda-forge ([![conda-forge](https://img.shields.io/conda/v/conda-f
 conda install -c conda-forge nvitop
 ```
 
-Install the latest version from GitHub (![Commit Count](https://img.shields.io/github/commits-since/XuehaiPan/nvitop/v1.5.3)):
+Install the latest version from GitHub (![Commit Count](https://img.shields.io/github/commits-since/XuehaiPan/nvitop/v1.6.0)):
 
 ```bash
 pip3 install --upgrade pip setuptools
@@ -321,9 +321,7 @@ Press <kbd>h</kbd> for help or <kbd>q</kbd> to return to the terminal. See [Keyb
 Build and run the Docker image with [nvidia-container-toolkit](https://github.com/NVIDIA/nvidia-container-toolkit):
 
 ```bash
-git clone --depth=1 https://github.com/XuehaiPan/nvitop.git && cd nvitop  # clone this repo first
-docker build --tag nvitop:latest .  # build the Docker image
-docker run -it --rm --runtime=nvidia --gpus=all --pid=host nvitop:latest  # run the Docker container
+docker run -it --rm --runtime=nvidia --gpus=all --pid=host ghcr.io/xuehaipan/nvitop:latest
 ```
 
 **NOTE:** Don't forget to add the `--pid=host` option when running the container.

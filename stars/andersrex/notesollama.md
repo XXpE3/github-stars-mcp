@@ -1,6 +1,6 @@
 ---
 project: notesollama
-stars: 697
+stars: 698
 description: |-
     Use Ollama to talk to local LLMs in Apple Notes
 url: https://github.com/andersrex/notesollama

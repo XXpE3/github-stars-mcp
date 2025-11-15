@@ -1,6 +1,6 @@
 ---
 project: qqqa
-stars: 292
+stars: 380
 description: |-
     Fast, stateless LLM for your shell: qq answers; qa runs commands
 url: https://github.com/iagooar/qqqa
@@ -19,7 +19,9 @@ The two binaries are:
 - `qq` - ask a single question, e.g. "qq how can I recursively list all files in this directory" (qq stands for "quick question")
 - `qa` - a single step agent that can optionally use tools to finish a task: read a file, write a file, or execute a command with confirmation (qa stands for "quick agent")
 
-By default the repo includes profiles for OpenRouter (default), OpenAI, Groq, and a local Ollama runtime. An Anthropic profile stub exists in the config for future work but is not wired up yet.
+qqqa runs on macOS, Linux, and Windows.
+
+By default the repo includes profiles for OpenRouter (default), OpenAI, Groq, a local Ollama runtime, the Codex CLI (piggyback on ChatGPT), and the Claude Code CLI (reuse your Claude subscription). An Anthropic profile stub exists in the config for future work but is not wired up yet.
 
 
 
@@ -51,6 +53,64 @@ The tools may include transient context you choose to provide:
 OpenRouter mirrors the OpenAI Chat Completions API, adds generous community-hosted models, and keeps `openai/gpt-4.1-nano` fast and inexpensive. qqqa talks to `https://openrouter.ai/api/v1` out of the box and reads the API key from `OPENROUTER_API_KEY`, so your first run works as soon as you drop in a key.
 
 If you need even more throughput, the bundled `groq` profile that targets `openai/gpt-oss-20b` and `openai/gpt-oss-120b` remains available, and you can still add any OpenAI-compatible provider by editing `~/.qq/config.json` or creating a new profile.
+
+### Codex CLI profile (bring-your-own ChatGPT subscription)
+
+Already paying for ChatGPT? Select the `codex` profile (during `qq --init`, via `qq --profile codex`, or by editing `~/.qq/config.json`) and qqqa will shell out to the Codex CLI instead of hitting an HTTP endpoint. That lets you reuse an existing ChatGPT subscription with practically zero marginal cost.
+
+What to know:
+
+- Install the Codex CLI via the ChatGPT desktop app (Settings → Labs → Codex) or `pip install codex-cli`, then ensure `codex` is on your `PATH`.
+- Streaming is unavailable; even without `--no-stream`, qqqa buffers the Codex response and prints it once.
+- `qa` still expects JSON tool calls. When you need `read_file`, `write_file`, or `execute_command`, respond with `{ "tool": string, "arguments": object }` the same way you would on OpenRouter.
+- If the binary is missing or exits with an error, qqqa surfaces the stderr/stdout so you can fix your environment quickly.
+
+Example `~/.qq/config.json` fragment that pins Codex as the default profile:
+
+```json
+{
+  "default_profile": "codex",
+  "profiles": {
+    "codex": {
+      "model_provider": "codex",
+      "model": "gpt-5",
+      "reasoning_effort": "minimal"
+    }
+  }
+}
+```
+
+### Claude Code CLI profile (bring-your-own Claude desktop subscription)
+
+Have a Claude subscription? Select the `claude_cli` profile and qqqa will use the `claude` binary. That keeps usage effectively free if you already pay for Claude for Desktop.
+
+What to know:
+
+- Install Claude Code so the `claude` binary is on your `PATH`, then run `claude login` once.
+- Claude Code streams responses the same way API-based LLMs do.
+- Need to pin a different Claude desktop model? Add `"model_override": "claude-haiku-4-5"` under `model_providers.claude_cli.cli` in `~/.qq/config.json`. That override only applies to the Claude CLI; `qq -m/--model` still takes precedence per run.
+
+Minimal config snippet:
+
+```json
+{
+  "default_profile": "claude_cli",
+  "profiles": {
+    "claude_cli": {
+      "model_provider": "claude_cli",
+      "model": "claude-haiku-4-5"
+    }
+  },
+  "model_providers": {
+    "claude_cli": {
+      "cli": {
+        "model_override": "claude-haiku-4-5"
+      }
+    }
+  }
+}
+```
+
 ## Features
 
 - OpenAI compatible API client with streaming and non streaming calls.
@@ -75,6 +135,10 @@ brew install qqqa
 
 Download a prebuilt archive from the [GitHub Releases](https://github.com/iagooar/qqqa/releases) page, extract it, and place `qq`/`qa` somewhere on your `PATH` (e.g., `/usr/local/bin`).
 
+### Windows
+
+Download the Windows archive from Releases (choose the architecture that matches your machine), extract `qq.exe` and `qa.exe`, and add them to your `%PATH%`.
+
 ## Configure
 
 On first run qqqa creates `~/.qq/config.json` with safe permissions. For a smooth first interaction, run the init flow:
@@ -95,6 +159,9 @@ The initializer lets you choose the default provider:
 - OpenAI + `gpt-5-mini` (slower, a bit smarter)
 - Anthropic + `claude-3-5-sonnet-20241022` (placeholder until their Messages API finalizes)
 - Ollama (runs locally, adjust port if needed)
+- Codex CLI + `gpt-5` (wraps the `codex exec` binary so you can reuse a ChatGPT subscription; no API key needed, buffered output only)
+- Claude Code CLI + `claude-haiku-4-5` (wraps the `claude` binary; `qq` streams live, `qa` buffers so it can parse tool calls)
+  - Need to force a different desktop model? Add `"model_override"` under the provider's `cli` block (supported for both Codex and Claude). That override wins over the profile default but still yields to the per-run `--model` flag.
 
 It also offers to store an API key in the config (optional). If you prefer environment variables, leave it blank and set one of:
 
@@ -102,6 +169,7 @@ It also offers to store an API key in the config (optional). If you prefer envir
 - `GROQ_API_KEY` for Groq
 - `OPENAI_API_KEY` for OpenAI
 - `OLLAMA_API_KEY` (optional; any non-empty string works—even `local`—because the Authorization header cannot be blank)
+- No API key is required for the Codex or Claude CLI profiles—their binaries handle auth (`codex login` / `claude login`).
 
 Defaults written to `~/.qq/config.json`:
 
@@ -111,13 +179,18 @@ Defaults written to `~/.qq/config.json`:
   - `groq` → base `https://api.groq.com/openai/v1`, env `GROQ_API_KEY`
   - `ollama` → base `http://127.0.0.1:11434/v1`, env `OLLAMA_API_KEY` (qqqa auto-injects a non-empty placeholder if you leave it unset)
   - `anthropic` → base `https://api.anthropic.com/v1`, env `ANTHROPIC_API_KEY` (present in the config schema for future support; not usable yet)
+  - `codex` → mode `cli`, binary `codex` with base args `exec` (install Codex CLI; auth handled by `codex login`). Optional `"model_override"` in the `cli` block forces a fallback ChatGPT model if OpenAI retires the default.
+  - `claude_cli` → mode `cli`, binary `claude` (install `@anthropic-ai/claude-code`; auth handled by `claude login`). Optional `"model_override"` pins Claude Code’s `--model` flag without touching your profile’s model.
+  - `codex` → CLI provider, binary `codex` - fails if the binary is missing
 - Profiles
   - `openrouter` → model `openai/gpt-4.1-nano` (default)
   - `openai` → model `gpt-5-mini`
   - `groq` → model `openai/gpt-oss-20b`
   - `ollama` → model `llama3.1`
   - `anthropic` → model `claude-3-5-sonnet-20241022` (inactive placeholder until Anthropic integration lands)
+  - `codex` → model label `gpt-5` (only used for display; Codex CLI picks the backing ChatGPT model)
 - Optional per-profile `reasoning_effort` for GPT-5 family models. If you leave it unset, qqqa sends `"reasoning_effort": "minimal"` for any `gpt-5*` model to keep responses fast. Set it to `"low"`, `"medium"`, or `"high"` when you want deeper reasoning.
+- (discouraged) Optional per-profile `temperature`. Most models default to `0.15` unless you set it in `~/.qq/config.json` or pass `--temperature <value>` for a single run. GPT-5 models ignore custom temperatures; qqqa forces them to `1.0`.
 - (discouraged): you can change the timeout, e.g. `"timeout": "240"` under a model profile in `~/.qq/config.json` to raise the per-request limit (`qq` + `qa` default to 180 s - this is SLOW; faster models are a better fix).
 
 Example override in `~/.qq/config.json`:
@@ -136,22 +209,30 @@ Example override in `~/.qq/config.json`:
 
 - Optional flag: `no_emoji` (unset by default). Set via `qq --no-fun` or `qa --no-fun`.
 - Optional auto-copy: `copy_first_command` (unset/false by default). Enable during `qq --init`, by running `qq --enable-auto-copy`, or by editing `~/.qq/config.json` so qq copies the first `<cmd>` block to your clipboard. Turn it off with `qq --disable-auto-copy`. Override per run with `--copy-command`/`--cc` or `--no-copy-command`/`--ncc` (also available as `-ncc`).
+- Per-run control: `--no-stream` forces qq to wait for the full response before printing; streaming is the default.
 
 ### Terminal history
 
 Terminal history is **off by default**. During `qq --init` / `qa --init` you can opt in to sending the last 10 `qq`/`qa` commands along with each request. You can still override per run with `--history` (force on) or `-n/--no-history` (force off). Only commands whose first token is `qq` or `qa` are ever shared.
 
-
 ## Usage
 
 ### qq - ask a question
+
+qq streams responses by default so you see tokens the moment they arrive. If you prefer the classic buffered output—for example when piping into another tool or copying the final answer as a whole—pass `--no-stream` to wait until the response completes before printing anything.
 
 ```sh
 # simplest
 qq "convert mp4 to mp3"
 
-# stream tokens with formatted output
-qq -s "how do I kill a process by name on macOS"
+# stream tokens by default (formatted output)
+qq "how do I kill a process by name on macOS"
+
+# disable streaming and wait for the full formatted response
+qq --no-stream "summarize today's git status"
+
+# bump temperature for non GPT-5 models on a single run
+qq --temperature 0.4 "draft a playful git commit message"
 
 # include piped context
 git status | qq "summarize what I should do next"
@@ -253,15 +334,21 @@ qa -y "count lines across *.rs"
 # include recent qq/qa commands just for this run
 qa --history "trace which git commands I ran recently"
 
+# raise temperature for this run (non GPT-5 models only)
+qa --temperature 0.3 "brainstorm fun git aliases"
+
 # disable emojis in responses (persists)
 qa --no-fun "format and lint the repo"
+
+# run qa non-interactively with confirmation already granted
+qa -y "count lines across *.rs"
 ```
 
-When qa runs a command while stdout is a terminal, output now streams live; the structured `[tool:execute_command]` summary still prints afterward for easy copying.
+When qa runs a command while stdout is a terminal, output streams live; the structured `[tool:execute_command]` summary still prints afterward for easy copying.
 
 `execute_command` prints the proposed command and asks for confirmation. It warns if the working directory is outside your home. Use `-y` to auto approve in trusted workflows.
 
-The runner enforces a default allowlist (think `ls`, `grep`, `find`, `rg`, `awk`, etc.) and rejects pipelines, redirection, and other high-risk constructs. When a command is blocked, `qa` prompts you to add it to `command_allowlist` inside `~/.qq/config.json`; approving once persists the choice and updates future runs.
+The runner enforces a default allowlist (think `ls`, `grep`, `find`, `rg`, `awk`, etc.) and rejects pipelines, redirection, and other high-risk constructs. When a command is blocked, `qa` prompts you to add it to `command_allowlist` inside `~/.qq/config.json`; approving once persists the choice and updates future runs. On Windows it automatically adapts to the active environment so built-ins like `dir` or `Get-ChildItem` keep working without extra flags.
 
 ## Advanced features and configurations
 
@@ -346,7 +433,7 @@ See CONTRIBUTING.md for guidelines on reporting issues and opening pull requests
 ## Troubleshooting
 
 - API error about missing key: run `qq --init` to set things up, or export the relevant env var, e.g. `export OPENROUTER_API_KEY=...`.
-- No output when streaming: try `-d` to see debug logs.
+- No output while streaming: try `-d` to see debug logs or rerun with `--no-stream` to fall back to buffered output (it might work better in some edge case scenarios).
 - Piped input not detected: ensure you are piping into `qq` and not running it in a subshell that swallows stdin.
 
 ## License

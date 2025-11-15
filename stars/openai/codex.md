@@ -1,6 +1,6 @@
 ---
 project: codex
-stars: 50039
+stars: 50565
 description: |-
     Lightweight coding agent that runs in your terminal
 url: https://github.com/openai/codex

@@ -1,6 +1,6 @@
 ---
 project: openplayground
-stars: 6363
+stars: 6364
 description: |-
     An LLM playground you can run on your laptop
 url: https://github.com/nat/openplayground

@@ -1,6 +1,6 @@
 ---
 project: Mole
-stars: 4035
+stars: 5074
 description: |-
     🐹 Dig deep like a mole to clean you Mac. 像鼹鼠一样深入挖掘来清理你的 Mac
 url: https://github.com/tw93/Mole
@@ -22,13 +22,14 @@ url: https://github.com/tw93/Mole
 
 <p align="center">
   <img src="https://cdn.tw93.fun/img/mole.jpeg" alt="Mole - 95.50GB freed" width="800" />
-  <p align="center">由于 Mole 还在初级版本，如果这台 Mac 对你非常重要，建议再等等。</p>
+  <p align="center">由于 Mole 还在中级版本，如果这台 Mac 对你非常重要，建议再等等。</p>
 </p>
 
 ## Features
 
 - **Deep System Cleanup** - Cleans way more junk than CleanMyMac/Lemon - caches, logs, temp files
 - **Thorough Uninstall** - Scans 22+ locations to remove app leftovers, not just the .app file
+- **System Optimization** - Rebuilds caches, resets services, and trims swap/network cruft with one run
 - **Interactive Disk Analyzer** - Navigate folders with arrow keys, find and delete large files quickly
 - **Fast & Lightweight** - Terminal-based with arrow-key navigation, pagination, and Touch ID support
 
@@ -54,6 +55,7 @@ mo clean                # System cleanup
 mo clean --dry-run      # Preview mode
 mo clean --whitelist    # Manage protected caches
 mo uninstall            # Uninstall apps
+mo optimize             # System optimization
 mo analyze              # Disk analyzer
 
 mo touchid              # Configure Touch ID for sudo
@@ -61,13 +63,14 @@ mo update               # Update Mole
 mo remove               # Remove Mole from system
 mo --help               # Show help
 mo --version            # Show installed version
+
 ```
 
 ## Tips
 
 - Safety first, if your Mac is mission-critical, wait for Mole to mature before full cleanups.
 - Preview the cleanup by running `mo clean --dry-run` and reviewing the generated list.
-- Protect caches with `mo clean --whitelist`; defaults cover Playwright, HuggingFace, and Maven paths.
+- Protect caches with `mo clean --whitelist`; defaults cover Playwright, HuggingFace, Maven, and Surge Mac paths.
 - Use `mo touchid` to approve sudo with Touch ID instead of typing your password.
 
 ## Features in Detail
@@ -77,26 +80,17 @@ mo --version            # Show installed version
 ```bash
 $ mo clean
 
-▶ System essentials
-  ✓ User app cache (45.2GB)
-  ✓ User app logs (2.1GB)
-  ✓ Trash (12.3GB)
+Scanning cache directories...
 
-▶ Browser cleanup
-  ✓ Chrome cache (8.4GB)
-  ✓ Safari cache (2.1GB)
-
-▶ Developer tools
-  ✓ Xcode derived data (9.1GB)
-  ✓ Node.js cache (14.2GB)
-
-▶ Others
-  ✓ Dropbox cache (5.2GB)
-  ✓ Spotify cache (3.1GB)
+  ✓ User app cache                                           45.2GB
+  ✓ Browser cache (Chrome, Safari, Firefox)                  10.5GB
+  ✓ Developer tools (Xcode, Node.js, npm)                    23.3GB
+  ✓ System logs and temp files                                3.8GB
+  ✓ App-specific cache (Spotify, Dropbox, Slack)              8.4GB
+  ✓ Trash                                                     12.3GB
 
 ====================================================================
-CLEANUP COMPLETE!
-Space freed: 95.50GB | Free space now: 223.5GB
+Space freed: 95.5GB | Free space now: 223.5GB
 ====================================================================
 ```
 
@@ -112,17 +106,34 @@ Select Apps to Remove
   ☐ Final Cut Pro             (3.8G) | Recent
 
 Uninstalling: Adobe Creative Cloud
-  ✓ Removed application              # /Applications/
-  ✓ Cleaned 52 related files         # ~/Library/ across 12 locations
-    - Support files & caches         # Application Support, Caches
-    - Preferences & logs             # Preferences, Logs
-    - WebKit storage & cookies       # WebKit, HTTPStorages
-    - Extensions & plugins           # Internet Plug-Ins, Services
-    - System files with sudo         # /Library/, Launch daemons
+
+  ✓ Removed application
+  ✓ Cleaned 52 related files across 12 locations
+    - Application Support, Caches, Preferences
+    - Logs, WebKit storage, Cookies
+    - Extensions, Plugins, Launch daemons
 
 ====================================================================
-UNINSTALLATION COMPLETE!
 Space freed: 12.8GB
+====================================================================
+```
+
+### System Optimization
+
+```bash
+$ mo optimize
+
+System: 5/32 GB RAM | 333/460 GB Disk (72%) | Uptime 6d
+
+  ✓ Rebuild system databases and flush caches
+  ✓ Reset network services
+  ✓ Refresh Finder and Dock
+  ✓ Clean diagnostic and crash logs
+  ✓ Purge swap files and restart dynamic pager
+  ✓ Rebuild launch services and spotlight index
+
+====================================================================
+System optimization completed
 ====================================================================
 ```
 
@@ -131,22 +142,37 @@ Space freed: 12.8GB
 ```bash
 $ mo analyze
 
-Analyzing: /Users/You
-═══════════════════════════════════════════════════════
-Total: 156.8GB
+Analyze Disk  ~/Documents  |  Total: 156.8GB
 
-├─ 📁 Library                                        45.2GB
-│  ├─ 📁 Caches                                      28.4GB
-│  └─ 📁 Application Support                         16.8GB
-├─ 📁 Downloads                                      32.6GB
-│  ├─ 📄 Xcode-14.3.1.dmg                            12.3GB
-│  ├─ 📄 backup_2023.zip                             8.6GB
-│  └─ 📄 old_projects.tar.gz                         5.2GB
-├─ 📁 Movies                                         28.9GB
-│  ├─ 📄 vacation_2023.mov                           15.4GB
-│  └─ 📄 screencast_raw.mp4                          8.8GB
-├─ 📁 Documents                                      18.4GB
-└─ 📁 Desktop                                        12.7GB
+ ▶  1. ███████████████████  48.2%  |  📁 Library                     75.4GB  >6mo
+    2. ██████████░░░░░░░░░  22.1%  |  📁 Downloads                   34.6GB
+    3. ████░░░░░░░░░░░░░░░  14.3%  |  📁 Movies                      22.4GB
+    4. ███░░░░░░░░░░░░░░░░  10.8%  |  📁 Documents                   16.9GB
+    5. ██░░░░░░░░░░░░░░░░░   5.2%  |  📄 backup_2023.zip              8.2GB
+
+  ↑↓←→ Navigate  |  O Open  |  F Reveal  |  ⌫ Delete  |  L Large(24)  |  Q Quit
+```
+
+## Quick Launchers
+
+Launch Mole commands instantly from Raycast or Alfred:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/tw93/Mole/main/scripts/setup-quick-launchers.sh | bash
+```
+
+This adds 4 commands to Raycast and Alfred:
+- `clean` - Deep system cleanup
+- `uninstall` - Remove applications
+- `optimize` - System health check
+- `analyze` - Disk space explorer
+
+Raycast scripts auto-detect your preferred terminal (Warp, Ghostty, Alacritty, Kitty, etc). Set `MO_LAUNCHER_APP=<name>` to override.
+
+**Uninstall:**
+```bash
+rm -rf ~/Documents/Raycast/Scripts/mole-*.sh
+rm -rf ~/Library/Application\ Support/Raycast/script-commands/mole-*.sh
 ```
 
 ## Support

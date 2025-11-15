@@ -1,6 +1,6 @@
 ---
 project: core-js
-stars: 25321
+stars: 25328
 description: |-
     Standard Library
 url: https://github.com/zloirock/core-js
@@ -2699,7 +2699,7 @@ core-js(-pure)/stage/3
 Module [`esnext.iterator.concat`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/esnext.iterator.concat.js)
 ```ts
 class Iterator {
-  concat(...items: Array<IterableObject>): Iterator<any>;
+  static concat(...items: Array<IterableObject>): Iterator<any>;
 }
 ```
 [*CommonJS entry points:*](#commonjs-api)

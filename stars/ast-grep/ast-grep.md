@@ -1,6 +1,6 @@
 ---
 project: ast-grep
-stars: 11079
+stars: 11172
 description: |-
     ⚡A CLI tool for code structural search, lint and rewriting. Written in Rust
 url: https://github.com/ast-grep/ast-grep
@@ -39,7 +39,7 @@ Try the [online playground](https://ast-grep.github.io/playground.html) for a ta
 See more screenshots on the [website](https://ast-grep.github.io/).
 
 ## Installation
-You can install it from [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm), [pip](https://pypi.org/), [cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html),  [cargo-binstall](https://github.com/cargo-bins/cargo-binstall), [homebrew](https://brew.sh/), [scoop](https://scoop.sh/) or [MacPorts](https://www.macports.org)!
+You can install it from [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm), [pip](https://pypi.org/), [cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html),  [cargo-binstall](https://github.com/cargo-bins/cargo-binstall), [homebrew](https://brew.sh/), [scoop](https://scoop.sh/), [mise](https://github.com/jdx/mise) or [MacPorts](https://www.macports.org)!
 
 ```bash
 npm install --global @ast-grep/cli
@@ -63,6 +63,9 @@ sudo port install ast-grep
 
 # try ast-grep in nix-shell
 nix-shell -p ast-grep
+
+# try ast-grep with mise
+mise use -g ast-grep
 ```
 </details>
 

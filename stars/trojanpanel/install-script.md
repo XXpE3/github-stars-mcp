@@ -1,6 +1,6 @@
 ---
 project: install-script
-stars: 2001
+stars: 2004
 description: |-
     Trojan Panel installation script / Trojan Panel 一键安装脚本
 url: https://github.com/trojanpanel/install-script

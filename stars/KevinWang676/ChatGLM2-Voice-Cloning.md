@@ -1,6 +1,6 @@
 ---
 project: ChatGLM2-Voice-Cloning
-stars: 605
+stars: 608
 description: |-
     Chat with any character you like: ChatGLM2+SadTalker+Voice Cloning | 和喜欢的角色沉浸式对话吧：ChatGLM2+声音克隆+视频对话
 url: https://github.com/KevinWang676/ChatGLM2-Voice-Cloning

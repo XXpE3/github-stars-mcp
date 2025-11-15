@@ -1,6 +1,6 @@
 ---
 project: bbs-go
-stars: 3307
+stars: 3315
 description: |-
     基于Golang的开源社区系统。简洁对话，高效互动，社区新体验！
 url: https://github.com/mlogclub/bbs-go

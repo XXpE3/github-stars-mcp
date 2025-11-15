@@ -1,6 +1,6 @@
 ---
 project: DeepCode
-stars: 9778
+stars: 10263
 description: |-
     "DeepCode: Open Agentic Coding (Paper2Code & Text2Web & Text2Backend)"
 url: https://github.com/HKUDS/DeepCode

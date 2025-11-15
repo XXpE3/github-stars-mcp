@@ -1,6 +1,6 @@
 ---
 project: ace-pinyin
-stars: 86
+stars: 87
 description: |-
     Jump to Chinese character by pinyin with `avy' or `ace-jump-mode`
 url: https://github.com/cute-jumper/ace-pinyin

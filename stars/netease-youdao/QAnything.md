@@ -1,6 +1,6 @@
 ---
 project: QAnything
-stars: 13724
+stars: 13742
 description: |-
     Question and Answer based on Anything.
 url: https://github.com/netease-youdao/QAnything

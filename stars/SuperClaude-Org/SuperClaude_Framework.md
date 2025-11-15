@@ -1,6 +1,6 @@
 ---
 project: SuperClaude_Framework
-stars: 17789
+stars: 18005
 description: |-
     A configuration framework that enhances Claude Code with specialized commands, cognitive personas, and development methodologies.
 url: https://github.com/SuperClaude-Org/SuperClaude_Framework
@@ -22,7 +22,10 @@ url: https://github.com/SuperClaude-Org/SuperClaude_Framework
 <a href="https://github.com/SuperClaude-Org/SuperQwen_Framework" target="_blank">
   <img src="https://img.shields.io/badge/Try-SuperQwen_Framework-orange" alt="Try SuperQwen Framework"/>
 </a>
-  <img src="https://img.shields.io/badge/version-4.2.0-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-4.1.9-blue" alt="Version">
+  <a href="https://github.com/SuperClaude-Org/SuperClaude_Framework/actions/workflows/test.yml">
+    <img src="https://github.com/SuperClaude-Org/SuperClaude_Framework/actions/workflows/test.yml/badge.svg" alt="Tests">
+  </a>
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome">
 </p>
@@ -70,12 +73,12 @@ url: https://github.com/SuperClaude-Org/SuperClaude_Framework
 
 ## 📊 **Framework Statistics**
 
-| **Plugins** | **Agents** | **Modes** | **MCP Servers** |
+| **Commands** | **Agents** | **Modes** | **MCP Servers** |
 |:------------:|:----------:|:---------:|:---------------:|
-| **3** | **16** | **7** | **8** |
-| Plugin Commands | Specialized AI | Behavioral | Integrations |
+| **30** | **16** | **7** | **8** |
+| Slash Commands | Specialized AI | Behavioral | Integrations |
 
-Three core plugins: **PM Agent** (orchestration), **Research** (web search), **Index** (context optimization).
+30 slash commands covering the complete development lifecycle from brainstorming to deployment.
 
 </div>
 
@@ -108,26 +111,61 @@ Claude Code is a product built and maintained by [Anthropic](https://www.anthrop
 
 ## ⚡ **Quick Installation**
 
-### **Project-Local Plugin (Recommended)**
+> **IMPORTANT**: The TypeScript plugin system described in older documentation is
+> not yet available (planned for v5.0). For current installation
+> instructions, please follow the steps below for v4.x.
 
-SuperClaude v2.0+ uses **TypeScript plugins** with project-local auto-detection:
+### **Current Stable Version (v4.1.9)**
 
+SuperClaude currently uses slash commands.
+
+**Option 1: pipx (Recommended)**
 ```bash
-# Clone repository
+# Install from PyPI
+pipx install superclaude
+
+# Install commands (installs all 30 slash commands)
+superclaude install
+
+# Install MCP servers (optional, for enhanced capabilities)
+superclaude mcp --list         # List available MCP servers
+superclaude mcp                # Interactive installation
+superclaude mcp --servers tavily --servers context7  # Install specific servers
+
+# Verify installation
+superclaude install --list
+superclaude doctor
+```
+
+After installation, restart Claude Code to use 30 commands including:
+- `/sc:research` - Deep web research (enhanced with Tavily MCP)
+- `/sc:brainstorm` - Structured brainstorming
+- `/sc:implement` - Code implementation
+- `/sc:test` - Testing workflows
+- `/sc:pm` - Project management
+- `/sc` - Show all 30 available commands
+
+**Option 2: Direct Installation from Git**
+```bash
+# Clone the repository
 git clone https://github.com/SuperClaude-Org/SuperClaude_Framework.git
 cd SuperClaude_Framework
 
-# Start Claude Code in this directory
-claude
+# Run the installation script
+./install.sh
 ```
 
-**That's it!** `.claude-plugin/` is auto-detected and PM Agent activates on session start.
+### **Coming in v5.0 (In Development)**
 
-**Key Features**:
-- ✅ **Zero Install**: No copying, no configuration
-- ✅ **Hot Reload**: Edit TypeScript → Save → Instant reflection
-- ✅ **Auto-Activation**: PM Agent starts automatically (SessionStart hook)
-- ✅ **Safe Development**: Separate sandbox from global Claude Code
+We are actively working on a new TypeScript plugin system (see issue [#419](https://github.com/SuperClaude-Org/SuperClaude_Framework/issues/419) for details). When released, installation will be simplified to:
+
+```bash
+# This feature is not yet available
+/plugin marketplace add SuperClaude-Org/superclaude-plugin-marketplace
+/plugin install superclaude
+```
+
+**Status**: In development. No ETA has been set.
 
 ### **Enhanced Performance (Optional MCPs)**
 
@@ -152,69 +190,6 @@ For **2-3x faster** execution and **30-50% fewer tokens**, optionally install MC
 - **With MCPs**: 2-3x faster, 30-50% fewer tokens ⚡
 
 </div>
-
-<details>
-<summary><b>⚠️ IMPORTANT: Upgrading from SuperClaude V1.x (Slash Commands)</b></summary>
-
-**V2.0 introduces breaking changes - migration from slash commands to TypeScript plugins:**
-
-```bash
-# 1. Remove old slash commands (if installed)
-rm -rf ~/.claude/commands/sc/
-
-# 2. Use new plugin (project-local)
-cd SuperClaude_Framework
-claude  # .claude-plugin/ auto-detected
-```
-
-**What's New in V2.0:**
-- ✅ TypeScript plugins (hot reload support)
-- ✅ Project-local detection (zero install)
-- ✅ Auto-activation via SessionStart hook
-- ✅ 3 core plugins: PM Agent, Research, Index
-- ✅ Confidence-driven workflow (≥90% threshold, Precision/Recall 1.0)
-
-**Migration Notes:**
-- Old: `/sc:pm`, `/sc:research`, `/sc:index-repo` (27 commands)
-- New: `/pm`, `/research`, `/index-repo` (3 plugin commands)
-- Installation: Global `~/.claude/commands/` → Project-local `.claude-plugin/`
-- Just `cd` to project directory and run `claude`
-
-</details>
-
-<details>
-<summary><b>💡 Troubleshooting</b></summary>
-
-**Plugin not loading?**
-```bash
-# Verify you're in the project directory
-pwd  # Should show: /path/to/SuperClaude_Framework
-
-# Check .claude-plugin/ exists
-ls .claude-plugin/plugin.json
-
-# Restart Claude Code in this directory
-claude
-```
-
-**Commands not working (/pm, /research, /index-repo)?**
-- Ensure you started `claude` from the SuperClaude_Framework directory
-- Check for errors in Claude Code output
-- Verify `.claude-plugin/plugin.json` has correct structure
-
-**Hot reload not working?**
-- Edit `.claude-plugin/pm/index.ts`
-- Save file
-- Changes should reflect immediately (no restart needed)
-
-**Development mode (for contributors):**
-```bash
-# Install Python package for testing
-make install
-make verify
-uv run pytest
-```
-</details>
 
 ---
 
@@ -278,9 +253,9 @@ uv run pytest
 
 <div align="center">
 
-## 🎉 **What's New in V2.0**
+## 🎉 **What's New in v4.1**
 
-> *Version 2.0 brings architectural transformation: migration from 27 slash commands to 3 TypeScript plugins with hot reload and auto-activation.*
+> *Version 4.1 focuses on stabilizing the slash command architecture, enhancing agent capabilities, and improving documentation.*
 
 <table>
 <tr>
@@ -298,13 +273,12 @@ uv run pytest
 </td>
 <td width="50%">
 
-### 🔥 **TypeScript Plugins**
-**3 core plugins** with hot reload:
-- **PM Agent**: Confidence-driven orchestration (≥90% threshold)
-- **Research**: Deep web search with adaptive planning
-- **Index**: 94% token reduction (58K → 3K)
-- Auto-activation via SessionStart hook
-- Edit → Save → Instant reflection (no restart)
+### ⚡ **Optimized Performance**
+**Smaller framework, bigger projects:**
+- Reduced framework footprint
+- More context for your code
+- Longer conversations possible
+- Complex operations enabled
 
 </td>
 </tr>
@@ -312,14 +286,27 @@ uv run pytest
 <td width="50%">
 
 ### 🔧 **MCP Server Integration**
-**8 powerful servers** (via airis-mcp-gateway):
+**8 powerful servers** with easy CLI installation:
+
+```bash
+# List available MCP servers
+superclaude mcp --list
+
+# Install specific servers
+superclaude mcp --servers tavily context7
+
+# Interactive installation
+superclaude mcp
+```
+
+**Available servers:**
 - **Tavily** → Primary web search (Deep Research)
-- **Serena** → Session persistence & memory
-- **Mindbase** → Cross-session learning (zero-footprint)
-- **Sequential** → Token-efficient reasoning
 - **Context7** → Official documentation lookup
-- **Playwright** → JavaScript-heavy content extraction
+- **Sequential-Thinking** → Multi-step reasoning
+- **Serena** → Session persistence & memory
+- **Playwright** → Cross-browser automation
 - **Magic** → UI component generation
+- **Morphllm-Fast-Apply** → Context-aware code modifications
 - **Chrome DevTools** → Performance analysis
 
 </td>
@@ -340,22 +327,22 @@ uv run pytest
 <tr>
 <td width="50%">
 
-### ⚡ **Optimized Performance**
-**Smaller framework, bigger projects:**
-- Reduced framework footprint
-- More context for your code
-- Longer conversations possible
-- Complex operations enabled
-
-</td>
-<td width="50%">
-
 ### 📚 **Documentation Overhaul**
 **Complete rewrite** for developers:
 - Real examples & use cases
 - Common pitfalls documented
 - Practical workflows included
 - Better navigation structure
+
+</td>
+<td width="50%">
+
+### 🧪 **Enhanced Stability**
+**Focus on reliability:**
+- Bug fixes for core commands
+- Improved test coverage
+- More robust error handling
+- CI/CD pipeline improvements
 
 </td>
 </tr>
@@ -482,11 +469,11 @@ The Deep Research system intelligently coordinates multiple tools:
 </td>
 <td valign="top">
 
-- 🎯 [**Plugin Commands**](docs/user-guide/commands.md)
-  *3 core plugin commands*
+- 🎯 [**Slash Commands**](docs/reference/commands-list.md)
+  *All 30 commands organized by category*
 
 - 🤖 [**Agents Guide**](docs/user-guide/agents.md)  
-  *15 specialized agents*
+  *16 specialized agents*
 
 - 🎨 [**Behavioral Modes**](docs/user-guide/modes.md)  
   *7 adaptive modes*
@@ -495,7 +482,7 @@ The Deep Research system intelligently coordinates multiple tools:
   *Control behaviors*
 
 - 🔧 [**MCP Servers**](docs/user-guide/mcp-servers.md)  
-  *7 server integrations*
+  *8 server integrations*
 
 - 💼 [**Session Management**](docs/user-guide/session-management.md)  
   *Save & restore state*
@@ -601,4 +588,62 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 </p>
 
 </div>
+
+---
+
+## 📋 **All 30 Commands**
+
+<details>
+<summary><b>Click to expand full command list</b></summary>
+
+### 🧠 Planning & Design (4)
+- `/brainstorm` - Structured brainstorming
+- `/design` - System architecture
+- `/estimate` - Time/effort estimation
+- `/spec-panel` - Specification analysis
+
+### 💻 Development (5)
+- `/implement` - Code implementation
+- `/build` - Build workflows
+- `/improve` - Code improvements
+- `/cleanup` - Refactoring
+- `/explain` - Code explanation
+
+### 🧪 Testing & Quality (4)
+- `/test` - Test generation
+- `/analyze` - Code analysis
+- `/troubleshoot` - Debugging
+- `/reflect` - Retrospectives
+
+### 📚 Documentation (2)
+- `/document` - Doc generation
+- `/help` - Command help
+
+### 🔧 Version Control (1)
+- `/git` - Git operations
+
+### 📊 Project Management (3)
+- `/pm` - Project management
+- `/task` - Task tracking
+- `/workflow` - Workflow automation
+
+### 🔍 Research & Analysis (2)
+- `/research` - Deep web research
+- `/business-panel` - Business analysis
+
+### 🎯 Utilities (9)
+- `/agent` - AI agents
+- `/index-repo` - Repository indexing
+- `/index` - Indexing alias
+- `/recommend` - Command recommendations
+- `/select-tool` - Tool selection
+- `/spawn` - Parallel tasks
+- `/load` - Load sessions
+- `/save` - Save sessions
+- `/sc` - Show all commands
+
+[**📖 View Detailed Command Reference →**](docs/reference/commands-list.md)
+
+</details>
+
 

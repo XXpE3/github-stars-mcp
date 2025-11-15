@@ -1,6 +1,6 @@
 ---
 project: webapp-conversation
-stars: 989
+stars: 999
 description: |-
     null
 url: https://github.com/langgenius/webapp-conversation

@@ -1,6 +1,6 @@
 ---
 project: awesome-claude-code
-stars: 16613
+stars: 16941
 description: |-
     A curated list of awesome commands, files, and workflows for Claude Code
 url: https://github.com/hesreallyhim/awesome-claude-code
@@ -41,31 +41,17 @@ This is a curated list of slash-commands, `CLAUDE.md` files, CLI tools, and othe
 
 Claude Code is a cutting-edge CLI-based coding assistant and agent released by [Anthropic](https://www.anthropic.com/) that you can access in your terminal or IDE. It is a rapidly evolving tool that offers a number of powerful capabilities, and allows for a lot of configuration, in a lot of different ways. Users are actively working out best practices and workflows. It is the hope that this repo will help the community share knowledge and understand how to get the most out of Claude Code.
 
-<div align="center"><a href="https://github.com/hesreallyhim/awesome-claude-code/discussions/287" align="center"><img src="assets/awesome-claude-code-feature-bounty.png" alt="Feature Bounty Banner" width="750px" align="center" /></a></div>
-
-<div align="center"><h2 align="center">I'm throwing the challenge down for a <strong>"FEATURE BOUNTY"</strong> with a <strong>cash prize</strong> to solve a problem that Claude Code users have been <a href="https://github.com/anthropics/claude-code/issues/2112">posting about on GitHub</a> for a while - want to join the fun? Check out the <a href="https://github.com/hesreallyhim/awesome-claude-code/discussions/287">announcement</a> and let me know you're in! Coding, Clauding, Collaborating, Cash... Let's get together and build something!</h2></div>
-
 ### Announcements [🔝](#awesome-claude-code)
 
 <details open>
 <summary>View Announcements</summary>
 
 - <details open>
-  <summary>2025-11-02 - A word on Plugins and a farewell to Output Styles</summary>
+  <summary>2025-11-15 - Output Styles - SAVED!</summary>
 
-  - <details open>
-    <summary>Plugins and Marketplaces</summary>
+  - Many thanks to user [fotgs](https://github.com/fotgs), who [brought to my attention](https://github.com/hesreallyhim/awesome-claude-code/discussions/318) that in a shocking last-minute turn of events, reminiscent of the "Miracle on Ice", it was announced on [GitHub](https://github.com/anthropics/claude-code/issues/10671#issuecomment-3478185783) that "the CC team has decided to **keep output styles working indefinitely**", or until they change their minds, so to celebrate, I would like to invite users to give Output Styles another shot; and seeing as we only have one awesome Output Style on this list, I'm going to guarantee that by one week from now, we will have a minimum of **5 Output Styles** in that category - which means that if you use Output Styles and would like to share some of the ones that you have found the most awesome, you have a _pretty decent chance_ of joining the ranks of comrade [viveknair](https://github.com/viveknair) - and, in drafting this announcement, I happened to visit viveknair's profile, and found a pretty neat little Claude Code [usage heatmap](https://github.com/viveknair/ccheatmap), so check it out!
 
-    - "Given my current available resources, I have so far declined to include plugins and/or marketplaces in Awesome Claude Code - but we are really hoping to secure some additional support to help us expand the scope of this repository while maintaining its standards of quality. I hope to have some good news on this forthcoming. 🤞
-
-    </details>
-
-  - <details open>
-    <summary>Output Styles - Deprecated</summary>
-
-    - "Per the Claude Code documentation site, Output Styles are set to be deprecated, so I will have to remove that category very soon."
-
-    </details>
+  - The bounty is off. Thank you to those who expressed interest.
 
   </details>
 
@@ -75,46 +61,13 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
-[`Claude Code Infrastructure Showcase`](https://github.com/diet103/claude-code-infrastructure-showcase) &nbsp; by &nbsp; [diet103](https://github.com/diet103)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A remarkably innovative approach to working with Skills, the centerpiece of which being a technique that leverages hooks to ensure that Claude intelligently selects and activates the appropriate Skill given the current context. Well-documented and adaptable to different projects and workflows.
+[`Claude Code Documentation Mirror`](https://github.com/ericbuess/claude-code-docs) &nbsp; by &nbsp; [Eric Buess](https://github.com/ericbuess)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
+A mirror of the Anthropic &copy; PBC documentation pages for Claude Code, updated every few hours. Can come in handy when trying to stay on top of the ever-expanding feature-set of Dr. Claw D. Code, Ph.D.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-infrastructure-showcase](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-infrastructure-showcase&username=diet103&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claudex`](https://github.com/kunwar-shah/claudex) &nbsp; by &nbsp; [Kunwar Shah](https://github.com/kunwar-shah)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Claudex - A web-based browser for exploring your Claude Code conversation history across projects. Indexes your codebase for full-text search. Nice, easy-to-navigate UI. Simple dashboard interface for high-level analytics, and multiple export options as well. (And completely local w/ no telemetry!)
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claudex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudex&username=kunwar-shah&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Omnara`](https://github.com/omnara-ai/omnara) &nbsp; by &nbsp; [Ishaan Sehgal](https://github.com/ishaansehgal99)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
-A command center for AI agents that syncs Claude Code sessions across terminal, web, and mobile. Allows for remote monitoring, human-in-the-loop interaction, and team collaboration.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for omnara](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=omnara&username=omnara-ai&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claudable`](https://github.com/opactorai/Claudable) &nbsp; by &nbsp; [Ethan Park](https://www.linkedin.com/in/seongil-park/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Claudable is an open-source web builder that leverages local CLI agents, such as Claude Code and Cursor Agent, to build and deploy products effortlessly.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for Claudable](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claudable&username=opactorai&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-docs](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-docs&username=ericbuess&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -275,6 +228,17 @@ Provides a well-structured set of commands for publishing and maintaining a blog
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for cloudartisan.github.io](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=cloudartisan.github.io&username=cloudartisan&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claude Code Documentation Mirror`](https://github.com/ericbuess/claude-code-docs) &nbsp; by &nbsp; [Eric Buess](https://github.com/ericbuess)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
+A mirror of the Anthropic &copy; PBC documentation pages for Claude Code, updated every few hours. Can come in handy when trying to stay on top of the ever-expanding feature-set of Dr. Claw D. Code, Ph.D.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-docs](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-docs&username=ericbuess&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1157,17 +1121,6 @@ Sets up and manages Husky Git hooks by configuring pre-commit hooks, establishin
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for tevm-monorepo](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=tevm-monorepo&username=evmts&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`/pr-review`](https://github.com/arkavo-org/opentdf-rs/blob/main/.claude/commands/pr-review.md) &nbsp; by &nbsp; [arkavo-org](https://github.com/arkavo-org)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Reviews pull request changes to provide feedback, check for issues, and suggest improvements before merging into the main codebase.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for opentdf-rs](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=opentdf-rs&username=arkavo-org&all_stats=true&stats_only=true)
 
 </details>
 <br>

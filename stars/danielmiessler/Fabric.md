@@ -1,6 +1,6 @@
 ---
 project: Fabric
-stars: 34196
+stars: 34277
 description: |-
     Fabric is an open-source framework for augmenting humans using AI. It provides a modular system for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere.
 url: https://github.com/danielmiessler/Fabric
@@ -81,6 +81,9 @@ Below are the **new features and capabilities** we've added (newest first):
 
 ### Recent Major Features
 
+- [v1.4.322](https://github.com/danielmiessler/fabric/releases/tag/v1.4.322) (Nov 5, 2025) — **Interactive HTML Concept Maps and Claude Sonnet 4.5**: Adds `create_conceptmap` pattern for visual knowledge representation using Vis.js, introduces WELLNESS category with psychological analysis patterns, and upgrades to Claude Sonnet 4.5
+- [v1.4.317](https://github.com/danielmiessler/fabric/releases/tag/v1.4.317) (Sep 21, 2025) — **Portuguese Language Variants**: Adds BCP 47 locale normalization with support for Brazilian Portuguese (pt-BR) and European Portuguese (pt-PT) with intelligent fallback chains
+- [v1.4.314](https://github.com/danielmiessler/fabric/releases/tag/v1.4.314) (Sep 17, 2025) — **Azure OpenAI Migration**: Migrates to official `openai-go/azure` SDK with improved authentication and default API version support
 - [v1.4.311](https://github.com/danielmiessler/fabric/releases/tag/v1.4.311) (Sep 13, 2025) — **More internationalization support**: Adds de (German), fa (Persian / Farsi), fr (French), it (Italian),
   ja (Japanese), pt (Portuguese), zh (Chinese)
 - [v1.4.309](https://github.com/danielmiessler/fabric/releases/tag/v1.4.309) (Sep 9, 2025) — **Comprehensive internationalization support**: Includes English and Spanish locale files.
@@ -169,6 +172,7 @@ Keep in mind that many of these were recorded when Fabric was Python-based, so r
       - [Fish Completion](#fish-completion)
   - [Usage](#usage)
     - [Debug Levels](#debug-levels)
+    - [Extensions](#extensions)
   - [Our approach to prompting](#our-approach-to-prompting)
   - [Examples](#examples)
   - [Just use the Patterns](#just-use-the-patterns)
@@ -712,6 +716,12 @@ Use the `--debug` flag to control runtime logging:
 - `1`: basic debug info
 - `2`: detailed debugging
 - `3`: trace level
+
+### Extensions
+
+Fabric supports extensions that can be called within patterns. See the [Extension Guide](internal/plugins/template/Examples/README.md) for complete documentation.
+
+**Important:** Extensions only work within pattern files, not via direct stdin. See the guide for details and examples.
 
 ## Our approach to prompting
 

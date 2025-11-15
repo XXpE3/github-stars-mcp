@@ -1,6 +1,6 @@
 ---
 project: one-api
-stars: 159
+stars: 162
 description: |-
     OpenRouter’s open‑source alternative. Multi-model/Multi-API-format/Multi-tenant LLM API aggregation platform.
 url: https://github.com/Laisky/one-api
@@ -22,6 +22,8 @@ Open‑source version of OpenRouter, managed through a unified gateway that hand
 ![](https://s3.laisky.com/uploads/2025/07/oneapi.drawio.png)
 
 Also welcome to register and use my deployed one-api gateway, which supports various mainstream models. For usage instructions, please refer to <https://wiki.laisky.com/projects/gpt/pay/>.
+
+Try it at <https://oneapi.laisky.com>, login with `test` / `12345678`. 🚀
 
 ```plain
 === One-API Compatibility Matrix ===
@@ -84,6 +86,7 @@ The original author stopped maintaining the project, leaving critical PRs and ne
   - [Contributors](#contributors)
   - [New Features](#new-features)
     - [Universal Features](#universal-features)
+      - [Support channel's built-in tooling configuration](#support-channels-built-in-tooling-configuration)
       - [Support update user's remained quota](#support-update-users-remained-quota)
       - [Get request's cost](#get-requests-cost)
       - [Support Tracing info in logs](#support-tracing-info-in-logs)
@@ -94,17 +97,18 @@ The original author stopped maintaining the project, leaving critical PRs and ne
         - [Reasoning Format - reasoning](#reasoning-format---reasoning)
         - [Reasoning Format - thinking](#reasoning-format---thinking)
     - [OpenAI Features](#openai-features)
-      - [(Merged) Support gpt-vision](#merged-support-gpt-vision)
+      - [Support whisper](#support-whisper)
       - [Support openai images edits](#support-openai-images-edits)
       - [Support OpenAI o1/o1-mini/o1-preview](#support-openai-o1o1-minio1-preview)
       - [Support gpt-4o-audio](#support-gpt-4o-audio)
       - [Support OpenAI web search models](#support-openai-web-search-models)
-      - [Support gpt-image-1's image generation \& edits](#support-gpt-image-1s-image-generation--edits)
+      - [Support gpt-image family for image generation \& edits](#support-gpt-image-family-for-image-generation--edits)
       - [Support o3-mini \& o3 \& o4-mini \& gpt-4.1 \& o3-pro \& reasoning content](#support-o3-mini--o3--o4-mini--gpt-41--o3-pro--reasoning-content)
       - [Support OpenAI Response API](#support-openai-response-api)
       - [Support gpt-5 family](#support-gpt-5-family)
       - [Support o3-deep-research \& o4-mini-deep-research](#support-o3-deep-research--o4-mini-deep-research)
       - [Support Codex Cli](#support-codex-cli)
+      - [Support Sora](#support-sora)
     - [Anthropic (Claude) Features](#anthropic-claude-features)
       - [(Merged) Support aws claude](#merged-support-aws-claude)
       - [Support claude-3-7-sonnet \& thinking](#support-claude-3-7-sonnet--thinking)
@@ -297,6 +301,12 @@ The Kubernetes deployment guide has been moved into a dedicated document:
 ## New Features
 
 ### Universal Features
+
+#### Support channel's built-in tooling configuration
+
+Configure the price and whitelist for a channel’s built‑in tools.
+
+![tooling-config](https://s3.laisky.com/uploads/2025/11/oneapi-channel-tools.png)
 
 #### Support update user's remained quota
 
@@ -535,7 +545,44 @@ Response:
 
 ### OpenAI Features
 
-#### (Merged) Support gpt-vision
+#### Support whisper
+
+```sh
+curl --location 'https://oneapi.laisky.com/v1/audio/transcriptions' \
+  --header 'Authorization: Bearer laisky-xxxxxxx' \
+  --form 'file=@"postman-cloud:///1efcd71f-7206-4a70-94d1-7727d79d124b"' \
+  --form 'model="whisper-1"' \
+  --form 'response_format="verbose_json"'
+```
+
+Response:
+
+```json
+{
+  "task": "transcribe",
+  "language": "english",
+  "duration": 3.869999885559082,
+  "text": "Hello everyone, nice to see you today",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 3.680000066757202,
+      "text": " Hello everyone, nice to see you today",
+      "tokens": [50364, 2425, 1518, 11, 1481, 281, 536, 291, 965, 50548],
+      "temperature": 0.0,
+      "avg_logprob": -0.44038617610931396,
+      "compression_ratio": 0.8604651093482971,
+      "no_speech_prob": 0.002639062935486436
+    }
+  ],
+  "usage": {
+    "type": "duration",
+    "seconds": 4
+  }
+}
+```
 
 #### Support openai images edits
 
@@ -769,13 +816,88 @@ Response:
 }
 ```
 
-#### Support gpt-image-1's image generation & edits
+#### Support gpt-image family for image generation & edits
 
-![](https://s3.laisky.com/uploads/2025/04/gpt-image-1-2.png)
+Support gpt-image-1 & gpt-image-1-mini for image generation and editing.
 
-![](https://s3.laisky.com/uploads/2025/04/gpt-image-1-3.png)
+Draw image:
 
-![](https://s3.laisky.com/uploads/2025/04/gpt-image-1-1.png)
+```sh
+curl --location 'https://oneapi.laisky.com/v1/images/generations' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: sk-xxxxxxx' \
+--data '{
+    "model": "gpt-image-1-mini",
+    "prompt": "draw a goose",
+    "n": 1,
+    "size": "1024x1024",
+    "response_format": "b64_json"
+}'
+```
+
+Response:
+
+```json
+{
+    "created": 1763152907,
+    "background": "opaque",
+    "data": [
+        {
+            "b64_json": "iVBORw0KGgoAAAANS..."
+        }
+    ],
+    "output_format": "png",
+    "quality": "high",
+    "size": "1536x1024",
+    "usage": {
+        "input_tokens": 437,
+        "input_tokens_details": {
+            "image_tokens": 388,
+            "text_tokens": 49
+        },
+        "output_tokens": 6208,
+        "total_tokens": 6645
+    }
+}
+```
+
+Edit image:
+
+```sh
+curl --location 'https://oneapi.laisky.com/v1/images/edits' \
+  --header 'Authorization: sk-xxxxxxx' \
+  --form 'image[]=@"postman-cloud:///1f020b33-1ca1-4f10-b6d2-7b12aa70111e"' \
+  --form 'image[]=@"postman-cloud:///1f020b33-22c6-4350-8314-063db53618a4"' \
+  --form 'prompt="put all items in references image into a gift busket"' \
+  --form 'model="gpt-image-1-mini"'
+```
+
+Response:
+
+```json
+{
+    "created": 1763152907,
+    "background": "opaque",
+    "data": [
+        {
+            "b64_json": "iVBORw0KGgoAAAANS..."
+        }
+    ],
+    "output_format": "png",
+    "quality": "high",
+    "size": "1536x1024",
+    "usage": {
+        "input_tokens": 437,
+        "input_tokens_details": {
+            "image_tokens": 388,
+            "text_tokens": 49
+        },
+        "output_tokens": 6208,
+        "total_tokens": 6645
+    }
+}
+```
+
 
 #### Support o3-mini & o3 & o4-mini & gpt-4.1 & o3-pro & reasoning content
 
@@ -827,6 +949,8 @@ Response:
 ```
 
 #### Support gpt-5 family
+
+gpt-5.1-chat-latest / gpt-5.1 / gpt-5.1-2025-11-13 / gpt-5.1-codex / gpt-5.1-codex-mini
 
 gpt-5-chat-latest / gpt-5 / gpt-5-mini / gpt-5-nano / gpt-5-codex / gpt-5-pro
 
@@ -918,6 +1042,75 @@ wire_api = "responses"
 # See the Azure example below.
 query_params = {}
 
+```
+
+#### Support Sora
+
+> <https://platform.openai.com/docs/guides/video-generation>
+
+Create Video Task:
+
+```sh
+curl --location 'https://oneapi.laisky.com/v1/videos' \
+  --header 'Authorization: sk-xxxxxxx' \
+  --form 'prompt="aurora"' \
+  --form 'model="sora-2"' \
+  --form 'seconds="4"' \
+  --form 'size="1280x720"'
+```
+
+Response:
+
+```json
+{
+  "id": "video_691608967fe8819399e710799dae2ae708872b008b63ff61",
+  "object": "video",
+  "created_at": 1763051670,
+  "status": "queued",
+  "completed_at": null,
+  "error": null,
+  "expires_at": null,
+  "model": "sora-2",
+  "progress": 0,
+  "prompt": "aurora",
+  "remixed_from_video_id": null,
+  "seconds": "4",
+  "size": "1280x720"
+}
+```
+
+Get Video Task Status:
+
+```sh
+curl --location 'https://oneapi.laisky.com/v1/videos/video_691608967fe8819399e710799dae2ae708872b008b63ff61'
+  --header 'Authorization: sk-xxxxxxx'
+```
+
+Response:
+
+```json
+{
+  "id": "video_691611812ca88190bfb123716dcc953a089a232f54b02b21",
+  "object": "video",
+  "created_at": 1763053953,
+  "status": "completed",
+  "completed_at": 1763054021,
+  "error": null,
+  "expires_at": 1763057621,
+  "model": "sora-2",
+  "progress": 100,
+  "prompt": "aurora",
+  "remixed_from_video_id": null,
+  "seconds": "4",
+  "size": "1280x720"
+}
+```
+
+Download Video:
+
+```sh
+curl --location 'https://oneapi.laisky.com/v1/videos/video_691611812ca88190bfb123716dcc953a089a232f54b02b21/content'
+  --header 'Authorization: sk-xxxxxxx'
 ```
 
 ### Anthropic (Claude) Features

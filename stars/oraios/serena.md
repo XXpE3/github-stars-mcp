@@ -1,6 +1,6 @@
 ---
 project: serena
-stars: 15507
+stars: 15831
 description: |-
     A powerful coding agent toolkit providing semantic retrieval and editing capabilities (MCP server & other integrations)
 url: https://github.com/oraios/serena

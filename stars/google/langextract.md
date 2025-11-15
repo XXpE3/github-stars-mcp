@@ -1,6 +1,6 @@
 ---
 project: langextract
-stars: 16814
+stars: 16891
 description: |-
     A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization.
 url: https://github.com/google/langextract
@@ -159,6 +159,12 @@ result = lx.extract(
 ```
 
 This approach can extract hundreds of entities from full novels while maintaining high accuracy. The interactive visualization seamlessly handles large result sets, making it easy to explore hundreds of entities from the output JSONL file. **[See the full *Romeo and Juliet* extraction example →](https://github.com/google/langextract/blob/main/docs/examples/longer_text_example.md)** for detailed results and performance insights.
+
+### Vertex AI Batch Processing
+
+Save costs on large-scale tasks by enabling Vertex AI Batch API: `language_model_params={"vertexai": True, "batch": {"enabled": True}}`.
+
+See an example of the Vertex AI Batch API usage in [this example](docs/examples/batch_api_example.md).
 
 ## Installation
 

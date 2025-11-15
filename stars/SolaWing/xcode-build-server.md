@@ -1,6 +1,6 @@
 ---
 project: xcode-build-server
-stars: 823
+stars: 834
 description: |-
     a build server protocol implementation for integrate xcode with sourcekit-lsp
 url: https://github.com/SolaWing/xcode-build-server

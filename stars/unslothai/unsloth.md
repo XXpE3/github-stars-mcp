@@ -1,6 +1,6 @@
 ---
 project: unsloth
-stars: 48048
+stars: 48310
 description: |-
     Fine-tuning & Reinforcement Learning for LLMs. 🦥 Train OpenAI gpt-oss, DeepSeek-R1, Qwen3, Gemma 3, TTS 2x faster with 70% less VRAM.
 url: https://github.com/unslothai/unsloth

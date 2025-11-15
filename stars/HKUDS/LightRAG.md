@@ -1,6 +1,6 @@
 ---
 project: LightRAG
-stars: 22479
+stars: 23162
 description: |-
     [EMNLP2025] "LightRAG: Simple and Fast Retrieval-Augmented Generation"
 url: https://github.com/HKUDS/LightRAG

@@ -1,6 +1,6 @@
 ---
 project: Huatuo-Llama-Med-Chinese
-stars: 4886
+stars: 4891
 description: |-
     Repo for BenTsao [original name: HuaTuo (华驼)], Instruction-tuning Large Language Models with Chinese Medical Knowledge. 本草（原名：华驼）模型仓库，基于中文医学知识的大语言模型指令微调
 url: https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese

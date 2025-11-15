@@ -1,6 +1,6 @@
 ---
 project: genai-toolbox
-stars: 11374
+stars: 11455
 description: |-
     MCP Toolbox for Databases is an open source MCP server for databases.
 url: https://github.com/googleapis/genai-toolbox
@@ -47,6 +47,7 @@ documentation](https://googleapis.github.io/genai-toolbox/).
   - [Sources](#sources)
   - [Tools](#tools)
   - [Toolsets](#toolsets)
+  - [Prompts](#prompts)
 - [Versioning](#versioning)
   - [Pre-1.0.0 Versioning](#pre-100-versioning)
   - [Post-1.0.0 Versioning](#post-100-versioning)
@@ -132,7 +133,7 @@ To install Toolbox as a binary:
 >
 > ```sh
 > # see releases page for other versions
-> export VERSION=0.19.1
+> export VERSION=0.20.0
 > curl -L -o toolbox https://storage.googleapis.com/genai-toolbox/v$VERSION/linux/amd64/toolbox
 > chmod +x toolbox
 > ```
@@ -145,7 +146,7 @@ To install Toolbox as a binary:
 >
 > ```sh
 > # see releases page for other versions
-> export VERSION=0.19.1
+> export VERSION=0.20.0
 > curl -L -o toolbox https://storage.googleapis.com/genai-toolbox/v$VERSION/darwin/arm64/toolbox
 > chmod +x toolbox
 > ```
@@ -158,7 +159,7 @@ To install Toolbox as a binary:
 >
 > ```sh
 > # see releases page for other versions
-> export VERSION=0.19.1
+> export VERSION=0.20.0
 > curl -L -o toolbox https://storage.googleapis.com/genai-toolbox/v$VERSION/darwin/amd64/toolbox
 > chmod +x toolbox
 > ```
@@ -171,7 +172,7 @@ To install Toolbox as a binary:
 >
 > ```powershell
 > # see releases page for other versions
-> $VERSION = "0.19.1"
+> $VERSION = "0.20.0"
 > Invoke-WebRequest -Uri "https://storage.googleapis.com/genai-toolbox/v$VERSION/windows/amd64/toolbox.exe" -OutFile "toolbox.exe"
 > ```
 >
@@ -184,7 +185,7 @@ You can also install Toolbox as a container:
 
 ```sh
 # see releases page for other versions
-export VERSION=0.19.1
+export VERSION=0.20.0
 docker pull us-central1-docker.pkg.dev/database-toolbox/toolbox/toolbox:$VERSION
 ```
 
@@ -208,7 +209,7 @@ To install from source, ensure you have the latest version of
 [Go installed](https://go.dev/doc/install), and then run the following command:
 
 ```sh
-go install github.com/googleapis/genai-toolbox@v0.19.1
+go install github.com/googleapis/genai-toolbox@v0.20.0
 ```
 <!-- {x-release-please-end} -->
 
@@ -811,8 +812,6 @@ For more detailed instructions on using the Toolbox Core SDK, see the
     For more detailed instructions on using the Toolbox Go SDK, see the
     [project's README][toolbox-core-go-readme].
 
-    [toolbox-go]: https://pkg.go.dev/github.com/googleapis/mcp-toolbox-sdk-go/core
-    [toolbox-core-go-readme]: https://github.com/googleapis/mcp-toolbox-sdk-go/blob/main/core/README.md
 
   </details>
 </details>
@@ -939,6 +938,25 @@ all_tools = client.load_toolset()
 # This will only load the tools listed in 'my_second_toolset'
 my_second_toolset = client.load_toolset("my_second_toolset")
 ```
+
+### Prompts
+
+The `prompts` section of a `tools.yaml` defines prompts that can be used for
+interactions with LLMs.
+
+```yaml
+prompts:
+  code_review:
+    description: "Asks the LLM to analyze code quality and suggest improvements."
+    messages:
+      - content: "Please review the following code for quality, correctness, and potential improvements: \n\n{{.code}}"
+    arguments:
+      - name: "code"
+        description: "The code to review"
+```
+
+For more details on configuring prompts, see the
+[Prompts](https://googleapis.github.io/genai-toolbox/resources/prompts).
 
 ## Versioning
 

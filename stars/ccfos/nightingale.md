@@ -1,6 +1,6 @@
 ---
 project: nightingale
-stars: 12590
+stars: 12605
 description: |-
     Nightingale is to monitoring and alerting what Grafana is to visualization.
 url: https://github.com/ccfos/nightingale
@@ -120,5 +120,5 @@ Then Nightingale is not suitable. It is recommended that you choose on-call prod
 </a>
 
 ## 📜 License
-- [Apache License V2.0](https://github.com/didi/nightingale/blob/main/LICENSE)
+- [Apache License V2.0](https://github.com/ccfos/nightingale/blob/main/LICENSE)
 

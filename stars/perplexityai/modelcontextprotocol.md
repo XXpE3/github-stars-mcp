@@ -1,6 +1,6 @@
 ---
 project: modelcontextprotocol
-stars: 1758
+stars: 1771
 description: |-
     The official MCP server implementation for the Perplexity API Platform
 url: https://github.com/perplexityai/modelcontextprotocol
@@ -8,9 +8,13 @@ url: https://github.com/perplexityai/modelcontextprotocol
 
 # Perplexity API Platform MCP Server
 
-The official MCP server implementation for the Perplexity API Platform, providing AI assistants with real-time web search, reasoning, and research capabilities through Sonar models and the Search API.
+[![Install in Cursor](https://custom-icon-badges.demolab.com/badge/Install_in_Cursor-000000?style=for-the-badge&logo=cursor-ai-white)](https://cursor.com/en/install-mcp?name=perplexity&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIkBwZXJwbGV4aXR5LWFpL21jcC1zZXJ2ZXIiXX0=)
+&nbsp;
+[![Install in VS Code](https://custom-icon-badges.demolab.com/badge/Install_in_VS_Code-007ACC?style=for-the-badge&logo=vsc&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=perplexity&config=%7B%22type%22%3A%22stdio%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40perplexity-ai%2Fmcp-server%22%5D%7D)
+&nbsp;
+[![npm version](https://img.shields.io/npm/v/%40perplexity-ai%2Fmcp-server?style=for-the-badge&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/@perplexity-ai/mcp-server)
 
-Please refer to the official [DeepWiki page](https://deepwiki.com/ppl-ai/modelcontextprotocol) for assistance with implementation.
+The official MCP server implementation for the Perplexity API Platform, providing AI assistants with real-time web search, reasoning, and research capabilities through Sonar models and the Search API.
 
 ## Available Tools
 
@@ -26,6 +30,11 @@ Deep, comprehensive research using the `sonar-deep-research` model. Ideal for th
 ### **perplexity_reason**
 Advanced reasoning and problem-solving using the `sonar-reasoning-pro` model. Perfect for complex analytical tasks.
 
+> [!TIP]
+> Available as an optional parameter for **perplexity_reason** and **perplexity_research**: `strip_thinking`
+>
+> Set to `true` to remove `<think>...</think>` tags from the response, saving context tokens. Default: `false`
+
 ## Configuration
 
 ### Get Your API Key
@@ -34,6 +43,26 @@ Advanced reasoning and problem-solving using the `sonar-reasoning-pro` model. Pe
 3. (Optional) Set a timeout for requests: `PERPLEXITY_TIMEOUT_MS=600000`. The default is 5 minutes.
 
 ### Claude Code
+
+#### Option 1: Install via Plugin (Recommended)
+
+The easiest way to get started with Perplexity in Claude Code, set your API key:
+```bash
+export PERPLEXITY_API_KEY="your_key_here"
+```
+Then:
+```bash
+# Open Claude Code
+claude
+
+# Add the Perplexity marketplace
+/plugin marketplace add perplexityai/modelcontextprotocol
+
+# Install the plugin
+/plugin install perplexity
+```
+
+#### Option 2: Manual Configuration
 
 Run in your terminal:
 
@@ -60,9 +89,9 @@ Or add to your `claude.json`:
 }
 ```
 
-### Cursor
+### Cursor / VS Code
 
-Add to your `mcp.json`:
+Add to your `mcp.json` (Cursor) or `.vscode/mcp.json` (VS Code):
 
 ```json
 {
@@ -78,6 +107,8 @@ Add to your `mcp.json`:
   }
 }
 ```
+
+Or use the one-click install badges at the top of this README.
 
 ### Codex
 
@@ -114,12 +145,44 @@ For any MCP-compatible client, use:
 npx @perplexity-ai/mcp-server
 ```
 
+### Proxy Setup (For Corporate Networks)
+
+If you are running this server at work—especially behind a company firewall or proxy—you may need to tell the program how to send its internet traffic through your network's proxy. Follow these steps:
+
+**1. Get your proxy details**
+
+- Ask your IT department for your HTTPS proxy address and port.
+- You may also need a username and password.
+
+**2. Set the proxy environment variable**
+
+The easiest and most reliable way for Perplexity MCP is to use `PERPLEXITY_PROXY`. For example:
+
+```bash
+export PERPLEXITY_PROXY=https://your-proxy-host:8080
+```
+
+If your proxy needs a username and password, use:
+
+```bash
+export PERPLEXITY_PROXY=https://username:password@your-proxy-host:8080
+```
+
+**3. Alternate: Standard environment variables**
+
+If you'd rather use the standard variables, we support `HTTPS_PROXY` and `HTTP_PROXY`.
+
+> [!NOTE]
+> The server checks proxy settings in this order: `PERPLEXITY_PROXY` → `HTTPS_PROXY` → `HTTP_PROXY`. If none are set, it connects directly to the internet.
+> URLs must include `https://`. Typical ports are `8080`, `3128`, and `80`.
+
 ## Troubleshooting
 
 - **API Key Issues**: Ensure `PERPLEXITY_API_KEY` is set correctly
 - **Connection Errors**: Check your internet connection and API key validity
 - **Tool Not Found**: Make sure the package is installed and the command path is correct
 - **Timeout Errors**: For very long research queries, set `PERPLEXITY_TIMEOUT_MS` to a higher value
+- **Proxy Issues**: Verify your `PERPLEXITY_PROXY` or `HTTPS_PROXY` setup and ensure `api.perplexity.ai` isn't blocked by your firewall.
 
 For support, visit [community.perplexity.ai](https://community.perplexity.ai) or [file an issue](https://github.com/perplexityai/modelcontextprotocol/issues).
 

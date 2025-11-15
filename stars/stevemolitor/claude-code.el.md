@@ -1,6 +1,6 @@
 ---
 project: claude-code.el
-stars: 520
+stars: 526
 description: |-
     Claude Code Emacs integration
 url: https://github.com/stevemolitor/claude-code.el

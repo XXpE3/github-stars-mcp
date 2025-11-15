@@ -1,6 +1,6 @@
 ---
 project: marta-issues
-stars: 418
+stars: 419
 description: |-
     An issue tracker for Marta File Manager.
 url: https://github.com/marta-file-manager/marta-issues

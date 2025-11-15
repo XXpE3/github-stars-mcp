@@ -1,6 +1,6 @@
 ---
 project: mcp-ragdocs
-stars: 47
+stars: 48
 description: |-
     null
 url: https://github.com/rahulretnan/mcp-ragdocs

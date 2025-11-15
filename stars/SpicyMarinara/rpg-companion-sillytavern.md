@@ -1,6 +1,6 @@
 ---
 project: rpg-companion-sillytavern
-stars: 93
+stars: 99
 description: |-
     RPG Companion extension for SillyTavern - Track characters, quests, inventory, and game state with AI-generated content
 url: https://github.com/SpicyMarinara/rpg-companion-sillytavern
@@ -193,6 +193,18 @@ The extension fully supports swipes:
 ### Manual Update
 
 You can click the "Refresh RPG Info" button in the settings to refresh the RPG data at any time in separate generation mode.
+
+### Compatibility with Guided Generations
+
+This extension detects when a "guided generation" prompt is submitted (for example, via the GuidedGenerations extension which injects an ephemeral `instruct` prompt), and will avoid adding its tracker injection instructions (requests for stats, info box, and context prompts) to the generation context. This prevents conflicting instructions and ensures guided generations behave as the user expects.
+
+If you want tracker prompts to apply during a guided generation, run the update via separate generation or temporarily disable guided generation in the other extension.
+
+There is a new setting "Skip Tracker & HTML Injections during Guided Generations" in the RPG Companion settings (Advanced section). It now supports three modes:
+- none: never skip (always inject the tracker prompts as usual, default)
+- impersonation: only skip when an impersonation-style guided generation is detected
+- guided: skip whenever a guided `instruct` or `quiet_prompt` generation is detected
+
 
 ## 🎨 Themes
 

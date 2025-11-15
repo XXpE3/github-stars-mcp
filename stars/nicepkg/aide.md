@@ -1,6 +1,6 @@
 ---
 project: aide
-stars: 2650
+stars: 2652
 description: |-
     Conquer Any Code in VSCode: One-Click Comments, Conversions, UI-to-Code, and AI Batch Processing of Files! 在 VSCode 中征服任何代码：一键注释、转换、UI 图生成代码、AI 批量处理文件！💪
 url: https://github.com/nicepkg/aide

@@ -1,6 +1,6 @@
 ---
 project: claude-task-master
-stars: 23525
+stars: 23702
 description: |-
     An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.
 url: https://github.com/eyaltoledano/claude-task-master
@@ -320,7 +320,7 @@ Add `TASK_MASTER_TOOLS` to your MCP configuration file's `env` section:
   "mcpServers": {  // or "servers" for VS Code
     "task-master-ai": {
       "command": "npx",
-      "args": ["-y", "--package=task-master-ai", "task-master-ai"],
+      "args": ["-y", "task-master-ai"],
       "env": {
         "TASK_MASTER_TOOLS": "standard",  // Options: "all", "standard", "core", "lean", or comma-separated list
         "ANTHROPIC_API_KEY": "your-key-here",

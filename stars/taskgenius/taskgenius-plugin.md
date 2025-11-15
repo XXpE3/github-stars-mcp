@@ -1,6 +1,6 @@
 ---
 project: taskgenius-plugin
-stars: 452
+stars: 458
 description: |-
     Comprehensive task management plugin for Obsidian
 url: https://github.com/taskgenius/taskgenius-plugin
@@ -19,7 +19,7 @@ url: https://github.com/taskgenius/taskgenius-plugin
 
 ## Overview
 
-Task Genius transforms Obsidian into a powerful task management system with advanced features, beautiful visualizations, and seamless in-editor task management workflow - all while preserving Obsidian's philosophy of plain-text, future-proof note-taking.
+Task Genius plugin transforms Obsidian into a powerful task management system with advanced features, beautiful visualizations, and seamless in-editor task management workflow - all while preserving Obsidian's philosophy of plain-text, future-proof note-taking.
 
 ---
 

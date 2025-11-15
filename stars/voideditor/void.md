@@ -1,6 +1,6 @@
 ---
 project: void
-stars: 27450
+stars: 27515
 description: |-
     null
 url: https://github.com/voideditor/void

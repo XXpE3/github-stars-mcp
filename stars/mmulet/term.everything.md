@@ -1,6 +1,6 @@
 ---
 project: term.everything
-stars: 6799
+stars: 6833
 description: |-
     Run any GUI app in the terminal❗
 url: https://github.com/mmulet/term.everything
@@ -12,7 +12,7 @@ url: https://github.com/mmulet/term.everything
 <table>
   <tr>
     <td valign="middle">
-      <img width="128" height="128" alt="icon2" src="./resources/icon.png" />
+      <img width="128" height="128" alt="icon2" src="./termeverything/resources/icon.png" />
     </td>
     <td><h1>Term.Everything❗</h1></td>
     <td><a href="https://github.com/mmulet/term.everything/releases">Download the beta test now!</a></td>
@@ -21,8 +21,8 @@ url: https://github.com/mmulet/term.everything
   <tr>
     <td></td>
     <td>Works on both x11 and Wayland host systems.</td>
-    <td></td>
-    <td></td>
+    <td>Now written in go!</td>
+    <td><a href="https://github.com/mmulet/term.everything/tree/typescript">Typescript version here</a> </td>
   </tr>
 </table>
 
@@ -99,7 +99,7 @@ And this isn't even full resolution! Checkout the [full vid in in the discussion
 Check out the [help file here](./resources/help.md) for a usage guide on how to use `term.everything❗`
 
 ## Contributing
-term.everything❗ is written in developer friendly [Typescript](https://www.typescriptlang.org/) using the [bun](https://bun.com/) engine, with a just a smidge of C++.
+term.everything❗ is written in developer friendly [Go](https://go.dev/), with a just a smidge of C.
 See [./Contributing.md](./Contributing.md).
 
 ## Legal:

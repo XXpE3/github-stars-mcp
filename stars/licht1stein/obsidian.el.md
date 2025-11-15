@@ -1,6 +1,6 @@
 ---
 project: obsidian.el
-stars: 485
+stars: 489
 description: |-
     Obsidian Notes for Emacs
 url: https://github.com/licht1stein/obsidian.el

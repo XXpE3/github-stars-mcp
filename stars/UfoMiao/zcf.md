@@ -1,6 +1,6 @@
 ---
 project: zcf
-stars: 3682
+stars: 3945
 description: |-
     Zero-Config Code Flow for Claude code & Codex
 url: https://github.com/UfoMiao/zcf
@@ -34,6 +34,22 @@ url: https://github.com/UfoMiao/zcf
 
 [![Sponsor AI API](./src/assets/302.ai-en.jpg)](https://share.302.ai/gAT9VG)
 [302.AI](https://share.302.ai/gAT9VG) is a pay-as-you-go enterprise AI resource hub that offers the latest and most comprehensive AI models and APIs on the market, along with a variety of ready-to-use online AI applications.
+
+---
+
+[![GLM](./src/assets/GLM-en.png)](https://z.ai/subscribe?ic=8JVLJQFSKB)
+This project is sponsored by Z.ai, supporting us with their GLM CODING PLAN.
+GLM CODING PLAN is a subscription service designed for AI coding, starting at just $3/month. It provides access to their flagship GLM-4.6 model across 10+ popular AI coding tools (Claude Code, Cline, Roo Code, etc.), offering developers top-tier, fast, and stable coding experiences.
+Get 10% OFF GLM CODING PLAN：https://z.ai/subscribe?ic=8JVLJQFSKB
+
+---
+
+<table>
+<tr>
+<td width="180"><a href="https://www.packyapi.com/register?aff=zcf"><img src="./src/assets/packycode.png" alt="PackyCode" width="150"></a></td>
+<td>Thanks to PackyCode for sponsoring this project! PackyCode is a reliable and efficient API relay service provider, offering relay services for Claude Code, Codex, Gemini, and more. PackyCode provides special discounts for our software users: register using  <a href="https://www.packyapi.com/register?aff=zcf">this link</a>  and enter the "zcf" promo code during recharge to get 10% off.</td>
+</tr>
+</table>
 
 ## 🚀 Quick Start
 
@@ -162,7 +178,8 @@ ZCF now supports API provider presets that automatically configure baseUrl and m
 
 **Supported Providers:**
 - `302ai` - [302.AI](https://share.302.ai/gAT9VG) API Service
-- `glm` - GLM (z.ai)
+- `packycode` - [PackyCode](https://www.packyapi.com/register?aff=zcf) API Service
+- `glm` - [GLM](https://z.ai/subscribe?ic=8JVLJQFSKB) API Service
 - `minimax` - MiniMax API Service
 - `kimi` - Kimi (Moonshot AI)
 - `custom` - Custom API endpoint (requires manual URL configuration)
@@ -174,6 +191,9 @@ ZCF now supports API provider presets that automatically configure baseUrl and m
 npx zcf i --skip-prompt --provider 302ai --api-key "sk-xxx"
 # or shorthand
 npx zcf i -s -p 302ai -k "sk-xxx"
+
+# Using PackyCode provider
+npx zcf i -s -p packycode -k "sk-xxx"
 
 # Using GLM provider
 npx zcf i -s -p glm -k "sk-xxx"
@@ -205,7 +225,7 @@ When using `--skip-prompt`, the following parameters are available:
 | Parameter                    | Description                                              | Values                                                                                             | Required                               | Default                                                                                                                          |
 | ---------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `--skip-prompt, -s`          | Skip all interactive prompts                             | -                                                                                                  | Yes (for non-interactive mode)         | -                                                                                                                                |
-| `--provider, -p`             | API provider preset (v3.3.0+ New)                        | `302ai`, `glm`, `minimax`, `kimi`, `custom`                                                        | No                                     | - (Simplifies configuration by auto-filling baseUrl and models)                                                                  |
+| `--provider, -p`             | API provider preset (v3.3.0+ New)                        | `302ai`, `packycode`, `glm`, `minimax`, `kimi`, `custom`                                           | No                                     | - (Simplifies configuration by auto-filling baseUrl and models)                                                                  |
 | `--lang, -l`                 | ZCF display language (applies to all commands)           | `zh-CN`, `en`                                                                                      | No                                     | `en` or user's saved preference                                                                                                  |
 | `--config-lang, -c`          | Configuration language (template files language)         | `zh-CN`, `en`                                                                                      | No                                     | `en`                                                                                                                             |
 | `--ai-output-lang, -a`       | AI output language                                       | `zh-CN`, `en`, custom string                                                                       | No                                     | `en`                                                                                                                             |
@@ -297,7 +317,7 @@ ZCF now supports customizable AI output styles to personalize your Claude Code e
 
 <p align="center">
 <a href="https://github.com/Haleclipse">
-<img src="./src/assets/Haleclipse.gif" alt="Halley-chan" width="200"/>
+<img src="./src/assets/Haleclipse.webp" alt="Halley-chan" width="200"/>
 </a>
 <div align="center">Tsundere <a href="https://github.com/Haleclipse">Halley-chan</a> Ojou-sama (￣▽￣)ゞ</div>
 </p>
@@ -481,6 +501,7 @@ ZCF provides flexible API configuration options for both Claude Code and Codex:
 
 Choose from popular API providers with pre-configured settings:
 - **302.AI** - Pay-as-you-go AI service with comprehensive model support
+- **PackyCode** - PackyCode API Service
 - **GLM (智谱AI)** - Zhipu AI's GLM models
 - **MiniMax** - MiniMax AI service
 - **Kimi (Moonshot AI)** - Moonshot's Kimi models
@@ -938,6 +959,8 @@ If you find this project helpful, please consider sponsoring its development. Yo
 
 A huge thank you to all our sponsors for their generous support!
 - [302.AI](https://share.302.ai/gAT9VG) (first corporate sponsorship 🤠)
+- [GLM](https://z.ai/subscribe?ic=8JVLJQFSKB) (first AI model sponsorship 🤖)
+- [PackyCode](https://www.packyapi.com/register?aff=zcf) (first API proxy service sponsor 🧝🏻‍♀️)
 - Tc (first sponsor)
 - Argolinhas (first ko-fi sponsor ٩(•̤̀ᵕ•̤́๑))
 - r\*r (first anonymous sponsor 🤣)

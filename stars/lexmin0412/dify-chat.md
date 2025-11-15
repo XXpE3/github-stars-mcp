@@ -1,6 +1,6 @@
 ---
 project: dify-chat
-stars: 640
+stars: 644
 description: |-
     一个 Dify 应用管理平台，基于 Dify API 构建，提供深度优化的用户端交互界面，支持 Chatflow、Workflow 等多种 Dify 应用类型，适配深度思考、思维链、图表渲染、文件处理等丰富的 AI 输出形式，提供开箱即用的 AI 应用解决方案。
 url: https://github.com/lexmin0412/dify-chat
@@ -29,13 +29,13 @@ nano docker-compose.yml
 docker compose up -d
 ```
 
-更多部署方式，详见 [官方文档](https://docs.dify-chat.lexmin.cn/guide/deploy/docker-compose.html)。
+更多部署方式，详见 [官方文档](https://lexmin0412.github.io/dify-chat-docs/guide/deploy/docker-compose.html)。
 
 ## 相关链接
 
 官方站点：
 
-- 使用文档：[https://docs.dify-chat.lexmin.cn/](https://docs.dify-chat.lexmin.cn/)
+- 使用文档：[https://lexmin0412.github.io/dify-chat-docs/](https://lexmin0412.github.io/dify-chat-docs/)
 - 演示站点：[https://lexmin0412.github.io/dify-chat/](https://lexmin0412.github.io/dify-chat/)
 
 另外，如果你想要了解整个项目的架构或技术细节，推荐访问：

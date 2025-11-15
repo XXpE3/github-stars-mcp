@@ -1,6 +1,6 @@
 ---
 project: cognee
-stars: 8195
+stars: 8594
 description: |-
     Memory for AI Agents in 6 lines of code
 url: https://github.com/topoteretes/cognee
@@ -106,7 +106,7 @@ Let’s try Cognee in just a few lines of code. For detailed setup and configura
 
 ### Prerequisites
 
-- Python 3.10 to 3.12
+- Python 3.10 to 3.13
 
 ### Step 1: Install Cognee
 

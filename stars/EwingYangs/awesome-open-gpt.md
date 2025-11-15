@@ -1,6 +1,6 @@
 ---
 project: awesome-open-gpt
-stars: 5951
+stars: 5957
 description: |-
     Collection of Open Source Projects Related to GPT，GPT相关开源项目合集🚀、精选🔥🔥
 url: https://github.com/EwingYangs/awesome-open-gpt
