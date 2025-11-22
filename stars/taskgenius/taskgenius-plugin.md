@@ -1,6 +1,6 @@
 ---
 project: taskgenius-plugin
-stars: 458
+stars: 466
 description: |-
     Comprehensive task management plugin for Obsidian
 url: https://github.com/taskgenius/taskgenius-plugin

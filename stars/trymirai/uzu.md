@@ -1,6 +1,6 @@
 ---
 project: uzu
-stars: 1363
+stars: 1373
 description: |-
     A high-performance inference engine for AI models
 url: https://github.com/trymirai/uzu

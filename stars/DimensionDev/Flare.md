@@ -1,6 +1,6 @@
 ---
 project: Flare
-stars: 411
+stars: 434
 description: |-
     All your Mastodon, Bluesky, Misskey, X, RSS feeds, in one APP.
 url: https://github.com/DimensionDev/Flare

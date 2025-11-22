@@ -1,6 +1,6 @@
 ---
 project: mind-map
-stars: 113
+stars: 114
 description: |-
     create mind maps with ai
 url: https://github.com/floguo/mind-map

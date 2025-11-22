@@ -1,6 +1,6 @@
 ---
 project: Notepad3
-stars: 5924
+stars: 5938
 description: |-
     Notepad like text editor based on the Scintilla source code. Notepad3 based on code from Notepad2 and MiniPath on code from metapath. Download Notepad3:
 url: https://github.com/rizonesoft/Notepad3

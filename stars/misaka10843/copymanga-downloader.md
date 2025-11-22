@@ -1,6 +1,6 @@
 ---
 project: copymanga-downloader
-stars: 341
+stars: 342
 description: |-
     使用python+copymanga API来下载copymanga(拷贝漫画)中的漫画(无速率限制)，支持批量+选话下载和获取您收藏的漫画并下载及半自动获取订阅下载！(全平台支持(pypi)) Nas版本请查看copymanga-nasdownloader
 url: https://github.com/misaka10843/copymanga-downloader

@@ -1,6 +1,6 @@
 ---
 project: tmux
-stars: 2643
+stars: 2657
 description: |-
     💽 Soothing pastel theme for Tmux
 url: https://github.com/catppuccin/tmux

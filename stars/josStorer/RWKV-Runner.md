@@ -1,6 +1,6 @@
 ---
 project: RWKV-Runner
-stars: 6091
+stars: 6100
 description: |-
     A RWKV management and startup tool, full automation, only 8MB. And provides an interface compatible with the OpenAI API. RWKV is a large language model that is fully open source and available for commercial use.
 url: https://github.com/josStorer/RWKV-Runner

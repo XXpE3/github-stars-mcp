@@ -1,6 +1,6 @@
 ---
 project: zotero-markdown-translator
-stars: 106
+stars: 107
 description: |-
     A simple Zotero translator that creates a Markdown Link when exporting
 url: https://github.com/silentdot/zotero-markdown-translator

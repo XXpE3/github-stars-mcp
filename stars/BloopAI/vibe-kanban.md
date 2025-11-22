@@ -1,6 +1,6 @@
 ---
 project: vibe-kanban
-stars: 5917
+stars: 6006
 description: |-
     Kanban board to manage your AI coding agents
 url: https://github.com/BloopAI/vibe-kanban
@@ -22,6 +22,10 @@ url: https://github.com/BloopAI/vibe-kanban
   <a href="https://github.com/BloopAI/vibe-kanban/blob/main/.github/workflows/publish.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/BloopAI/vibe-kanban/.github%2Fworkflows%2Fpublish.yml" /></a>
   <a href="https://deepwiki.com/BloopAI/vibe-kanban"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a>
 </p>
+
+<h1 align="center">
+  <a href="https://jobs.polymer.co/vibe-kanban?source=github"><strong>We're hiring!</strong></a>
+</h1>
 
 ![](frontend/public/vibe-kanban-screenshot-overview.png)
 

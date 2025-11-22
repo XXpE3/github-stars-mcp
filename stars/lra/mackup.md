@@ -1,6 +1,6 @@
 ---
 project: mackup
-stars: 14953
+stars: 14970
 description: |-
     Backup and keep your application settings in sync.
 url: https://github.com/lra/mackup

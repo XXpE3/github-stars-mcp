@@ -1,6 +1,6 @@
 ---
 project: Deeper-Seeker
-stars: 412
+stars: 413
 description: |-
     Deeper Seeker is an simpler OSS version of OpenAI's latest Deep Research feature in ChatGPT.It is an agentic research tool to reason , create multi step tasks , synthesize data from multiple online resources and create neat reports 
 url: https://github.com/HarshJ23/Deeper-Seeker

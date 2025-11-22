@@ -1,6 +1,6 @@
 ---
 project: nvitop
-stars: 6291
+stars: 6316
 description: |-
     An interactive NVIDIA-GPU process viewer and beyond, the one-stop solution for GPU process management.
 url: https://github.com/XuehaiPan/nvitop

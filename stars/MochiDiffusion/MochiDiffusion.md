@@ -1,6 +1,6 @@
 ---
 project: MochiDiffusion
-stars: 7804
+stars: 7807
 description: |-
     Run Stable Diffusion on Mac natively
 url: https://github.com/MochiDiffusion/MochiDiffusion

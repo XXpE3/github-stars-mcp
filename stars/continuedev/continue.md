@@ -1,6 +1,6 @@
 ---
 project: continue
-stars: 29843
+stars: 29951
 description: |-
     ⏩ Ship faster with Continuous AI. Open-source CLI that can be used in TUI mode as a coding agent or Headless mode to run background agents
 url: https://github.com/continuedev/continue

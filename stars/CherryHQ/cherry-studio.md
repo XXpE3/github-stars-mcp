@@ -1,6 +1,6 @@
 ---
 project: cherry-studio
-stars: 35429
+stars: 35682
 description: |-
     🍒 Cherry Studio is a desktop client that supports for multiple LLM providers.
 url: https://github.com/CherryHQ/cherry-studio

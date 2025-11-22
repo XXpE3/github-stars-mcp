@@ -1,6 +1,6 @@
 ---
 project: rpg-companion-sillytavern
-stars: 99
+stars: 105
 description: |-
     RPG Companion extension for SillyTavern - Track characters, quests, inventory, and game state with AI-generated content
 url: https://github.com/SpicyMarinara/rpg-companion-sillytavern

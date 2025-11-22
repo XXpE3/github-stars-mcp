@@ -1,6 +1,6 @@
 ---
 project: lean-conky-config
-stars: 160
+stars: 161
 description: |-
     Lean Conky config that just works
 url: https://github.com/jxai/lean-conky-config

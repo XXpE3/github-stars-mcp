@@ -1,6 +1,6 @@
 ---
 project: perplexity-ai-app
-stars: 537
+stars: 539
 description: |-
     The Perplexity AI Desktop App, powered by Electron which brings the magic of AI language processing to your desktop.
 url: https://github.com/inulute/perplexity-ai-app

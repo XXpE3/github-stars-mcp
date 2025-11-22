@@ -1,6 +1,6 @@
 ---
 project: DeepCode
-stars: 10263
+stars: 10657
 description: |-
     "DeepCode: Open Agentic Coding (Paper2Code & Text2Web & Text2Backend)"
 url: https://github.com/HKUDS/DeepCode
@@ -550,6 +550,14 @@ curl -O https://raw.githubusercontent.com/HKUDS/DeepCode/main/mcp_agent.secrets.
 # Edit mcp_agent.secrets.yaml with your API keys and base_url:
 # - openai: api_key, base_url (for OpenAI/custom endpoints)
 # - anthropic: api_key (for Claude models)
+# - google: api_key (for Gemini models)
+
+# 🤖 Select your preferred LLM provider (optional)
+# Edit mcp_agent.config.yaml to choose your LLM (line ~106):
+# - llm_provider: "google"    # Use Google Gemini models
+# - llm_provider: "anthropic" # Use Anthropic Claude models
+# - llm_provider: "openai"    # Use OpenAI/compatible models
+# Note: If not set or unavailable, will automatically fallback to first available provider
 
 # 🔑 Configure search API keys for web search (optional)
 # Edit mcp_agent.config.yaml to set your API keys:
@@ -586,6 +594,14 @@ uv pip install -r requirements.txt
 # Edit mcp_agent.secrets.yaml with your API keys and base_url:
 # - openai: api_key, base_url (for OpenAI/custom endpoints)
 # - anthropic: api_key (for Claude models)
+# - google: api_key (for Gemini models)
+
+# 🤖 Select your preferred LLM provider (optional)
+# Edit mcp_agent.config.yaml to choose your LLM (line ~106):
+# - llm_provider: "google"    # Use Google Gemini models
+# - llm_provider: "anthropic" # Use Anthropic Claude models
+# - llm_provider: "openai"    # Use OpenAI/compatible models
+# Note: If not set or unavailable, will automatically fallback to first available provider
 
 # 🔑 Configure search API keys for web search (optional)
 # Edit mcp_agent.config.yaml to set your API keys:
@@ -612,6 +628,14 @@ pip install -r requirements.txt
 # Edit mcp_agent.secrets.yaml with your API keys and base_url:
 # - openai: api_key, base_url (for OpenAI/custom endpoints)
 # - anthropic: api_key (for Claude models)
+# - google: api_key (for Gemini models)
+
+# 🤖 Select your preferred LLM provider (optional)
+# Edit mcp_agent.config.yaml to choose your LLM (line ~106):
+# - llm_provider: "google"    # Use Google Gemini models
+# - llm_provider: "anthropic" # Use Anthropic Claude models
+# - llm_provider: "openai"    # Use OpenAI/compatible models
+# Note: If not set or unavailable, will automatically fallback to first available provider
 
 # 🔑 Configure search API keys for web search (optional)
 # Edit mcp_agent.config.yaml to set your API keys:

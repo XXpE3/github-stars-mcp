@@ -1,6 +1,6 @@
 ---
 project: llama-cookbook
-stars: 18033
+stars: 18042
 description: |-
     Welcome to the Llama Cookbook! This is your go to guide for Building with Llama: Getting started with Inference, Fine-Tuning, RAG. We also show you how to solve end to end problems using Llama model family and using them on various provider services  
 url: https://github.com/meta-llama/llama-cookbook

@@ -1,6 +1,6 @@
 ---
 project: iterm-mcp
-stars: 483
+stars: 487
 description: |-
     A Model Context Protocol server that executes commands in the current iTerm session - useful for REPL and CLI assistance
 url: https://github.com/ferrislucas/iterm-mcp

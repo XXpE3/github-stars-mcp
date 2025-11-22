@@ -1,6 +1,6 @@
 ---
 project: ast-grep
-stars: 11172
+stars: 11353
 description: |-
     ⚡A CLI tool for code structural search, lint and rewriting. Written in Rust
 url: https://github.com/ast-grep/ast-grep

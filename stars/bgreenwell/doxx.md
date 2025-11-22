@@ -1,6 +1,6 @@
 ---
 project: doxx
-stars: 3185
+stars: 3209
 description: |-
     Expose the contents of .docx files without leaving your terminal. Fast, safe, and smart — no Office required!
 url: https://github.com/bgreenwell/doxx

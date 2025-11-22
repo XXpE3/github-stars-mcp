@@ -1,6 +1,6 @@
 ---
 project: LocalAI
-stars: 38515
+stars: 39009
 description: |-
     :robot: The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. Drop-in replacement for OpenAI,  running on consumer-grade hardware. No GPU required. Runs gguf, transformers, diffusers and many more. Features: Generate Text, Audio, Video, Images, Voice Cloning, Distributed, P2P and decentralized inference
 url: https://github.com/mudler/LocalAI
@@ -116,7 +116,7 @@ Run the installer script:
 curl https://localai.io/install.sh | sh
 ```
 
-For more installation options, see [Installer Options](https://localai.io/docs/advanced/installer/).
+For more installation options, see [Installer Options](https://localai.io/installation/).
 
 ### macOS Download:
 

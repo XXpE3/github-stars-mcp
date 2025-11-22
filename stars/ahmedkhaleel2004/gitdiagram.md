@@ -1,6 +1,6 @@
 ---
 project: gitdiagram
-stars: 14718
+stars: 14767
 description: |-
     Free, simple, fast interactive diagrams for any GitHub repository
 url: https://github.com/ahmedkhaleel2004/gitdiagram

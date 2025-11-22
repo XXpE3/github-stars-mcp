@@ -1,6 +1,6 @@
 ---
 project: window.ai
-stars: 962
+stars: 964
 description: |-
     Use your own AI models on the web
 url: https://github.com/alexanderatallah/window.ai

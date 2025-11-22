@@ -1,6 +1,6 @@
 ---
 project: graphiti
-stars: 20202
+stars: 20375
 description: |-
     Build Real-Time Knowledge Graphs for AI Agents
 url: https://github.com/getzep/graphiti
@@ -487,7 +487,7 @@ graphiti = Graphiti(
     cross_encoder=GeminiRerankerClient(
         config=LLMConfig(
             api_key=api_key,
-            model="gemini-2.5-flash-lite-preview-06-17"
+            model="gemini-2.5-flash-lite"
         )
     )
 )
@@ -495,7 +495,7 @@ graphiti = Graphiti(
 # Now you can use Graphiti with Google Gemini for all components
 ```
 
-The Gemini reranker uses the `gemini-2.5-flash-lite-preview-06-17` model by default, which is optimized for
+The Gemini reranker uses the `gemini-2.5-flash-lite` model by default, which is optimized for
 cost-effective and low-latency classification tasks. It uses the same boolean classification approach as the OpenAI
 reranker, leveraging Gemini's log probabilities feature to rank passage relevance.
 

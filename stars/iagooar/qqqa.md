@@ -1,6 +1,6 @@
 ---
 project: qqqa
-stars: 380
+stars: 415
 description: |-
     Fast, stateless LLM for your shell: qq answers; qa runs commands
 url: https://github.com/iagooar/qqqa

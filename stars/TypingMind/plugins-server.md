@@ -1,6 +1,6 @@
 ---
 project: plugins-server
-stars: 92
+stars: 94
 description: |-
     Plugin server for TypingMind
 url: https://github.com/TypingMind/plugins-server

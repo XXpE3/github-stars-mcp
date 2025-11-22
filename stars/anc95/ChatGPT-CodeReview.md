@@ -1,6 +1,6 @@
 ---
 project: ChatGPT-CodeReview
-stars: 4382
+stars: 4384
 description: |-
     🐥 A code review bot powered by ChatGPT
 url: https://github.com/anc95/ChatGPT-CodeReview

@@ -1,6 +1,6 @@
 ---
 project: dirvish
-stars: 1007
+stars: 1013
 description: |-
     A polished Dired with batteries included.
 url: https://github.com/alexluigit/dirvish

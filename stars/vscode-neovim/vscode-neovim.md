@@ -1,6 +1,6 @@
 ---
 project: vscode-neovim
-stars: 7453
+stars: 7465
 description: |-
     Vim mode for VSCode, powered by Neovim
 url: https://github.com/vscode-neovim/vscode-neovim

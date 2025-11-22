@@ -1,6 +1,6 @@
 ---
 project: qireader
-stars: 192
+stars: 193
 description: |-
     A Modern Web RSS Reader
 url: https://github.com/oxyry/qireader

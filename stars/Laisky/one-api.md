@@ -1,6 +1,6 @@
 ---
 project: one-api
-stars: 162
+stars: 166
 description: |-
     OpenRouter’s open‑source alternative. Multi-model/Multi-API-format/Multi-tenant LLM API aggregation platform.
 url: https://github.com/Laisky/one-api
@@ -86,6 +86,7 @@ The original author stopped maintaining the project, leaving critical PRs and ne
   - [Contributors](#contributors)
   - [New Features](#new-features)
     - [Universal Features](#universal-features)
+      - [Unified Billing System](#unified-billing-system)
       - [Support channel's built-in tooling configuration](#support-channels-built-in-tooling-configuration)
       - [Support update user's remained quota](#support-update-users-remained-quota)
       - [Get request's cost](#get-requests-cost)
@@ -126,6 +127,7 @@ The original author stopped maintaining the project, leaving critical PRs and ne
       - [Support gemini-2.5-pro](#support-gemini-25-pro)
       - [Support GCP Vertex gloabl region and gemini-2.5-pro-preview-06-05](#support-gcp-vertex-gloabl-region-and-gemini-25-pro-preview-06-05)
       - [Support gemini-2.5-flash-image-preview \& imagen-4 series](#support-gemini-25-flash-image-preview--imagen-4-series)
+      - [Support gemini-3 family](#support-gemini-3-family)
     - [OpenCode Support](#opencode-support)
     - [AWS Features](#aws-features)
       - [Support AWS cross-region inferences](#support-aws-cross-region-inferences)
@@ -301,6 +303,10 @@ The Kubernetes deployment guide has been moved into a dedicated document:
 ## New Features
 
 ### Universal Features
+
+#### Unified Billing System
+
+All channels share a four-layer billing pipeline (channel overrides → adapter defaults → global fallback → safe default) with support for tiered token pricing, cached prompt buckets, and per-second/per-image media meters. Administrators can fetch defaults, override specific models, and audit every call via `X-Oneapi-Request-Id`; see [docs/arch/billing.md](./docs/arch/billing.md) for internals and [docs/manuals/billing.md](./docs/manuals/billing.md) for the operational playbook.
 
 #### Support channel's built-in tooling configuration
 
@@ -839,25 +845,25 @@ Response:
 
 ```json
 {
-    "created": 1763152907,
-    "background": "opaque",
-    "data": [
-        {
-            "b64_json": "iVBORw0KGgoAAAANS..."
-        }
-    ],
-    "output_format": "png",
-    "quality": "high",
-    "size": "1536x1024",
-    "usage": {
-        "input_tokens": 437,
-        "input_tokens_details": {
-            "image_tokens": 388,
-            "text_tokens": 49
-        },
-        "output_tokens": 6208,
-        "total_tokens": 6645
+  "created": 1763152907,
+  "background": "opaque",
+  "data": [
+    {
+      "b64_json": "iVBORw0KGgoAAAANS..."
     }
+  ],
+  "output_format": "png",
+  "quality": "high",
+  "size": "1536x1024",
+  "usage": {
+    "input_tokens": 437,
+    "input_tokens_details": {
+      "image_tokens": 388,
+      "text_tokens": 49
+    },
+    "output_tokens": 6208,
+    "total_tokens": 6645
+  }
 }
 ```
 
@@ -876,28 +882,27 @@ Response:
 
 ```json
 {
-    "created": 1763152907,
-    "background": "opaque",
-    "data": [
-        {
-            "b64_json": "iVBORw0KGgoAAAANS..."
-        }
-    ],
-    "output_format": "png",
-    "quality": "high",
-    "size": "1536x1024",
-    "usage": {
-        "input_tokens": 437,
-        "input_tokens_details": {
-            "image_tokens": 388,
-            "text_tokens": 49
-        },
-        "output_tokens": 6208,
-        "total_tokens": 6645
+  "created": 1763152907,
+  "background": "opaque",
+  "data": [
+    {
+      "b64_json": "iVBORw0KGgoAAAANS..."
     }
+  ],
+  "output_format": "png",
+  "quality": "high",
+  "size": "1536x1024",
+  "usage": {
+    "input_tokens": 437,
+    "input_tokens_details": {
+      "image_tokens": 388,
+      "text_tokens": 49
+    },
+    "output_tokens": 6208,
+    "total_tokens": 6645
+  }
 }
 ```
-
 
 #### Support o3-mini & o3 & o4-mini & gpt-4.1 & o3-pro & reasoning content
 
@@ -1194,6 +1199,10 @@ claude-opus-4-0 / claude-opus-4-1 / claude-sonnet-4-0 / claude-sonnet-4-5 / clau
 #### Support gemini-2.5-flash-image-preview & imagen-4 series
 
 ![](https://s3.laisky.com/uploads/2025/09/gemini-banana.png)
+
+#### Support gemini-3 family
+
+Support gemini-3-pro-preview, gemini-3-pro-image-preview
 
 ### OpenCode Support
 

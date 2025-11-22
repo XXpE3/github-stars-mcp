@@ -1,6 +1,6 @@
 ---
 project: claude-task-master
-stars: 23702
+stars: 23811
 description: |-
     An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.
 url: https://github.com/eyaltoledano/claude-task-master
@@ -284,9 +284,6 @@ task-master research "What are the latest best practices for JWT authentication?
 task-master move --from=5 --from-tag=backlog --to-tag=in-progress
 task-master move --from=5,6,7 --from-tag=backlog --to-tag=done --with-dependencies
 task-master move --from=5 --from-tag=backlog --to-tag=in-progress --ignore-dependencies
-
-# Generate task files
-task-master generate
 
 # Add rules after initialization
 task-master rules add windsurf,roo,vscode

@@ -1,6 +1,6 @@
 ---
 project: chatgpt-engineer-prompts
-stars: 169
+stars: 168
 description: |-
     Awesome ChatGPT prompts for engineers😇
 url: https://github.com/camsong/chatgpt-engineer-prompts

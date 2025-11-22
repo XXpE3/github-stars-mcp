@@ -1,6 +1,6 @@
 ---
 project: langflow
-stars: 138313
+stars: 139061
 description: |-
     Langflow is a powerful tool for building and deploying AI-powered agents and workflows.
 url: https://github.com/langflow-ai/langflow
@@ -36,7 +36,7 @@ url: https://github.com/langflow-ai/langflow
 
 ## 🖥️  Langflow Desktop
 
-Langflow Desktop is the easiest way to get started. It includes dependency management and automatic updates.
+Langflow Desktop is the easiest way to get started with Langflow. All dependencies are included, so you don't need to manage Python environments or install packages manually.
 Available for Windows and macOS.
 
 [📥 Download Langflow Desktop](https://www.langflow.org/desktop)

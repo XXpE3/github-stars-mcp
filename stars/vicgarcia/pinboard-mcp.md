@@ -19,24 +19,19 @@ Once set up, you can make queries like:
 
 ## setup
 
-### clone the repo and build the docker image
+this mcp server runs in a docker container for use with claude desktop.
 
-clone the repo
-```
-git clone https://github.com/vicgarcia/pinboard-mcp.git
-cd pinboard-mcp
-```
+#### get the docker image
 
-build the docker image
-```
-docker build -t pinboard-mcp:local .
+```bash
+docker pull ghcr.io/vicgarcia/pinboard-mcp:latest
 ```
 
-### get your pinboard api token
+#### get your pinboard api token
 
 go to [pinboard settings](https://pinboard.in/settings/password) and copy your api token (format: `username:1234567890ABCDEF1234567890ABCDEF`)
 
-### setup mcp server in claude desktop
+#### configure claude desktop
 
 add this to your claude desktop mcp settings:
 
@@ -48,7 +43,7 @@ add this to your claude desktop mcp settings:
       "args": [
         "run", "-i", "--rm",
         "-e", "PINBOARD_TOKEN=your-username:your-api-token",
-        "pinboard-mcp:local"
+        "ghcr.io/vicgarcia/pinboard-mcp:latest"
       ]
     }
   }
@@ -59,7 +54,9 @@ replace `your-username:your-api-token` with your actual pinboard token
 
 ## features
 
-### get_bookmarks
+this mcp server exposes tools to interact with the pinboard api.
+
+#### get_bookmarks
 
 retrieve bookmarks within a date range
 
@@ -76,7 +73,7 @@ retrieve bookmarks within a date range
 **example usage in claude:**
 > "get my bookmarks from last week with the tag 'python'"
 
-### add_bookmark
+#### add_bookmark
 
 create a new bookmark
 
@@ -91,7 +88,7 @@ create a new bookmark
 **example usage in claude:**
 > "bookmark https://example.com with title 'interesting article' and tags 'research, ai'"
 
-### update_bookmark
+#### update_bookmark
 
 update an existing bookmark by url
 
@@ -106,7 +103,7 @@ update an existing bookmark by url
 **example usage in claude:**
 > "update the bookmark for https://example.com to add the tag 'important'"
 
-### get_tags
+#### get_tags
 
 retrieve all tags with usage counts
 
@@ -117,7 +114,7 @@ retrieve all tags with usage counts
 **example usage in claude:**
 > "show me all my tags and how often i use them"
 
-### rename_tag
+#### rename_tag
 
 rename a tag across all bookmarks
 
@@ -133,7 +130,7 @@ rename a tag across all bookmarks
 **example usage in claude:**
 > "rename the tag 'ppython' to 'python'"
 
-### suggest_tags
+#### suggest_tags
 
 get suggested tags for a url from pinboard
 
@@ -149,7 +146,7 @@ get suggested tags for a url from pinboard
 > "suggest tags for https://example.com/article"
 > "what tags should i use for bookmarking https://github.com/repo/project"
 
-## dev
+## development
 
 if you want to work on this locally:
 
@@ -161,7 +158,7 @@ cd pinboard-mcp
 pip install -e .
 ```
 
-### project structure
+#### project structure
 
 ```
 src/
@@ -172,9 +169,26 @@ src/
     utils.py          # validation helpers
 ```
 
-### building docker image
+#### building docker image locally
 
 ```bash
-./build.sh
+docker build -t pinboard-mcp:local .
+```
+
+to use the local build in claude desktop, update your mcp settings to use `pinboard-mcp:local` instead of `ghcr.io/vicgarcia/pinboard-mcp:latest`:
+
+```json
+{
+  "mcpServers": {
+    "pinboard": {
+      "command": "docker",
+      "args": [
+        "run", "-i", "--rm",
+        "-e", "PINBOARD_TOKEN=your-username:your-api-token",
+        "pinboard-mcp:local"
+      ]
+    }
+  }
+}
 ```
 

@@ -1,6 +1,6 @@
 ---
 project: RSSBox
-stars: 602
+stars: 604
 description: |-
     让RSS管理更智能，让信息获取更高效 | Smarter RSS management, more efficient information access
 url: https://github.com/versun/RSSBox

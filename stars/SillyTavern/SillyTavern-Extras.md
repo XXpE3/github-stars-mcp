@@ -1,6 +1,6 @@
 ---
 project: SillyTavern-Extras
-stars: 650
+stars: 652
 description: |-
     Extensions API for SillyTavern.
 url: https://github.com/SillyTavern/SillyTavern-Extras

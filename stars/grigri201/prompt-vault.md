@@ -12,7 +12,7 @@ Prompt Vault 是一个 Go 命令行工具，用于管理 AI 提示词。
 
 ## 功能特性
 
-使用 GitHub Gist 管理、分享和导入提示词。同时提供了本地缓存可以在离线的时候使用。
+使用 GitHub Gist 管理和导入提示词（新增提示词会创建公开 Gist），同时提供本地缓存以便离线查看。
 
 ## 安装
 
@@ -65,7 +65,7 @@ version: "1.0"
 - 改进建议
 ```
 
-然后添加到 Prompt Vault：
+然后添加到 Prompt Vault（会创建公开的 GitHub Gist）：
 
 ```bash
 pv add my-prompt.yaml
@@ -100,30 +100,7 @@ pv get "代码审查"
 pv get https://gist.github.com/username/abc123
 ```
 
-### 5. 同步提示词缓存
-
-```bash
-# 同步所有提示词到本地缓存
-pv sync
-
-# 显示详细同步过程
-pv sync --verbose
-```
-
-### 6. 分享提示词
-
-```bash
-# 交互式选择私有提示词进行分享
-pv share
-
-# 按关键字筛选私有提示词进行分享
-pv share "我的提示词"
-
-# 直接分享指定 URL 的私有提示词
-pv share https://gist.github.com/username/private_gist_id
-```
-
-### 7. 删除提示词
+### 5. 删除提示词
 
 ```bash
 # 交互式删除 - 显示所有提示词供选择
@@ -144,11 +121,9 @@ pv del
 | 命令 | 别名 | 描述 | 示例 |
 |------|------|------|------|
 | `pv` | - | 显示欢迎信息 | `pv` |
-| `pv list [--remote]` | - | 列出所有提示词 | `pv list -r` |
-| `pv add <file\|url>` | - | 添加提示词 | `pv add prompt.yaml` |
+| `pv list` | - | 列出所有提示词 | `pv list` |
+| `pv add <file\|url>` | - | 添加提示词（会创建公开 Gist） | `pv add prompt.yaml` |
 | `pv get [keyword\|url]` | - | 获取提示词到剪贴板 | `pv get "golang"` |
-| `pv sync [--verbose]` | - | 同步远程数据到本地 | `pv sync -v` |
-| `pv share [keyword\|url]` | - | 分享私有提示词 | `pv share "密码"` |
 | `pv delete [keyword\|url]` | `pv del` | 删除提示词 | `pv delete "golang"` |
 | `pv auth login` | - | 登录 GitHub 账户 | `pv auth login` |
 | `pv auth logout` | - | 登出当前账户 | `pv auth logout` |
@@ -170,24 +145,6 @@ pv del
 1. **交互式获取** - 显示所有提示词列表供选择
 2. **关键字筛选获取** - 根据关键字筛选提示词
 3. **直接 URL 获取** - 通过 Gist URL 直接获取
-
-### 同步功能
-
-完整的缓存同步流程：
-
-- 获取远程提示词索引列表
-- 串行下载所有提示词内容到本地缓存
-- 显示 "正在下载 X/Y" 进度信息
-- 单个提示词失败时继续处理其他提示词
-- 显示最终同步统计信息（成功/失败数量）
-
-### 分享功能
-
-将私有 GitHub Gists 转换为公开 Gists：
-
-1. **交互式分享** - 显示所有私有提示词列表供选择
-2. **关键字筛选分享** - 根据关键字筛选私有提示词
-3. **直接 URL 分享** - 直接分享指定 URL 的私有提示词
 
 ### 删除功能
 
@@ -223,15 +180,6 @@ version: "1.0"             # 可选：版本号
 - 用户偏好设置
 - 本地索引缓存
 
-## 缓存机制
-
-PV 支持本地缓存机制，提供以下优势：
-
-- **快速访问** - `pv list` 默认使用本地缓存，秒级响应
-- **离线使用** - 缓存的提示词可在离线状态下访问
-- **网络优化** - 减少 GitHub API 调用，避免速率限制
-- **手动控制** - 通过 `pv sync` 手动更新缓存，`pv list --remote` 强制远程获取
-
 ## 故障排除
 
 ### 认证问题
@@ -258,18 +206,6 @@ curl -I https://api.github.com
 ### 权限问题
 
 确保你的 GitHub token 具有创建和管理 Gists 的权限（`gist` scope）。
-
-### 缓存问题
-
-如果缓存数据不一致：
-
-```bash
-# 强制同步远程数据
-pv sync
-
-# 或使用远程模式列出
-pv list --remote
-```
 
 ## 开发
 
@@ -302,7 +238,6 @@ make test-quick
 
 # 特定功能测试
 make test-delete
-make test-tui
 make test-integration
 
 # 完整测试套件（生成合并覆盖率报告）

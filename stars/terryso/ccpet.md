@@ -1,6 +1,6 @@
 ---
 project: ccpet
-stars: 47
+stars: 48
 description: |-
     A virtual pet for your Claude Code status line.
 url: https://github.com/terryso/ccpet

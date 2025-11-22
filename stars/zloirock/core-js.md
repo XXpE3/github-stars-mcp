@@ -1,6 +1,6 @@
 ---
 project: core-js
-stars: 25328
+stars: 25331
 description: |-
     Standard Library
 url: https://github.com/zloirock/core-js
@@ -153,6 +153,7 @@ structuredClone(new Set([1, 2, 3])); // => new Set([1, 2, 3])
       - [Explicit Resource Management](#explicit-resource-management)
       - [`Float16` methods](#float16-methods)
       - [`Iterator` helpers](#iterator-helpers)
+      - [`Iterator` sequencing](#iterator-sequencing)
       - [`Object.values` / `Object.entries`](#objectvalues--objectentries)
       - [`Object.fromEntries`](#objectfromentries)
       - [`Object.getOwnPropertyDescriptors`](#objectgetownpropertydescriptors)
@@ -171,18 +172,17 @@ structuredClone(new Set([1, 2, 3])); // => new Set([1, 2, 3])
       - [`Promise.withResolvers`](#promisewithresolvers)
       - [`Symbol.asyncIterator` for asynchronous iteration](#symbolasynciterator-for-asynchronous-iteration)
       - [`Symbol.prototype.description`](#symbolprototypedescription)
+      - [`JSON.parse` source text access](#jsonparse-source-text-access)
       - [Well-formed `JSON.stringify`](#well-formed-jsonstringify)
       - [Well-formed unicode strings](#well-formed-unicode-strings)
       - [New `Set` methods](#new-set-methods)
       - [`Math.sumPrecise`](#mathsumprecise)
     - [Stage 3 proposals](#stage-3-proposals)
-      - [`Iterator` sequencing](#iterator-sequencing)
+      - [Joint iteration](#joint-iteration)
       - [`Map` upsert](#map-upsert)
-      - [`JSON.parse` source text access](#jsonparse-source-text-access)
       - [`Symbol.metadata` for decorators metadata proposal](#symbolmetadata-for-decorators-metadata-proposal)
     - [Stage 2.7 proposals](#stage-27-proposals)
       - [`Iterator` chunking](#iterator-chunking)
-      - [Joint iteration](#joint-iteration)
     - [Stage 2 proposals](#stage-2-proposals)
       - [`AsyncIterator` helpers](#asynciterator-helpers)
       - [`Iterator.range`](#iteratorrange)
@@ -228,11 +228,11 @@ structuredClone(new Set([1, 2, 3])); // => new Set([1, 2, 3])
 ### Installation:[⬆](#index)
 ```sh
 // global version
-npm install --save core-js@3.46.0
+npm install --save core-js@3.47.0
 // version without global namespace pollution
-npm install --save core-js-pure@3.46.0
+npm install --save core-js-pure@3.47.0
 // bundled global version
-npm install --save core-js-bundle@3.46.0
+npm install --save core-js-bundle@3.47.0
 ```
 
 ### `postinstall` message[⬆](#index)
@@ -328,10 +328,10 @@ import 'regenerator-runtime/runtime';
 
 #### `@babel/preset-env`[⬆](#index)
 
-[`@babel/preset-env`](https://github.com/babel/babel/tree/master/packages/babel-preset-env) has `useBuiltIns` option, which optimizes the use of the global version of `core-js`. With `useBuiltIns` option, you should also set `corejs` option to the used version of `core-js`, like `corejs: '3.46'`.
+[`@babel/preset-env`](https://github.com/babel/babel/tree/master/packages/babel-preset-env) has `useBuiltIns` option, which optimizes the use of the global version of `core-js`. With `useBuiltIns` option, you should also set `corejs` option to the used version of `core-js`, like `corejs: '3.47'`.
 
 > [!IMPORTANT]
-> It is recommended to specify the used minor `core-js` version, like `corejs: '3.46'`, instead of `corejs: 3`, since with `corejs: 3` will not be injected modules which were added in minor `core-js` releases.
+> It is recommended to specify the used minor `core-js` version, like `corejs: '3.47'`, instead of `corejs: 3`, since with `corejs: 3` will not be injected modules which were added in minor `core-js` releases.
 
 ---
 
@@ -392,7 +392,7 @@ import 'core-js/modules/es.array.of';
 var array = Array.of(1, 2, 3);
 ```
 
-By default, `@babel/preset-env` with `useBuiltIns: 'usage'` option only polyfills stable features, but you can enable polyfilling of proposals by the `proposals` option, as `corejs: { version: '3.46', proposals: true }`.
+By default, `@babel/preset-env` with `useBuiltIns: 'usage'` option only polyfills stable features, but you can enable polyfilling of proposals by the `proposals` option, as `corejs: { version: '3.47', proposals: true }`.
 
 > [!IMPORTANT]
 > In the case of `useBuiltIns: 'usage'`, you should not add `core-js` imports by yourself, they will be added automatically.
@@ -430,7 +430,7 @@ Fast JavaScript transpiler `swc` [contains integration with `core-js`](https://s
   "env": {
     "targets": "> 0.25%, not dead",
     "mode": "entry",
-    "coreJs": "3.46"
+    "coreJs": "3.47"
   }
 }
 ```
@@ -877,9 +877,10 @@ await Array.fromAsync((async function * () { yield * [1, 2, 3]; })(), i => i ** 
 ```
 
 #### ECMAScript: Iterator[⬆](#index)
-Modules [`es.iterator.constructor`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.constructor.js), [`es.iterator.dispose`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.dispose.js), [`es.iterator.drop`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.drop.js), [`es.iterator.every`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.every.js), [`es.iterator.filter`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.filter.js), [`es.iterator.find`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.find.js), [`es.iterator.flat-map`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.flat-map.js), [`es.iterator.for-each`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.for-each.js), [`es.iterator.from`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.from.js), [`es.iterator.map`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.map.js), [`es.iterator.reduce`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.reduce.js), [`es.iterator.some`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.some.js), [`es.iterator.take`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.take.js), [`es.iterator.to-array`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.to-array.js)
+Modules [`es.iterator.constructor`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.constructor.js), [`es.iterator.concat`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.concat.js), [`es.iterator.dispose`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.dispose.js), [`es.iterator.drop`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.drop.js), [`es.iterator.every`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.every.js), [`es.iterator.filter`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.filter.js), [`es.iterator.find`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.find.js), [`es.iterator.flat-map`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.flat-map.js), [`es.iterator.for-each`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.for-each.js), [`es.iterator.from`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.from.js), [`es.iterator.map`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.map.js), [`es.iterator.reduce`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.reduce.js), [`es.iterator.some`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.some.js), [`es.iterator.take`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.take.js), [`es.iterator.to-array`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.iterator.to-array.js)
 ```ts
 class Iterator {
+  static concat(...items: Array<IterableObject>): Iterator<any>;
   static from(iterable: Iterable<any> | Iterator<any>): Iterator<any>;
   drop(limit: uint): Iterator<any>;
   every(callbackfn: (value: any, counter: uint) => boolean): boolean;
@@ -899,6 +900,7 @@ class Iterator {
 [*CommonJS entry points:*](#commonjs-api)
 ```
 core-js(-pure)/es|stable|actual|full/iterator
+core-js(-pure)/es|stable|actual|full/iterator/concat
 core-js(-pure)/es|stable|actual|full/iterator/dispose
 core-js(-pure)/es|stable|actual|full/iterator/drop
 core-js(-pure)/es|stable|actual|full/iterator/every
@@ -913,7 +915,7 @@ core-js(-pure)/es|stable|actual|full/iterator/some
 core-js(-pure)/es|stable|actual|full/iterator/take
 core-js(-pure)/es|stable|actual|full/iterator/to-array
 ```
-[Examples](https://tinyurl.com/249jw4e4):
+[Examples](https://tinyurl.com/24af2z7v):
 ```js
 [1, 2, 3, 4, 5, 6, 7].values()
   .drop(1)
@@ -925,6 +927,11 @@ core-js(-pure)/es|stable|actual|full/iterator/to-array
 Iterator.from({
   next: () => ({ done: Math.random() > 0.9, value: Math.random() * 10 | 0 }),
 }).toArray(); // => [7, 6, 3, 0, 2, 8]
+
+Iterator.concat([0, 1].values(), [2, 3], function * () {
+  yield 4;
+  yield 5;
+}()).toArray(); // => [0, 1, 2, 3, 4, 5]
 ```
 
 > [!WARNING]
@@ -2140,23 +2147,47 @@ instance.c; // => 42
 ```
 
 #### ECMAScript: JSON[⬆](#index)
-Since `JSON` object is missed only in very old engines like IE7-, `core-js` does not provide a full `JSON` polyfill, however, fix already existing implementations by the current standard, for example, [well-formed `JSON.stringify`](https://github.com/tc39/proposal-well-formed-stringify). `JSON` is also fixed in other modules - for example, `Symbol` polyfill fixes `JSON.stringify` for correct work with symbols.
+Since `JSON` object is missed only in very old engines like IE7-, `core-js` does not provide a full `JSON.{ parse, stringify }` polyfill, however, fix already existing implementations by the current standard.
 
-Module [`es.json.to-string-tag`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.json.to-string-tag.js) and [`es.json.stringify`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.json.stringify.js).
+Modules [`es.json.is-raw-json`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.json.is-raw-json.js), [`es.json.parse`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.json.parse.js), [`es.json.raw-json`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.json.raw-json.js), [`es.json.stringify`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.json.stringify.js) and [`es.json.to-string-tag`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.json.to-string-tag.js) .
 ```ts
 namespace JSON {
+  isRawJSON(O: any): boolean;
+  parse(text: string, reviver?: (this: any, key: string, value: any, context: { source?: string }) => any): any;
+  rawJSON(text: any): RawJSON;
   stringify(value: any, replacer?: Array<string | number> | (this: any, key: string, value: any) => any, space?: string | number): string | void;
   @@toStringTag: 'JSON';
 }
 ```
 [*CommonJS entry points:*](#commonjs-api)
 ```
+core-js(-pure)/es|stable|actual|full/json/is-raw-json
+core-js(-pure)/es|stable|actual|full/json/parse
+core-js(-pure)/es|stable|actual|full/json/raw-json
+core-js(-pure)/es|stable|actual|full/json/stringify
 core-js(-pure)/es|stable|actual|full/json/stringify
 core-js(-pure)/es|stable|actual|full/json/to-string-tag
 ```
-[*Examples*](https://is.gd/izZqKn):
+[*Examples*](https://tinyurl.com/34ctm7cn):
 ```js
 JSON.stringify({ '𠮷': ['\uDF06\uD834'] }); // => '{"𠮷":["\\udf06\\ud834"]}'
+
+function digitsToBigInt(key, val, { source }) {
+  return /^\d+$/.test(source) ? BigInt(source) : val;
+}
+
+function bigIntToRawJSON(key, val) {
+  return typeof val === 'bigint' ? JSON.rawJSON(String(val)) : val;
+}
+
+const tooBigForNumber = BigInt(Number.MAX_SAFE_INTEGER) + 2n;
+JSON.parse(String(tooBigForNumber), digitsToBigInt) === tooBigForNumber; // true
+
+const wayTooBig = BigInt(`1${ '0'.repeat(1000) }`);
+JSON.parse(String(wayTooBig), digitsToBigInt) === wayTooBig; // true
+
+const embedded = JSON.stringify({ tooBigForNumber }, bigIntToRawJSON);
+embedded === '{"tooBigForNumber":9007199254740993}'; // true
 ```
 
 #### ECMAScript: globalThis[⬆](#index)
@@ -2436,6 +2467,17 @@ class Iterator {
 core-js/proposals/iterator-helpers-stage-3-2
 ```
 
+##### [`Iterator` sequencing](https://github.com/tc39/proposal-iterator-sequencing)[⬆](#index)
+```ts
+class Iterator {
+  static concat(...items: Array<IterableObject>): Iterator<any>;
+}
+```
+[*CommonJS entry points:*](#commonjs-api)
+```
+core-js/proposals/iterator-sequencing
+```
+
 ##### [`Object.values` / `Object.entries`](https://github.com/tc39/proposal-object-values-entries)[⬆](#index)
 ```ts
 class Object {
@@ -2639,6 +2681,23 @@ class Symbol {
 ```
 core-js/proposals/symbol-description
 ```
+
+##### [`JSON.parse` source text access](https://github.com/tc39/proposal-json-parse-with-source)[⬆](#index)
+```ts
+namespace JSON {
+  isRawJSON(O: any): boolean;
+  // patched for source support
+  parse(text: string, reviver?: (this: any, key: string, value: any, context: { source?: string }) => any): any;
+  rawJSON(text: any): RawJSON;
+  // patched for `JSON.rawJSON` support
+  stringify(value: any, replacer?: Array<string | number> | (this: any, key: string, value: any) => any, space?: string | number): string | void;
+}
+```
+[*CommonJS entry points:*](#commonjs-api)
+```
+core-js/proposals/json-parse-with-source
+```
+
 ##### [Well-formed `JSON.stringify`](https://github.com/tc39/proposal-well-formed-stringify)[⬆](#index)
 ```ts
 namespace JSON {
@@ -2695,24 +2754,55 @@ core-js/proposals/math-sum
 core-js(-pure)/stage/3
 ```
 
-##### [`Iterator` sequencing](https://github.com/tc39/proposal-iterator-sequencing)[⬆](#index)
-Module [`esnext.iterator.concat`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/esnext.iterator.concat.js)
+##### [Joint iteration](https://github.com/tc39/proposal-joint-iteration)[⬆](#index)
+Modules [esnext.iterator.zip](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/esnext.iterator.zip.js), [esnext.iterator.zip-keyed](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/esnext.iterator.zip-keyed.js)
 ```ts
 class Iterator {
-  static concat(...items: Array<IterableObject>): Iterator<any>;
+  zip<T extends readonly Iterable<unknown>[]>(
+    iterables: T,
+    options?: {
+      mode?: 'shortest' | 'longest' | 'strict';
+      padding?: { [K in keyof T]?: T[K] extends Iterable<infer U> ? U : never };
+    }
+  ): IterableIterator<{ [K in keyof T]: T[K] extends Iterable<infer U> ? U : never }>;
+  zipKeyed<K extends PropertyKey, V extends Record<K, Iterable<unknown>>>(
+    iterables: V,
+    options?: {
+      mode?: 'shortest' | 'longest' | 'strict';
+      padding?: { [P in keyof V]?: V[P] extends Iterable<infer U> ? U : never };
+    }
+  ): IterableIterator<{ [P in keyof V]: V[P] extends Iterable<infer U> ? U : never }>;
 }
 ```
 [*CommonJS entry points:*](#commonjs-api)
 ```
-core-js/proposals/iterator-sequencing
-core-js(-pure)/actual|full/iterator/concat
+core-js/proposals/joint-iteration
+core-js(-pure)/actual|full/iterator/zip
+core-js(-pure)/actual|full/iterator/zip-keyed
 ```
-[*Example*](https://tinyurl.com/2522xjae):
+[*Example*](https://tinyurl.com/vutnf2nu):
 ```js
-Iterator.concat([0, 1].values(), [2, 3], function * () {
-  yield 4;
-  yield 5;
-}()).toArray(); // => [0, 1, 2, 3, 4, 5]
+Iterator.zip([
+  [0, 1, 2],
+  [3, 4, 5],
+]).toArray();  // => [[0, 3], [1, 4], [2, 5]]
+
+Iterator.zipKeyed({
+  a: [0, 1, 2],
+  b: [3, 4, 5, 6],
+  c: [7, 8, 9],
+}, {
+  mode: 'longest',
+  padding: { c: 10 },
+}).toArray();
+/*
+[
+  { a: 0,         b: 3, c: 7  },
+  { a: 1,         b: 4, c: 8  },
+  { a: 2,         b: 5, c: 9  },
+  { a: undefined, b: 6, c: 10 },
+];
+ */
 ```
 
 ##### [`Map` upsert](https://github.com/thumbsupep/proposal-upsert)[⬆](#index)
@@ -2749,46 +2839,6 @@ map.getOrInsertComputed('a', key => key); // => 1
 map.getOrInsertComputed('c', key => key); // => 'c'
 
 console.log(map); // => Map { 'a': 1, 'b': 3, 'c': 'c' }
-```
-
-##### [`JSON.parse` source text access](https://github.com/tc39/proposal-json-parse-with-source)[⬆](#index)
-Modules [`esnext.json.is-raw-json`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/esnext.json.is-raw-json.js), [`esnext.json.parse`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/esnext.json.parse.js), [`esnext.json.raw-json`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/esnext.json.raw-json.js).
-```ts
-namespace JSON {
-  isRawJSON(O: any): boolean;
-  // patched for source support
-  parse(text: string, reviver?: (this: any, key: string, value: any, context: { source?: string }) => any): any;
-  rawJSON(text: any): RawJSON;
-  // patched for `JSON.rawJSON` support
-  stringify(value: any, replacer?: Array<string | number> | (this: any, key: string, value: any) => any, space?: string | number): string | void;
-}
-```
-[*CommonJS entry points:*](#commonjs-api)
-```
-core-js/proposals/json-parse-with-source
-core-js(-pure)/actual|full/json/is-raw-json
-core-js(-pure)/actual|full/json/parse
-core-js(-pure)/actual|full/json/raw-json
-core-js(-pure)/actual|full/json/stringify
-```
-[*Examples*](https://tinyurl.com/22phm569):
-```js
-function digitsToBigInt(key, val, { source }) {
-  return /^\d+$/.test(source) ? BigInt(source) : val;
-}
-
-function bigIntToRawJSON(key, val) {
-  return typeof val === 'bigint' ? JSON.rawJSON(String(val)) : val;
-}
-
-const tooBigForNumber = BigInt(Number.MAX_SAFE_INTEGER) + 2n;
-JSON.parse(String(tooBigForNumber), digitsToBigInt) === tooBigForNumber; // true
-
-const wayTooBig = BigInt(`1${ '0'.repeat(1000) }`);
-JSON.parse(String(wayTooBig), digitsToBigInt) === wayTooBig; // true
-
-const embedded = JSON.stringify({ tooBigForNumber }, bigIntToRawJSON);
-embedded === '{"tooBigForNumber":9007199254740993}'; // true
 ```
 
 ##### [`Symbol.metadata` for decorators metadata proposal](https://github.com/tc39/proposal-decorator-metadata)[⬆](#index)
@@ -2841,57 +2891,6 @@ let windows = Array.from(digits().windows(2));  // [[0, 1], [1, 2], [2, 3], [3, 
 let windowsPartial = Array.from([0, 1].values().windows(3, 'allow-partial'));  // [[0, 1]]
 
 let windowsFull = Array.from([0, 1].values().windows(3));  // []
-```
-
-##### [Joint iteration](https://github.com/tc39/proposal-joint-iteration)[⬆](#index)
-Modules [esnext.iterator.zip](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/esnext.iterator.zip.js), [esnext.iterator.zip-keyed](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/esnext.iterator.zip-keyed.js)
-```ts
-class Iterator {
-  zip<T extends readonly Iterable<unknown>[]>(
-    iterables: T,
-    options?: {
-      mode?: 'shortest' | 'longest' | 'strict';
-      padding?: { [K in keyof T]?: T[K] extends Iterable<infer U> ? U : never };
-    }
-  ): IterableIterator<{ [K in keyof T]: T[K] extends Iterable<infer U> ? U : never }>;
-  zipKeyed<K extends PropertyKey, V extends Record<K, Iterable<unknown>>>(
-    iterables: V,
-    options?: {
-      mode?: 'shortest' | 'longest' | 'strict';
-      padding?: { [P in keyof V]?: V[P] extends Iterable<infer U> ? U : never };
-    }
-  ): IterableIterator<{ [P in keyof V]: V[P] extends Iterable<infer U> ? U : never }>;
-}
-```
-[*CommonJS entry points:*](#commonjs-api)
-```
-core-js/proposals/joint-iteration
-core-js(-pure)/full/iterator/zip
-core-js(-pure)/full/iterator/zip-keyed
-```
-[*Example*](https://tinyurl.com/vutnf2nu):
-```js
-Iterator.zip([
-  [0, 1, 2],
-  [3, 4, 5],
-]).toArray();  // => [[0, 3], [1, 4], [2, 5]]
-
-Iterator.zipKeyed({
-  a: [0, 1, 2],
-  b: [3, 4, 5, 6],
-  c: [7, 8, 9],
-}, {
-  mode: 'longest',
-  padding: { c: 10 },
-}).toArray();
-/*
-[
-  { a: 0,         b: 3, c: 7  },
-  { a: 1,         b: 4, c: 8  },
-  { a: 2,         b: 5, c: 9  },
-  { a: undefined, b: 6, c: 10 },
-];
- */
 ```
 
 #### Stage 2 proposals[⬆](#index)

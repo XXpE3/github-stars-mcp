@@ -1,6 +1,6 @@
 ---
 project: Alle
-stars: 203
+stars: 277
 description: |-
     AI识别的邮件聚合客户端 | AI Powered Email Aggregation  Client
 url: https://github.com/bestruirui/Alle

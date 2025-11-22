@@ -1,6 +1,6 @@
 ---
 project: prompt-manage
-stars: 157
+stars: 165
 description: |-
     prompt-manage
 url: https://github.com/zhuchenyu2008/prompt-manage

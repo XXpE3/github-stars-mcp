@@ -1,6 +1,6 @@
 ---
 project: DocsGPT
-stars: 17365
+stars: 17387
 description: |-
     Private AI platform for agents, assistants and enterprise search. Built-in Agent Builder, Deep research, Document analysis, Multi-model support, and API connectivity for agents.
 url: https://github.com/arc53/DocsGPT
@@ -32,13 +32,6 @@ url: https://github.com/arc53/DocsGPT
 <a href="https://docs.docsgpt.cloud/">📖 Documentation</a> • <a href="https://github.com/arc53/DocsGPT/blob/main/CONTRIBUTING.md">👫 Contribute</a> • <a href="https://blog.docsgpt.cloud/">🗞 Blog</a>
 <br>
 
-</div>
-
-<div align="center">
-  <br>
-🎃 <a href="https://github.com/arc53/DocsGPT/blob/main/HACKTOBERFEST.md"> Hacktoberfest Prizes, Rules & Q&A </a> 🎃
-  <br>
-  <br>
 </div>
 
 

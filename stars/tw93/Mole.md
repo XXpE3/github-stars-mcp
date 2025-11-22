@@ -1,14 +1,14 @@
 ---
 project: Mole
-stars: 5074
+stars: 5511
 description: |-
-    🐹 Dig deep like a mole to clean you Mac. 像鼹鼠一样深入挖掘来清理你的 Mac
+    🐹 Dig deep like a mole to optimize you Mac. 像鼹鼠一样深入挖掘来优化你的 Mac
 url: https://github.com/tw93/Mole
 ---
 
 <div align="center">
   <h1>Mole</h1>
-  <p><em>Dig deep like a mole to clean your Mac.</em></p>
+  <p><em>Dig deep like a mole to optimize your Mac.</em></p>
 </div>
 
 <p align="center">
@@ -22,16 +22,15 @@ url: https://github.com/tw93/Mole
 
 <p align="center">
   <img src="https://cdn.tw93.fun/img/mole.jpeg" alt="Mole - 95.50GB freed" width="800" />
-  <p align="center">由于 Mole 还在中级版本，如果这台 Mac 对你非常重要，建议再等等。</p>
 </p>
 
 ## Features
 
-- **Deep System Cleanup** - Cleans way more junk than CleanMyMac/Lemon - caches, logs, temp files
-- **Thorough Uninstall** - Scans 22+ locations to remove app leftovers, not just the .app file
-- **System Optimization** - Rebuilds caches, resets services, and trims swap/network cruft with one run
-- **Interactive Disk Analyzer** - Navigate folders with arrow keys, find and delete large files quickly
-- **Fast & Lightweight** - Terminal-based with arrow-key navigation, pagination, and Touch ID support
+1. All-in-one toolkit equal to CleanMyMac + AppCleaner + DaisyDisk + Sensei + iStat in one trusted binary.
+2. Deep cleanup finds and removes caches, temp files, browser leftovers, and junk to free up tens of gigabytes.
+3. Smart uninstall finds app bundles plus launch agents, settings, caches, logs, and leftover files.
+4. Disk insight + optimization show large files, display folders, rebuild caches, clean swap, refresh services.
+5. Live status shows CPU, GPU, memory, disk, network, battery, and proxy data so you can find problems.
 
 ## Quick Start
 
@@ -51,12 +50,13 @@ brew install tw93/tap/mole
 
 ```bash
 mo                      # Interactive menu
-mo clean                # System cleanup
-mo clean --dry-run      # Preview mode
-mo clean --whitelist    # Manage protected caches
-mo uninstall            # Uninstall apps
-mo optimize             # System optimization
-mo analyze              # Disk analyzer
+mo clean                # Deep cleanup
+mo clean --dry-run      # Preview cleanup plan
+mo clean --whitelist    # Adjust protected caches
+mo uninstall            # Remove apps + leftovers
+mo optimize             # Refresh caches & services
+mo analyze              # Visual disk explorer
+mo status               # Live system health dashboard
 
 mo touchid              # Configure Touch ID for sudo
 mo update               # Update Mole
@@ -68,9 +68,9 @@ mo --version            # Show installed version
 
 ## Tips
 
-- Safety first, if your Mac is mission-critical, wait for Mole to mature before full cleanups.
-- Preview the cleanup by running `mo clean --dry-run` and reviewing the generated list.
-- Protect caches with `mo clean --whitelist`; defaults cover Playwright, HuggingFace, Maven, and Surge Mac paths.
+- Safety first, if your Mac is very important, wait for Mole to become stable before full cleanups.
+- Preview the cleanup by running `mo clean --dry-run` and reviewing the list.
+- Use `mo clean --whitelist` to manage protected caches.
 - Use `mo touchid` to approve sudo with Touch ID instead of typing your password.
 
 ## Features in Detail
@@ -125,11 +125,11 @@ $ mo optimize
 
 System: 5/32 GB RAM | 333/460 GB Disk (72%) | Uptime 6d
 
-  ✓ Rebuild system databases and flush caches
+  ✓ Rebuild system databases and clear caches
   ✓ Reset network services
   ✓ Refresh Finder and Dock
   ✓ Clean diagnostic and crash logs
-  ✓ Purge swap files and restart dynamic pager
+  ✓ Remove swap files and restart dynamic pager
   ✓ Rebuild launch services and spotlight index
 
 ====================================================================
@@ -150,8 +150,37 @@ Analyze Disk  ~/Documents  |  Total: 156.8GB
     4. ███░░░░░░░░░░░░░░░░  10.8%  |  📁 Documents                   16.9GB
     5. ██░░░░░░░░░░░░░░░░░   5.2%  |  📄 backup_2023.zip              8.2GB
 
-  ↑↓←→ Navigate  |  O Open  |  F Reveal  |  ⌫ Delete  |  L Large(24)  |  Q Quit
+  ↑↓←→ Navigate  |  O Open  |  F Show  |  ⌫ Delete  |  L Large(24)  |  Q Quit
 ```
+
+### Live System Status
+
+Real-time dashboard with system health score, hardware info, and performance metrics.
+
+```bash
+$ mo status
+
+Mole Status  Health ● 92  MacBook Pro · M4 Pro · 32GB · macOS 14.5
+
+⚙ CPU                                    ▦ Memory
+Total   ████████████░░░░░░░  45.2%       Used    ███████████░░░░░░░  58.4%
+Load    0.82 / 1.05 / 1.23 (8 cores)     Total   14.2 / 24.0 GB
+Core 1  ███████████████░░░░  78.3%       Free    ████████░░░░░░░░░░  41.6%
+Core 2  ████████████░░░░░░░  62.1%       Avail   9.8 GB
+
+▤ Disk                                   ⚡ Power
+Used    █████████████░░░░░░  67.2%       Level   ██████████████████  100%
+Free    156.3 GB                         Status  Charged
+Read    ▮▯▯▯▯  2.1 MB/s                  Health  Normal · 423 cycles
+Write   ▮▮▮▯▯  18.3 MB/s                 Temp    58°C · 1200 RPM
+
+⇅ Network                                ▶ Processes
+Down    ▮▮▯▯▯  3.2 MB/s                  Code       ▮▮▮▮▯  42.1%
+Up      ▮▯▯▯▯  0.8 MB/s                  Chrome     ▮▮▮▯▯  28.3%
+Proxy   HTTP · 192.168.1.100             Terminal   ▮▯▯▯▯  12.5%
+```
+
+Health score calculated from CPU, memory, disk, temperature, and I/O load. Color-coded by range.
 
 ## Quick Launchers
 
@@ -161,24 +190,16 @@ Launch Mole commands instantly from Raycast or Alfred:
 curl -fsSL https://raw.githubusercontent.com/tw93/Mole/main/scripts/setup-quick-launchers.sh | bash
 ```
 
-This adds 4 commands to Raycast and Alfred:
-- `clean` - Deep system cleanup
-- `uninstall` - Remove applications
-- `optimize` - System health check
-- `analyze` - Disk space explorer
+Adds 5 commands: `clean`, `uninstall`, `optimize`, `analyze`, `status`. Finds your terminal automatically or set `MO_LAUNCHER_APP=<name>` to override.
 
-Raycast scripts auto-detect your preferred terminal (Warp, Ghostty, Alacritty, Kitty, etc). Set `MO_LAUNCHER_APP=<name>` to override.
-
-**Uninstall:**
-```bash
-rm -rf ~/Documents/Raycast/Scripts/mole-*.sh
-rm -rf ~/Library/Application\ Support/Raycast/script-commands/mole-*.sh
-```
+Reload Raycast by running `Reload Script Directories`, or simply restarting Raycast.
 
 ## Support
 
-- If Mole reclaimed storage for you, consider starring the repo or sharing it with friends needing a cleaner Mac.
-- Have ideas or fixes? Open an issue or PR and help shape Mole's roadmap together with the community.
+<a href="https://miaoyan.app/cats.html?name=Mole"><img src="https://miaoyan.app/assets/sponsors.svg" width="1000px" /></a>
+
+- If Mole freed storage for you, consider starring the repo or sharing it with friends needing a cleaner Mac.
+- Have ideas or fixes? Open an issue or PR and help shape Mole's future together with the community.
 - Love cats? Treat Tangyuan and Cola to canned food via <a href="https://miaoyan.app/cats.html?name=Mole" target="_blank">this link</a> and keep the mascots purring.
 
 ## License

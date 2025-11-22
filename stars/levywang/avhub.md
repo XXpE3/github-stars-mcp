@@ -1,6 +1,6 @@
 ---
 project: avhub
-stars: 2662
+stars: 2661
 description: |-
     R18 Resource Search & Management Tool
 url: https://github.com/levywang/avhub

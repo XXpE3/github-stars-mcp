@@ -1,6 +1,6 @@
 ---
 project: codemcp
-stars: 1570
+stars: 1572
 description: |-
     Coding assistant MCP for Claude Desktop
 url: https://github.com/ezyang/codemcp

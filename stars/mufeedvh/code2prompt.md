@@ -1,6 +1,6 @@
 ---
 project: code2prompt
-stars: 6750
+stars: 6771
 description: |-
     A CLI tool to convert your codebase into a single LLM prompt with source tree, prompt templating, and token counting.
 url: https://github.com/mufeedvh/code2prompt

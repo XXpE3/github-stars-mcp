@@ -1,6 +1,6 @@
 ---
 project: helium
-stars: 6962
+stars: 7298
 description: |-
     Private, fast, and honest web browser
 url: https://github.com/imputnet/helium

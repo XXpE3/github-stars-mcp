@@ -1,6 +1,6 @@
 ---
 project: EhPanda
-stars: 3660
+stars: 3665
 description: |-
     An unofficial E-Hentai App for iOS built with SwiftUI & TCA.
 url: https://github.com/EhPanda-Team/EhPanda
